@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="gem1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4dd0e1;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#00bcd4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0097a7;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Diamante -->
+  <path d="M 16 4 L 26 12 L 16 28 L 6 12 Z" fill="url(#gem1)" opacity="0.8"/>
+  <!-- Facetas -->
+  <path d="M 16 4 L 26 12 L 16 16 Z" fill="#4dd0e1" opacity="0.6"/>
+  <path d="M 16 4 L 6 12 L 16 16 Z" fill="#00bcd4" opacity="0.7"/>
+  <path d="M 6 12 L 16 16 L 16 28 Z" fill="#0097a7" opacity="0.8"/>
+  <path d="M 26 12 L 16 16 L 16 28 Z" fill="#00838f" opacity="0.9"/>
+  <!-- Bordes -->
+  <path d="M 16 4 L 26 12 L 16 28 L 6 12 Z" fill="none" stroke="#006064" stroke-width="1.5"/>
+  <line x1="16" y1="4" x2="16" y2="28" stroke="#006064" stroke-width="1"/>
+  <line x1="6" y1="12" x2="26" y2="12" stroke="#006064" stroke-width="1"/>
+  <!-- Brillos -->
+  <circle cx="14" cy="8" r="2" fill="#fff" opacity="0.7"/>
+  <circle cx="18" cy="10" r="1" fill="#fff" opacity="0.8"/>
+</svg>

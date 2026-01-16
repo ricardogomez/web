@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <radialGradient id="crystal">
+      <stop offset="0%" style="stop-color:#e6f3ff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#a8d5ff;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#4a90e2;stop-opacity:0.9" />
+    </radialGradient>
+    <radialGradient id="baseGrad">
+      <stop offset="0%" style="stop-color:#4a4a4a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2a2a2a;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  <!-- Base -->
+  <ellipse cx="16" cy="27" rx="8" ry="2" fill="url(#baseGrad)"/>
+  <rect x="14" y="22" width="4" height="5" fill="#3a3a3a"/>
+  <!-- Bola de cristal -->
+  <circle cx="16" cy="14" r="10" fill="url(#crystal)" opacity="0.9"/>
+  <circle cx="16" cy="14" r="10" fill="none" stroke="#4a90e2" stroke-width="1" opacity="0.5"/>
+  <!-- Brillos -->
+  <circle cx="12" cy="10" r="3" fill="#fff" opacity="0.5"/>
+  <circle cx="19" cy="12" r="1.5" fill="#fff" opacity="0.7"/>
+  <!-- Efecto místico interior -->
+  <path d="M 11 14 Q 16 10, 21 14 Q 16 18, 11 14" fill="#fff" opacity="0.2"/>
+</svg>
