@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="glass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e0e0e0;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#f5f5f5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d0d0d0;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="handle" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b4513;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#a0522d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6b3410;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="glare">
+      <stop offset="0%" style="stop-color:#fff;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#fff;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  <!-- Sombra -->
+  <ellipse cx="35" cy="60" rx="20" ry="3" fill="#000" opacity="0.15"/>
+  <!-- Cristal de la lupa (círculo exterior) -->
+  <circle cx="24" cy="24" r="18" fill="none" stroke="url(#glass)" stroke-width="4"/>
+  <circle cx="24" cy="24" r="18" fill="url(#glass)" opacity="0.3"/>
+  <!-- Marco interior -->
+  <circle cx="24" cy="24" r="15" fill="none" stroke="#999" stroke-width="2"/>
+  <!-- Mango de la lupa -->
+  <path d="M 36 36 L 54 54" stroke="url(#handle)" stroke-width="8" stroke-linecap="round"/>
+  <!-- Reflejo en el cristal -->
+  <circle cx="18" cy="18" r="8" fill="url(#glare)"/>
+  <ellipse cx="28" cy="22" rx="4" ry="2" fill="#fff" opacity="0.6"/>
+  <!-- Detalle del mango -->
+  <circle cx="54" cy="54" r="4" fill="url(#handle)"/>
+</svg>
