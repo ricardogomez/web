@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="wand" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b4513;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#a0522d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6b3410;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="star">
+      <stop offset="0%" style="stop-color:#ffd700;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ffed4e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffa500;stop-opacity:1" />
+    </radialGradient>
+    <radialGradient id="sparkle">
+      <stop offset="0%" style="stop-color:#fff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffd700;stop-opacity:0.3" />
+    </radialGradient>
+  </defs>
+
+  <!-- Sombra -->
+  <ellipse cx="38" cy="60" rx="18" ry="3" fill="#000" opacity="0.15"/>
+
+  <!-- Varita -->
+  <line x1="12" y1="52" x2="38" y2="26" stroke="url(#wand)" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Detalles de la varita -->
+  <line x1="14" y1="50" x2="36" y2="28" stroke="#5a2d0c" stroke-width="1" opacity="0.5"/>
+
+  <!-- Estrella principal en la punta -->
+  <path d="M 38 20 L 40 26 L 46 26 L 41 30 L 43 36 L 38 32 L 33 36 L 35 30 L 30 26 L 36 26 Z"
+        fill="url(#star)"
+        stroke="#ffa500"
+        stroke-width="1"/>
+
+  <!-- Brillos en la estrella -->
+  <circle cx="38" cy="28" r="3" fill="url(#sparkle)" opacity="0.8"/>
+
+  <!-- Chispas alrededor -->
+  <circle cx="46" cy="18" r="2" fill="#ffd700" opacity="0.9"/>
+  <circle cx="32" cy="14" r="1.5" fill="#ffed4e" opacity="0.8"/>
+  <circle cx="48" cy="28" r="1.8" fill="#ffd700" opacity="0.85"/>
+  <circle cx="28" cy="24" r="1.3" fill="#ffed4e" opacity="0.75"/>
+
+  <!-- Estrellas pequeñas -->
+  <path d="M 50 20 L 51 22 L 53 22 L 51.5 23.5 L 52 25 L 50 24 L 48 25 L 48.5 23.5 L 47 22 L 49 22 Z"
+        fill="#ffd700"
+        opacity="0.9"/>
+  <path d="M 30 16 L 31 18 L 33 18 L 31.5 19.5 L 32 21 L 30 20 L 28 21 L 28.5 19.5 L 27 18 L 29 18 Z"
+        fill="#ffed4e"
+        opacity="0.85"/>
+
+  <!-- Brillo en la varita -->
+  <line x1="20" y1="44" x2="24" y2="40" stroke="#fff" stroke-width="1.5" opacity="0.4" stroke-linecap="round"/>
+</svg>
