@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="camera-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3498db;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#5dade2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2980b9;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="lens-shine">
+      <stop offset="0%" style="stop-color:#fff;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#3498db;stop-opacity:0.3" />
+    </radialGradient>
+  </defs>
+
+  <!-- Sombra -->
+  <ellipse cx="32" cy="58" rx="22" ry="4" fill="#000" opacity="0.2"/>
+
+  <!-- Cuerpo de la cámara -->
+  <rect x="10" y="24" width="44" height="28" rx="3" fill="url(#camera-blue)" stroke="#2980b9" stroke-width="1.5"/>
+
+  <!-- Visor superior -->
+  <rect x="18" y="18" width="12" height="8" rx="2" fill="url(#camera-blue)" stroke="#2980b9" stroke-width="1"/>
+
+  <!-- Flash -->
+  <circle cx="46" cy="30" r="3" fill="#5dade2" stroke="#2980b9" stroke-width="0.5"/>
+
+  <!-- Lente exterior -->
+  <circle cx="32" cy="38" r="10" fill="#2c3e50" stroke="#1c2833" stroke-width="1.5"/>
+
+  <!-- Lente media -->
+  <circle cx="32" cy="38" r="7" fill="#34495e" stroke="#1c2833" stroke-width="1"/>
+
+  <!-- Lente interior -->
+  <circle cx="32" cy="38" r="5" fill="#5dade2" opacity="0.7"/>
+
+  <!-- Brillo en la lente -->
+  <circle cx="29" cy="35" r="3" fill="url(#lens-shine)" opacity="0.6"/>
+
+  <!-- Botón de disparo -->
+  <rect x="40" y="16" width="6" height="4" rx="1" fill="#e74c3c" stroke="#c0392b" stroke-width="0.5"/>
+
+  <!-- Detalles decorativos -->
+  <line x1="14" y1="28" x2="14" y2="48" stroke="#2980b9" stroke-width="0.5" opacity="0.5"/>
+  <line x1="50" y1="28" x2="50" y2="48" stroke="#2980b9" stroke-width="0.5" opacity="0.5"/>
+
+  <!-- Correa -->
+  <path d="M 12 24 Q 8 20 8 16 Q 8 12 12 12 L 16 12" stroke="#2c3e50" stroke-width="1.5" fill="none"/>
+  <path d="M 52 24 Q 56 20 56 16 Q 56 12 52 12 L 48 12" stroke="#2c3e50" stroke-width="1.5" fill="none"/>
+</svg>
