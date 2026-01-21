@@ -47,6 +47,27 @@
         .foto-clickable:hover {
             transform: scale(1.03);
         }
+        /* Responsive */
+        .galeria-fotos {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            background: rgba(52, 152, 219, 0.1);
+            padding: 1.5rem;
+            border-radius: 12px;
+        }
+        @media (max-width: 900px) {
+            .galeria-fotos {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 500px) {
+            .galeria-fotos {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -83,7 +104,7 @@
             </div>
 
             <!-- Galería de fotos -->
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-bottom: 2rem; background: rgba(52, 152, 219, 0.1); padding: 1.5rem; border-radius: 12px;">
+            <div class="galeria-fotos">
                 <div style="text-align: center;">
                     <img loading="lazy" src="imagenes/websamigas/antena.jpg" alt="Fotografía" class="foto-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
                 </div>
