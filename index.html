@@ -34,19 +34,34 @@
     <header>
         <nav>
             <a href="#" class="logo"></a>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <ul class="nav-links">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#biografia">Mi Biografía</a></li>
-                <li><a href="#libros">Mis Libros</a></li>
-                <li><a href="#paraleer">Para Leer</a></li>
-                <li><a href="#premios">Premios</a></li>
-                <li><a href="#conferencias">Conferencias</a></li>
-                <li><a href="#matematicas">Matemáticas</a></li>
-                <li><a href="#sahara">Sáhara</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#inicio" onclick="closeMenu()">Inicio</a></li>
+                <li><a href="#biografia" onclick="closeMenu()">Mi Biografía</a></li>
+                <li><a href="#libros" onclick="closeMenu()">Mis Libros</a></li>
+                <li><a href="#paraleer" onclick="closeMenu()">Para Leer</a></li>
+                <li><a href="#premios" onclick="closeMenu()">Premios</a></li>
+                <li><a href="#conferencias" onclick="closeMenu()">Conferencias</a></li>
+                <li><a href="#matematicas" onclick="closeMenu()">Matemáticas</a></li>
+                <li><a href="#sahara" onclick="closeMenu()">Sáhara</a></li>
+                <li><a href="#contacto" onclick="closeMenu()">Contacto</a></li>
             </ul>
         </nav>
     </header>
+    <script>
+        function toggleMenu() {
+            document.querySelector('.menu-toggle').classList.toggle('active');
+            document.querySelector('.nav-links').classList.toggle('active');
+        }
+        function closeMenu() {
+            document.querySelector('.menu-toggle').classList.remove('active');
+            document.querySelector('.nav-links').classList.remove('active');
+        }
+    </script>
 
     <section class="hero" id="inicio" style="position: relative;">
         <div class="hero-content">
