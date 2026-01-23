@@ -5,6 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Los Viajes de Ulises - Contenido Extra - Ricardo Gómez</title>
     <link rel="stylesheet" href="/styles.css">
+    <style>
+        /* Lightbox */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .lightbox.active {
+            display: flex;
+        }
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 4px;
+            box-shadow: 0 0 40px rgba(0,0,0,0.7);
+        }
+        .lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .img-clickable {
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .img-clickable:hover {
+            transform: scale(1.02);
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -50,19 +91,19 @@
             <div style="line-height: 1.8; color: #555; margin-bottom: 2rem;">
                 <div style="display: grid; grid-template-columns: 1fr; gap: 1.5rem; max-width: 800px; margin-left: auto; margin-right: auto;">
                     <div style="text-align: center;">
-                        <img src="imagenes/mislibros/edelvives-mitologia/ulises-1.png" alt="Ilustración de Los Viajes de Ulises" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                        <img src="imagenes/mislibros/edelvives-mitologia/ulises-1.png" alt="Ilustración de Los Viajes de Ulises" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
                     </div>
                     <div style="text-align: center;">
-                        <img src="imagenes/mislibros/edelvives-mitologia/ulises-2.png" alt="Ilustración de Los Viajes de Ulises" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                        <img src="imagenes/mislibros/edelvives-mitologia/ulises-2.png" alt="Ilustración de Los Viajes de Ulises" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
                     </div>
                     <div style="text-align: center;">
-                        <img src="imagenes/mislibros/edelvives-mitologia/ulises-3.png" alt="Ilustración de Los Viajes de Ulises" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                        <img src="imagenes/mislibros/edelvives-mitologia/ulises-3.png" alt="Ilustración de Los Viajes de Ulises" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
                     </div>
                     <div style="text-align: center;">
-                        <img src="imagenes/mislibros/edelvives-mitologia/ulises-4.png" alt="Ilustración de Los Viajes de Ulises" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                        <img src="imagenes/mislibros/edelvives-mitologia/ulises-4.png" alt="Ilustración de Los Viajes de Ulises" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
                     </div>
                     <div style="text-align: center;">
-                        <img src="imagenes/mislibros/edelvives-mitologia/Ulises-5.png" alt="Ilustración de Los Viajes de Ulises" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                        <img src="imagenes/mislibros/edelvives-mitologia/ulises-5.png" alt="Ilustración de Los Viajes de Ulises" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
                     </div>
                 </div>
             </div>
@@ -78,5 +119,26 @@
     <footer style="background: var(--primary); color: var(--white); text-align: center; padding: 2rem;">
         <p>&copy; 2024 Ricardo Gómez. Todos los derechos reservados.</p>
     </footer>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" onclick="cerrarLightbox()">
+        <span class="lightbox-close">&times;</span>
+        <img id="lightbox-img" src="" alt="Ilustración ampliada">
+    </div>
+
+    <script>
+        function abrirLightbox(src) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        function cerrarLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') cerrarLightbox();
+        });
+    </script>
 </body>
 </html>
