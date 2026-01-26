@@ -5,6 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3333 - Contenido Extra - Ricardo Gómez</title>
     <link rel="stylesheet" href="/styles.css">
+    <style>
+        /* Lightbox */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .lightbox.active {
+            display: flex;
+        }
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 4px;
+            box-shadow: 0 0 40px rgba(0,0,0,0.7);
+        }
+        .lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .img-clickable {
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .img-clickable:hover {
+            transform: scale(1.02);
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -51,7 +92,7 @@
             <div style="line-height: 1.8; color: #555; margin-bottom: 2rem;">
                 <div style="margin-top: 2rem; margin-bottom: 1.5rem;">
                     <div style="text-align: center; margin-bottom: 1rem;">
-                        <img src="imagenes/mislibros/sm/chico-3333dos.jpg" loading="lazy" alt="Ilustración 3333" style="width: 600px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                        <img src="imagenes/mislibros/sm/chico-3333dos.jpg" loading="lazy" alt="Ilustración 3333" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 600px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
                     </div>
                     <h3 style="text-align: center; color: var(--primary); font-size: 1.4rem;">PEQUEÑO TRICCIONARIO DE 3333</h3>
                 </div>
@@ -75,7 +116,7 @@
                 <p style="margin-bottom: 1rem;"><strong>Equipo</strong>: Grupo de personas que realizan una tarea juntas. A veces compiten entre sí equipos situados en lugares muy distintos del mundo. Los estudiantes de 3333 trabajan siempre en equipos, dirigidos por un entrenador que está con ellos 3 horas diarias. (Pasadas 3 horas con adolescentes, el entrenador debe someterse a una revisión psicorobótica de 2 horas. Además, se ha comprobado que si los adolescentes están más de 3 horas juntos comienzan a maquinar pillerías.)</p>
 
                 <div style="float: left; margin: 0 2rem 1rem 0; text-align: center;">
-                    <img src="imagenes/mislibros/sm/3333.jpg" loading="lazy" alt="Portada original de 3333" style="width: 250px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                    <img src="imagenes/mislibros/sm/3333.jpg" loading="lazy" alt="Portada original de 3333" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 250px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
                     <span style="color: var(--accent); font-size: 2rem; font-weight: bold;">*</span>
                 </div>
 
@@ -115,5 +156,26 @@
     <footer style="background: var(--primary); color: var(--white); text-align: center; padding: 2rem;">
         <p>&copy; 2026 Ricardo Gómez. Todos los derechos reservados.</p>
     </footer>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" onclick="cerrarLightbox()">
+        <span class="lightbox-close">&times;</span>
+        <img id="lightbox-img" src="" loading="lazy" alt="Imagen ampliada">
+    </div>
+
+    <script>
+        function abrirLightbox(src) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        function cerrarLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') cerrarLightbox();
+        });
+    </script>
 </body>
 </html>

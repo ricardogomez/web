@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="cover" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8B4513;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#A0522D;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8B4513;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="pages" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f9f0e1;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#fffaf0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f9f0e1;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Página izquierda -->
+  <path d="M 3 8 Q 3 6, 5 7 L 15 5 Q 16 4.5, 16 6 L 16 25 Q 16 26, 15 25.5 L 5 27 Q 3 27.5, 3 26 Z"
+        fill="url(#pages)" stroke="#c4a77d" stroke-width="1"/>
+  <!-- Página derecha -->
+  <path d="M 29 8 Q 29 6, 27 7 L 17 5 Q 16 4.5, 16 6 L 16 25 Q 16 26, 17 25.5 L 27 27 Q 29 27.5, 29 26 Z"
+        fill="url(#pages)" stroke="#c4a77d" stroke-width="1"/>
+  <!-- Lomo del libro -->
+  <line x1="16" y1="5" x2="16" y2="25.5" stroke="#8B4513" stroke-width="1.5"/>
+  <!-- Líneas de texto izquierda -->
+  <line x1="6" y1="12" x2="14" y2="10.5" stroke="#8b7355" stroke-width="0.6" opacity="0.5"/>
+  <line x1="6" y1="15" x2="14" y2="13.5" stroke="#8b7355" stroke-width="0.6" opacity="0.5"/>
+  <line x1="6" y1="18" x2="14" y2="16.5" stroke="#8b7355" stroke-width="0.6" opacity="0.5"/>
+  <line x1="6" y1="21" x2="11" y2="20" stroke="#8b7355" stroke-width="0.6" opacity="0.5"/>
+  <!-- Líneas de texto derecha -->
+  <line x1="18" y1="10.5" x2="26" y2="12" stroke="#8b7355" stroke-width="0.6" opacity="0.5"/>
+  <line x1="18" y1="13.5" x2="26" y2="15" stroke="#8b7355" stroke-width="0.6" opacity="0.5"/>
+  <line x1="18" y1="16.5" x2="26" y2="18" stroke="#8b7355" stroke-width="0.6" opacity="0.5"/>
+  <line x1="18" y1="20" x2="23" y2="21" stroke="#8b7355" stroke-width="0.6" opacity="0.5"/>
+  <!-- Tapas del libro (bordes) -->
+  <path d="M 2 7 Q 2 5, 4 6 L 15 4 Q 16 3.5, 16 5" fill="none" stroke="#8B4513" stroke-width="1.5"/>
+  <path d="M 30 7 Q 30 5, 28 6 L 17 4 Q 16 3.5, 16 5" fill="none" stroke="#8B4513" stroke-width="1.5"/>
+</svg>
