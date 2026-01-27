@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuentos Crudos - Contenido Extra - Ricardo Gómez</title>
+    <link rel="stylesheet" href="/styles.css">
+    <style>
+        /* Lightbox */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .lightbox.active {
+            display: flex;
+        }
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 4px;
+            box-shadow: 0 0 40px rgba(0,0,0,0.7);
+        }
+        .lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .img-clickable {
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .img-clickable:hover {
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo"></a>
+            <ul class="nav-links">
+                <li><a href="index.html#inicio">Inicio</a></li>
+                <li><a href="index.html#biografia">Mi Biografía</a></li>
+                <li><a href="index.html#libros">Mis Libros</a></li>
+                <li><a href="index.html#paraleer">Para Leer</a></li>
+                <li><a href="index.html#premios">Premios</a></li>
+                <li><a href="index.html#conferencias">Conferencias</a></li>
+                <li><a href="index.html#matematicas">Matemáticas</a></li>
+                <li><a href="index.html#sahara">Sáhara</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container" style="margin-top: 2rem; margin-bottom: 3rem;">
+        <p style="margin-bottom: 2rem; font-weight: bold; text-align: center; font-size: 1.3rem; color: #dc3545;">
+            Has encontrado algo con la lupa...
+        </p>
+
+        <h2 class="section-title section-asterisk">*</h2>
+        <h2 class="section-title">Cuentos Crudos</h2>
+
+        <div style="background: var(--white); padding: 2.5rem; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+
+            <!-- Imagen de la portada del libro con texto -->
+            <div style="display: flex; gap: 2rem; margin-bottom: 2rem; align-items: flex-start;">
+                <div style="flex-shrink: 0;">
+                    <img src="imagenes/mislibros/sm/crudos-CUBcompleta.png" alt="Cuentos Crudos"
+                         style="width: 220px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+                </div>
+                <div style="flex: 1; line-height: 1.8; color: #555;">
+                    <p style="font-style: italic; font-size: 1.15rem; margin-bottom: 0.8rem;">Nueve cuentos situados en diferentes lugares del mundo: desde nuestras calles a las de Lima, de selvas africanas a poblados camboyanos o los campamentos de refugiados saharauis, de Bagdag o Beirut en guerra al interior de la tierra o el fondo del mar...</p>
+                    <p style="font-style: italic; font-size: 1.15rem; margin-bottom: 0.8rem;">Varios de ellos están inspirados en situaciones dramáticas reales y nos muestran cómo las personas sobrevivimos con alegría y esperanza a pesar de las dificultades.</p>
+                    <p style="font-style: italic; font-size: 1.15rem;">El libro se publicó inicialmente como un bellísimo libro-regalo ilustrado por Juan Ramón Alonso y en su versión rústica lleva ya muchas ediciones tanto en España como en Brasil.</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: var(--light); border-radius: 10px;">
+                <a href="index.html#libros" style="display: inline-block; background: var(--secondary); color: white; padding: 1rem 2rem; border-radius: 5px; text-decoration: none; font-weight: bold; transition: all 0.3s ease;" onmouseover="this.style.background='#2980b9'" onmouseout="this.style.background='#3498db'">
+                    &larr; Volver a Mis Libros
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer style="background: var(--primary); color: var(--white); text-align: center; padding: 2rem;">
+        <p>&copy; 2026 Ricardo Gómez. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" onclick="cerrarLightbox()">
+        <span class="lightbox-close">&times;</span>
+        <img id="lightbox-img" src="" loading="lazy" alt="Imagen ampliada">
+    </div>
+
+    <script>
+        function abrirLightbox(src) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        function cerrarLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') cerrarLightbox();
+        });
+    </script>
+</body>
+</html>
