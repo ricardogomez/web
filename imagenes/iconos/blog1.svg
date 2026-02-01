@@ -2,12 +2,12 @@
   <!-- Página con borde rojo -->
   <rect x="3" y="1" width="18" height="22" rx="1.5" fill="white" stroke="white" stroke-width="0.8"/>
   <!-- Líneas de texto simulado -->
-  <line x1="6" y1="5" x2="18" y2="5" stroke="#333" stroke-width="0.5"/>
-  <line x1="6" y1="7.5" x2="16" y2="7.5" stroke="#333" stroke-width="0.5"/>
-  <line x1="6" y1="10" x2="17" y2="10" stroke="#333" stroke-width="0.5"/>
-  <line x1="6" y1="12.5" x2="14" y2="12.5" stroke="#333" stroke-width="0.5"/>
-  <line x1="6" y1="15" x2="18" y2="15" stroke="#333" stroke-width="0.5"/>
-  <line x1="6" y1="17.5" x2="15" y2="17.5" stroke="#333" stroke-width="0.5"/>
+  <line x1="6" y1="5" x2="18" y2="5" stroke="#aaa" stroke-width="0.5"/>
+  <line x1="6" y1="7.5" x2="16" y2="7.5" stroke="#aaa" stroke-width="0.5"/>
+  <line x1="6" y1="10" x2="17" y2="10" stroke="#aaa" stroke-width="0.5"/>
+  <line x1="6" y1="12.5" x2="14" y2="12.5" stroke="#aaa" stroke-width="0.5"/>
+  <line x1="6" y1="15" x2="18" y2="15" stroke="#aaa" stroke-width="0.5"/>
+  <line x1="6" y1="17.5" x2="15" y2="17.5" stroke="#aaa" stroke-width="0.5"/>
   <!-- Círculo con número 1 -->
   <circle cx="15" cy="17.5" r="5" fill="#dc3545"/>
   <text x="15" y="19.3" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" font-weight="bold" fill="white">1</text>
