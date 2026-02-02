@@ -5,6 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Un proyecto apasionante: el Bubisher - Ricardo Gómez</title>
     <link rel="stylesheet" href="/styles.css">
+    <style>
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .lightbox.active {
+            display: flex;
+        }
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 4px;
+            box-shadow: 0 0 40px rgba(0,0,0,0.7);
+        }
+        .img-clickable {
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+        .img-clickable:hover {
+            opacity: 0.9;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -60,6 +91,18 @@
                 <p style="line-height: 1.8;">Si quieres colaborar, puedes hacerlo a través de la página <strong><a href="http://www.bubisher.com" style="color: white; text-decoration: underline;">www.bubisher.com</a></strong>. ¡Gracias!</p>
             </div>
 
+            <h2 style="color: var(--accent); text-align: center; margin-top: 3rem; margin-bottom: 1.5rem;">Si quieres conocer algunos entresijos de esta historia...</h2>
+
+            <div style="display: grid; grid-template-columns: 1fr auto; gap: 2rem; align-items: center; margin-top: 2rem;">
+                <div>
+                    <p><strong>2001, 2003...</strong></p>
+                    <p>Tras algunos viajes y visitas a las escuelas de los campamentos de refugiados nos encontramos con que la enseñanza es obligatoria para niños y niñas; maestros y maestras enseñan el español, con poco más que la ayuda de una pizarra.</p>
+                    <p>Solo algunos niños tienen cuadernos. No hay un solo libro, ni de texto ni de lectura. Y la pregunta es: ¿cómo podemos llevar libros, con tantos como sobran en España?</p>
+                    <p>"¡Hay que defender el español!, nos dijimos."</p>
+                </div>
+                <img src="imagenes/elsahara/bubi-clase.JPG" loading="lazy" alt="Clase en el Sáhara" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 200px; border-radius: 8px;">
+            </div>
+
             <p style="margin-top: 3rem; text-align: center;"><a href="index.html#sahara" style="color: var(--secondary); font-weight: bold; text-decoration: none;">← Volver</a></p>
         </div>
     </div>
@@ -69,5 +112,21 @@
             <p>&copy; Ricardo Gómez</p>
         </div>
     </footer>
+    <div class="lightbox" onclick="cerrarLightbox()">
+        <img src="" alt="Imagen ampliada">
+    </div>
+    <script>
+        function abrirLightbox(src) {
+            const lb = document.querySelector('.lightbox');
+            lb.querySelector('img').src = src;
+            lb.classList.add('active');
+        }
+        function cerrarLightbox() {
+            document.querySelector('.lightbox').classList.remove('active');
+        }
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') cerrarLightbox();
+        });
+    </script>
 </body>
 </html>
