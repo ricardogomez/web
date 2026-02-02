@@ -5,46 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Un proyecto apasionante: el Bubisher - Ricardo Gómez</title>
     <link rel="stylesheet" href="/styles.css">
-    <style>
-        .lightbox {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.9);
-            z-index: 1000;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-        }
-        .lightbox.active {
-            display: flex;
-        }
-        .lightbox img {
-            max-width: 90%;
-            max-height: 90%;
-            border-radius: 4px;
-            box-shadow: 0 0 40px rgba(0,0,0,0.7);
-        }
-        .lightbox-close {
-            position: absolute;
-            top: 20px;
-            right: 30px;
-            color: white;
-            font-size: 40px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        .img-clickable {
-            cursor: pointer;
-            transition: transform 0.3s ease;
-        }
-        .img-clickable:hover {
-            transform: scale(1.02);
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -75,13 +35,15 @@
             <h1 style="color: var(--primary); margin-bottom: 2rem;">Un proyecto apasionante: el Bubisher</h1>
 
             <div style="overflow: hidden; margin-bottom: 1.5rem;">
-                <img src="imagenes/elsahara/bubisher-ni-a.jpg" loading="lazy" alt="Bubisher" class="img-clickable" onclick="abrirLightbox(this.src)" style="float: left; width: 400px; max-width: 100%; border-radius: 8px; margin-right: 1.5rem; margin-bottom: 0.5rem;">
+                <img src="imagenes/elsahara/bubisher-ni-a.jpg" loading="lazy" alt="Bubisher" style="float: left; width: 400px; max-width: 100%; border-radius: 8px; margin-right: 1.5rem; margin-bottom: 0.5rem;">
 
                 <p>El <strong>BIBLIOBÚS SAHARAUI</strong>, el <strong>Bubisher</strong>, fue presentado en sociedad en septiembre de 2008, lleva años rodando por el desierto cargado de libros donados por editoriales generosas.</p>
 
                 <p>Puedes seguir sus noticias en: <a href="http://bubisher.blogspot.com/" style="color: var(--secondary); font-weight: bold;">bubisher.com</a></p>
 
-                <p>Con el tiempo, en 2011, se inauguró la biblioteca fija <strong>El Nido del Bubisher</strong>, que pretende ser una especie de "biblioteca central" que coordinará y servirá para nutrir otros bibliobuses que recorran otros campamentos. En enero de 2012 comenzó a rodar un segundo bibliobús en Ausserd. Al cabo del tiempo, en cada una de las cinco wilayas se ha llevado un bibliobús y se ha construido una Biblioteca fija, un espacio dotado de una sala general, almacenes, aulas para la realización de actividades, patios y jardines. En cada una de ellas trabajan dos o tres bibliotecarias formadas en la gestión de la colección y de los préstamos, y en la animación a la lectura. Hay también conductores que llevan el bibliobús a las escuelas y a los barrios, y un vigilante permanente en cada una. Todo esto ha sido posible gracias a las aportaciones y a la dedicación generosas de miles de personas al cabo de estos años. Tú también puedes sumarte.</p>
+                <p>Con el tiempo, en 2011, se inauguró la primera biblioteca fija, <strong>"El Nido del Bubisher"</strong>, que pretendía ser una especie de Biblioteca Central que coordinaría y nutriría otros bibliobuses que recorrerían otras wilayas.</p>
+
+                <p>En enero de 2012 comenzó a rodar un segundo bibliobús en Ausserd. Al cabo del tiempo, en cada una de las cinco wilayas se ha llevado un bibliobús y se ha construido una Biblioteca fija, un espacio dotado de una sala general, almacenes, aulas para la realización de actividades, patios y jardines. En cada una de ellas trabajan dos o tres bibliotecarias formadas en la gestión de la colección y de los préstamos, y en la animación a la lectura. Hay también conductores que llevan el bibliobús a las escuelas y a los barrios, y un vigilante permanente en cada una. Todo esto ha sido posible gracias a las aportaciones y a la dedicación generosas de miles de personas al cabo de estos años. Tú también puedes sumarte.</p>
             </div>
 
             <div style="background: var(--accent); color: white; padding: 2rem; border-radius: 10px; margin-top: 2rem;">
@@ -93,27 +55,6 @@
             <p style="margin-top: 3rem; text-align: center;"><a href="index.html#sahara" style="color: var(--secondary); font-weight: bold; text-decoration: none;">← Volver</a></p>
         </div>
     </div>
-
-    <!-- Lightbox -->
-    <div id="lightbox" class="lightbox" onclick="cerrarLightbox()">
-        <span class="lightbox-close">&times;</span>
-        <img id="lightbox-img" src="" loading="lazy" alt="Imagen ampliada">
-    </div>
-
-    <script>
-        function abrirLightbox(src) {
-            document.getElementById('lightbox-img').src = src;
-            document.getElementById('lightbox').classList.add('active');
-            document.body.style.overflow = 'hidden';
-        }
-        function cerrarLightbox() {
-            document.getElementById('lightbox').classList.remove('active');
-            document.body.style.overflow = 'auto';
-        }
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') cerrarLightbox();
-        });
-    </script>
 
     <footer>
         <div class="container">
