@@ -107,6 +107,65 @@
             .cuaderno::after {
                 left: 23px;
             }
+            .foto-pegada {
+                position: relative !important;
+                right: auto !important;
+                bottom: auto !important;
+                margin: 2rem auto 0 auto !important;
+            }
+        }
+
+        .foto-pegada {
+            position: absolute;
+            right: 40px;
+            bottom: 40px;
+            transform: rotate(20deg);
+            z-index: 5;
+        }
+
+        .foto-marco {
+            background: white;
+            padding: 10px 10px 30px 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            position: relative;
+        }
+
+        .foto-marco img {
+            width: 200px;
+            display: block;
+        }
+
+        /* Cintas adhesivas */
+        .cinta {
+            position: absolute;
+            width: 60px;
+            height: 20px;
+            background: rgba(255, 235, 180, 0.7);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .cinta-top-left {
+            top: -8px;
+            left: -15px;
+            transform: rotate(-45deg);
+        }
+
+        .cinta-top-right {
+            top: -8px;
+            right: -15px;
+            transform: rotate(45deg);
+        }
+
+        .cinta-bottom-left {
+            bottom: -8px;
+            left: -15px;
+            transform: rotate(45deg);
+        }
+
+        .cinta-bottom-right {
+            bottom: -8px;
+            right: -15px;
+            transform: rotate(-45deg);
         }
     </style>
 </head>
@@ -121,6 +180,15 @@
             <p>Quizá esta coincidencia, y no otro mérito, sea el motivo de que el FESTILIJ26 me entregue, este mismo día, el premio "Torre del Agua", dicen que como reconocimiento por mi dedicación a la Literatura Infantil y Juvenil. Ya he dicho que lo acepto con una mezcla de orgullo y de humildad. Un premio no le hace a uno mejor de lo que es, pero se agradece por ser honorífico y porque hay detrás colegas de la profesión.</p>
             <p>En realidad, escribo esto antes de la entrega del premio. Quizá en otro post o en otros sitios cuente cómo fue.</p>
             <p>De momento, me doy satisfecho con esta anotación. ¡GRACIAS!</p>
+        </div>
+        <div class="foto-pegada">
+            <div class="foto-marco">
+                <span class="cinta cinta-top-left"></span>
+                <span class="cinta cinta-top-right"></span>
+                <span class="cinta cinta-bottom-left"></span>
+                <span class="cinta cinta-bottom-right"></span>
+                <img src="imagenes/premios/premio-torre.png" alt="Premio Torre del Agua">
+            </div>
         </div>
     </div>
 </body>
