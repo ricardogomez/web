@@ -5,37 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Terrorífica Medusa - Contenido Extra - Ricardo Gómez</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        .lightbox {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.9);
-            z-index: 1000;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-        }
-        .lightbox.active {
-            display: flex;
-        }
-        .lightbox img {
-            max-width: 90%;
-            max-height: 90%;
-            border-radius: 4px;
-            box-shadow: 0 0 40px rgba(0,0,0,0.7);
-        }
-        .img-clickable {
-            cursor: pointer;
-            transition: opacity 0.2s;
-        }
-        .img-clickable:hover {
-            opacity: 0.9;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -55,51 +24,50 @@
         </nav>
     </header>
 
-    <div class="container" style="margin-top: 2rem; margin-bottom: 3rem;">
-        <p style="margin-bottom: 2rem; font-weight: bold; text-align: center; font-size: 1.3rem; color: #dc3545;">
-            ¡Has puesto el ojo sobre uno de los mitos más fascinantes! <img src="imagenes/iconos/camara.svg" alt="" style="width: 36px; height: 36px; vertical-align: middle; transition: transform 0.3s ease, filter 0.3s ease;" onmouseover="this.style.transform='scale(1.25)'; this.style.filter='brightness(1.15)'" onmouseout="this.style.transform='scale(1)'; this.style.filter='brightness(1)'">
+    <div class="container mt-2 mb-3">
+        <p class="text-intro">
+            ¡Has puesto el ojo sobre uno de los mitos más fascinantes! <img src="imagenes/iconos/camara.svg" alt="" class="icon-hover" style="width: 36px; height: 36px; vertical-align: middle;">
         </p>
 
         <h2 class="section-title section-asterisk">*</h2>
         <h2 class="section-title">La Terrorífica Medusa</h2>
 
-        <div style="background: var(--white); padding: 2.5rem; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-
-            <div style="display: grid; grid-template-columns: auto 1fr; gap: 2rem; align-items: start;">
-                <img src="imagenes/mislibros/edelvives-mitologia/Optimized-medusa-cub-600.jpg" loading="lazy" alt="Cubierta de La Terrorífica Medusa" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 200px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                <div style="line-height: 1.8; color: #555;">
-                    <p style="font-style: italic; font-size: 1.15rem;">Cada uno de estos libros de Mitología es una obra de arte; la variedad de ilustradores hace que cada uno se convierta en un libro singular. Compárense el diseño y la técnica de Dani Torrent con los de otros ilustradores. Cada historia, por otro lado, me supuso una inmersión profunda en la mitología griega, para lo que utilicé distintas fuentes. No quería perder personajes accesorios: ¿Quién era Perseo y por qué mata a Medusa? ¿Cómo nace Pegaso? ¿Quién es el gigante Crisaor, mencionado en El Quijote? ¿Quiénes eran Andrómeda, Cefeo y Casiopea y por qué son galaxias o constelaciones? ¿Por qué la imagen de Medusa aparece como símbolo de la farmacia?</p>
+        <div class="content-box">
+            <div class="grid-cols-2">
+                <img src="imagenes/mislibros/edelvives-mitologia/Optimized-medusa-cub-600.jpg" loading="lazy" alt="Cubierta de La Terrorífica Medusa" class="img-clickable img-cover" onclick="abrirLightbox(this.src)">
+                <div class="text-content">
+                    <p class="text-italic">Cada uno de estos libros de Mitología es una obra de arte; la variedad de ilustradores hace que cada uno se convierta en un libro singular. Compárense el diseño y la técnica de Dani Torrent con los de otros ilustradores. Cada historia, por otro lado, me supuso una inmersión profunda en la mitología griega, para lo que utilicé distintas fuentes. No quería perder personajes accesorios: ¿Quién era Perseo y por qué mata a Medusa? ¿Cómo nace Pegaso? ¿Quién es el gigante Crisaor, mencionado en El Quijote? ¿Quiénes eran Andrómeda, Cefeo y Casiopea y por qué son galaxias o constelaciones? ¿Por qué la imagen de Medusa aparece como símbolo de la farmacia?</p>
                 </div>
             </div>
 
-            <p style="margin-top: 2.5rem; text-align: center; font-weight: bold; font-size: 1.2rem; color: #dc3545;">Algunas ilustraciones de Dani Torrent</p>
+            <p class="text-highlight">Algunas ilustraciones de Dani Torrent</p>
 
-            <div style="display: grid; grid-template-columns: 1fr; gap: 2rem; margin-top: 1.5rem;">
-                <img src="imagenes/mislibros/edelvives-mitologia/medusa-pag1.jpg" loading="lazy" alt="Ilustración de La Terrorífica Medusa" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                <img src="imagenes/mislibros/edelvives-mitologia/medusa-pag2.png" loading="lazy" alt="Ilustración de La Terrorífica Medusa" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                <img src="imagenes/mislibros/edelvives-mitologia/medusa-pag3.png" loading="lazy" alt="Ilustración de La Terrorífica Medusa" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+            <div class="grid-cols-1 mt-2">
+                <img src="imagenes/mislibros/edelvives-mitologia/medusa-pag1.jpg" loading="lazy" alt="Ilustración de La Terrorífica Medusa" class="img-clickable img-full" onclick="abrirLightbox(this.src)">
+                <img src="imagenes/mislibros/edelvives-mitologia/medusa-pag2.png" loading="lazy" alt="Ilustración de La Terrorífica Medusa" class="img-clickable img-full" onclick="abrirLightbox(this.src)">
+                <img src="imagenes/mislibros/edelvives-mitologia/medusa-pag3.png" loading="lazy" alt="Ilustración de La Terrorífica Medusa" class="img-clickable img-full" onclick="abrirLightbox(this.src)">
             </div>
 
-            <p style="margin-top: 2.5rem; text-align: center; font-weight: bold; font-size: 1.2rem; color: #dc3545;">Además, al final, quise darle un toque moderno, reivindicativo...</p>
+            <p class="text-highlight">Además, al final, quise darle un toque moderno, reivindicativo...</p>
 
-            <div style="text-align: center; margin-top: 1.5rem;">
-                <img src="imagenes/mislibros/edelvives-mitologia/medusa-pag4.png" loading="lazy" alt="Ilustración final de La Terrorífica Medusa" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; max-width: 800px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+            <div class="mt-2" style="text-align: center;">
+                <img src="imagenes/mislibros/edelvives-mitologia/medusa-pag4.png" loading="lazy" alt="Ilustración final de La Terrorífica Medusa" class="img-clickable img-rounded" style="width: 100%; max-width: 800px;">
             </div>
 
-            <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: var(--light); border-radius: 10px;">
-                <a href="index.html#libros" style="display: inline-block; background: var(--secondary); color: white; padding: 1rem 2rem; border-radius: 5px; text-decoration: none; font-weight: bold; transition: all 0.3s ease;" onmouseover="this.style.background='#2980b9'" onmouseout="this.style.background='#3498db'">
-                    ← Volver a Mis Libros
-                </a>
+            <div class="light-box">
+                <a href="index.html#libros" class="btn-back">← Volver a Mis Libros</a>
             </div>
         </div>
     </div>
 
-    <footer style="background: var(--primary); color: var(--white); text-align: center; padding: 2rem;">
+    <footer>
         <p>&copy; 2026 Ricardo Gómez. Todos los derechos reservados.</p>
     </footer>
+
     <div class="lightbox" onclick="cerrarLightbox()">
         <img src="" alt="Imagen ampliada">
     </div>
+
     <script>
         function abrirLightbox(src) {
             const lb = document.querySelector('.lightbox');

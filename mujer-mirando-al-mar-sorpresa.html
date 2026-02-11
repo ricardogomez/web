@@ -5,37 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mujer mirando al mar - Contenido Extra - Ricardo Gómez</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        .lightbox {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.9);
-            z-index: 1000;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-        }
-        .lightbox.active {
-            display: flex;
-        }
-        .lightbox img {
-            max-width: 90%;
-            max-height: 90%;
-            border-radius: 4px;
-            box-shadow: 0 0 40px rgba(0,0,0,0.7);
-        }
-        .img-clickable {
-            cursor: pointer;
-            transition: opacity 0.2s;
-        }
-        .img-clickable:hover {
-            opacity: 0.9;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -55,48 +24,47 @@
         </nav>
     </header>
 
-    <div class="container" style="margin-top: 2rem; margin-bottom: 3rem;">
-        <p style="margin-bottom: 2rem; font-weight: bold; text-align: center; font-size: 1.3rem; color: #dc3545;">
-            Una pregunta literaria: ¿es lícito matar a alguien por amor? <img src="imagenes/iconos/rostro-lagrima.svg" alt="" style="width: 42px; height: 42px; vertical-align: middle; transition: transform 0.3s ease, filter 0.3s ease;" onmouseover="this.style.transform='scale(1.15)'; this.style.filter='brightness(1.1)'" onmouseout="this.style.transform='scale(1)'; this.style.filter='brightness(1)'">
+    <div class="container mt-2 mb-3">
+        <p class="text-intro">
+            Una pregunta literaria: ¿es lícito matar a alguien por amor? <img src="imagenes/iconos/rostro-lagrima.svg" alt="" class="icon-hover" style="width: 42px; height: 42px; vertical-align: middle;">
         </p>
 
         <h2 class="section-title section-asterisk">*</h2>
         <h2 class="section-title">Mujer mirando al mar</h2>
 
-        <div style="background: var(--white); padding: 2.5rem; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-
-            <div style="display: grid; grid-template-columns: auto 1fr; gap: 2rem; align-items: start;">
-                <img src="imagenes/mislibros/sm-especial/mmm-peq.jpg" loading="lazy" alt="Cubierta de Mujer mirando al mar" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 200px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                <div style="line-height: 1.8; color: #555;">
-                    <p style="font-style: italic; font-size: 1.15rem;">Todo lo ocurrido con este libro podría dar para un ensayo.</p>
-                    <p style="font-style: italic; font-size: 1.15rem;">El libro como tal salió a la luz de una forma espléndida, con el premio Gran Angular de SM, pero su historia arranca de mucho atrás: un relato breve (que puedes encontrar en "Para leer", y que obtuvo otro premio) dio lugar a un poema, y al cabo del tiempo relato y poema compusieron esta historia, en forma novelada, que quería ser además un ensayo literario: ¿qué utilizamos los escritores cuando escribimos?, ¿cómo se va tejiendo una historia?, ¿qué diferencias hay entre la ficción y la realidad?, ¿qué es lícito imaginar, cuando se escribe sobre algo real?</p>
-                    <p style="font-style: italic; font-size: 1.15rem;">Pero además, este libro es la historia de un pequeño fracaso, que también daría para otro artículo; creo que un fracaso de los tiempos en los que vivimos, y esto va más allá del valor literario de este libro en particular.</p>
+        <div class="content-box">
+            <div class="grid-cols-2">
+                <img src="imagenes/mislibros/sm-especial/mmm-peq.jpg" loading="lazy" alt="Cubierta de Mujer mirando al mar" class="img-clickable img-cover" onclick="abrirLightbox(this.src)">
+                <div class="text-content">
+                    <p class="text-italic">Todo lo ocurrido con este libro podría dar para un ensayo.</p>
+                    <p class="text-italic">El libro como tal salió a la luz de una forma espléndida, con el premio Gran Angular de SM, pero su historia arranca de mucho atrás: un relato breve (que puedes encontrar en "Para leer", y que obtuvo otro premio) dio lugar a un poema, y al cabo del tiempo relato y poema compusieron esta historia, en forma novelada, que quería ser además un ensayo literario: ¿qué utilizamos los escritores cuando escribimos?, ¿cómo se va tejiendo una historia?, ¿qué diferencias hay entre la ficción y la realidad?, ¿qué es lícito imaginar, cuando se escribe sobre algo real?</p>
+                    <p class="text-italic">Pero además, este libro es la historia de un pequeño fracaso, que también daría para otro artículo; creo que un fracaso de los tiempos en los que vivimos, y esto va más allá del valor literario de este libro en particular.</p>
                 </div>
             </div>
 
-            <p style="margin-top: 2.5rem; text-align: center; font-weight: bold; font-size: 1.2rem; color: #dc3545;">Si quieres, te cuento la historia de este 'fracaso...'</p>
+            <p class="text-highlight">Si quieres, te cuento la historia de este 'fracaso...'</p>
 
-            <div style="display: grid; grid-template-columns: 1fr; gap: 2rem; margin-top: 1.5rem;">
-                <img src="imagenes/mislibros/sm-especial/mmm-01.png" loading="lazy" alt="Mujer mirando al mar - Imagen 1" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                <img src="imagenes/mislibros/sm-especial/mmm-02.png" loading="lazy" alt="Mujer mirando al mar - Imagen 2" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                <img src="imagenes/mislibros/sm-especial/mmm-03.png" loading="lazy" alt="Mujer mirando al mar - Imagen 3" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                <img src="imagenes/mislibros/sm-especial/mmm-04.png" loading="lazy" alt="Mujer mirando al mar - Imagen 4" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+            <div class="grid-cols-1 mt-2">
+                <img src="imagenes/mislibros/sm-especial/mmm-01.png" loading="lazy" alt="Mujer mirando al mar - Imagen 1" class="img-clickable img-full" onclick="abrirLightbox(this.src)">
+                <img src="imagenes/mislibros/sm-especial/mmm-02.png" loading="lazy" alt="Mujer mirando al mar - Imagen 2" class="img-clickable img-full" onclick="abrirLightbox(this.src)">
+                <img src="imagenes/mislibros/sm-especial/mmm-03.png" loading="lazy" alt="Mujer mirando al mar - Imagen 3" class="img-clickable img-full" onclick="abrirLightbox(this.src)">
+                <img src="imagenes/mislibros/sm-especial/mmm-04.png" loading="lazy" alt="Mujer mirando al mar - Imagen 4" class="img-clickable img-full" onclick="abrirLightbox(this.src)">
             </div>
 
-            <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: var(--light); border-radius: 10px;">
-                <a href="index.html#libros" style="display: inline-block; background: var(--secondary); color: white; padding: 1rem 2rem; border-radius: 5px; text-decoration: none; font-weight: bold; transition: all 0.3s ease;" onmouseover="this.style.background='#2980b9'" onmouseout="this.style.background='#3498db'">
-                    ← Volver a Mis Libros
-                </a>
+            <div class="light-box">
+                <a href="index.html#libros" class="btn-back">← Volver a Mis Libros</a>
             </div>
         </div>
     </div>
 
-    <footer style="background: var(--primary); color: var(--white); text-align: center; padding: 2rem;">
+    <footer>
         <p>&copy; 2026 Ricardo Gómez. Todos los derechos reservados.</p>
     </footer>
+
     <div class="lightbox" onclick="cerrarLightbox()">
         <img src="" alt="Imagen ampliada">
     </div>
+
     <script>
         function abrirLightbox(src) {
             const lb = document.querySelector('.lightbox');

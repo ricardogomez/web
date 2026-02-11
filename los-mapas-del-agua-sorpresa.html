@@ -5,47 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Los Mapas del Agua - Contenido Extra - Ricardo Gómez</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Lightbox */
-        .lightbox {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.9);
-            z-index: 1000;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-        }
-        .lightbox.active {
-            display: flex;
-        }
-        .lightbox img {
-            max-width: 90%;
-            max-height: 90%;
-            border-radius: 4px;
-            box-shadow: 0 0 40px rgba(0,0,0,0.7);
-        }
-        .lightbox-close {
-            position: absolute;
-            top: 20px;
-            right: 30px;
-            color: white;
-            font-size: 40px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        .img-clickable {
-            cursor: pointer;
-            transition: transform 0.3s ease;
-        }
-        .img-clickable:hover {
-            transform: scale(1.02);
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -65,71 +24,64 @@
         </nav>
     </header>
 
-    <div class="container" style="margin-top: 2rem; margin-bottom: 3rem;">
-        <p style="margin-bottom: 2rem; font-weight: bold; text-align: center; font-size: 1.3rem; color: #dc3545;">
-            ¡Has encontrado el secreto! <img src="imagenes/iconos/lupa.svg" alt="" style="width: 28px; height: 28px; vertical-align: middle;">
+    <div class="container mt-2 mb-3">
+        <p class="text-intro">
+            ¡Has encontrado el secreto! <img src="imagenes/iconos/lupa.svg" alt="" class="icon-hover" style="width: 28px; height: 28px; vertical-align: middle;">
         </p>
 
         <h2 class="section-title section-asterisk">*</h2>
         <h2 class="section-title">Los Mapas del Agua</h2>
 
-        <div style="background: var(--white); padding: 2.5rem; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-
-            <!-- Imagen de la portada del libro con texto -->
-            <div style="display: flex; gap: 2rem; margin-bottom: 2rem; align-items: flex-start;">
-                <div style="flex-shrink: 0;">
-                    <img src="imagenes/mapasdelagua.jpg" alt="Los Mapas del Agua"
-                         style="width: 220px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
-                </div>
-                <div style="flex: 1; line-height: 1.8; color: #555;">
-                    <p style="font-style: italic; font-size: 1.15rem; margin-bottom: 0.8rem;">"Los mapas del agua" es uno de mis libros más emotivos. Cuenta la historia de dos hermanos, huérfanos; la pequeña, Nanga, es una N'Wone, una mujer-agua, que hereda las cualidades y las obligaciones de su madre muerta; pero Nanga tiene solo ocho años.</p>
-                    <p style="font-style: italic; font-size: 1.15rem; margin-bottom: 0.8rem;">Quería con este libro, ambientado en el desierto australiano, hacer un canto a las tradiciones, al viaje de aventura, al riesgo, a la sororidad y a la supervivencia de un pueblo, tan dependiente del agua.</p>
-                    <p style="font-style: italic; font-size: 1.15rem;">Las ilustraciones de Laia Pàmpols son bellísimas; a mí me encantan sobre todo las que conservan la mitología de un pueblo, encerrada en sus grabados, sus leyendas ¡y en la fascinante música del diyeridú!</p>
+        <div class="content-box">
+            <div class="flex-layout mb-2">
+                <img src="imagenes/mapasdelagua.jpg" alt="Los Mapas del Agua" class="img-cover-large">
+                <div class="text-content">
+                    <p class="text-italic mb-1">"Los mapas del agua" es uno de mis libros más emotivos. Cuenta la historia de dos hermanos, huérfanos; la pequeña, Nanga, es una N'Wone, una mujer-agua, que hereda las cualidades y las obligaciones de su madre muerta; pero Nanga tiene solo ocho años.</p>
+                    <p class="text-italic mb-1">Quería con este libro, ambientado en el desierto australiano, hacer un canto a las tradiciones, al viaje de aventura, al riesgo, a la sororidad y a la supervivencia de un pueblo, tan dependiente del agua.</p>
+                    <p class="text-italic">Las ilustraciones de Laia Pàmpols son bellísimas; a mí me encantan sobre todo las que conservan la mitología de un pueblo, encerrada en sus grabados, sus leyendas ¡y en la fascinante música del diyeridú!</p>
                 </div>
             </div>
 
-            <div style="line-height: 1.8; color: #555; margin-bottom: 2rem;">
-                <h3 style="text-align: center; color: #dc3545; margin-top: 2rem; margin-bottom: 1.5rem; font-size: 1.4rem;">Aquí, los dos primeros capítulos  y algunas ilustraciones de Christa Soriano</h3>
+            <div class="text-content mb-2">
+                <h3 class="text-highlight mt-2 mb-2" style="font-size: 1.4rem;">Aquí, los dos primeros capítulos y algunas ilustraciones de Christa Soriano</h3>
 
-                <div style="text-align: center; margin-bottom: 2rem;">
-                    <img src="imagenes/mislibros/otros/INT-mapas1.png" loading="lazy" alt="Ilustración 1 de Los Mapas del Agua" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; max-width: 1000px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                <div style="text-align: center;" class="mb-2">
+                    <img src="imagenes/mislibros/otros/INT-mapas1.png" loading="lazy" alt="Ilustración 1 de Los Mapas del Agua" class="img-clickable img-rounded" style="width: 100%; max-width: 1000px;" onclick="abrirLightbox(this.src)">
                 </div>
 
                 <div style="text-align: center;">
-                    <img src="imagenes/mislibros/otros/INT-mapas2-3.png" loading="lazy" alt="Ilustración 2 de Los Mapas del Agua" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; max-width: 1000px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                    <img src="imagenes/mislibros/otros/INT-mapas2-3.png" loading="lazy" alt="Ilustración 2 de Los Mapas del Agua" class="img-clickable img-rounded" style="width: 100%; max-width: 1000px;" onclick="abrirLightbox(this.src)">
                 </div>
 
-                <div style="text-align: center; margin-top: 2rem;">
-                    <img src="imagenes/mislibros/otros/mapas-oepli.png" loading="lazy" alt="OEPLI - Los Mapas del Agua" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 400px; max-width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                <div style="text-align: center;" class="mt-2">
+                    <img src="imagenes/mislibros/otros/mapas-oepli.png" loading="lazy" alt="OEPLI - Los Mapas del Agua" class="img-clickable img-rounded" style="width: 400px; max-width: 100%;" onclick="abrirLightbox(this.src)">
                 </div>
             </div>
 
-            <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: var(--light); border-radius: 10px;">
-                <a href="index.html#libros" style="display: inline-block; background: var(--secondary); color: white; padding: 1rem 2rem; border-radius: 5px; text-decoration: none; font-weight: bold; transition: all 0.3s ease;" onmouseover="this.style.background='#2980b9'" onmouseout="this.style.background='#3498db'">
-                    ← Volver a Mis Libros
-                </a>
+            <div class="light-box">
+                <a href="index.html#libros" class="btn-back">← Volver a Mis Libros</a>
             </div>
         </div>
     </div>
 
-    <footer style="background: var(--primary); color: var(--white); text-align: center; padding: 2rem;">
+    <footer>
         <p>&copy; 2026 Ricardo Gómez. Todos los derechos reservados.</p>
     </footer>
 
-    <!-- Lightbox -->
-    <div id="lightbox" class="lightbox" onclick="cerrarLightbox()">
+    <div class="lightbox" onclick="cerrarLightbox()">
         <span class="lightbox-close">&times;</span>
-        <img id="lightbox-img" src="" loading="lazy" alt="Imagen ampliada">
+        <img src="" alt="Imagen ampliada">
     </div>
 
     <script>
         function abrirLightbox(src) {
-            document.getElementById('lightbox-img').src = src;
-            document.getElementById('lightbox').classList.add('active');
+            const lb = document.querySelector('.lightbox');
+            lb.querySelector('img').src = src;
+            lb.classList.add('active');
             document.body.style.overflow = 'hidden';
         }
         function cerrarLightbox() {
-            document.getElementById('lightbox').classList.remove('active');
+            document.querySelector('.lightbox').classList.remove('active');
             document.body.style.overflow = 'auto';
         }
         document.addEventListener('keydown', function(e) {
