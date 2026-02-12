@@ -70,16 +70,16 @@
             <p style="margin-top: 2rem; margin-bottom: 0; font-size: 1rem; opacity: 0.9;">si me encuentras por la calle y buscas en mi mochila</p>
             <p style="font-size: 1rem; opacity: 0.9; margin-top: 0.2rem;">encontrarás una libreta y una cámara fotográfica</p>
         </div>
-        <div style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); z-index: 10; display: flex; gap: 0.5rem; align-items: center;">
-            <a href="blog1.html"><img src="imagenes/iconos/blog1.svg" loading="lazy" alt="Blog 1" style="width: 40px; height: 40px; cursor: pointer; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.3)'" onmouseout="this.style.transform='scale(1)'"></a>
-            <a href="blog2.html"><img src="imagenes/iconos/blog2.svg" loading="lazy" alt="Blog 2" style="width: 40px; height: 40px; cursor: pointer; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.3)'" onmouseout="this.style.transform='scale(1)'"></a>
-            <a href="blog3.html"><img src="imagenes/iconos/blog3.svg" loading="lazy" alt="Blog 3" style="width: 40px; height: 40px; cursor: pointer; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.3)'" onmouseout="this.style.transform='scale(1)'"></a>
-            <a href="algunas-fotos-que-hice-un-dia.html" style="margin: 0 0.5rem;" onclick="new Audio('data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAoUXrTp66hVFApGn+DyvmwhBix+zO/aizsIHGu87+OZUA0PVKzl67JdGAU6leHyvWwfBSl7yu/fjjoIHm++7+OcTwwQV6zh7Ldbh7sIHvJM+QCkj9JNxzVvCa9m6nJWcSExV9RuaVY3E9wPbvU7+SXfYkLsF38pVe9Qm77HQRW7X0fleCdFVuXtPQ/ZpKLs9YaNExR3m77LgL+NYnhj4yG0Y0h4VGrn7ooGvI8F8KxoITw3o7nZ5LFQoqZSq7tVUZFhTW5J+MZBVI1Y0PdSsP6BZfdbZVDlVQpn7v3g1bHhZ9Kp5U3gGv99kEXLf4l5YpE0bKvXpRPDFfLa0RJ3aw5o7+OwYU' + 'WZatKl2t3sDW3Cxc+VRfTmUevZy') .play(); return true;">
-                <img src="imagenes/iconos/camara.svg" loading="lazy" alt="Ver mis fotos" style="width: 80px; height: 80px; cursor: pointer; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.3)'" onmouseout="this.style.transform='scale(1)'">
+        <div class="hero-icons">
+            <a href="blog1.html"><img src="imagenes/iconos/blog1.svg" loading="lazy" alt="Blog 1" class="icon-blog"></a>
+            <a href="blog2.html"><img src="imagenes/iconos/blog2.svg" loading="lazy" alt="Blog 2" class="icon-blog"></a>
+            <a href="blog3.html"><img src="imagenes/iconos/blog3.svg" loading="lazy" alt="Blog 3" class="icon-blog"></a>
+            <a href="algunas-fotos-que-hice-un-dia.html" class="icon-camera-link">
+                <img src="imagenes/iconos/camara.svg" loading="lazy" alt="Ver mis fotos" class="icon-blog-large">
             </a>
-            <a href="blog4.html"><img src="imagenes/iconos/blog4.svg" loading="lazy" alt="Blog 4" style="width: 40px; height: 40px; cursor: pointer; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.3)'" onmouseout="this.style.transform='scale(1)'"></a>
-            <a href="blog5.html"><img src="imagenes/iconos/blog5.svg" loading="lazy" alt="Blog 5" style="width: 40px; height: 40px; cursor: pointer; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.3)'" onmouseout="this.style.transform='scale(1)'"></a>
-            <a href="blog6.html"><img src="imagenes/iconos/blog6.svg" loading="lazy" alt="Blog 6" style="width: 40px; height: 40px; cursor: pointer; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.3)'" onmouseout="this.style.transform='scale(1)'"></a>
+            <a href="blog4.html"><img src="imagenes/iconos/blog4.svg" loading="lazy" alt="Blog 4" class="icon-blog"></a>
+            <a href="blog5.html"><img src="imagenes/iconos/blog5.svg" loading="lazy" alt="Blog 5" class="icon-blog"></a>
+            <a href="blog6.html"><img src="imagenes/iconos/blog6.svg" loading="lazy" alt="Blog 6" class="icon-blog"></a>
         </div>
     </section>
 
@@ -88,29 +88,29 @@
         <h2 class="section-title">Si quieres saber sobre mí...</h2>
         <p class="section-subtitle">Biografía</p>
 
-        <div class="math-grid" style="grid-template-columns: repeat(2, 1fr);">
+        <div class="bio-grid">
             <div class="math-card">
                 <h3>Una bio formal</h3>
                 <p>Nací en febrero de 1954 en un pueblo de Segovia, pero crecí en Madrid. Volví a nacer cuando decidí dedicarme a escribir hace unos años, después de dar clases de matemáticas durante mucho tiempo. Me he empapado de miles de lecturas, viajando con Verne, Melville, Poe, Kafka, Nabokov, Borges y Cortázar. Leo, escribo, paseo, fotografío, disfruto del cine y la música, viajo cuando puedo. Me repugnan la injusticia y la barbarie, odio la guerra, no comprendo el hambre en el planeta y desprecio a quienes se enriquecen a costa ajena.</p>
-                <p style="margin-top: 1rem;"><a href="fotos-personales.html" style="color: var(--secondary); font-weight: bold; text-decoration: none;">→ Si te atreves a ver algunas fotos...</a></p>
+                <p class="mt-1"><a href="fotos-personales.html" class="link-bio">→ Si te atreves a ver algunas fotos...</a></p>
             </div>
 
             <div class="math-card">
                 <h3>Lo que pienso de la vida...</h3>
                 <p>"El diccionario de Ricardo Gómez" es una entrevista publicada en la revista "Lazarillo" en 2007, donde a través de entradas alfabéticas hablo sobre conceptos que me definen: amor, arte, compromiso, educación, literatura, Sáhara, solidaridad y muchos más. Defiendo el conocimiento científico, critico la injusticia y la guerra, reivindico la literatura sin fronteras de edad. Hablo de mi pasión tardía por la escritura, mi trabajo como profesor de matemáticas, mis lecturas fundamentales y mi compromiso social. Es un retrato íntimo y público a la vez, donde expreso mis convicciones sobre el mundo, la literatura y la necesidad de cambiar las cosas.</p>
-                <p style="margin-top: 1rem;"><a href="diccionario-ricardo-gomez.html" style="color: var(--secondary); font-weight: bold; text-decoration: none;">→ Leer el diccionario completo</a></p>
+                <p class="mt-1"><a href="diccionario-ricardo-gomez.html" class="link-bio">→ Leer el diccionario completo</a></p>
             </div>
 
             <div class="math-card">
                 <h3>Esto NO es una biografía</h3>
                 <p>Las biografías están bien para cuando uno está muerto, que no es mi caso de momento. Leí desde muy niño gracias a un abuelo que me contaba historias por los campos de Castilla. Comencé a escribir pasados los cuarenta, después de haberme preparado durante años leyendo, y ahora la escritura me apasiona tanto que no puedo vivir sin ella. Escribo sobre cosas que me gustan y otras que me hieren, orgulloso de mis libros que me han dado premios y, sobre todo, satisfacciones. Disfruto del cine, la fotografía, la música, los paseos y, especialmente, de mis dos hijos y de las personas que me quieren.</p>
-                <p style="margin-top: 1rem;"><a href="esto-no-es-una-biografia.html" style="color: var(--secondary); font-weight: bold; text-decoration: none;">→ Si quieres seguir cotilleando...</a></p>
+                <p class="mt-1"><a href="esto-no-es-una-biografia.html" class="link-bio">→ Si quieres seguir cotilleando...</a></p>
             </div>
 
             <div class="math-card" style="position: relative;">
                 <h3>Cuentan (pero no te fíes...)</h3>
                 <p>De niño esperaba con ganas el recreo para jugar al guá, al rescate, a las chapas o al pañuelo. Con el tiempo, dejó de ser alumno y se convirtió en profesor de Matemáticas, jugando ahora con los números, que siguen encantándole. Pero como ser "de ciencias" no significa que no pueden gustarte los libros, un buen día decidió jugar con las letras y se hizo escritor. Si le encuentras por la calle y buscas en su mochila, encontrarás una libreta y una cámara fotográfica. Toma nota de casi todo y trata de registrarlo, porque nunca sabe dónde va a encontrar una buena historia que merezca la pena ser contada.</p>
-                <a href="biografia-caricatura.html" style="position: absolute; bottom: 1rem; right: 1rem;"><img src="imagenes/iconos/camara.svg" loading="lazy" alt="Ver caricatura" style="width: 48px; height: 48px; cursor: pointer; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"></a>
+                <a href="biografia-caricatura.html" class="book-info-link" style="bottom: 1rem; top: auto;"><img src="imagenes/iconos/camara.svg" loading="lazy" alt="Ver caricatura" class="icon-camera-bio"></a>
             </div>
         </div>
     </div>
@@ -119,12 +119,12 @@
 
         <h2 class="section-title section-asterisk">*</h2>
         <h2 class="section-title">Mis Libros</h2>
-        <p style="text-align: center; font-size: 1.1rem; color: #555; margin-bottom: 2rem;">
+        <p class="books-intro">
             Si puedes, no te pierdas los bonus que verás junto a los títulos...
-            <img src="imagenes/iconos/lupa.svg" loading="lazy" alt="" style="width: 24px; height: 24px; margin: 0 0.3rem; vertical-align: middle;">
-            <img src="imagenes/iconos/llave-antigua.svg" loading="lazy" alt="" style="width: 24px; height: 24px; margin: 0 0.3rem; vertical-align: middle;">
-            <img src="imagenes/iconos/baul.svg" loading="lazy" alt="" style="width: 24px; height: 24px; margin: 0 0.3rem; vertical-align: middle;">
-            <img src="imagenes/iconos/varita.svg" loading="lazy" alt="" style="width: 24px; height: 24px; margin: 0 0.3rem; vertical-align: middle;">
+            <img src="imagenes/iconos/lupa.svg" loading="lazy" alt="">
+            <img src="imagenes/iconos/llave-antigua.svg" loading="lazy" alt="">
+            <img src="imagenes/iconos/baul.svg" loading="lazy" alt="">
+            <img src="imagenes/iconos/varita.svg" loading="lazy" alt="">
         </p>
 
         <div class="filter-buttons">
@@ -141,11 +141,8 @@
             <div class="book-card" data-category="juvenil">
                 <img src="imagenes/mapasdelagua.jpg" loading="lazy" alt="Los Mapas del Agua" class="book-cover">
                 <div class="book-info" style="position: relative;">
-                    <a href="los-mapas-del-agua-sorpresa.html" style="text-decoration: none; position: absolute; top: 1rem; right: 0;">
-                        <img src="imagenes/iconos/lupa.svg" alt=""
-                             style="width: 36px; height: 36px; transition: transform 0.3s ease;"
-                             onmouseover="this.style.transform='scale(2) rotate(10deg)'"
-                             onmouseout="this.style.transform='scale(1) rotate(0deg)'">
+                    <a href="los-mapas-del-agua-sorpresa.html" class="book-info-link">
+                        <img src="imagenes/iconos/lupa.svg" alt="" class="icon-surprise">
                     </a>
                     <h3>Los Mapas del Agua</h3>
                     <p class="genre">Novela juvenil • Editorial Anaya</p>
@@ -162,11 +159,8 @@
             <div class="book-card" data-category="juvenil">
                 <img src="imagenes/mislibros/otros/CUB-maquina.png" loading="lazy" alt="La Máquina de Hacer Cuentos" class="book-cover">
                 <div class="book-info" style="position: relative;">
-                    <a href="la-maquina-de-hacer-cuentos-sorpresa.html" style="text-decoration: none; position: absolute; top: 1rem; right: 0;">
-                        <img src="imagenes/iconos/baul.svg" alt=""
-                             style="width: 36px; height: 36px; transition: transform 0.3s ease;"
-                             onmouseover="this.style.transform='scale(2) rotate(10deg)'"
-                             onmouseout="this.style.transform='scale(1) rotate(0deg)'">
+                    <a href="la-maquina-de-hacer-cuentos-sorpresa.html" class="book-info-link">
+                        <img src="imagenes/iconos/baul.svg" alt="" class="icon-surprise">
                     </a>
                     <h3>La Máquina de Hacer Cuentos</h3>
                     <p class="genre">Narrativa infantil • Editorial Triqueta</p>
@@ -181,11 +175,8 @@
             <div class="book-card" data-category="juvenil">
                 <img src="imagenes/mislibros/sm/CUB-ojodenube.png" loading="lazy" alt="Ojo de Nube" class="book-cover">
                 <div class="book-info" style="position: relative;">
-                    <a href="ojodenube-sorpresa.html" style="text-decoration: none; position: absolute; top: 1rem; right: 0;">
-                        <img src="imagenes/iconos/lupa.svg" alt=""
-                             style="width: 36px; height: 36px; transition: transform 0.3s ease;"
-                             onmouseover="this.style.transform='scale(2) rotate(10deg)'"
-                             onmouseout="this.style.transform='scale(1) rotate(0deg)'">
+                    <a href="ojodenube-sorpresa.html" class="book-info-link">
+                        <img src="imagenes/iconos/lupa.svg" alt="" class="icon-surprise">
                     </a>
                     <h3>Ojo de Nube</h3>
                     <p class="genre">Novela histórica juvenil • Editorial SM</p>
@@ -200,11 +191,8 @@
             <div class="book-card" data-category="juvenil">
                 <img src="imagenes/mislibros/sm/cub-caballos.jpg" loading="lazy" alt="Caballos en la Nieve" class="book-cover">
                 <div class="book-info" style="position: relative;">
-                    <a href="caballos-en-la-nieve-sorpresa.html" style="text-decoration: none; position: absolute; top: 1rem; right: 0;">
-                        <img src="imagenes/iconos/lupa.svg" alt=""
-                             style="width: 36px; height: 36px; transition: transform 0.3s ease;"
-                             onmouseover="this.style.transform='scale(2) rotate(10deg)'"
-                             onmouseout="this.style.transform='scale(1) rotate(0deg)'">
+                    <a href="caballos-en-la-nieve-sorpresa.html" class="book-info-link">
+                        <img src="imagenes/iconos/lupa.svg" alt="" class="icon-surprise">
                     </a>
                     <h3>Caballos en la Nieve</h3>
                     <p class="genre">Novela juvenil • Editorial SM</p>
@@ -216,11 +204,8 @@
             <div class="book-card" data-category="juvenil">
                 <img src="imagenes/mislibros/sm/cazadordeestrellas2004-500x759.jpg" loading="lazy" alt="El Cazador de Estrellas" class="book-cover">
                 <div class="book-info" style="position: relative;">
-                    <a href="el-cazador-de-estrellas-sorpresa.html" style="text-decoration: none; position: absolute; top: 1rem; right: 0;">
-                        <img src="imagenes/iconos/camara.svg" alt=""
-                             style="width: 36px; height: 36px; transition: transform 0.3s ease;"
-                             onmouseover="this.style.transform='scale(2) rotate(10deg)'"
-                             onmouseout="this.style.transform='scale(1) rotate(0deg)'">
+                    <a href="el-cazador-de-estrellas-sorpresa.html" class="book-info-link">
+                        <img src="imagenes/iconos/camara.svg" alt="" class="icon-surprise">
                     </a>
                     <h3>El Cazador de Estrellas</h3>
                     <p class="genre">Novela juvenil • Editorial SM</p>
@@ -236,11 +221,8 @@
             <div class="book-card" data-category="juvenil">
                 <img src="imagenes/mislibros/sm/crudos-CUB.png" alt="Cuentos Crudos" class="book-cover">
                 <div class="book-info" style="position: relative;">
-                    <a href="cuentos-crudos-sorpresa.html" style="text-decoration: none; position: absolute; top: 1rem; right: 0;">
-                        <img src="imagenes/iconos/lupa.svg" alt=""
-                             style="width: 36px; height: 36px; transition: transform 0.3s ease;"
-                             onmouseover="this.style.transform='scale(2) rotate(10deg)'"
-                             onmouseout="this.style.transform='scale(1) rotate(0deg)'">
+                    <a href="cuentos-crudos-sorpresa.html" class="book-info-link">
+                        <img src="imagenes/iconos/lupa.svg" alt="" class="icon-surprise">
                     </a>
                     <h3>Cuentos Crudos</h3>
                     <p class="genre">Relatos juveniles • Editorial SM</p>
@@ -252,11 +234,8 @@
             <div class="book-card" data-category="juvenil">
                 <img src="imagenes/mislibros/edelvives/diario.jpg" loading="lazy" alt="Diario en un Campo de Barro" class="book-cover">
                 <div class="book-info" style="position: relative;">
-                    <a href="diario-en-un-campo-de-barro-sorpresa.html" style="text-decoration: none; position: absolute; top: 1rem; right: 0;">
-                        <img src="imagenes/iconos/camara.svg" alt=""
-                             style="width: 36px; height: 36px; transition: transform 0.3s ease;"
-                             onmouseover="this.style.transform='scale(2) rotate(10deg)'"
-                             onmouseout="this.style.transform='scale(1) rotate(0deg)'">
+                    <a href="diario-en-un-campo-de-barro-sorpresa.html" class="book-info-link">
+                        <img src="imagenes/iconos/camara.svg" alt="" class="icon-surprise">
                     </a>
                     <h3>Diario en un Campo de Barro</h3>
                     <p class="genre">Novela juvenil • Editorial Edelvives</p>
@@ -278,11 +257,8 @@
             <div class="book-card" data-category="juvenil">
                 <img src="imagenes/mislibros/alfaguara/CUB-selva.png" loading="lazy" alt="La Selva de los Números" class="book-cover">
                 <div class="book-info" style="position: relative;">
-                    <a href="la-selva-de-los-numeros-sorpresa.html" style="text-decoration: none; position: absolute; top: 1rem; right: 0;">
-                        <img src="imagenes/iconos/libro-abierto.svg" alt=""
-                             style="width: 36px; height: 36px; transition: transform 0.3s ease;"
-                             onmouseover="this.style.transform='scale(2) rotate(10deg)'"
-                             onmouseout="this.style.transform='scale(1) rotate(0deg)'">
+                    <a href="la-selva-de-los-numeros-sorpresa.html" class="book-info-link">
+                        <img src="imagenes/iconos/libro-abierto.svg" alt="" class="icon-surprise">
                     </a>
                     <h3>La Selva de los Números</h3>
                     <p class="genre">Narrativa infantil • Editorial Alfaguara</p>
@@ -294,11 +270,8 @@
             <div class="book-card" data-category="juvenil">
                 <img src="imagenes/mislibros/alfaguara/CUB-hijas.png" loading="lazy" alt="Las Hijas de Tuga" class="book-cover">
                 <div class="book-info" style="position: relative;">
-                    <a href="las-hijas-de-tuga-sorpresa.html" style="text-decoration: none; position: absolute; top: 1rem; right: 0;">
-                        <img src="imagenes/iconos/libro-abierto.svg" alt=""
-                             style="width: 36px; height: 36px; transition: transform 0.3s ease;"
-                             onmouseover="this.style.transform='scale(2) rotate(10deg)'"
-                             onmouseout="this.style.transform='scale(1) rotate(0deg)'">
+                    <a href="las-hijas-de-tuga-sorpresa.html" class="book-info-link">
+                        <img src="imagenes/iconos/libro-abierto.svg" alt="" class="icon-surprise">
                     </a>
                     <h3>Las Hijas de Tuga</h3>
                     <p class="genre">Narrativa infantil • Editorial Alfaguara</p>
@@ -310,11 +283,8 @@
             <div class="book-card" data-category="juvenil">
                 <img src="imagenes/mislibros/edelvives/CUB-lin.png" loading="lazy" alt="La Isla de Nuncameolvides" class="book-cover">
                 <div class="book-info" style="position: relative;">
-                    <a href="la-isla-de-nuncameolvides-sorpresa.html" style="text-decoration: none; position: absolute; top: 1rem; right: 0;">
-                        <img src="imagenes/iconos/baul.svg" alt=""
-                             style="width: 36px; height: 36px; transition: transform 0.3s ease;"
-                             onmouseover="this.style.transform='scale(2) rotate(10deg)'"
-                             onmouseout="this.style.transform='scale(1) rotate(0deg)'">
+                    <a href="la-isla-de-nuncameolvides-sorpresa.html" class="book-info-link">
+                        <img src="imagenes/iconos/baul.svg" alt="" class="icon-surprise">
                     </a>
                     <h3>La Isla de Nuncameolvides</h3>
                     <p class="genre">Novela juvenil • Editorial Edelvives</p>
@@ -326,11 +296,8 @@
             <div class="book-card" data-category="album">
                 <img src="imagenes/mislibros/edelvives-ilustrado/luszhu.jpg" loading="lazy" alt="El Sueño de Lu Shzu" class="book-cover">
                 <div class="book-info" style="position: relative;">
-                    <a href="el-sueno-de-lu-shzu-sorpresa.html" style="text-decoration: none; position: absolute; top: 1rem; right: 0;">
-                        <img src="imagenes/iconos/lupa.svg" alt=""
-                             style="width: 36px; height: 36px; transition: transform 0.3s ease;"
-                             onmouseover="this.style.transform='scale(2) rotate(10deg)'"
-                             onmouseout="this.style.transform='scale(1) rotate(0deg)'">
+                    <a href="el-sueno-de-lu-shzu-sorpresa.html" class="book-info-link">
+                        <img src="imagenes/iconos/lupa.svg" alt="" class="icon-surprise">
                     </a>
                     <h3>El Sueño de Lu Shzu</h3>
                     <p class="genre">Álbum ilustrado • Editorial Edelvives</p>
@@ -345,8 +312,8 @@
             <div class="book-card" data-category="adultos">
                 <img src="imagenes/mislibros/sm/CUB-mujer-mar.png" loading="lazy" alt="Mujer mirando al mar" class="book-cover">
                 <div class="book-info" style="position: relative;">
-                    <a href="mujer-mirando-al-mar-sorpresa.html" style="text-decoration: none; position: absolute; top: 1rem; right: 0;">
-                        <img src="imagenes/iconos/rostro-lagrima.svg" alt="Contenido extra" style="width: 32px; height: 32px; opacity: 0.8; transition: opacity 0.3s, transform 0.3s;" onmouseover="this.style.opacity='1'; this.style.transform='scale(1.1)'" onmouseout="this.style.opacity='0.8'; this.style.transform='scale(1)'">
+                    <a href="mujer-mirando-al-mar-sorpresa.html" class="book-info-link">
+                        <img src="imagenes/iconos/rostro-lagrima.svg" alt="" class="icon-surprise-small">
                     </a>
                     <h3>Mujer mirando al mar</h3>
                     <p class="genre">Novela para adultos • Editorial SM</p>
@@ -371,11 +338,8 @@
             <div class="book-card" data-category="adultos">
                 <img src="imagenes/mislibros/adultos/CUB-dulce-olor.jpg" loading="lazy" alt="El Dulce Olor del Diablo" class="book-cover">
                 <div class="book-info" style="position: relative;">
-                    <a href="el-dulce-olor-del-diablo-sorpresa.html" style="text-decoration: none; position: absolute; top: 1rem; right: 0;">
-                        <img src="imagenes/iconos/lupa.svg" alt=""
-                             style="width: 36px; height: 36px; transition: transform 0.3s ease;"
-                             onmouseover="this.style.transform='scale(2) rotate(10deg)'"
-                             onmouseout="this.style.transform='scale(1) rotate(0deg)'">
+                    <a href="el-dulce-olor-del-diablo-sorpresa.html" class="book-info-link">
+                        <img src="imagenes/iconos/lupa.svg" alt="" class="icon-surprise">
                     </a>
                     <h3>El Dulce Olor del Diablo</h3>
                     <p class="genre">Novela para adultos • Editorial Narval</p>
@@ -387,8 +351,8 @@
             <div class="book-card" data-category="adultos">
                 <img src="imagenes/mislibros/adultos/conpiracionespejos.jpg" loading="lazy" alt="La Conspiración de los Espejos" class="book-cover">
                 <div class="book-info" style="position: relative;">
-                    <a href="la-conspiracion-de-los-espejos-sorpresa.html" style="text-decoration: none; position: absolute; top: 1rem; right: 0;">
-                        <img src="imagenes/iconos/pergamino.svg" alt="Contenido extra" style="width: 28px; height: 28px; opacity: 0.7; transition: opacity 0.3s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'">
+                    <a href="la-conspiracion-de-los-espejos-sorpresa.html" class="book-info-link">
+                        <img src="imagenes/iconos/pergamino.svg" alt="" class="icon-surprise-small">
                     </a>
                     <h3>La Conspiración de los Espejos</h3>
                     <p class="genre">Novela para adultos</p>
@@ -410,11 +374,8 @@
             <div class="book-card" data-category="juvenil">
                 <img src="imagenes/mislibros/edelvives/cub-musica-ramas-para-web.jpg" loading="lazy" alt="Música entre las Ramas" class="book-cover">
                 <div class="book-info" style="position: relative;">
-                    <a href="musica-entre-las-ramas-sorpresa.html" style="text-decoration: none; position: absolute; top: 1rem; right: 0;">
-                        <img src="imagenes/iconos/libro-abierto.svg" alt=""
-                             style="width: 36px; height: 36px; transition: transform 0.3s ease;"
-                             onmouseover="this.style.transform='scale(2) rotate(10deg)'"
-                             onmouseout="this.style.transform='scale(1) rotate(0deg)'">
+                    <a href="musica-entre-las-ramas-sorpresa.html" class="book-info-link">
+                        <img src="imagenes/iconos/libro-abierto.svg" alt="" class="icon-surprise">
                     </a>
                     <h3>Música entre las Ramas</h3>
                     <p class="genre">Novela juvenil • Editorial Edelvives</p>
@@ -431,11 +392,8 @@
             <div class="book-card" data-category="juvenil">
                 <img src="imagenes/mislibros/edelvives/103211-cubtd-juegos-web.jpg" loading="lazy" alt="Juegos inocentes juegos" class="book-cover">
                 <div class="book-info" style="position: relative;">
-                    <a href="juegos-inocentes-juegos-sorpresa.html" style="text-decoration: none; position: absolute; top: 1rem; right: 0;">
-                        <img src="imagenes/iconos/lupa.svg" alt=""
-                             style="width: 36px; height: 36px; transition: transform 0.3s ease;"
-                             onmouseover="this.style.transform='scale(2) rotate(10deg)'"
-                             onmouseout="this.style.transform='scale(1) rotate(0deg)'">
+                    <a href="juegos-inocentes-juegos-sorpresa.html" class="book-info-link">
+                        <img src="imagenes/iconos/lupa.svg" alt="" class="icon-surprise">
                     </a>
                     <h3>Juegos inocentes juegos</h3>
                     <p class="genre">Novela juvenil • Editorial Edelvives</p>
@@ -450,11 +408,8 @@
             <div class="book-card" data-category="album">
                 <img src="imagenes/mislibros/edelvives-ilustrado/CUB-pasteleria.png" loading="lazy" alt="La Pastelería" class="book-cover">
                 <div class="book-info" style="position: relative;">
-                    <a href="la-pasteleria-sorpresa.html" style="text-decoration: none; position: absolute; top: 1rem; right: 0;">
-                        <img src="imagenes/iconos/lupa.svg" alt=""
-                             style="width: 36px; height: 36px; transition: transform 0.3s ease;"
-                             onmouseover="this.style.transform='scale(1.2)'"
-                             onmouseout="this.style.transform='scale(1)'">
+                    <a href="la-pasteleria-sorpresa.html" class="book-info-link">
+                        <img src="imagenes/iconos/lupa.svg" alt="" class="icon-surprise">
                     </a>
                     <h3>La Pastelería</h3>
                     <p class="genre">Álbum ilustrado • Editorial Edelvives</p>
@@ -466,11 +421,8 @@
             <div class="book-card" data-category="juvenil">
                 <img src="imagenes/mislibros/edelvives/cub-treshistorias-para-web.png" loading="lazy" alt="Tres Historias con Gato" class="book-cover">
                 <div class="book-info" style="position: relative;">
-                    <a href="tres-historias-con-gato-sorpresa.html" style="text-decoration: none; position: absolute; top: 1rem; right: 0;">
-                        <img src="imagenes/iconos/cara-gato.svg" alt=""
-                             style="width: 36px; height: 36px; transition: transform 0.3s ease;"
-                             onmouseover="this.style.transform='scale(2) rotate(10deg)'"
-                             onmouseout="this.style.transform='scale(1) rotate(0deg)'">
+                    <a href="tres-historias-con-gato-sorpresa.html" class="book-info-link">
+                        <img src="imagenes/iconos/cara-gato.svg" alt="" class="icon-surprise">
                     </a>
                     <h3>Tres Historias con Gato</h3>
                     <p class="genre">Narrativa infantil • Editorial Edelvives</p>
@@ -492,7 +444,7 @@
             <div class="book-card" data-category="adultos">
                 <img src="imagenes/mislibros/adultos/los-poemas.jpg" loading="lazy" alt="Los Poemas de la Arena" class="book-cover">
                 <div class="book-info">
-                    <h3>Los Poemas de la Arena <a href="los-poemas-de-la-arena-sorpresa.html"><img src="imagenes/iconos/camara.svg" loading="lazy" alt="" style="width: 36px; height: 36px; vertical-align: middle; margin-left: 0.5rem; opacity: 0.7; transition: transform 0.3s ease, opacity 0.3s;" onmouseover="this.style.opacity='1'; this.style.transform='scale(1.1)'" onmouseout="this.style.opacity='0.7'; this.style.transform='scale(1)'"></a></h3>
+                    <h3>Los Poemas de la Arena <a href="los-poemas-de-la-arena-sorpresa.html"><img src="imagenes/iconos/camara.svg" loading="lazy" alt="" class="icon-surprise-small" style="vertical-align: middle; margin-left: 0.5rem;"></a></h3>
                     <p class="genre">Novela para adultos • Editorial Algaida</p>
                     <p>Cuatro soldados comparten guardia en una casamata perdida en medio del desierto. El calor, la arena, el tedio y el miedo marcan sus días. Para sobrevivir al aburrimiento, juegan al ajedrez con piezas talladas artesanalmente, leen poesía árabe y recuerdan su patria lejana. Una historia sobre la guerra, la amistad y el poder de la poesía en las situaciones más extremas.</p>
                     <div class="book-awards">
@@ -505,8 +457,8 @@
             <div class="book-card" data-category="juvenil">
                 <img src="imagenes/mislibros/sm/caiman-para-web.jpg" loading="lazy" alt="Como la Piel del Caimán" class="book-cover">
                 <div class="book-info" style="position: relative;">
-                    <a href="como-la-piel-del-caiman-sorpresa.html" style="text-decoration: none; position: absolute; top: 1rem; right: 0;">
-                        <img src="imagenes/iconos/pergamino.svg" loading="lazy" alt="" style="width: 36px; height: 36px; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                    <a href="como-la-piel-del-caiman-sorpresa.html" class="book-info-link">
+                        <img src="imagenes/iconos/pergamino.svg" loading="lazy" alt="" class="icon-surprise">
                     </a>
                     <h3>Como la Piel del Caimán</h3>
                     <p class="genre">Novela juvenil • Editorial SM</p>
@@ -518,11 +470,8 @@
             <div class="book-card" data-category="juvenil">
                 <img src="imagenes/mislibros/sm/uno-de-ellos-para-web.jpg" loading="lazy" alt="Uno de Ellos" class="book-cover">
                 <div class="book-info" style="position: relative;">
-                    <a href="uno-de-ellos-sorpresa.html" style="text-decoration: none; position: absolute; top: 1rem; right: 0;">
-                        <img src="imagenes/iconos/lupa.svg" alt=""
-                             style="width: 36px; height: 36px; transition: transform 0.3s ease;"
-                             onmouseover="this.style.transform='scale(2) rotate(10deg)'"
-                             onmouseout="this.style.transform='scale(1) rotate(0deg)'">
+                    <a href="uno-de-ellos-sorpresa.html" class="book-info-link">
+                        <img src="imagenes/iconos/lupa.svg" alt="" class="icon-surprise">
                     </a>
                     <h3>Uno de Ellos</h3>
                     <p class="genre">Novela juvenil • Editorial SM</p>
@@ -534,11 +483,8 @@
             <div class="book-card" data-category="juvenil">
                 <img src="imagenes/mislibros/edelvives/cubierta-chico-peq.jpg" loading="lazy" alt="Un Chico Diferente" class="book-cover">
                 <div class="book-info" style="position: relative;">
-                    <a href="un-chico-diferente-sorpresa.html" style="text-decoration: none; position: absolute; top: 1rem; right: 0;">
-                        <img src="imagenes/iconos/llave-antigua.svg" alt=""
-                             style="width: 36px; height: 36px; transition: transform 0.3s ease;"
-                             onmouseover="this.style.transform='scale(2) rotate(-15deg)'"
-                             onmouseout="this.style.transform='scale(1) rotate(0deg)'">
+                    <a href="un-chico-diferente-sorpresa.html" class="book-info-link">
+                        <img src="imagenes/iconos/llave-antigua.svg" alt="" class="icon-surprise">
                     </a>
                     <h3>Un Chico Diferente</h3>
                     <p class="genre">Novela juvenil • Editorial Edelvives</p>
@@ -550,11 +496,8 @@
             <div class="book-card" data-category="juvenil">
                 <img src="imagenes/mislibros/sm/CUB3333nuevo.png" loading="lazy" alt="3333" class="book-cover">
                 <div class="book-info" style="position: relative;">
-                    <a href="3333-sorpresa.html" style="text-decoration: none; position: absolute; top: 1rem; right: 0;">
-                        <img src="imagenes/iconos/pergamino.svg" alt=""
-                             style="width: 36px; height: 36px; transition: transform 0.3s ease;"
-                             onmouseover="this.style.transform='scale(2) rotate(5deg)'"
-                             onmouseout="this.style.transform='scale(1) rotate(0deg)'">
+                    <a href="3333-sorpresa.html" class="book-info-link">
+                        <img src="imagenes/iconos/pergamino.svg" alt="" class="icon-surprise">
                     </a>
                     <h3>3333</h3>
                     <p class="genre">Ciencia ficción juvenil • Editorial SM</p>
@@ -576,11 +519,8 @@
             <div class="book-card" data-category="juvenil">
                 <img src="imagenes/mislibros/edelvives/los-zorros.jpg" loading="lazy" alt="Los Zorros del Norte" class="book-cover">
                 <div class="book-info" style="position: relative;">
-                    <a href="los-zorros-del-norte-sorpresa.html" style="text-decoration: none; position: absolute; top: 1rem; right: 0;">
-                        <img src="imagenes/iconos/pergamino.svg" alt=""
-                             style="width: 36px; height: 36px; transition: transform 0.3s ease;"
-                             onmouseover="this.style.transform='scale(2) rotate(10deg)'"
-                             onmouseout="this.style.transform='scale(1) rotate(0deg)'">
+                    <a href="los-zorros-del-norte-sorpresa.html" class="book-info-link">
+                        <img src="imagenes/iconos/pergamino.svg" alt="" class="icon-surprise">
                     </a>
                     <h3>Los Zorros del Norte</h3>
                     <p class="genre">Narrativa infantil • Editorial Edelvives</p>
@@ -592,11 +532,8 @@
             <div class="book-card" data-category="juvenil">
                 <img src="imagenes/mislibros/edelvives-ilustrado/CUB-perro-estrellas.png" loading="lazy" alt="El perro que buscaba estrellas" class="book-cover">
                 <div class="book-info" style="position: relative;">
-                    <a href="el-perro-que-buscaba-estrellas-sorpresa.html" style="text-decoration: none; position: absolute; top: 1rem; right: 0;">
-                        <img src="imagenes/iconos/cielo-estrellado.svg" alt=""
-                             style="width: 36px; height: 36px; transition: transform 0.3s ease;"
-                             onmouseover="this.style.transform='scale(2) rotate(10deg)'"
-                             onmouseout="this.style.transform='scale(1) rotate(0deg)'">
+                    <a href="el-perro-que-buscaba-estrellas-sorpresa.html" class="book-info-link">
+                        <img src="imagenes/iconos/cielo-estrellado.svg" alt="" class="icon-surprise">
                     </a>
                     <h3>El perro que buscaba estrellas</h3>
                     <p class="genre">Narrativa infantil • Editorial Edelvives</p>
@@ -648,8 +585,8 @@
             <div class="book-card" data-category="mitologia">
                 <img src="imagenes/mislibros/edelvives-mitologia/ulises-550.jpg" loading="lazy" alt="Los Viajes de Ulises" class="book-cover">
                 <div class="book-info" style="position: relative;">
-                    <a href="los-viajes-de-ulises-sorpresa.html" style="text-decoration: none; position: absolute; top: 1rem; right: 0;">
-                        <img src="imagenes/iconos/camara.svg" loading="lazy" alt="" style="width: 36px; height: 36px; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                    <a href="los-viajes-de-ulises-sorpresa.html" class="book-info-link">
+                        <img src="imagenes/iconos/camara.svg" loading="lazy" alt="" class="icon-surprise">
                     </a>
                     <h3>Los Viajes de Ulises</h3>
                     <p class="genre">Mitología griega • Editorial Edelvives</p>
@@ -721,11 +658,8 @@
             <div class="book-card" data-category="mitologia">
                 <img src="imagenes/mislibros/edelvives-mitologia/Optimized-atenea-cub-600.jpg" loading="lazy" alt="La Sabiduría de Atenea" class="book-cover">
                 <div class="book-info" style="position: relative;">
-                    <a href="la-sabiduria-de-atenea-sorpresa.html" style="text-decoration: none; position: absolute; top: 1rem; right: 0;">
-                        <img src="imagenes/iconos/lupa.svg" alt=""
-                             style="width: 36px; height: 36px; transition: transform 0.3s ease;"
-                             onmouseover="this.style.transform='scale(2) rotate(10deg)'"
-                             onmouseout="this.style.transform='scale(1) rotate(0deg)'">
+                    <a href="la-sabiduria-de-atenea-sorpresa.html" class="book-info-link">
+                        <img src="imagenes/iconos/lupa.svg" alt="" class="icon-surprise">
                     </a>
                     <h3>La Sabiduría de Atenea</h3>
                     <p class="genre">Mitología griega • Editorial Edelvives</p>
@@ -747,8 +681,8 @@
             <div class="book-card" data-category="mitologia">
                 <img src="imagenes/mislibros/edelvives-mitologia/Optimized-medusa-cub-600.jpg" loading="lazy" alt="La Terrorífica Medusa" class="book-cover">
                 <div class="book-info" style="position: relative;">
-                    <a href="la-terrorifica-medusa-sorpresa.html" style="text-decoration: none; position: absolute; top: 1rem; right: 0;">
-                        <img src="imagenes/iconos/camara.svg" loading="lazy" alt="" style="width: 36px; height: 36px; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                    <a href="la-terrorifica-medusa-sorpresa.html" class="book-info-link">
+                        <img src="imagenes/iconos/camara.svg" loading="lazy" alt="" class="icon-surprise">
                     </a>
                     <h3>La Terrorífica Medusa</h3>
                     <p class="genre">Mitología griega • Editorial Edelvives</p>
@@ -948,9 +882,6 @@
         </div>
     </div>
 
-            </div>
-    </div>
-
 <section class="awards-section" id="premios">
         <div class="container">
 
@@ -1051,21 +982,21 @@
                     <h3>Literatura Comprometida</h3>
                     <p class="meta">Reflexiones sobre el papel del escritor</p>
                     <p>He defendido que el principal compromiso del escritor es con la propia literatura, entendida como el arte de imaginar, descubrir, comunicar y compartir a través de la palabra. Los escritores solemos olvidar en ocasiones que la escritura tiene varios milenios de existencia, que la narración oral lleva existiendo varios milenios más, y que nuestra responsabilidad es intentar ahondar desde una perspectiva distinta, o con una mirada más profunda, sobre asuntos que ya han sido tratados una y otra vez a lo largo de los siglos.</p>
-                    <a href="/literatura-comprometida.html" style="display: inline-block; margin-top: 1rem; color: var(--secondary); font-weight: bold; text-decoration: none; border-bottom: 2px solid var(--secondary); padding-bottom: 0.2rem; transition: all 0.3s ease;" onmouseover="this.style.color='var(--primary)'; this.style.borderColor='var(--primary)'" onmouseout="this.style.color='var(--secondary)'; this.style.borderColor='var(--secondary)'">Leer conferencia completa →</a>
+                    <a href="/literatura-comprometida.html" class="link-styled">Leer conferencia completa →</a>
                 </div>
 
                 <div class="conference-card">
                     <h3>Leer en Tiempos Turbios</h3>
                     <p class="meta">Conferencia en Miami • Sobre el valor de la lectura</p>
                     <p>Confieso ser un lector voraz, pero desastroso. A veces, sobre mi mesilla de noche hay dos o tres novelas que leo asistemáticamente, alternando unas y otras. Cuando me llega alguna revista científica a la que estoy suscrito, interrumpo esa lectura para dar cuenta de algún artículo que llama mi atención. Me son muy queridos los géneros diarísticos y aquellos en que los escritores hablan sobre escritores, y especialmente sobre sí mismos.</p>
-                    <a href="/leer-tiempos-turbios.html" style="display: inline-block; margin-top: 1rem; color: var(--secondary); font-weight: bold; text-decoration: none; border-bottom: 2px solid var(--secondary); padding-bottom: 0.2rem; transition: all 0.3s ease;" onmouseover="this.style.color='var(--primary)'; this.style.borderColor='var(--primary)'" onmouseout="this.style.color='var(--secondary)'; this.style.borderColor='var(--secondary)'">Leer conferencia completa →</a>
+                    <a href="/leer-tiempos-turbios.html" class="link-styled">Leer conferencia completa →</a>
                 </div>
 
                 <div class="conference-card">
                     <h3>Gastronomía y literatura: Salir de tapas (el cuento)</h3>
                     <p class="meta">Conferencia impartida en Alberta, Canadá</p>
                     <p>En ocasiones, sobre todo entre lectores poco frecuentes o adolescentes, la literatura produce empacho, y el propósito de leer un libro, por excelso que sea, se convierte en un obstáculo insalvable. Pero hay otras vías para saciar el hambre e incluso para incitar el sentido del gusto: pequeñas porciones.</p>
-                    <a href="/gastronomia-literatura.html" style="display: inline-block; margin-top: 1rem; color: var(--secondary); font-weight: bold; text-decoration: none; border-bottom: 2px solid var(--secondary); padding-bottom: 0.2rem; transition: all 0.3s ease;" onmouseover="this.style.color='var(--primary)'; this.style.borderColor='var(--primary)'" onmouseout="this.style.color='var(--secondary)'; this.style.borderColor='var(--secondary)'">Leer un extracto de la conferencia →</a>
+                    <a href="/gastronomia-literatura.html" class="link-styled">Leer un extracto de la conferencia →</a>
                 </div>
 
                 <div class="conference-card">
@@ -1089,125 +1020,83 @@
         <h2 class="section-title">Para Leer</h2>
         <p class="section-subtitle">Cuentos, fragmentos de novelas, poemas y textos completos para disfrutar</p>
         
-        <div style="background: var(--light); padding: 2rem; border-radius: 10px; margin-bottom: 3rem;">
-            <p style="text-align: center; color: #555; line-height: 1.8;">
-                Algunos de mis cuentos están recogidos en libros como <em>Tras el cristal</em> o <em>Cuentos crudos</em>. 
-                Otros han sido publicados en diferentes momentos y están ya libres de derechos. Los ofrezco ahora juntos, 
+        <div class="paraleer-intro">
+            <p>
+                Algunos de mis cuentos están recogidos en libros como <em>Tras el cristal</em> o <em>Cuentos crudos</em>.
+                Otros han sido publicados en diferentes momentos y están ya libres de derechos. Los ofrezco ahora juntos,
                 y completos, a petición de algunos lectores. Añado, por aquello del reconocimiento, y no sin recato, algunos poemas.
             </p>
         </div>
 
         <!-- Enlaces a cuentos y relatos -->
-        <div style="background: white; padding: 2.5rem; border-radius: 10px; margin-bottom: 3rem; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-            <h3 style="color: var(--primary); margin-bottom: 1.5rem; border-bottom: 2px solid var(--secondary); padding-bottom: 0.5rem;">Cuentos y Relatos</h3>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem;">
-                <div><a href="/los-poemas-de-la-arena" style="color: var(--secondary); text-decoration: none; display: block; padding: 0.5rem; border-left: 3px solid var(--gold); padding-left: 1rem; transition: all 0.3s;">▶ 'Los poemas de la arena'</a></div>
-                <div><a href="/algo-es-algo" style="color: var(--secondary); text-decoration: none; display: block; padding: 0.5rem; border-left: 3px solid var(--gold); padding-left: 1rem; transition: all 0.3s;">▶ 'Algo es algo'</a></div>
-                <div><a href="/la-ultima-foto-de-robert-capa" style="color: var(--secondary); text-decoration: none; display: block; padding: 0.5rem; border-left: 3px solid var(--gold); padding-left: 1rem; transition: all 0.3s;">▶ 'La última foto de Robert Capa'</a></div>
-                <div><a href="/las-garzas-del-lago-de-luan-hao" style="color: var(--secondary); text-decoration: none; display: block; padding: 0.5rem; border-left: 3px solid var(--gold); padding-left: 1rem; transition: all 0.3s;">▶ 'Las garzas del lago de Luan Hao'</a></div>
-                <div><a href="/no-lo-entiendo" style="color: var(--secondary); text-decoration: none; display: block; padding: 0.5rem; border-left: 3px solid var(--gold); padding-left: 1rem; transition: all 0.3s;">▶ 'No lo entiendo'</a></div>
-                <div><a href="/la-ultima-leccion" style="color: var(--secondary); text-decoration: none; display: block; padding: 0.5rem; border-left: 3px solid var(--gold); padding-left: 1rem; transition: all 0.3s;">▶ 'La última lección'</a></div>
-                <div><a href="/ruleta-rusa" style="color: var(--secondary); text-decoration: none; display: block; padding: 0.5rem; border-left: 3px solid var(--gold); padding-left: 1rem; transition: all 0.3s;">▶ 'Ruleta rusa'</a></div>
-                <div><a href="/mujer-mirando-al-mar" style="color: var(--secondary); text-decoration: none; display: block; padding: 0.5rem; border-left: 3px solid var(--gold); padding-left: 1rem; transition: all 0.3s;">▶ 'Mujer mirando al mar' (el relato)</a></div>
-                <div><a href="/los-nombres-de-las-cosas" style="color: var(--secondary); text-decoration: none; display: block; padding: 0.5rem; border-left: 3px solid var(--gold); padding-left: 1rem; transition: all 0.3s;">▶ 'Los nombres de las cosas' (poema)</a></div>
-                <div><a href="/hace-tiempo" style="color: var(--secondary); text-decoration: none; display: block; padding: 0.5rem; border-left: 3px solid var(--gold); padding-left: 1rem; transition: all 0.3s;">▶ 'Hace tiempo' (poema)</a></div>
+        <div class="paraleer-box">
+            <h3 class="paraleer-title">Cuentos y Relatos</h3>
+            <div class="paraleer-grid">
+                <div><a href="/los-poemas-de-la-arena" class="paraleer-link">▶ 'Los poemas de la arena'</a></div>
+                <div><a href="/algo-es-algo" class="paraleer-link">▶ 'Algo es algo'</a></div>
+                <div><a href="/la-ultima-foto-de-robert-capa" class="paraleer-link">▶ 'La última foto de Robert Capa'</a></div>
+                <div><a href="/las-garzas-del-lago-de-luan-hao" class="paraleer-link">▶ 'Las garzas del lago de Luan Hao'</a></div>
+                <div><a href="/no-lo-entiendo" class="paraleer-link">▶ 'No lo entiendo'</a></div>
+                <div><a href="/la-ultima-leccion" class="paraleer-link">▶ 'La última lección'</a></div>
+                <div><a href="/ruleta-rusa" class="paraleer-link">▶ 'Ruleta rusa'</a></div>
+                <div><a href="/mujer-mirando-al-mar" class="paraleer-link">▶ 'Mujer mirando al mar' (el relato)</a></div>
+                <div><a href="/los-nombres-de-las-cosas" class="paraleer-link">▶ 'Los nombres de las cosas' (poema)</a></div>
+                <div><a href="/hace-tiempo" class="paraleer-link">▶ 'Hace tiempo' (poema)</a></div>
             </div>
         </div>
 
         <!-- Fragmentos de otros autores -->
-        <div style="background: white; padding: 2.5rem; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-            <h3 style="color: var(--primary); margin-bottom: 1.5rem; border-bottom: 2px solid var(--secondary); padding-bottom: 0.5rem;">Fragmentos de Lecturas</h3>
+        <div class="paraleer-box">
+            <h3 class="paraleer-title">Fragmentos de Lecturas</h3>
             <p style="margin-bottom: 2rem; color: #666;">Líneas que un día me asombraron a mí... y quizá te sorprendan a ti.</p>
-            
+
             <div style="display: flex; flex-direction: column; gap: 2rem;">
-                <!-- Fragmento 1 -->
-                <div style="border-left: 4px solid var(--gold); padding-left: 1.5rem; background: var(--light); padding: 1.5rem; border-radius: 5px;">
-                    <p style="font-style: italic; line-height: 1.8; margin-bottom: 1rem;">
-                        "A estas alturas debes haberlo adivinado: vengo de otro planeta. Pero nunca te diré llévame ante tus dirigentes. 
-                        Ni siquiera yo, poco acostumbrada como estoy a vuestras maneras, cometería tal error... 
-                        En cambio te diré: Llévame ante tus desayunos, tus puestas de sol, tus malos sueños, tus zapatos, tus sustantivos. 
-                        Llévame ante tus dedos; ante tus muertes. Esos sí valen la pena. Eso es lo que vine buscando."
-                    </p>
-                    <p style="text-align: right; color: var(--primary); font-weight: bold;">— Margaret Atwood: "Aterrizaje"</p>
+                <div class="fragment-card">
+                    <p class="fragment-text">"A estas alturas debes haberlo adivinado: vengo de otro planeta. Pero nunca te diré llévame ante tus dirigentes. Ni siquiera yo, poco acostumbrada como estoy a vuestras maneras, cometería tal error... En cambio te diré: Llévame ante tus desayunos, tus puestas de sol, tus malos sueños, tus zapatos, tus sustantivos. Llévame ante tus dedos; ante tus muertes. Esos sí valen la pena. Eso es lo que vine buscando."</p>
+                    <p class="fragment-author">— Margaret Atwood: "Aterrizaje"</p>
                 </div>
 
-                <!-- Fragmento 2 -->
-                <div style="border-left: 4px solid var(--secondary); padding-left: 1.5rem; background: var(--light); padding: 1.5rem; border-radius: 5px;">
-                    <p style="font-style: italic; line-height: 1.8; margin-bottom: 1rem;">
-                        "Si pudiera ser un indio, ahora mismo, y sobre un caballo a todo galope, con el cuerpo inclinado y suspendido en el aire, 
-                        estremeciéndome sobre el suelo oscilante, hasta dejar las espuelas, pues no tenía espuelas, hasta tirar las riendas, 
-                        pues no tenía riendas, y sólo viendo ante mí un paisaje como una pradera segada, ya sin el cuello y sin la cabeza del caballo."
-                    </p>
-                    <p style="text-align: right; color: var(--primary); font-weight: bold;">— Franz Kafka: "El deseo de ser un indio"</p>
+                <div class="fragment-card border-secondary">
+                    <p class="fragment-text">"Si pudiera ser un indio, ahora mismo, y sobre un caballo a todo galope, con el cuerpo inclinado y suspendido en el aire, estremeciéndome sobre el suelo oscilante, hasta dejar las espuelas, pues no tenía espuelas, hasta tirar las riendas, pues no tenía riendas, y sólo viendo ante mí un paisaje como una pradera segada, ya sin el cuello y sin la cabeza del caballo."</p>
+                    <p class="fragment-author">— Franz Kafka: "El deseo de ser un indio"</p>
                 </div>
 
-                <!-- Fragmento 3 -->
-                <div style="border-left: 4px solid var(--accent); padding-left: 1.5rem; background: var(--light); padding: 1.5rem; border-radius: 5px;">
-                    <p style="font-style: italic; line-height: 1.8; margin-bottom: 1rem;">
-                        "La tierra bajo sus botas era como un viejo colchón chirriante y elástico: encima una capa de hojas ligeras, frágiles, 
-                        diferentes entre sí también en la muerte; y, debajo, otra de hojas disecadas, viejas, de hace años, que se habían macerado 
-                        y que constituían una única masa marrón: polvo de la vida que un día había brotado en capullos, susurrado en el viento de una tormenta, 
-                        brillado al sol después de una lluvia."
-                    </p>
-                    <p style="text-align: right; color: var(--primary); font-weight: bold;">— Vasili Grossman: "Vida y destino"</p>
+                <div class="fragment-card border-accent">
+                    <p class="fragment-text">"La tierra bajo sus botas era como un viejo colchón chirriante y elástico: encima una capa de hojas ligeras, frágiles, diferentes entre sí también en la muerte; y, debajo, otra de hojas disecadas, viejas, de hace años, que se habían macerado y que constituían una única masa marrón: polvo de la vida que un día había brotado en capullos, susurrado en el viento de una tormenta, brillado al sol después de una lluvia."</p>
+                    <p class="fragment-author">— Vasili Grossman: "Vida y destino"</p>
                 </div>
 
-                <!-- Fragmento 4 -->
-                <div style="border-left: 4px solid var(--gold); padding-left: 1.5rem; background: var(--light); padding: 1.5rem; border-radius: 5px;">
-                    <p style="font-style: italic; line-height: 1.8; margin-bottom: 1rem;">
-                        "Las bibliotecas de los críticos suelen ser estupendas, primero por la inmensa cantidad de libros (no los compran, 
-                        se los mandan de regalo las editoriales, con dedicatorias lambonas de los autores), y segundo porque la mayoría de ellos 
-                        permanecen intonsos, como nuevos, no teniendo el crítico de tiempo ni ganas de leer los libros que reseña. 
-                        En Angosta se sabía que el lema de Afamador era el siguiente: Reseño los libros antes de leerlos; así, cuando los leo, ya sé qué pensar de ellos."
-                    </p>
-                    <p style="text-align: right; color: var(--primary); font-weight: bold;">— Héctor Abad Faciolince: "Angosta"</p>
+                <div class="fragment-card">
+                    <p class="fragment-text">"Las bibliotecas de los críticos suelen ser estupendas, primero por la inmensa cantidad de libros (no los compran, se los mandan de regalo las editoriales, con dedicatorias lambonas de los autores), y segundo porque la mayoría de ellos permanecen intonsos, como nuevos, no teniendo el crítico de tiempo ni ganas de leer los libros que reseña. En Angosta se sabía que el lema de Afamador era el siguiente: Reseño los libros antes de leerlos; así, cuando los leo, ya sé qué pensar de ellos."</p>
+                    <p class="fragment-author">— Héctor Abad Faciolince: "Angosta"</p>
                 </div>
 
-                <!-- Fragmento 5 -->
-                <div style="border-left: 4px solid var(--secondary); padding-left: 1.5rem; background: var(--light); padding: 1.5rem; border-radius: 5px;">
-                    <p style="font-style: italic; line-height: 1.8; margin-bottom: 1rem;">
-                        "No basta con lamentarnos, criticar al gobierno, a los capitalistas o a las multinacionales. Es necesario mucho más. 
-                        Basta con resistir culturalmente como lectores. Militantes de la lectura. Resistentes de la cultura. 
-                        Frente a la dictadura de la basura, hay que insistir en lo bueno, defender el derecho a leer literatura."
-                    </p>
-                    <p style="text-align: right; color: var(--primary); font-weight: bold;">— Ana María Machado</p>
+                <div class="fragment-card border-secondary">
+                    <p class="fragment-text">"No basta con lamentarnos, criticar al gobierno, a los capitalistas o a las multinacionales. Es necesario mucho más. Basta con resistir culturalmente como lectores. Militantes de la lectura. Resistentes de la cultura. Frente a la dictadura de la basura, hay que insistir en lo bueno, defender el derecho a leer literatura."</p>
+                    <p class="fragment-author">— Ana María Machado</p>
                 </div>
 
-                <!-- Fragmento 6 -->
-                <div style="border-left: 4px solid var(--accent); padding-left: 1.5rem; background: var(--light); padding: 1.5rem; border-radius: 5px;">
-                    <p style="font-style: italic; line-height: 1.8; margin-bottom: 1rem;">
-                        "Yo creo que la verdad siempre es simple. Y lo es por fuerza. Tiene que ser bastante simple como para que la entienda un niño.
-                        De lo contrario sería demasiado tarde. Cuando la comprendieras ya sería tarde."
-                    </p>
-                    <p style="text-align: right; color: var(--primary); font-weight: bold;">— Cormac McCarthy: "No es país para viejos"</p>
+                <div class="fragment-card border-accent">
+                    <p class="fragment-text">"Yo creo que la verdad siempre es simple. Y lo es por fuerza. Tiene que ser bastante simple como para que la entienda un niño. De lo contrario sería demasiado tarde. Cuando la comprendieras ya sería tarde."</p>
+                    <p class="fragment-author">— Cormac McCarthy: "No es país para viejos"</p>
                 </div>
 
-                <!-- Fragmento 7 -->
-                <div style="border-left: 4px solid var(--gold); padding-left: 1.5rem; background: var(--light); padding: 1.5rem; border-radius: 5px;">
-                    <p style="font-style: italic; line-height: 1.8; margin-bottom: 1rem;">
-                        "En mi opinión, solo deberíamos leer libros que nos muerdan y nos hieran. Si el libro que estamos leyendo no nos sacude como un golpe en el cráneo, ¿para qué molestarnos en leerlo? ¿Para que nos haga felices, como tú dices? Dios mío, seríamos igual de felices si no tuviéramos ningún libro."
-                    </p>
-                    <p style="text-align: right; color: var(--primary); font-weight: bold;">— Kafka. Carta a Oskar Pollak.</p>
+                <div class="fragment-card">
+                    <p class="fragment-text">"En mi opinión, solo deberíamos leer libros que nos muerdan y nos hieran. Si el libro que estamos leyendo no nos sacude como un golpe en el cráneo, ¿para qué molestarnos en leerlo? ¿Para que nos haga felices, como tú dices? Dios mío, seríamos igual de felices si no tuviéramos ningún libro."</p>
+                    <p class="fragment-author">— Kafka. Carta a Oskar Pollak.</p>
                 </div>
 
-                <!-- Fragmento 8 -->
-                <div style="border-left: 4px solid var(--secondary); padding-left: 1.5rem; background: var(--light); padding: 1.5rem; border-radius: 5px;">
-                    <p style="font-style: italic; line-height: 1.8; margin-bottom: 1rem;">
-                        "Van pasando, pasan, pasan, deslizándose los años, por utilizar una desgarradora inflexión horaciana. Pasan los años, cariño, y con el tiempo nadie sabrá lo que tú y yo sabemos. Crece nuestro hijo; las rosas de Paestum, del neblinoso Paestum, han desaparecido; estúpidos mecanicistas manosean ciertas fuerzas de la naturaleza que algunos mansos matemáticos, para su propia y secreta sorpresa, parecen haber presentido; de modo que quizá haya llegado la hora de que examinemos algunas instantáneas antiguas, pinturas rupestres de trenes y aeroplanos, estratos de juguetes en el pesado armario."
-                    </p>
-                    <p style="text-align: right; color: var(--primary); font-weight: bold;">— Vladimir Nabokov: "Habla, memoria"</p>
+                <div class="fragment-card border-secondary">
+                    <p class="fragment-text">"Van pasando, pasan, pasan, deslizándose los años, por utilizar una desgarradora inflexión horaciana. Pasan los años, cariño, y con el tiempo nadie sabrá lo que tú y yo sabemos. Crece nuestro hijo; las rosas de Paestum, del neblinoso Paestum, han desaparecido; estúpidos mecanicistas manosean ciertas fuerzas de la naturaleza que algunos mansos matemáticos, para su propia y secreta sorpresa, parecen haber presentido; de modo que quizá haya llegado la hora de que examinemos algunas instantáneas antiguas, pinturas rupestres de trenes y aeroplanos, estratos de juguetes en el pesado armario."</p>
+                    <p class="fragment-author">— Vladimir Nabokov: "Habla, memoria"</p>
                 </div>
             </div>
         </div>
 
-        <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: var(--light); border-radius: 10px;">
-            <h3 style="color: var(--primary); margin-bottom: 1rem;">¿Quieres leer fotos?</h3>
-            <p style="color: #555; margin-bottom: 1.5rem;">
-                Porque una foto también puede contar una historia...
-            </p>
-            <a href="algunas-fotos-que-hice-un-dia.html" style="display: inline-block; background: var(--secondary); color: white; padding: 1rem 2rem; border-radius: 5px; text-decoration: none; font-weight: bold; transition: all 0.3s ease;" onmouseover="this.style.background='#2980b9'" onmouseout="this.style.background='#3498db'">
-                Leer fotos →
-            </a>
+        <div class="paraleer-cta">
+            <h3>¿Quieres leer fotos?</h3>
+            <p>Porque una foto también puede contar una historia...</p>
+            <a href="algunas-fotos-que-hice-un-dia.html" class="btn-cta">Leer fotos →</a>
         </div>
     </section>
 
@@ -1247,7 +1136,7 @@
                 <div class="math-card">
                     <h3>📊 Problemas y Reflexiones</h3>
                     <p>Hace mucho tiempo (unos 30 años, todavía no habían llegado los ordenadores), proponía a mis alumnos problemas ilustrados por mi amigo Antonio Varas. ¡Qué tiempos, en los que uno se apañaba con una máquina de escribir y una caja de rotuladores! En esta sección de mi web comparto problemas matemáticos, reflexiones y lecturas recomendadas.</p>
-                    <p style="margin-top: 1rem;"><a href="algunos-problemas.html" style="color: var(--secondary); font-weight: bold; text-decoration: none;">→ ¿Quieres ver algunos problemas?</a></p>
+                    <p class="mt-1"><a href="algunos-problemas.html" class="link-bio">→ ¿Quieres ver algunos problemas?</a></p>
                 </div>
             </div>
         </div>
@@ -1258,42 +1147,41 @@
         <h2 class="section-title section-asterisk">*</h2>
         <h2 class="section-title">Bienvenid@ al Sáhara</h2>
 
-        <div style="background: var(--white); padding: 2.5rem; border-radius: 10px; margin-bottom: 3rem; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+        <div class="sahara-intro">
+            <p><strong>Hace años, tuve la suerte de visitar el Sáhara y de conocer a hombres, mujeres y niños que viven en un desierto terrible. Una inconclusa descolonización, la invasión de un país extranjero, la contumacia de nuestros gobernantes y la incapacidad de la ONU no ha resuelto después de décadas un problema vergonzoso.</strong></p>
 
-            <p style="line-height: 1.8; color: #555; margin-bottom: 1.5rem;"><strong>Hace años, tuve la suerte de visitar el Sáhara y de conocer a hombres, mujeres y niños que viven en un desierto terrible. Una inconclusa descolonización, la invasión de un país extranjero, la contumacia de nuestros gobernantes y la incapacidad de la ONU no ha resuelto después de décadas un problema vergonzoso.</strong></p>
+            <p><strong>Desde aquel primer viaje he hecho una docena más, casi siempre en relación con el Bubisher. Pero el apoyo no solo se puede hacer allí, sino también aquí, y siempre con personas que sentimos que el Sáhara sigue siendo una parte distante de este país, mientras el Sáhara Occidental no obtenga su liberación y por tanto su independencia.</strong></p>
 
-            <p style="line-height: 1.8; color: #555; margin-bottom: 1.5rem;"><strong>Desde aquel primer viaje he hecho una docena más, casi siempre en relación con el Bubisher. Pero el apoyo no solo se puede hacer allí, sino también aquí, y siempre con personas que sentimos que el Sáhara sigue siendo una parte distante de este país, mientras el Sáhara Occidental no obtenga su liberación y por tanto su independencia.</strong></p>
-
-            <div style="margin-top: 2rem;">
-                <img src="imagenes/elsahara/bubisher-en-desierto.png" loading="lazy" alt="Bubisher en el desierto" style="width: 100%; border-radius: 8px;">
+            <div class="mt-2">
+                <img src="imagenes/elsahara/bubisher-en-desierto.png" loading="lazy" alt="Bubisher en el desierto" class="img-rounded" style="width: 100%;">
                 <p style="text-align: right; font-style: italic; color: #777; margin-top: 0.5rem;">(Foto de Inés G. Aparicio.)</p>
             </div>
         </div>
 
-        <h3 style="color: #c0392b; font-size: 1.6rem; margin-bottom: 2rem; text-align: center;">Los caminos del desierto son infinitos, pero yo recorro tres...</h3>
+        <h3 class="sahara-subtitle">Los caminos del desierto son infinitos, pero yo recorro tres...</h3>
 
         <div class="math-grid">
             <a href="sahara-bubisher.html" style="text-decoration: none;">
-                <div class="math-card" style="cursor: pointer; position: relative; padding-bottom: 3rem;">
+                <div class="math-card sahara-card">
                     <h3>Un proyecto apasionante: el Bubisher</h3>
-                    <p style="font-size: 0.95rem; color: #555; margin-top: 1rem; line-height: 1.6;">En el desierto, el bubisher es el pájaro que trae la buena suerte. Lo utilizamos como símbolo de los libros que viajan hasta las bibliotecas, escuelas, jaimas y calles saharauis. Comenzó como un pequeño proyecto, que hoy asombra y es candidato en 2026 al Premio "Astrid Lindgren Memorial Award" (ALMA), de promoción de la lectura. Si quieres conocer su origen, desarrollo y trabajo...</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="position: absolute; bottom: 12px; right: 12px; width: 28px; height: 28px;" fill="none" stroke="#c0392b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="M12 8l4 4-4 4" /><line x1="8" y1="12" x2="16" y2="12" /></svg>
+                    <p>En el desierto, el bubisher es el pájaro que trae la buena suerte. Lo utilizamos como símbolo de los libros que viajan hasta las bibliotecas, escuelas, jaimas y calles saharauis. Comenzó como un pequeño proyecto, que hoy asombra y es candidato en 2026 al Premio "Astrid Lindgren Memorial Award" (ALMA), de promoción de la lectura. Si quieres conocer su origen, desarrollo y trabajo...</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="sahara-arrow" fill="none" stroke="#c0392b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="M12 8l4 4-4 4" /><line x1="8" y1="12" x2="16" y2="12" /></svg>
                 </div>
             </a>
 
             <a href="sahara-colaborar.html" style="text-decoration: none;">
-                <div class="math-card" style="cursor: pointer; position: relative; padding-bottom: 3rem;">
+                <div class="math-card sahara-card">
                     <h3>Colaborar con el Bubisher: libros y más...</h3>
-                    <p style="font-size: 0.95rem; color: #555; margin-top: 1rem; line-height: 1.6;">Construir y mantener bibliotecas, pagar a bibliotecarias y ayudantes saharauis, trasladar libros o comprarlos, llenar el combustible de los bibliobuses... supone esfuerzo y dinero, que íntegramente se traslada al desierto. Desde aquí se puede ayudar de muchas formas: haciéndose socio de Bubisher, realizando pequeñas donaciones, ofreciéndose a formar personal o... ¡llevándote libros que editamos a cambio de una pequeña ofrenda! Si quieres saber cómo echar una mano...</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="position: absolute; bottom: 12px; right: 12px; width: 28px; height: 28px;" fill="none" stroke="#c0392b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="M12 8l4 4-4 4" /><line x1="8" y1="12" x2="16" y2="12" /></svg>
+                    <p>Construir y mantener bibliotecas, pagar a bibliotecarias y ayudantes saharauis, trasladar libros o comprarlos, llenar el combustible de los bibliobuses... supone esfuerzo y dinero, que íntegramente se traslada al desierto. Desde aquí se puede ayudar de muchas formas: haciéndose socio de Bubisher, realizando pequeñas donaciones, ofreciéndose a formar personal o... ¡llevándote libros que editamos a cambio de una pequeña ofrenda! Si quieres saber cómo echar una mano...</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="sahara-arrow" fill="none" stroke="#c0392b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="M12 8l4 4-4 4" /><line x1="8" y1="12" x2="16" y2="12" /></svg>
                 </div>
             </a>
 
             <a href="sahara-poetas.html" style="text-decoration: none;">
-                <div class="math-card" style="cursor: pointer; position: relative; padding-bottom: 3rem;">
+                <div class="math-card sahara-card">
                     <h3>Poetas y escritores saharauis</h3>
-                    <p style="font-size: 0.95rem; color: #555; margin-top: 1rem; line-height: 1.6;">No hay que olvidar que los saharauis hablan español, que estudiaron en español y que escriben en español. No han olvidado su lengua y su poesía o sus cuentos y novelas tratan de mantener la cultura inmemorial de su pueblo y de ser un testimonio de la añoranza por sus tierras y la lucha por su liberación. Necesitan apoyo, tanto aquí como en el desierto. Si quieres conocer sus obras...</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="position: absolute; bottom: 12px; right: 12px; width: 28px; height: 28px;" fill="none" stroke="#c0392b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="M12 8l4 4-4 4" /><line x1="8" y1="12" x2="16" y2="12" /></svg>
+                    <p>No hay que olvidar que los saharauis hablan español, que estudiaron en español y que escriben en español. No han olvidado su lengua y su poesía o sus cuentos y novelas tratan de mantener la cultura inmemorial de su pueblo y de ser un testimonio de la añoranza por sus tierras y la lucha por su liberación. Necesitan apoyo, tanto aquí como en el desierto. Si quieres conocer sus obras...</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="sahara-arrow" fill="none" stroke="#c0392b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="M12 8l4 4-4 4" /><line x1="8" y1="12" x2="16" y2="12" /></svg>
                 </div>
             </a>
         </div>
