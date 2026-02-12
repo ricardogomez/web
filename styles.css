@@ -1094,6 +1094,123 @@ footer a:hover {
     vertical-align: middle;
 }
 
+/* ================================================
+   CLASES ADICIONALES PARA ELIMINAR INLINE STYLES
+   ================================================ */
+
+/* Hero section */
+.hero-relative {
+    position: relative;
+}
+
+.hero-subtitle {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.hero-tagline {
+    margin-top: 2rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.hero-tagline-small {
+    font-size: 1rem;
+    opacity: 0.9;
+    margin-top: 0.2rem;
+}
+
+/* Posicionamiento relativo para contenedores */
+.position-relative {
+    position: relative;
+}
+
+/* Enlace de info con posición inferior */
+.book-info-link-bottom {
+    text-decoration: none;
+    position: absolute;
+    bottom: 1rem;
+    right: 0;
+    top: auto;
+}
+
+/* Icono con alineación vertical */
+.icon-inline {
+    vertical-align: middle;
+    margin-left: 0.5rem;
+}
+
+/* Secciones con padding top */
+.section-padded {
+    padding-top: 4rem;
+}
+
+/* Fragmentos container */
+.fragments-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Subtítulo de fragmentos */
+.fragments-subtitle {
+    margin-bottom: 2rem;
+    color: #666;
+}
+
+/* Imagen 100% ancho */
+.img-full-width {
+    width: 100%;
+}
+
+/* Crédito de foto */
+.photo-credit {
+    text-align: right;
+    font-style: italic;
+    color: #777;
+    margin-top: 0.5rem;
+}
+
+/* Enlaces de tarjeta sin decoración */
+.card-link {
+    text-decoration: none;
+}
+
+/* Sección Contacto */
+.contact-info {
+    margin-top: 2rem;
+    opacity: 0.9;
+}
+
+.contact-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.contact-link {
+    color: white;
+    text-decoration: underline;
+}
+
+.contact-photos {
+    margin-top: 1.5rem;
+    opacity: 0.9;
+}
+
+.contact-photos-link {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-footer {
+    margin-top: 3rem;
+    opacity: 0.7;
+    font-size: 0.9rem;
+}
+
 /* Responsive para layouts de páginas sorpresa */
 @media (max-width: 768px) {
     .grid-cols-2,
