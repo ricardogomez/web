@@ -5,47 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Selva de los Números - Contenido Extra - Ricardo Gómez</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Lightbox */
-        .lightbox {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.9);
-            z-index: 1000;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-        }
-        .lightbox.active {
-            display: flex;
-        }
-        .lightbox img {
-            max-width: 90%;
-            max-height: 90%;
-            border-radius: 4px;
-            box-shadow: 0 0 40px rgba(0,0,0,0.7);
-        }
-        .lightbox-close {
-            position: absolute;
-            top: 20px;
-            right: 30px;
-            color: white;
-            font-size: 40px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        .img-clickable {
-            cursor: pointer;
-            transition: transform 0.3s ease;
-        }
-        .img-clickable:hover {
-            transform: scale(1.02);
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -65,82 +24,67 @@
         </nav>
     </header>
 
-    <div class="container" style="margin-top: 2rem; margin-bottom: 3rem;">
-        <p style="margin-bottom: 2rem; font-weight: bold; text-align: center; font-size: 1.3rem; color: #dc3545;">
-            Has abierto el libro... <img src="imagenes/iconos/libro-abierto.svg" alt="" style="width: 28px; height: 28px; vertical-align: middle;">
+    <div class="container mt-2 mb-3">
+        <p class="text-intro">
+            Has abierto el libro... <img src="imagenes/iconos/libro-abierto.svg" alt="" class="icon-hover" style="width: 28px; height: 28px; vertical-align: middle;">
         </p>
 
         <h2 class="section-title section-asterisk">*</h2>
         <h2 class="section-title">La Selva de los Números</h2>
 
-        <div style="background: var(--white); padding: 2.5rem; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-
-            <!-- Imagen de la portada del libro con texto -->
-            <div style="display: flex; gap: 2rem; margin-bottom: 2rem; align-items: flex-start;">
-                <div style="flex-shrink: 0;">
-                    <img src="imagenes/mislibros/alfaguara/CUB-selva.png" alt="La Selva de los Números"
-                         style="width: 220px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
-                </div>
-                <div style="flex: 1; line-height: 1.8; color: #555;">
-                    <p style="font-style: italic; font-size: 1.15rem; margin-bottom: 0.8rem;">Mi segundo libro infantil y el primero con ilustraciones, de modo que entonces no conocía a Tesa González ni sospechaba lo fructífera que sería nuestra relación.</p>
-                    <p style="font-style: italic; font-size: 1.15rem; margin-bottom: 0.8rem;">Este libro salió editado en el 2000, el Año Mundial de las Matemáticas, con lo que tiene ya una larga vida y lo concebí como lo que creo que es: una divertida historia en el que aparecen tortugas, leones, elefantes, abejas y monos, cada uno utilizando los números a su manera, con charlas a veces absurdas...</p>
-                    <p style="font-style: italic; font-size: 1.15rem;">Cansada de sus andanzas, Tuga se retira a tener crías, ¡y vaya si las tiene en "Las hijas de Tuga"!</p>
+        <div class="content-box">
+            <div class="flex-layout mb-2">
+                <img src="imagenes/mislibros/alfaguara/CUB-selva.png" alt="La Selva de los Números" class="img-cover-large">
+                <div class="text-content">
+                    <p class="text-italic mb-1">Mi segundo libro infantil y el primero con ilustraciones, de modo que entonces no conocía a Tesa González ni sospechaba lo fructífera que sería nuestra relación.</p>
+                    <p class="text-italic mb-1">Este libro salió editado en el 2000, el Año Mundial de las Matemáticas, con lo que tiene ya una larga vida y lo concebí como lo que creo que es: una divertida historia en el que aparecen tortugas, leones, elefantes, abejas y monos, cada uno utilizando los números a su manera, con charlas a veces absurdas...</p>
+                    <p class="text-italic">Cansada de sus andanzas, Tuga se retira a tener crías, ¡y vaya si las tiene en "Las hijas de Tuga"!</p>
                 </div>
             </div>
 
-            <div style="line-height: 1.8; color: #555; margin-bottom: 2rem;">
-                <h3 style="text-align: center; color: #dc3545; margin-top: 2rem; margin-bottom: 1.5rem; font-size: 1.4rem;">2000: Año Mundial de las Matemáticas. Seleccionado por Lazarillo.</h3>
+            <div class="text-content mb-2">
+                <h3 class="text-highlight mt-2 mb-2">2000: Año Mundial de las Matemáticas. Seleccionado por Lazarillo.</h3>
 
-                <p style="text-align: center; color: #555; font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">Esta fue de las primeras reseñas literarias que recibí de mis libros. Me sentí orgulloso de la selección de la Revista "Lazarillo", en ese lejano año 2001</p>
+                <p class="text-center mb-2" style="color: #555; font-size: 1.1rem;">Esta fue de las primeras reseñas literarias que recibí de mis libros. Me sentí orgulloso de la selección de la Revista "Lazarillo", en ese lejano año 2001</p>
 
-                <div style="text-align: center; margin-bottom: 2rem;">
-                    <img src="imagenes/mislibros/alfaguara/selva-critica.png" loading="lazy" alt="Crítica La Selva de los Números" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; max-width: 900px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                <div class="text-center mb-2">
+                    <img src="imagenes/mislibros/alfaguara/selva-critica.png" loading="lazy" alt="Crítica La Selva de los Números" class="img-clickable img-rounded" style="width: 100%; max-width: 900px;" onclick="abrirLightbox(this.src)">
                 </div>
 
-                <h3 style="text-align: center; color: #dc3545; margin-top: 2.5rem; margin-bottom: 1.5rem; font-size: 1.4rem;">Si quieres leer las primeras páginas...</h3>
+                <h3 class="text-highlight mt-3 mb-2">Si quieres leer las primeras páginas...</h3>
 
-                <div style="display: grid; grid-template-columns: repeat(1, 1fr); gap: 1.5rem; max-width: 900px; margin-left: auto; margin-right: auto;">
-                    <div style="text-align: center;">
-                        <img src="imagenes/mislibros/alfaguara/selva-pag1.png" loading="lazy" alt="La Selva de los Números - Página 1" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                    </div>
-                    <div style="text-align: center;">
-                        <img src="imagenes/mislibros/alfaguara/selva-pag2.png" loading="lazy" alt="La Selva de los Números - Página 2" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                    </div>
-                    <div style="text-align: center;">
-                        <img src="imagenes/mislibros/alfaguara/selva-pag3.png" loading="lazy" alt="La Selva de los Números - Página 3" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                    </div>
-                    <div style="text-align: center;">
-                        <img src="imagenes/mislibros/alfaguara/selva-pag4.png" loading="lazy" alt="La Selva de los Números - Página 4" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                    </div>
+                <div class="grid-cols-1" style="max-width: 900px; margin: 0 auto;">
+                    <img src="imagenes/mislibros/alfaguara/selva-pag1.png" loading="lazy" alt="La Selva de los Números - Página 1" class="img-clickable img-full" onclick="abrirLightbox(this.src)">
+                    <img src="imagenes/mislibros/alfaguara/selva-pag2.png" loading="lazy" alt="La Selva de los Números - Página 2" class="img-clickable img-full" onclick="abrirLightbox(this.src)">
+                    <img src="imagenes/mislibros/alfaguara/selva-pag3.png" loading="lazy" alt="La Selva de los Números - Página 3" class="img-clickable img-full" onclick="abrirLightbox(this.src)">
+                    <img src="imagenes/mislibros/alfaguara/selva-pag4.png" loading="lazy" alt="La Selva de los Números - Página 4" class="img-clickable img-full" onclick="abrirLightbox(this.src)">
                 </div>
             </div>
 
-            <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: var(--light); border-radius: 10px;">
-                <a href="index.html#libros" style="display: inline-block; background: var(--secondary); color: white; padding: 1rem 2rem; border-radius: 5px; text-decoration: none; font-weight: bold; transition: all 0.3s ease;" onmouseover="this.style.background='#2980b9'" onmouseout="this.style.background='#3498db'">
-                    &larr; Volver a Mis Libros
-                </a>
+            <div class="light-box">
+                <a href="index.html#libros" class="btn-back">← Volver a Mis Libros</a>
             </div>
         </div>
     </div>
 
-    <footer style="background: var(--primary); color: var(--white); text-align: center; padding: 2rem;">
+    <footer>
         <p>&copy; 2026 Ricardo Gómez. Todos los derechos reservados.</p>
     </footer>
 
-    <!-- Lightbox -->
-    <div id="lightbox" class="lightbox" onclick="cerrarLightbox()">
+    <div class="lightbox" onclick="cerrarLightbox()">
         <span class="lightbox-close">&times;</span>
-        <img id="lightbox-img" src="" loading="lazy" alt="Imagen ampliada">
+        <img src="" alt="Imagen ampliada">
     </div>
 
     <script>
         function abrirLightbox(src) {
-            document.getElementById('lightbox-img').src = src;
-            document.getElementById('lightbox').classList.add('active');
+            const lb = document.querySelector('.lightbox');
+            lb.querySelector('img').src = src;
+            lb.classList.add('active');
             document.body.style.overflow = 'hidden';
         }
         function cerrarLightbox() {
-            document.getElementById('lightbox').classList.remove('active');
+            document.querySelector('.lightbox').classList.remove('active');
             document.body.style.overflow = 'auto';
         }
         document.addEventListener('keydown', function(e) {

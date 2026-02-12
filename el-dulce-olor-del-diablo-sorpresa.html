@@ -24,42 +24,33 @@
         </nav>
     </header>
 
-    <div class="container" style="margin-top: 2rem; margin-bottom: 3rem;">
-        <p style="margin-bottom: 2rem; font-weight: bold; text-align: center; font-size: 1.3rem; color: #dc3545;">
-            ¡Has descubierto algo más! <img src="imagenes/iconos/lupa.svg" alt="" style="width: 28px; height: 28px; vertical-align: middle;">
+    <div class="container mt-2 mb-3">
+        <p class="text-intro">
+            ¡Has descubierto algo más! <img src="imagenes/iconos/lupa.svg" alt="" class="icon-hover" style="width: 28px; height: 28px; vertical-align: middle;">
         </p>
 
         <h2 class="section-title section-asterisk">*</h2>
         <h2 class="section-title">El dulce olor del diablo</h2>
 
-        <div style="background: var(--white); padding: 2.5rem; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-
-            <!-- Imagen de la portada del libro con texto -->
-            <div style="display: flex; gap: 2rem; margin-bottom: 2rem; align-items: flex-start;">
-                <div style="flex-shrink: 0;">
-                    <img src="imagenes/mislibros/adultos/diablo-gr.jpg" alt="El dulce olor del diablo"
-                         style="width: 170px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
-                </div>
-                <div style="flex: 1; line-height: 1.8; color: #555;">
-                    <p style="font-style: italic; font-size: 1.15rem;">Con algunos libros siempre tengo dudas de si se trata de literatura juvenil o adulta. Al final, lo sitúo en esta categoría, aunque está recomendado para jóvenes, como crossover. Mi protagonista, Andrea, adquiere una capacidad misteriosa y estremecedora, tras sufrir un intento de agresión sexual. Una historia cruda, sí, pero que creo necesaria para hablar sobre un drama que se arrastra desde demasiado tiempo atrás y que, hoy, por desgracia, sigue vivo.</p>
+        <div class="content-box">
+            <div class="flex-layout mb-2">
+                <img src="imagenes/mislibros/adultos/diablo-gr.jpg" alt="El dulce olor del diablo" class="img-cover">
+                <div class="text-content">
+                    <p class="text-italic">Con algunos libros siempre tengo dudas de si se trata de literatura juvenil o adulta. Al final, lo sitúo en esta categoría, aunque está recomendado para jóvenes, como crossover. Mi protagonista, Andrea, adquiere una capacidad misteriosa y estremecedora, tras sufrir un intento de agresión sexual. Una historia cruda, sí, pero que creo necesaria para hablar sobre un drama que se arrastra desde demasiado tiempo atrás y que, hoy, por desgracia, sigue vivo.</p>
                 </div>
             </div>
 
-            <div style="line-height: 1.8; color: #555; margin-bottom: 2rem;">
-                <div style="text-align: center;">
-                    <img src="imagenes/mislibros/adultos/OLOR-reseña.JPG" loading="lazy" alt="Reseña de El dulce olor del diablo" style="width: 100%; max-width: 450px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                </div>
+            <div class="text-content mb-2 text-center">
+                <img src="imagenes/mislibros/adultos/OLOR-reseña.JPG" loading="lazy" alt="Reseña de El dulce olor del diablo" class="img-rounded" style="width: 100%; max-width: 450px;">
             </div>
 
-            <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: var(--light); border-radius: 10px;">
-                <a href="index.html#libros" style="display: inline-block; background: var(--secondary); color: white; padding: 1rem 2rem; border-radius: 5px; text-decoration: none; font-weight: bold; transition: all 0.3s ease;" onmouseover="this.style.background='#2980b9'" onmouseout="this.style.background='#3498db'">
-                    ← Volver a Mis Libros
-                </a>
+            <div class="light-box">
+                <a href="index.html#libros" class="btn-back">← Volver a Mis Libros</a>
             </div>
         </div>
     </div>
 
-    <footer style="background: var(--primary); color: var(--white); text-align: center; padding: 2rem;">
+    <footer>
         <p>&copy; 2026 Ricardo Gómez. Todos los derechos reservados.</p>
     </footer>
 </body>

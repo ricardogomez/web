@@ -5,47 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Máquina de Hacer Cuentos - Contenido Extra - Ricardo Gómez</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Lightbox */
-        .lightbox {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.9);
-            z-index: 1000;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-        }
-        .lightbox.active {
-            display: flex;
-        }
-        .lightbox img {
-            max-width: 90%;
-            max-height: 90%;
-            border-radius: 4px;
-            box-shadow: 0 0 40px rgba(0,0,0,0.7);
-        }
-        .lightbox-close {
-            position: absolute;
-            top: 20px;
-            right: 30px;
-            color: white;
-            font-size: 40px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        .img-clickable {
-            cursor: pointer;
-            transition: transform 0.3s ease;
-        }
-        .img-clickable:hover {
-            transform: scale(1.02);
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -65,84 +24,61 @@
         </nav>
     </header>
 
-    <div class="container" style="margin-top: 2rem; margin-bottom: 3rem;">
-        <p style="margin-bottom: 2rem; font-weight: bold; text-align: center; font-size: 1.3rem; color: #dc3545;">
-            ¡Has abierto el baúl secreto! <img src="imagenes/iconos/baul.svg" alt="" style="width: 28px; height: 28px; vertical-align: middle;">
+    <div class="container mt-2 mb-3">
+        <p class="text-intro">
+            ¡Has abierto el baúl secreto! <img src="imagenes/iconos/baul.svg" alt="" class="icon-hover" style="width: 28px; height: 28px; vertical-align: middle;">
         </p>
 
         <h2 class="section-title section-asterisk">*</h2>
         <h2 class="section-title">La Máquina de Hacer Cuentos</h2>
 
-        <div style="background: var(--white); padding: 2.5rem; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-
-            <!-- Imagen de la portada del libro con texto -->
-            <div style="display: flex; gap: 2rem; margin-bottom: 2rem; align-items: flex-start;">
-                <div style="flex-shrink: 0;">
-                    <img src="imagenes/mislibros/otros/CUB-maquina.png" alt="La Máquina de Hacer Cuentos"
-                         style="width: 170px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
-                </div>
-                <div style="flex: 1; line-height: 1.8; color: #555;">
-                    <p style="font-style: italic; font-size: 1.15rem;">Pocas veces se tiene la suerte de trabajar con un ilustrador como Emilio Urberuaga y un editor (Víctor Mascato), empeñado en hacer las cosas bien, dando como resultado un libro cuidado en sus más pequeños detalles: la cubierta, las guardas, el índice, el color representativo, el papel... Quise imaginar en el libro la llegada de algo parecido a la Inteligencia Artificial al mundo de la literatura, con la que todo el mundo está entusiasmado. Todos, menos una chica, Celeste, que anticipa los problemas en una historia que se convierte en un juego detectivesco, con la desaparición del profesor Betrug y la salida a escena de misteriosos personajes, que forman parte de una confabulación mundial.</p>
+        <div class="content-box">
+            <div class="flex-layout mb-2">
+                <img src="imagenes/mislibros/otros/CUB-maquina.png" alt="La Máquina de Hacer Cuentos" class="img-cover">
+                <div class="text-content">
+                    <p class="text-italic">Pocas veces se tiene la suerte de trabajar con un ilustrador como Emilio Urberuaga y un editor (Víctor Mascato), empeñado en hacer las cosas bien, dando como resultado un libro cuidado en sus más pequeños detalles: la cubierta, las guardas, el índice, el color representativo, el papel... Quise imaginar en el libro la llegada de algo parecido a la Inteligencia Artificial al mundo de la literatura, con la que todo el mundo está entusiasmado. Todos, menos una chica, Celeste, que anticipa los problemas en una historia que se convierte en un juego detectivesco, con la desaparición del profesor Betrug y la salida a escena de misteriosos personajes, que forman parte de una confabulación mundial.</p>
                 </div>
             </div>
 
-            <div style="line-height: 1.8; color: #555; margin-bottom: 2rem;">
-                <!-- Imágenes verticales en grid x2 -->
-                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin-bottom: 1.5rem;">
-                    <div style="text-align: center;">
-                        <img src="imagenes/mislibros/otros/maq-astro.png" loading="lazy" alt="Ilustración Astro" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                    </div>
-                    <div style="text-align: center;">
-                        <img src="imagenes/mislibros/otros/maq-betrug.png" loading="lazy" alt="Profesor Betrug" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                    </div>
-                    <div style="text-align: center;">
-                        <img src="imagenes/mislibros/otros/maq-blakey.png" loading="lazy" alt="Ilustración Blakey" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                    </div>
-                    <div style="text-align: center;">
-                        <img src="imagenes/mislibros/otros/maq-oepli.png" loading="lazy" alt="OEPLI" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                    </div>
-                    <div style="text-align: center;">
-                        <img src="imagenes/mislibros/otros/maq-bio-urberuaga.png" loading="lazy" alt="Emilio Urberuaga" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                    </div>
+            <div class="text-content mb-2">
+                <div class="grid-2-equal mb-2">
+                    <img src="imagenes/mislibros/otros/maq-astro.png" loading="lazy" alt="Ilustración Astro" class="img-clickable img-full" onclick="abrirLightbox(this.src)">
+                    <img src="imagenes/mislibros/otros/maq-betrug.png" loading="lazy" alt="Profesor Betrug" class="img-clickable img-full" onclick="abrirLightbox(this.src)">
+                    <img src="imagenes/mislibros/otros/maq-blakey.png" loading="lazy" alt="Ilustración Blakey" class="img-clickable img-full" onclick="abrirLightbox(this.src)">
+                    <img src="imagenes/mislibros/otros/maq-oepli.png" loading="lazy" alt="OEPLI" class="img-clickable img-full" onclick="abrirLightbox(this.src)">
+                    <img src="imagenes/mislibros/otros/maq-bio-urberuaga.png" loading="lazy" alt="Emilio Urberuaga" class="img-clickable img-full" onclick="abrirLightbox(this.src)">
                 </div>
 
-                <!-- Imágenes horizontales en grid x1 -->
-                <div style="display: grid; grid-template-columns: 1fr; gap: 1.5rem;">
-                    <div style="text-align: center;">
-                        <img src="imagenes/mislibros/otros/maq-indice.png" loading="lazy" alt="Índice" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                    </div>
-                    <div style="text-align: center;">
-                        <img src="imagenes/mislibros/otros/maq-galego.png" loading="lazy" alt="Edición en gallego" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                    </div>
+                <div class="grid-cols-1">
+                    <img src="imagenes/mislibros/otros/maq-indice.png" loading="lazy" alt="Índice" class="img-clickable img-full" onclick="abrirLightbox(this.src)">
+                    <img src="imagenes/mislibros/otros/maq-galego.png" loading="lazy" alt="Edición en gallego" class="img-clickable img-full" onclick="abrirLightbox(this.src)">
                 </div>
             </div>
 
-            <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: var(--light); border-radius: 10px;">
-                <a href="index.html#libros" style="display: inline-block; background: var(--secondary); color: white; padding: 1rem 2rem; border-radius: 5px; text-decoration: none; font-weight: bold; transition: all 0.3s ease;" onmouseover="this.style.background='#2980b9'" onmouseout="this.style.background='#3498db'">
-                    ← Volver a Mis Libros
-                </a>
+            <div class="light-box">
+                <a href="index.html#libros" class="btn-back">← Volver a Mis Libros</a>
             </div>
         </div>
     </div>
 
-    <footer style="background: var(--primary); color: var(--white); text-align: center; padding: 2rem;">
+    <footer>
         <p>&copy; 2026 Ricardo Gómez. Todos los derechos reservados.</p>
     </footer>
 
-    <!-- Lightbox -->
-    <div id="lightbox" class="lightbox" onclick="cerrarLightbox()">
+    <div class="lightbox" onclick="cerrarLightbox()">
         <span class="lightbox-close">&times;</span>
-        <img id="lightbox-img" src="" loading="lazy" alt="Imagen ampliada">
+        <img src="" alt="Imagen ampliada">
     </div>
 
     <script>
         function abrirLightbox(src) {
-            document.getElementById('lightbox-img').src = src;
-            document.getElementById('lightbox').classList.add('active');
+            const lb = document.querySelector('.lightbox');
+            lb.querySelector('img').src = src;
+            lb.classList.add('active');
             document.body.style.overflow = 'hidden';
         }
         function cerrarLightbox() {
-            document.getElementById('lightbox').classList.remove('active');
+            document.querySelector('.lightbox').classList.remove('active');
             document.body.style.overflow = 'auto';
         }
         document.addEventListener('keydown', function(e) {

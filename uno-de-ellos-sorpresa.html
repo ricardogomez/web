@@ -24,46 +24,37 @@
         </nav>
     </header>
 
-    <div class="container" style="margin-top: 2rem; margin-bottom: 3rem;">
-        <p style="margin-bottom: 2rem; font-weight: bold; text-align: center; font-size: 1.3rem; color: #dc3545;">
-            ¡Has encontrado el secreto! <img src="imagenes/iconos/lupa.svg" alt="" style="width: 28px; height: 28px; vertical-align: middle;">
+    <div class="container mt-2 mb-3">
+        <p class="text-intro">
+            ¡Has encontrado el secreto! <img src="imagenes/iconos/lupa.svg" alt="" class="icon-hover" style="width: 28px; height: 28px; vertical-align: middle;">
         </p>
 
         <h2 class="section-title section-asterisk">*</h2>
         <h2 class="section-title">Uno de Ellos</h2>
 
-        <div style="background: var(--white); padding: 2.5rem; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-
-            <!-- Imagen de la portada del libro con texto -->
-            <div style="display: flex; gap: 2rem; margin-bottom: 2rem; align-items: flex-start;">
-                <div style="flex-shrink: 0;">
-                    <img src="imagenes/mislibros/sm/cub-uno340.jpg" alt="Uno de Ellos"
-                         style="width: 170px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
-                </div>
-                <div style="flex: 1; line-height: 1.8; color: #555;">
-                    <p style="font-style: italic; font-size: 1.15rem; margin-bottom: 0.8rem;">Tengo la suerte de que mis hijos y nietos son buenos lectores.</p>
-                    <p style="font-style: italic; font-size: 1.15rem; margin-bottom: 0.8rem;">Pero además de ello disfrutan con la música y el dibujo.</p>
-                    <p style="font-style: italic; font-size: 1.15rem; margin-bottom: 0.8rem;">A una en especial (en realidad, dos), le encanta dibujar cómics, y a veces se basan en mis libros.</p>
-                    <p style="font-style: italic; font-size: 1.15rem; margin-bottom: 0.8rem;">He aquí los dibujos que hizo con el comienzo de "Uno de ellos".</p>
-                    <p style="font-style: italic; font-size: 1.15rem;">Me emociona...</p>
+        <div class="content-box">
+            <div class="flex-layout mb-2">
+                <img src="imagenes/mislibros/sm/cub-uno340.jpg" alt="Uno de Ellos" class="img-cover">
+                <div class="text-content">
+                    <p class="text-italic mb-1">Tengo la suerte de que mis hijos y nietos son buenos lectores.</p>
+                    <p class="text-italic mb-1">Pero además de ello disfrutan con la música y el dibujo.</p>
+                    <p class="text-italic mb-1">A una en especial (en realidad, dos), le encanta dibujar cómics, y a veces se basan en mis libros.</p>
+                    <p class="text-italic mb-1">He aquí los dibujos que hizo con el comienzo de "Uno de ellos".</p>
+                    <p class="text-italic">Me emociona...</p>
                 </div>
             </div>
 
-            <div style="line-height: 1.8; color: #555; margin-bottom: 2rem;">
-                <div style="text-align: center;">
-                    <img src="imagenes/mislibros/sm/Unodeellos-iruna.jpeg" loading="lazy" alt="Cómic Uno de ellos por Iruna" style="width: 100%; max-width: 800px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                </div>
+            <div class="text-content mb-2 text-center">
+                <img src="imagenes/mislibros/sm/Unodeellos-iruna.jpeg" loading="lazy" alt="Cómic Uno de ellos por Iruna" class="img-rounded" style="width: 100%; max-width: 800px;">
             </div>
 
-            <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: var(--light); border-radius: 10px;">
-                <a href="index.html#libros" style="display: inline-block; background: var(--secondary); color: white; padding: 1rem 2rem; border-radius: 5px; text-decoration: none; font-weight: bold; transition: all 0.3s ease;" onmouseover="this.style.background='#2980b9'" onmouseout="this.style.background='#3498db'">
-                    ← Volver a Mis Libros
-                </a>
+            <div class="light-box">
+                <a href="index.html#libros" class="btn-back">← Volver a Mis Libros</a>
             </div>
         </div>
     </div>
 
-    <footer style="background: var(--primary); color: var(--white); text-align: center; padding: 2rem;">
+    <footer>
         <p>&copy; 2026 Ricardo Gómez. Todos los derechos reservados.</p>
     </footer>
 </body>

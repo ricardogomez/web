@@ -5,37 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El Sueño de Lu Shzu - Contenido Extra - Ricardo Gómez</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        .lightbox {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.9);
-            z-index: 1000;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-        }
-        .lightbox.active {
-            display: flex;
-        }
-        .lightbox img {
-            max-width: 90%;
-            max-height: 90%;
-            border-radius: 4px;
-            box-shadow: 0 0 40px rgba(0,0,0,0.7);
-        }
-        .img-clickable {
-            cursor: pointer;
-            transition: opacity 0.2s;
-        }
-        .img-clickable:hover {
-            opacity: 0.9;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -55,64 +24,57 @@
         </nav>
     </header>
 
-    <div class="container" style="margin-top: 2rem; margin-bottom: 3rem;">
-        <p style="margin-bottom: 2rem; font-weight: bold; text-align: center; font-size: 1.3rem; color: #dc3545;">
-            Veo que eres una persona curiosa... <img src="imagenes/iconos/lupa.svg" alt="" style="width: 28px; height: 28px; vertical-align: middle;">
+    <div class="container mt-2 mb-3">
+        <p class="text-intro">
+            Veo que eres una persona curiosa... <img src="imagenes/iconos/lupa.svg" alt="" class="icon-hover" style="width: 28px; height: 28px; vertical-align: middle;">
         </p>
 
         <h2 class="section-title section-asterisk">*</h2>
         <h2 class="section-title">El Sueño de Lu Shzu</h2>
 
-        <div style="background: var(--white); padding: 2.5rem; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-
-            <!-- Imagen de la portada del libro con texto -->
-            <div style="display: flex; gap: 2rem; margin-bottom: 2rem; align-items: flex-start;">
-                <div style="flex-shrink: 0;">
-                    <img src="imagenes/mislibros/edelvives-ilustrado/luszhu.jpg" alt="El Sueño de Lu Shzu"
-                         style="width: 170px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
-                </div>
-                <div style="flex: 1; line-height: 1.8; color: #555;">
-                    <p style="font-style: italic; font-size: 1.15rem; margin-bottom: 0.8rem;">¡Tres años de trabajo! Este fue el tiempo que dedicó Tesa González a este libro, precioso en todos sus detalles: la tipografía, las imágenes, los efectos visuales, las guardas...</p>
-                    <p style="font-style: italic; font-size: 1.15rem; margin-bottom: 0.8rem;">El libro fue publicado inicialmente por Edelvives, que inexplicablemente lo descatalogó cuando recibió premios, menciones y buenas críticas, y sigue vivo en Brasil, donde recibió el Premio al mejor álbum del año. El libro fue cubierta de uno de los números de CLIJ, y la reseña de abajo, que corresponde a una selección de la OEPLI, lo dice todo.</p>
-                    <p style="font-style: italic; font-size: 1.15rem;">Ahora, buscamos una editorial que sepa apreciar la belleza de este álbum, que sigue teniendo una demanda a la que por desgracia ilustradora y autor no podemos responder.</p>
+        <div class="content-box">
+            <div class="flex-layout mb-2">
+                <img src="imagenes/mislibros/edelvives-ilustrado/luszhu.jpg" alt="El Sueño de Lu Shzu" class="img-rounded" style="width: 170px;">
+                <div class="text-content">
+                    <p class="text-italic mb-1">¡Tres años de trabajo! Este fue el tiempo que dedicó Tesa González a este libro, precioso en todos sus detalles: la tipografía, las imágenes, los efectos visuales, las guardas...</p>
+                    <p class="text-italic mb-1">El libro fue publicado inicialmente por Edelvives, que inexplicablemente lo descatalogó cuando recibió premios, menciones y buenas críticas, y sigue vivo en Brasil, donde recibió el Premio al mejor álbum del año. El libro fue cubierta de uno de los números de CLIJ, y la reseña de abajo, que corresponde a una selección de la OEPLI, lo dice todo.</p>
+                    <p class="text-italic">Ahora, buscamos una editorial que sepa apreciar la belleza de este álbum, que sigue teniendo una demanda a la que por desgracia ilustradora y autor no podemos responder.</p>
                 </div>
             </div>
 
-            <div style="line-height: 1.8; color: #555; margin-bottom: 2rem;">
-                <div style="text-align: center;">
-                    <img src="imagenes/mislibros/edelvives-ilustrado/lushzu-mosaico.png" loading="lazy" alt="Mosaico de El Sueño de Lu Shzu" style="width: 100%; max-width: 1000px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                </div>
+            <div class="text-content mb-2 text-center">
+                <img src="imagenes/mislibros/edelvives-ilustrado/lushzu-mosaico.png" loading="lazy" alt="Mosaico de El Sueño de Lu Shzu" class="img-rounded" style="width: 100%; max-width: 1000px;">
             </div>
 
-            <p style="line-height: 1.8; color: #555; margin-top: 2rem;">Este es uno de los libros que me han dado más satisfacciones. Una ver cómo un libro induce cambios; por ejemplo, en la fabricación de muñecas de trapo. Otra, los encuentros y firmas con mi querida ilustradora.</p>
+            <p class="text-content mt-2">Este es uno de los libros que me han dado más satisfacciones. Una ver cómo un libro induce cambios; por ejemplo, en la fabricación de muñecas de trapo. Otra, los encuentros y firmas con mi querida ilustradora.</p>
 
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;">
-                <img src="imagenes/mislibros/edelvives-ilustrado/lu-muñecas.jpg" loading="lazy" alt="Muñecas de trapo inspiradas en Lu Shzu" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                <img src="imagenes/mislibros/edelvives-ilustrado/lu-ric-tesa-2013.jpg" loading="lazy" alt="Ricardo y Tesa, 2013" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+            <div class="grid-2-equal mt-2">
+                <img src="imagenes/mislibros/edelvives-ilustrado/lu-muñecas.jpg" loading="lazy" alt="Muñecas de trapo inspiradas en Lu Shzu" class="img-clickable img-full" onclick="abrirLightbox(this.src)">
+                <img src="imagenes/mislibros/edelvives-ilustrado/lu-ric-tesa-2013.jpg" loading="lazy" alt="Ricardo y Tesa, 2013" class="img-clickable img-full" onclick="abrirLightbox(this.src)">
             </div>
 
-            <p style="line-height: 1.8; color: #555; margin-top: 2rem;">Y es que los dibujos de Tesa son una delicia, en lo grande y en lo pequeño. Aquí puedes ver tres stickers creados por Joaquín Secall, para su uso en WhatsApp, por ejemplo...</p>
+            <p class="text-content mt-2">Y es que los dibujos de Tesa son una delicia, en lo grande y en lo pequeño. Aquí puedes ver tres stickers creados por Joaquín Secall, para su uso en WhatsApp, por ejemplo...</p>
 
-            <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2rem; margin-top: 1.5rem;">
-                <img src="imagenes/mislibros/edelvives-ilustrado/lu-stick1.png" loading="lazy" alt="Sticker Lu Shzu 1" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                <img src="imagenes/mislibros/edelvives-ilustrado/lu-stick2.png" loading="lazy" alt="Sticker Lu Shzu 2" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                <img src="imagenes/mislibros/edelvives-ilustrado/lu-stick3.png" loading="lazy" alt="Sticker Lu Shzu 3" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+            <div class="grid-3-equal mt-2">
+                <img src="imagenes/mislibros/edelvives-ilustrado/lu-stick1.png" loading="lazy" alt="Sticker Lu Shzu 1" class="img-clickable img-full" onclick="abrirLightbox(this.src)">
+                <img src="imagenes/mislibros/edelvives-ilustrado/lu-stick2.png" loading="lazy" alt="Sticker Lu Shzu 2" class="img-clickable img-full" onclick="abrirLightbox(this.src)">
+                <img src="imagenes/mislibros/edelvives-ilustrado/lu-stick3.png" loading="lazy" alt="Sticker Lu Shzu 3" class="img-clickable img-full" onclick="abrirLightbox(this.src)">
             </div>
 
-            <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: var(--light); border-radius: 10px;">
-                <a href="index.html#libros" style="display: inline-block; background: var(--secondary); color: white; padding: 1rem 2rem; border-radius: 5px; text-decoration: none; font-weight: bold; transition: all 0.3s ease;" onmouseover="this.style.background='#2980b9'" onmouseout="this.style.background='#3498db'">
-                    ← Volver a Mis Libros
-                </a>
+            <div class="light-box">
+                <a href="index.html#libros" class="btn-back">← Volver a Mis Libros</a>
             </div>
         </div>
     </div>
 
-    <footer style="background: var(--primary); color: var(--white); text-align: center; padding: 2rem;">
+    <footer>
         <p>&copy; 2026 Ricardo Gómez. Todos los derechos reservados.</p>
     </footer>
+
     <div class="lightbox" onclick="cerrarLightbox()">
         <img src="" alt="Imagen ampliada">
     </div>
+
     <script>
         function abrirLightbox(src) {
             const lb = document.querySelector('.lightbox');

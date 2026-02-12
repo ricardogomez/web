@@ -5,68 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Los zorros del norte - Contenido Extra - Ricardo Gómez</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Lightbox */
-        .lightbox {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.9);
-            z-index: 1000;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-        }
-        .lightbox.active {
-            display: flex;
-        }
-        .lightbox img {
-            max-width: 90%;
-            max-height: 90%;
-            border-radius: 4px;
-            box-shadow: 0 0 40px rgba(0,0,0,0.7);
-        }
-        .lightbox-close {
-            position: absolute;
-            top: 20px;
-            right: 30px;
-            color: white;
-            font-size: 40px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        .img-clickable {
-            cursor: pointer;
-            transition: transform 0.3s ease;
-        }
-        .img-clickable:hover {
-            transform: scale(1.02);
-        }
-        .image-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1rem;
-            margin-top: 1.5rem;
-        }
-        .image-grid img {
-            width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        }
-        @media (max-width: 768px) {
-            .image-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-        @media (max-width: 480px) {
-            .image-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -86,68 +24,60 @@
         </nav>
     </header>
 
-    <div class="container" style="margin-top: 2rem; margin-bottom: 3rem;">
-        <p style="margin-bottom: 2rem; font-weight: bold; text-align: center; font-size: 1.3rem; color: #dc3545;">
-            ¿Has encontrado un rato para leer...? <img src="imagenes/iconos/pergamino.svg" alt="" style="width: 28px; height: 28px; vertical-align: middle;">
+    <div class="container mt-2 mb-3">
+        <p class="text-intro">
+            ¿Has encontrado un rato para leer...? <img src="imagenes/iconos/pergamino.svg" alt="" class="icon-hover" style="width: 28px; height: 28px; vertical-align: middle;">
         </p>
 
         <h2 class="section-title">Los zorros del norte</h2>
 
-        <div style="background: var(--white); padding: 2.5rem; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-
-            <!-- Imagen de la portada del libro con texto -->
-            <div style="display: flex; gap: 2rem; margin-bottom: 2rem; align-items: flex-start;">
-                <div style="flex-shrink: 0;">
-                    <img src="imagenes/mislibros/edelvives/los-zorros.jpg" alt="Los zorros del norte"
-                         style="width: 220px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
-                </div>
-                <div style="flex: 1; line-height: 1.8; color: #555;">
-                    <p style="font-style: italic; font-size: 1.15rem; margin-bottom: 0.8rem;">Concebí este libro como una historia oral, que podría ser contada en capítulos breves; así es como mi abuelo me contaba historias de niño: un tramo, una pausa para observar una lagartija, otro tramo, otra pausa para contemplar un hormiguero, otro tramo...</p>
-                    <p style="font-style: italic; font-size: 1.15rem; margin-bottom: 0.8rem;">Quería jugar también con cuentos clásicos, y de ahí esa niña que se encuentra con un animal, y sus botitas rojas, y el cazador, y las leyendas...</p>
-                    <p style="font-style: italic; font-size: 1.15rem;">Me encantaron las ilustraciones, tan sencillas y eficaces a la hora de dibujar la nieve.</p>
+        <div class="content-box">
+            <div class="flex-layout mb-2">
+                <img src="imagenes/mislibros/edelvives/los-zorros.jpg" alt="Los zorros del norte" class="img-cover-large">
+                <div class="text-content">
+                    <p class="text-italic mb-1">Concebí este libro como una historia oral, que podría ser contada en capítulos breves; así es como mi abuelo me contaba historias de niño: un tramo, una pausa para observar una lagartija, otro tramo, otra pausa para contemplar un hormiguero, otro tramo...</p>
+                    <p class="text-italic mb-1">Quería jugar también con cuentos clásicos, y de ahí esa niña que se encuentra con un animal, y sus botitas rojas, y el cazador, y las leyendas...</p>
+                    <p class="text-italic">Me encantaron las ilustraciones, tan sencillas y eficaces a la hora de dibujar la nieve.</p>
                 </div>
             </div>
 
-            <div style="line-height: 1.8; color: #555; margin-bottom: 2rem;">
-                <h3 style="text-align: center; color: var(--primary); margin-top: 2rem; margin-bottom: 1.5rem; font-size: 1.4rem;">Primeras páginas e ilustraciones de Ximena Maier</h3>
+            <div class="text-content mb-2">
+                <h3 class="text-highlight mt-2 mb-2">Primeras páginas e ilustraciones de Ximena Maier</h3>
 
-                <!-- Grid de imágenes 3x2 -->
-                <div class="image-grid">
-                    <img src="imagenes/mislibros/edelvives/zorros-cap1.png" loading="lazy" alt="Ilustración zorros capítulo 1" class="img-clickable" onclick="abrirLightbox(this.src)">
-                    <img src="imagenes/mislibros/edelvives/zorros-cap2.png" loading="lazy" alt="Ilustración zorros capítulo 2" class="img-clickable" onclick="abrirLightbox(this.src)">
-                    <img src="imagenes/mislibros/edelvives/zorros-cap3.png" loading="lazy" alt="Ilustración zorros capítulo 3" class="img-clickable" onclick="abrirLightbox(this.src)">
-                    <img src="imagenes/mislibros/edelvives/zorros-01.png" loading="lazy" alt="Ilustración zorros 1" class="img-clickable" onclick="abrirLightbox(this.src)">
-                    <img src="imagenes/mislibros/edelvives/zorros-02.png" loading="lazy" alt="Ilustración zorros 2" class="img-clickable" onclick="abrirLightbox(this.src)">
-                    <img src="imagenes/mislibros/edelvives/zorros-03.png" loading="lazy" alt="Ilustración zorros 3" class="img-clickable" onclick="abrirLightbox(this.src)">
+                <div class="grid-3-equal">
+                    <img src="imagenes/mislibros/edelvives/zorros-cap1.png" loading="lazy" alt="Ilustración zorros capítulo 1" class="img-clickable img-full" onclick="abrirLightbox(this.src)">
+                    <img src="imagenes/mislibros/edelvives/zorros-cap2.png" loading="lazy" alt="Ilustración zorros capítulo 2" class="img-clickable img-full" onclick="abrirLightbox(this.src)">
+                    <img src="imagenes/mislibros/edelvives/zorros-cap3.png" loading="lazy" alt="Ilustración zorros capítulo 3" class="img-clickable img-full" onclick="abrirLightbox(this.src)">
+                    <img src="imagenes/mislibros/edelvives/zorros-01.png" loading="lazy" alt="Ilustración zorros 1" class="img-clickable img-full" onclick="abrirLightbox(this.src)">
+                    <img src="imagenes/mislibros/edelvives/zorros-02.png" loading="lazy" alt="Ilustración zorros 2" class="img-clickable img-full" onclick="abrirLightbox(this.src)">
+                    <img src="imagenes/mislibros/edelvives/zorros-03.png" loading="lazy" alt="Ilustración zorros 3" class="img-clickable img-full" onclick="abrirLightbox(this.src)">
                 </div>
             </div>
 
-            <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: var(--light); border-radius: 10px;">
-                <a href="index.html#libros" style="display: inline-block; background: var(--secondary); color: white; padding: 1rem 2rem; border-radius: 5px; text-decoration: none; font-weight: bold; transition: all 0.3s ease;" onmouseover="this.style.background='#2980b9'" onmouseout="this.style.background='#3498db'">
-                    ← Volver a Mis Libros
-                </a>
+            <div class="light-box">
+                <a href="index.html#libros" class="btn-back">← Volver a Mis Libros</a>
             </div>
         </div>
     </div>
 
-    <footer style="background: var(--primary); color: var(--white); text-align: center; padding: 2rem;">
+    <footer>
         <p>&copy; 2026 Ricardo Gómez. Todos los derechos reservados.</p>
     </footer>
 
-    <!-- Lightbox -->
-    <div id="lightbox" class="lightbox" onclick="cerrarLightbox()">
+    <div class="lightbox" onclick="cerrarLightbox()">
         <span class="lightbox-close">&times;</span>
-        <img id="lightbox-img" src="" loading="lazy" alt="Imagen ampliada">
+        <img src="" alt="Imagen ampliada">
     </div>
 
     <script>
         function abrirLightbox(src) {
-            document.getElementById('lightbox-img').src = src;
-            document.getElementById('lightbox').classList.add('active');
+            const lb = document.querySelector('.lightbox');
+            lb.querySelector('img').src = src;
+            lb.classList.add('active');
             document.body.style.overflow = 'hidden';
         }
         function cerrarLightbox() {
-            document.getElementById('lightbox').classList.remove('active');
+            document.querySelector('.lightbox').classList.remove('active');
             document.body.style.overflow = 'auto';
         }
         document.addEventListener('keydown', function(e) {

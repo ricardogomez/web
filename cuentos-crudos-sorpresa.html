@@ -5,47 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cuentos Crudos - Contenido Extra - Ricardo Gómez</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Lightbox */
-        .lightbox {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.9);
-            z-index: 1000;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-        }
-        .lightbox.active {
-            display: flex;
-        }
-        .lightbox img {
-            max-width: 90%;
-            max-height: 90%;
-            border-radius: 4px;
-            box-shadow: 0 0 40px rgba(0,0,0,0.7);
-        }
-        .lightbox-close {
-            position: absolute;
-            top: 20px;
-            right: 30px;
-            color: white;
-            font-size: 40px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        .img-clickable {
-            cursor: pointer;
-            transition: transform 0.3s ease;
-        }
-        .img-clickable:hover {
-            transform: scale(1.02);
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -65,116 +24,77 @@
         </nav>
     </header>
 
-    <div class="container" style="margin-top: 2rem; margin-bottom: 3rem;">
-        <p style="margin-bottom: 2rem; font-weight: bold; text-align: center; font-size: 1.3rem; color: #dc3545;">
-            Mirando los detalles de las cosas... <img src="imagenes/iconos/lupa.svg" alt="" style="width: 28px; height: 28px; vertical-align: middle;">
+    <div class="container mt-2 mb-3">
+        <p class="text-intro">
+            Mirando los detalles de las cosas... <img src="imagenes/iconos/lupa.svg" alt="" class="icon-hover" style="width: 28px; height: 28px; vertical-align: middle;">
         </p>
 
         <h2 class="section-title section-asterisk">*</h2>
         <h2 class="section-title">Cuentos Crudos</h2>
 
-        <div style="background: var(--white); padding: 2.5rem; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-
-            <!-- Imagen de la portada del libro con texto -->
-            <div style="display: flex; gap: 2rem; margin-bottom: 2rem; align-items: flex-start;">
-                <div style="flex-shrink: 0;">
-                    <img src="imagenes/mislibros/sm/crudos-CUBcompleta.png" alt="Cuentos Crudos"
-                         style="width: 220px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
-                </div>
-                <div style="flex: 1; line-height: 1.8; color: #555;">
-                    <p style="font-style: italic; font-size: 1.15rem; margin-bottom: 0.8rem;">Nueve cuentos situados en diferentes lugares del mundo: desde nuestras calles a las de Lima, de selvas africanas a poblados camboyanos o los campamentos de refugiados saharauis, de Bagdag o Beirut en guerra al interior de la tierra o el fondo del mar...</p>
-                    <p style="font-style: italic; font-size: 1.15rem; margin-bottom: 0.8rem;">Varios de ellos están inspirados en situaciones dramáticas reales y nos muestran cómo las personas sobrevivimos con alegría y esperanza a pesar de las dificultades.</p>
-                    <p style="font-style: italic; font-size: 1.15rem;">El libro se publicó inicialmente como un bellísimo libro-regalo ilustrado por Juan Ramón Alonso y en su versión rústica lleva ya muchas ediciones tanto en España como en Brasil.</p>
+        <div class="content-box">
+            <div class="flex-layout mb-2">
+                <img src="imagenes/mislibros/sm/crudos-CUBcompleta.png" alt="Cuentos Crudos" class="img-cover-large">
+                <div class="text-content">
+                    <p class="text-italic mb-1">Nueve cuentos situados en diferentes lugares del mundo: desde nuestras calles a las de Lima, de selvas africanas a poblados camboyanos o los campamentos de refugiados saharauis, de Bagdag o Beirut en guerra al interior de la tierra o el fondo del mar...</p>
+                    <p class="text-italic mb-1">Varios de ellos están inspirados en situaciones dramáticas reales y nos muestran cómo las personas sobrevivimos con alegría y esperanza a pesar de las dificultades.</p>
+                    <p class="text-italic">El libro se publicó inicialmente como un bellísimo libro-regalo ilustrado por Juan Ramón Alonso y en su versión rústica lleva ya muchas ediciones tanto en España como en Brasil.</p>
                 </div>
             </div>
 
-            <div style="line-height: 1.8; color: #555; margin-bottom: 2rem;">
-                <h3 style="text-align: center; color: var(--primary); margin-top: 2rem; margin-bottom: 1.5rem; font-size: 1.4rem;">Nueve tips sobre nueve cuentos</h3>
+            <div class="text-content mb-2">
+                <h3 class="text-highlight mt-2 mb-2">Nueve tips sobre nueve cuentos</h3>
 
-                <div style="text-align: center; margin-bottom: 2rem;">
-                    <img src="imagenes/mislibros/sm/crudos-tips.png" loading="lazy" alt="Nueve tips sobre nueve cuentos" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; max-width: 900px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                <div class="text-center mb-2">
+                    <img src="imagenes/mislibros/sm/crudos-tips.png" loading="lazy" alt="Nueve tips sobre nueve cuentos" class="img-clickable img-rounded" style="width: 100%; max-width: 900px;" onclick="abrirLightbox(this.src)">
                 </div>
 
-                <h3 style="text-align: center; color: var(--primary); margin-top: 2.5rem; margin-bottom: 1.5rem; font-size: 1.4rem;">Otras curiosidades e ilustraciones de Juan Ramón Alonso para la edición original del libro</h3>
+                <h3 class="text-highlight mt-3 mb-2">Otras curiosidades e ilustraciones de Juan Ramón Alonso para la edición original del libro</h3>
 
-                <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; max-width: 900px; margin-left: auto; margin-right: auto;">
-                    <div style="text-align: center;">
-                        <img src="imagenes/mislibros/sm/crudos-01.png" loading="lazy" alt="Ilustración Cuentos Crudos 1" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                    </div>
-                    <div style="text-align: center;">
-                        <img src="imagenes/mislibros/sm/crudos-02.png" loading="lazy" alt="Ilustración Cuentos Crudos 2" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                    </div>
-                    <div style="text-align: center;">
-                        <img src="imagenes/mislibros/sm/crudos-03.png" loading="lazy" alt="Ilustración Cuentos Crudos 3" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                    </div>
-                    <div style="text-align: center;">
-                        <img src="imagenes/mislibros/sm/crudos-04.png" loading="lazy" alt="Ilustración Cuentos Crudos 4" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                    </div>
-                    <div style="text-align: center;">
-                        <img src="imagenes/mislibros/sm/crudos-05.png" loading="lazy" alt="Ilustración Cuentos Crudos 5" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                    </div>
-                    <div style="text-align: center;">
-                        <img src="imagenes/mislibros/sm/crudos-06.png" loading="lazy" alt="Ilustración Cuentos Crudos 6" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                    </div>
-                    <div style="text-align: center;">
-                        <img src="imagenes/mislibros/sm/crudos-07.png" loading="lazy" alt="Ilustración Cuentos Crudos 7" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                    </div>
-                    <div style="text-align: center;">
-                        <img src="imagenes/mislibros/sm/crudos-08.png" loading="lazy" alt="Ilustración Cuentos Crudos 8" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                    </div>
-                    <div style="text-align: center;">
-                        <img src="imagenes/mislibros/sm/crudos-09.png" loading="lazy" alt="Ilustración Cuentos Crudos 9" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                    </div>
-                    <div style="text-align: center;">
-                        <img src="imagenes/mislibros/sm/crudos-10.png" loading="lazy" alt="Ilustración Cuentos Crudos 10" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                    </div>
-                    <div style="text-align: center;">
-                        <img src="imagenes/mislibros/sm/crudos-11.png" loading="lazy" alt="Ilustración Cuentos Crudos 11" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                    </div>
-                    <div style="text-align: center;">
-                        <img src="imagenes/mislibros/sm/crudos-12.png" loading="lazy" alt="Ilustración Cuentos Crudos 12" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                    </div>
-                    <div style="text-align: center;">
-                        <img src="imagenes/mislibros/sm/crudos-13.png" loading="lazy" alt="Ilustración Cuentos Crudos 13" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                    </div>
-                    <div style="text-align: center;">
-                        <img src="imagenes/mislibros/sm/crudos-14.png" loading="lazy" alt="Ilustración Cuentos Crudos 14" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                    </div>
-                    <div style="text-align: center;">
-                        <img src="imagenes/mislibros/sm/crudos-15.png" loading="lazy" alt="Ilustración Cuentos Crudos 15" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                    </div>
-                    <div style="text-align: center;">
-                        <img src="imagenes/mislibros/sm/crudos-16.png" loading="lazy" alt="Ilustración Cuentos Crudos 16" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                    </div>
+                <div class="grid-4-equal max-w-900">
+                    <img src="imagenes/mislibros/sm/crudos-01.png" loading="lazy" alt="Ilustración Cuentos Crudos 1" class="img-clickable img-full" onclick="abrirLightbox(this.src)">
+                    <img src="imagenes/mislibros/sm/crudos-02.png" loading="lazy" alt="Ilustración Cuentos Crudos 2" class="img-clickable img-full" onclick="abrirLightbox(this.src)">
+                    <img src="imagenes/mislibros/sm/crudos-03.png" loading="lazy" alt="Ilustración Cuentos Crudos 3" class="img-clickable img-full" onclick="abrirLightbox(this.src)">
+                    <img src="imagenes/mislibros/sm/crudos-04.png" loading="lazy" alt="Ilustración Cuentos Crudos 4" class="img-clickable img-full" onclick="abrirLightbox(this.src)">
+                    <img src="imagenes/mislibros/sm/crudos-05.png" loading="lazy" alt="Ilustración Cuentos Crudos 5" class="img-clickable img-full" onclick="abrirLightbox(this.src)">
+                    <img src="imagenes/mislibros/sm/crudos-06.png" loading="lazy" alt="Ilustración Cuentos Crudos 6" class="img-clickable img-full" onclick="abrirLightbox(this.src)">
+                    <img src="imagenes/mislibros/sm/crudos-07.png" loading="lazy" alt="Ilustración Cuentos Crudos 7" class="img-clickable img-full" onclick="abrirLightbox(this.src)">
+                    <img src="imagenes/mislibros/sm/crudos-08.png" loading="lazy" alt="Ilustración Cuentos Crudos 8" class="img-clickable img-full" onclick="abrirLightbox(this.src)">
+                    <img src="imagenes/mislibros/sm/crudos-09.png" loading="lazy" alt="Ilustración Cuentos Crudos 9" class="img-clickable img-full" onclick="abrirLightbox(this.src)">
+                    <img src="imagenes/mislibros/sm/crudos-10.png" loading="lazy" alt="Ilustración Cuentos Crudos 10" class="img-clickable img-full" onclick="abrirLightbox(this.src)">
+                    <img src="imagenes/mislibros/sm/crudos-11.png" loading="lazy" alt="Ilustración Cuentos Crudos 11" class="img-clickable img-full" onclick="abrirLightbox(this.src)">
+                    <img src="imagenes/mislibros/sm/crudos-12.png" loading="lazy" alt="Ilustración Cuentos Crudos 12" class="img-clickable img-full" onclick="abrirLightbox(this.src)">
+                    <img src="imagenes/mislibros/sm/crudos-13.png" loading="lazy" alt="Ilustración Cuentos Crudos 13" class="img-clickable img-full" onclick="abrirLightbox(this.src)">
+                    <img src="imagenes/mislibros/sm/crudos-14.png" loading="lazy" alt="Ilustración Cuentos Crudos 14" class="img-clickable img-full" onclick="abrirLightbox(this.src)">
+                    <img src="imagenes/mislibros/sm/crudos-15.png" loading="lazy" alt="Ilustración Cuentos Crudos 15" class="img-clickable img-full" onclick="abrirLightbox(this.src)">
+                    <img src="imagenes/mislibros/sm/crudos-16.png" loading="lazy" alt="Ilustración Cuentos Crudos 16" class="img-clickable img-full" onclick="abrirLightbox(this.src)">
                 </div>
             </div>
 
-            <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: var(--light); border-radius: 10px;">
-                <a href="index.html#libros" style="display: inline-block; background: var(--secondary); color: white; padding: 1rem 2rem; border-radius: 5px; text-decoration: none; font-weight: bold; transition: all 0.3s ease;" onmouseover="this.style.background='#2980b9'" onmouseout="this.style.background='#3498db'">
-                    &larr; Volver a Mis Libros
-                </a>
+            <div class="light-box">
+                <a href="index.html#libros" class="btn-back">← Volver a Mis Libros</a>
             </div>
         </div>
     </div>
 
-    <footer style="background: var(--primary); color: var(--white); text-align: center; padding: 2rem;">
+    <footer>
         <p>&copy; 2026 Ricardo Gómez. Todos los derechos reservados.</p>
     </footer>
 
-    <!-- Lightbox -->
-    <div id="lightbox" class="lightbox" onclick="cerrarLightbox()">
+    <div class="lightbox" onclick="cerrarLightbox()">
         <span class="lightbox-close">&times;</span>
-        <img id="lightbox-img" src="" loading="lazy" alt="Imagen ampliada">
+        <img src="" alt="Imagen ampliada">
     </div>
 
     <script>
         function abrirLightbox(src) {
-            document.getElementById('lightbox-img').src = src;
-            document.getElementById('lightbox').classList.add('active');
+            const lb = document.querySelector('.lightbox');
+            lb.querySelector('img').src = src;
+            lb.classList.add('active');
             document.body.style.overflow = 'hidden';
         }
         function cerrarLightbox() {
-            document.getElementById('lightbox').classList.remove('active');
+            document.querySelector('.lightbox').classList.remove('active');
             document.body.style.overflow = 'auto';
         }
         document.addEventListener('keydown', function(e) {

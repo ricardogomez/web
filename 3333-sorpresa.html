@@ -5,47 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3333 - Contenido Extra - Ricardo Gómez</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Lightbox */
-        .lightbox {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.9);
-            z-index: 1000;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-        }
-        .lightbox.active {
-            display: flex;
-        }
-        .lightbox img {
-            max-width: 90%;
-            max-height: 90%;
-            border-radius: 4px;
-            box-shadow: 0 0 40px rgba(0,0,0,0.7);
-        }
-        .lightbox-close {
-            position: absolute;
-            top: 20px;
-            right: 30px;
-            color: white;
-            font-size: 40px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        .img-clickable {
-            cursor: pointer;
-            transition: transform 0.3s ease;
-        }
-        .img-clickable:hover {
-            transform: scale(1.02);
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -65,112 +24,103 @@
         </nav>
     </header>
 
-    <div class="container" style="margin-top: 2rem; margin-bottom: 3rem;">
-        <p style="margin-bottom: 2rem; font-weight: bold; text-align: center; font-size: 1.3rem; color: #dc3545;">
-            ¡Has desenrollado el pergamino secreto! <img src="imagenes/iconos/pergamino.svg" alt="" style="width: 28px; height: 28px; vertical-align: middle;">
+    <div class="container mt-2 mb-3">
+        <p class="text-intro">
+            ¡Has desenrollado el pergamino secreto! <img src="imagenes/iconos/pergamino.svg" alt="" class="icon-hover" style="width: 28px; height: 28px; vertical-align: middle;">
         </p>
 
         <h2 class="section-title section-asterisk">*</h2>
         <h2 class="section-title">3333</h2>
 
-        <div style="background: var(--white); padding: 2.5rem; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-
-            <!-- Imagen de la portada del libro con texto -->
-            <div style="display: flex; gap: 2rem; margin-bottom: 2rem; align-items: flex-start;">
-                <div style="flex-shrink: 0;">
-                    <img src="imagenes/mislibros/sm/3333-comp.png" alt="3333"
-                         style="width: 170px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
-                </div>
-                <div style="flex: 1; line-height: 1.8; color: #555;">
-                    <p style="font-style: italic; font-size: 1.15rem; margin-bottom: 0.8rem;">Decidí situar esta historia en el lejano 3333 por razones matemáticas, pensando además que es una fecha fácil de recordar, aparte de capicúa.</p>
-                    <p style="font-style: italic; font-size: 1.15rem; margin-bottom: 0.8rem;">Pero al imaginar el mundo de 3333 tenía que crear escenarios, cachivaches, máquinas y estilos de vida muy diferentes de los actuales.</p>
-                    <p style="font-style: italic; font-size: 1.15rem; margin-bottom: 0.8rem;">Poco a poco, fui creando este mundo, ayudándome de un diccionario para quienes vivimos en una época tan antigua como la nuestra. Es un TRIccionario, como corresponde a la época de 3333.</p>
-                    <p style="font-style: italic; font-size: 1.15rem;">Ahí va...</p>
+        <div class="content-box">
+            <div class="flex-layout mb-2">
+                <img src="imagenes/mislibros/sm/3333-comp.png" alt="3333" class="img-cover">
+                <div class="text-content">
+                    <p class="text-italic mb-1">Decidí situar esta historia en el lejano 3333 por razones matemáticas, pensando además que es una fecha fácil de recordar, aparte de capicúa.</p>
+                    <p class="text-italic mb-1">Pero al imaginar el mundo de 3333 tenía que crear escenarios, cachivaches, máquinas y estilos de vida muy diferentes de los actuales.</p>
+                    <p class="text-italic mb-1">Poco a poco, fui creando este mundo, ayudándome de un diccionario para quienes vivimos en una época tan antigua como la nuestra. Es un TRIccionario, como corresponde a la época de 3333.</p>
+                    <p class="text-italic">Ahí va...</p>
                 </div>
             </div>
 
-            <div style="line-height: 1.8; color: #555; margin-bottom: 2rem;">
-                <div style="margin-top: 2rem; margin-bottom: 1.5rem;">
-                    <div style="text-align: center; margin-bottom: 1rem;">
-                        <img src="imagenes/mislibros/sm/chico-3333dos.jpg" loading="lazy" alt="Ilustración 3333" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 600px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                    </div>
-                    <h3 style="text-align: center; color: var(--primary); font-size: 1.4rem;">PEQUEÑO TRICCIONARIO DE 3333</h3>
+            <div class="text-content mb-2">
+                <div class="text-center mb-1 mt-2">
+                    <img src="imagenes/mislibros/sm/chico-3333dos.jpg" loading="lazy" alt="Ilustración 3333" class="img-clickable img-rounded" style="width: 600px; max-width: 100%;" onclick="abrirLightbox(this.src)">
                 </div>
+                <h3 class="text-highlight mb-2">PEQUEÑO TRICCIONARIO DE 3333</h3>
 
-                <p style="margin-bottom: 1rem;"><strong>Bici</strong> (en realidad, <strong>bicicleta</strong>): Máquina de transporte muy antigua que se mantenía en equilibrio de milagro y que chupaba la fuerza física de las personas a cambio de llevarles de un lugar a otro. Aunque parezca mentira, hace mucho tiempo había carreras de bicicletas, con personas que se dejaban chupar casi toda la fuerza física para ir a sitios que les importaban un pepino.</p>
+                <p class="mb-1"><strong>Bici</strong> (en realidad, <strong>bicicleta</strong>): Máquina de transporte muy antigua que se mantenía en equilibrio de milagro y que chupaba la fuerza física de las personas a cambio de llevarles de un lugar a otro. Aunque parezca mentira, hace mucho tiempo había carreras de bicicletas, con personas que se dejaban chupar casi toda la fuerza física para ir a sitios que les importaban un pepino.</p>
 
-                <p style="margin-bottom: 1rem;"><strong>Biopila</strong>: Fuente de energía. Cápsula con tres clases de bacterias y un regenerador. El funcionamiento es sencillo. Las bacterias A se comen a las B y producen energía eléctrica. Cuando las B han desaparecido, el regenerador comienza a fabricar bacterias C, que devoran a las B produciendo energía eléctrica, y así por muchas generaciones. El proceso continúa con A, B y C hasta que el regenerador muere. El regenerador se alimenta de oxígeno del aire, por lo que las biopilas no funcionan en el espacio. La biopila deja de funcionar cuando las bacterias, hartas de tanta tomadura de pelo, se alían para destruir al regenerador. Pero eso no suele suceder nunca antes de cinco años, que es el tiempo que tardan las bacterias en darse cuenta de lo que ocurre.</p>
+                <p class="mb-1"><strong>Biopila</strong>: Fuente de energía. Cápsula con tres clases de bacterias y un regenerador. El funcionamiento es sencillo. Las bacterias A se comen a las B y producen energía eléctrica. Cuando las B han desaparecido, el regenerador comienza a fabricar bacterias C, que devoran a las B produciendo energía eléctrica, y así por muchas generaciones. El proceso continúa con A, B y C hasta que el regenerador muere. El regenerador se alimenta de oxígeno del aire, por lo que las biopilas no funcionan en el espacio. La biopila deja de funcionar cuando las bacterias, hartas de tanta tomadura de pelo, se alían para destruir al regenerador. Pero eso no suele suceder nunca antes de cinco años, que es el tiempo que tardan las bacterias en darse cuenta de lo que ocurre.</p>
 
-                <p style="margin-bottom: 1rem;"><strong>Blurk</strong>: Lenguaje interestelar. Está basado en una detallada observación de las manos, los labios y, sobre todo, los ojos del interlocutor. Es una evolución del lenguaje de signos que comenzó a utilizarse hace muchos siglos. Se aprende desde que el niño o la niña tiene un año. El blurk permite la comunicación de cualquier persona del mundo, con la sola condición de que una de ellas sepa blurk. Pero hay que decir que casi todas las personas civilizadas lo saben, aunque en situaciones cotidianas manejen su idioma nativo. Se calcula que en 3333 hay 66 lenguas nativas distintas. (Nota: entenderse no significa comprenderse).</p>
+                <p class="mb-1"><strong>Blurk</strong>: Lenguaje interestelar. Está basado en una detallada observación de las manos, los labios y, sobre todo, los ojos del interlocutor. Es una evolución del lenguaje de signos que comenzó a utilizarse hace muchos siglos. Se aprende desde que el niño o la niña tiene un año. El blurk permite la comunicación de cualquier persona del mundo, con la sola condición de que una de ellas sepa blurk. Pero hay que decir que casi todas las personas civilizadas lo saben, aunque en situaciones cotidianas manejen su idioma nativo. Se calcula que en 3333 hay 66 lenguas nativas distintas. (Nota: entenderse no significa comprenderse).</p>
 
-                <p style="margin-bottom: 1rem;"><strong>Cala</strong>: (Comunicador Automático de Largo Alcance) Dispositivo de comunicación personal que se implanta tras la oreja, en el hueco que forman la mandíbula inferior y el cráneo. Tiene el tamaño de un grano de arroz. Sirve para recibir mensajes instantáneamente en cualquier lugar del Universo, gracias a las vibraciones producidas por las ondas Zascandiles (ondas Z). Hasta los 16 años, chicas y chicos deben conectarse al cala cinco horas diarias, para recibir clases de Ciencias, Lenguaje Intergaláctico y Matemáticas. El patiflop y los cascos de la juerga solo se activan si el usuario ha cumplido esta condición.</p>
+                <p class="mb-1"><strong>Cala</strong>: (Comunicador Automático de Largo Alcance) Dispositivo de comunicación personal que se implanta tras la oreja, en el hueco que forman la mandíbula inferior y el cráneo. Tiene el tamaño de un grano de arroz. Sirve para recibir mensajes instantáneamente en cualquier lugar del Universo, gracias a las vibraciones producidas por las ondas Zascandiles (ondas Z). Hasta los 16 años, chicas y chicos deben conectarse al cala cinco horas diarias, para recibir clases de Ciencias, Lenguaje Intergaláctico y Matemáticas. El patiflop y los cascos de la juerga solo se activan si el usuario ha cumplido esta condición.</p>
 
-                <p style="margin-bottom: 1rem;"><strong>Cascos de la juerga</strong>: Mecanismo de escasa inteligencia con forma de casco que adosado al cráneo causa la risa incontrolada de quien se lo coloca. Produce una doble onda: una eléctrica, que estimula las regiones del cerebro que activan la risa tonta; Otra, una onda sonora negativa, que impide que las risotadas del poseedor salgan a más de veinte cm del casco, para impedir el aturdimiento de los que están alrededor. Al comienzo, los cascos de la juerga se hacían del tamaño de la cabeza de los adolescentes, pero cada vez son más los mayores que compran un ingenio de este tipo. Nunca se aconseja llevarlos puestos más de una hora. Pasado este tiempo el casco se desactiva, para no volver irremediablemente bobo al usuario. Evidentemente, una persona puede utilizar solo su casco.</p>
+                <p class="mb-1"><strong>Cascos de la juerga</strong>: Mecanismo de escasa inteligencia con forma de casco que adosado al cráneo causa la risa incontrolada de quien se lo coloca. Produce una doble onda: una eléctrica, que estimula las regiones del cerebro que activan la risa tonta; Otra, una onda sonora negativa, que impide que las risotadas del poseedor salgan a más de veinte cm del casco, para impedir el aturdimiento de los que están alrededor. Al comienzo, los cascos de la juerga se hacían del tamaño de la cabeza de los adolescentes, pero cada vez son más los mayores que compran un ingenio de este tipo. Nunca se aconseja llevarlos puestos más de una hora. Pasado este tiempo el casco se desactiva, para no volver irremediablemente bobo al usuario. Evidentemente, una persona puede utilizar solo su casco.</p>
 
-                <p style="margin-bottom: 1rem;"><strong>Cocibot</strong>: Como su nombre indica, es el cocinero robótico. Los cocibots están en todas las casas, aunque cumplen distintas funciones. Cuando trabajan a máxima potencia, componen los alimentos, los cuecen, los saborizan y los sirven en la mesa. Pero hay casas donde alguien desea cocinar, en cuyo caso el robot solo prepara los alimentos y pone la mesa. También hay casos en los que alguien pone la mesa y el robot se ocupa del resto. La familia puede indicarle por las mañanas qué desean comer y cenar y el cocibot se encarga de todo. Los cocibots recogen la mesa pero no friegan los platos. De esto se encargan unos robots de cuarta categoría que no suelen comunicarse con los humanos. Los fabricantes de fregabots han oído quejas de estos, que afirman que los cocibots los tratan como esclavos.</p>
+                <p class="mb-1"><strong>Cocibot</strong>: Como su nombre indica, es el cocinero robótico. Los cocibots están en todas las casas, aunque cumplen distintas funciones. Cuando trabajan a máxima potencia, componen los alimentos, los cuecen, los saborizan y los sirven en la mesa. Pero hay casas donde alguien desea cocinar, en cuyo caso el robot solo prepara los alimentos y pone la mesa. También hay casos en los que alguien pone la mesa y el robot se ocupa del resto. La familia puede indicarle por las mañanas qué desean comer y cenar y el cocibot se encarga de todo. Los cocibots recogen la mesa pero no friegan los platos. De esto se encargan unos robots de cuarta categoría que no suelen comunicarse con los humanos. Los fabricantes de fregabots han oído quejas de estos, que afirman que los cocibots los tratan como esclavos.</p>
 
-                <p style="margin-bottom: 1rem;"><strong>Duroplast</strong>: Lámina de rarifén comprimida mediante cascadas de ondas plastoplásticas que forman una película fina, transparente y muy resistente. Existen dos tipos de duroplast, los permeables y los impermeables. Pueden ser de colores.</p>
+                <p class="mb-1"><strong>Duroplast</strong>: Lámina de rarifén comprimida mediante cascadas de ondas plastoplásticas que forman una película fina, transparente y muy resistente. Existen dos tipos de duroplast, los permeables y los impermeables. Pueden ser de colores.</p>
 
-                <p style="margin-bottom: 1rem;"><strong>Entrenador</strong>: Robot avanzado que se ocupa de la enseñanza en las escuelas y se hace cargo de un equipo. Hace mucho tiempo que los entrenadores sustituyeron a los maestros, porque estos se cansaban y deprimían mucho con las nuevas generaciones de niños y adolescentes y los robots son casi incansables. La mayoría de los chicos y chicos que van a una escuela desearían algún día desactivar un entrenador. Pero eso no se ha conseguido nunca. (Que se sepa).</p>
+                <p class="mb-1"><strong>Entrenador</strong>: Robot avanzado que se ocupa de la enseñanza en las escuelas y se hace cargo de un equipo. Hace mucho tiempo que los entrenadores sustituyeron a los maestros, porque estos se cansaban y deprimían mucho con las nuevas generaciones de niños y adolescentes y los robots son casi incansables. La mayoría de los chicos y chicos que van a una escuela desearían algún día desactivar un entrenador. Pero eso no se ha conseguido nunca. (Que se sepa).</p>
 
-                <p style="margin-bottom: 1rem;"><strong>Equipo</strong>: Grupo de personas que realizan una tarea juntas. A veces compiten entre sí equipos situados en lugares muy distintos del mundo. Los estudiantes de 3333 trabajan siempre en equipos, dirigidos por un entrenador que está con ellos 3 horas diarias. (Pasadas 3 horas con adolescentes, el entrenador debe someterse a una revisión psicorobótica de 2 horas. Además, se ha comprobado que si los adolescentes están más de 3 horas juntos comienzan a maquinar pillerías.)</p>
+                <p class="mb-1"><strong>Equipo</strong>: Grupo de personas que realizan una tarea juntas. A veces compiten entre sí equipos situados en lugares muy distintos del mundo. Los estudiantes de 3333 trabajan siempre en equipos, dirigidos por un entrenador que está con ellos 3 horas diarias. (Pasadas 3 horas con adolescentes, el entrenador debe someterse a una revisión psicorobótica de 2 horas. Además, se ha comprobado que si los adolescentes están más de 3 horas juntos comienzan a maquinar pillerías.)</p>
 
-                <div style="float: left; margin: 0 2rem 1rem 0; text-align: center;">
-                    <img src="imagenes/mislibros/sm/3333.jpg" loading="lazy" alt="Portada original de 3333" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 250px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                <div class="img-float-left text-center">
+                    <img src="imagenes/mislibros/sm/3333.jpg" loading="lazy" alt="Portada original de 3333" class="img-clickable img-rounded" style="width: 250px;" onclick="abrirLightbox(this.src)">
                     <span style="color: var(--accent); font-size: 2rem; font-weight: bold;">*</span>
                 </div>
 
-                <p style="margin-bottom: 1rem;"><strong>Esfera</strong>: Dispositivo para realizar viajes interestelares, superando la barrera del tiempo. Una esfera puede trasladarse instantáneamente a cualquier lugar del Universo utilizando la energía de un agujero negro del tamaño de un núcleo atómico, atravesando cinco de las nueve dimensiones que tiene el Universo. En realidad, ni los científicos saben cómo funciona, pero el caso es que funciona. Una esfera identifica a un usuario utilizando la voz, el iris del ojo y la forma de la oreja, de modo que no puede ser suplantado. Solo las personas mayores de 18 años pueden utilizar esferas porque, cuando se inventaron, los adolescentes utilizaban las esferas en asuntos poco serios, como acercarse a las singularidades de los grandes agujeros negros y estirar sus cuerpos como espaguetis. Como había que gastar demasiada energía en sacarlos de allí y devolverles la forma original, se les prohibió el uso. Hace 200 años hubo una gran rebelión y los científicos de las FUD se apresuraron en inventar el patiflop y los cascos de la juerga, que al principio fueron recibidos bien por los jóvenes pero que al cabo del tiempo se convirtieron en nuevos problemas. Quien, a pesar de todo, intenta utilizar mal una esfera, es condenado a no salir del Sistema Solar durante siete años. (Las esferas también se llaman cápsulas viclu, pero esto se considera una pedantería.)</p>
+                <p class="mb-1"><strong>Esfera</strong>: Dispositivo para realizar viajes interestelares, superando la barrera del tiempo. Una esfera puede trasladarse instantáneamente a cualquier lugar del Universo utilizando la energía de un agujero negro del tamaño de un núcleo atómico, atravesando cinco de las nueve dimensiones que tiene el Universo. En realidad, ni los científicos saben cómo funciona, pero el caso es que funciona. Una esfera identifica a un usuario utilizando la voz, el iris del ojo y la forma de la oreja, de modo que no puede ser suplantado. Solo las personas mayores de 18 años pueden utilizar esferas porque, cuando se inventaron, los adolescentes utilizaban las esferas en asuntos poco serios, como acercarse a las singularidades de los grandes agujeros negros y estirar sus cuerpos como espaguetis. Como había que gastar demasiada energía en sacarlos de allí y devolverles la forma original, se les prohibió el uso. Hace 200 años hubo una gran rebelión y los científicos de las FUD se apresuraron en inventar el patiflop y los cascos de la juerga, que al principio fueron recibidos bien por los jóvenes pero que al cabo del tiempo se convirtieron en nuevos problemas. Quien, a pesar de todo, intenta utilizar mal una esfera, es condenado a no salir del Sistema Solar durante siete años. (Las esferas también se llaman cápsulas viclu, pero esto se considera una pedantería.)</p>
 
-                <p style="margin-bottom: 1rem;"><strong>FUD</strong>: Fábrica Universal de Diversiones. Es la mayor empresa del Universo en el siglo XXXIV. Como la gente vive mucho tiempo y no tiene que trabajar demasiado porque hay robots para todo, uno de los principales problemas es que la gente esté entretenida. Se calcula que el 99,99% de los científicos del Mundo no hace otra cosa que inventar entretenimientos que a veces son bastante aburridos.</p>
+                <p class="mb-1"><strong>FUD</strong>: Fábrica Universal de Diversiones. Es la mayor empresa del Universo en el siglo XXXIV. Como la gente vive mucho tiempo y no tiene que trabajar demasiado porque hay robots para todo, uno de los principales problemas es que la gente esté entretenida. Se calcula que el 99,99% de los científicos del Mundo no hace otra cosa que inventar entretenimientos que a veces son bastante aburridos.</p>
 
-                <p style="margin-bottom: 1rem;"><strong>Holopadre</strong>, <strong>holomadre</strong> (en general, <strong>holopersona</strong>): Imagen en tres dimensiones de una persona, grabada mediante ondas sonoras y laséricas. Estas imágenes no pueden superar nunca los 30 cm de altura, para que nadie pueda falsificar a una persona auténtica. (En el caso de los animales, este límite no existe, pero solo se pueden holograbar los bichos más pequeños que un gato.)</p>
+                <p class="mb-1"><strong>Holopadre</strong>, <strong>holomadre</strong> (en general, <strong>holopersona</strong>): Imagen en tres dimensiones de una persona, grabada mediante ondas sonoras y laséricas. Estas imágenes no pueden superar nunca los 30 cm de altura, para que nadie pueda falsificar a una persona auténtica. (En el caso de los animales, este límite no existe, pero solo se pueden holograbar los bichos más pequeños que un gato.)</p>
 
-                <p style="margin-bottom: 1rem;"><strong>John Silver</strong>: (Su nombre completo es <strong>Long John Silver</strong>). Pirata, personaje de un libro publicado nada menos que en 1883 por Robert L. Stevenson. Esta novela, cuyo protagonista es un chico llamado Jim, trata de la búsqueda de un tesoro enterrado. John Silver representa el mal.</p>
+                <p class="mb-1"><strong>John Silver</strong>: (Su nombre completo es <strong>Long John Silver</strong>). Pirata, personaje de un libro publicado nada menos que en 1883 por Robert L. Stevenson. Esta novela, cuyo protagonista es un chico llamado Jim, trata de la búsqueda de un tesoro enterrado. John Silver representa el mal.</p>
 
-                <p style="margin-bottom: 1rem;"><strong>Luz negra</strong>: Emisión radioeléctrica que crea oscuridad a su alrededor. En realidad, sirve solo para ocultar cosas. Por ejemplo, las trampas de electroratones que se dejan en las calles por la noche.</p>
+                <p class="mb-1"><strong>Luz negra</strong>: Emisión radioeléctrica que crea oscuridad a su alrededor. En realidad, sirve solo para ocultar cosas. Por ejemplo, las trampas de electroratones que se dejan en las calles por la noche.</p>
 
-                <p style="margin-bottom: 1rem;"><strong>Patiflop</strong>: Contracción de «patín robotizado». Solo los chicos y chicas menores de 16 años pueden manejar un patiflop. Durante muchos años, los adolescentes utilizaron estas máquinas para trepar por las fachadas de las casas, lo que provocó numerosos accidentes. Actualmente, la ley obliga a los fabricantes a que ningún patiflop pueda levantarse más de diez centímetros del suelo.</p>
+                <p class="mb-1"><strong>Patiflop</strong>: Contracción de «patín robotizado». Solo los chicos y chicas menores de 16 años pueden manejar un patiflop. Durante muchos años, los adolescentes utilizaron estas máquinas para trepar por las fachadas de las casas, lo que provocó numerosos accidentes. Actualmente, la ley obliga a los fabricantes a que ningún patiflop pueda levantarse más de diez centímetros del suelo.</p>
 
-                <p style="margin-bottom: 1rem;"><strong>Rarifén</strong>: Ver Duroplast.</p>
+                <p class="mb-1"><strong>Rarifén</strong>: Ver Duroplast.</p>
 
-                <p style="margin-bottom: 1rem;"><strong>POCO</strong>: (Poderoso Ordenador Completamente Organizado). Biorrobot que tiene respuestas a todas las preguntas. Nadie ha visto nunca a POCO, por lo que hay muchas leyendas sobre él. Se dice que surgió de un accidente, en el que el cerebro de una gallina comenzó a crecer y a crecer sin que nadie pudiera impedirlo. Se hizo tan grande como un campo de electrofútbol y alguien pensó en darle alguna utilidad. Pero esto, se insiste, es una leyenda.</p>
+                <p class="mb-1"><strong>POCO</strong>: (Poderoso Ordenador Completamente Organizado). Biorrobot que tiene respuestas a todas las preguntas. Nadie ha visto nunca a POCO, por lo que hay muchas leyendas sobre él. Se dice que surgió de un accidente, en el que el cerebro de una gallina comenzó a crecer y a crecer sin que nadie pudiera impedirlo. Se hizo tan grande como un campo de electrofútbol y alguien pensó en darle alguna utilidad. Pero esto, se insiste, es una leyenda.</p>
 
-                <p style="margin-bottom: 1rem;"><strong>Robomano</strong>: Mezcla de robot y de humano. Su construcción está prohibida por la ley. Se ha comprobado que nadie ha fabricado nunca un robomano con buenos propósitos. Más bien, sus fabricantes siempre piensan en cosas malas, con lo que unen lo peor del ser humano con lo peor de las máquinas. Fabricar uno está castigado con penas de veinte años de reclusión en el interior de una cápsula de duroplast en una charca de electrocodrilos.</p>
+                <p class="mb-1"><strong>Robomano</strong>: Mezcla de robot y de humano. Su construcción está prohibida por la ley. Se ha comprobado que nadie ha fabricado nunca un robomano con buenos propósitos. Más bien, sus fabricantes siempre piensan en cosas malas, con lo que unen lo peor del ser humano con lo peor de las máquinas. Fabricar uno está castigado con penas de veinte años de reclusión en el interior de una cápsula de duroplast en una charca de electrocodrilos.</p>
 
-                <p style="margin-bottom: 1rem;"><strong>Rome</strong>: (Robot Médico). Todas las familias tienen un rome doméstico que vive en un cubo de agua, de la que se alimenta. Es una masa parecida a la gelatina que se coloca sobre la tripa del enfermo y que detecta si hay fiebre y la causa de la enfermedad, administrando a través de la piel el remedio correspondiente. En caso de heridas leves, repta hacia el lugar y las cura. En los hospitales hay romes para realizar trabajos serios, como recomponer seres humanos estropeados en algún accidente o sustituir órganos caducados.</p>
+                <p class="mb-1"><strong>Rome</strong>: (Robot Médico). Todas las familias tienen un rome doméstico que vive en un cubo de agua, de la que se alimenta. Es una masa parecida a la gelatina que se coloca sobre la tripa del enfermo y que detecta si hay fiebre y la causa de la enfermedad, administrando a través de la piel el remedio correspondiente. En caso de heridas leves, repta hacia el lugar y las cura. En los hospitales hay romes para realizar trabajos serios, como recomponer seres humanos estropeados en algún accidente o sustituir órganos caducados.</p>
 
-                <p style="margin-bottom: 1rem;"><strong>Viclu</strong>: Ver Esfera.</p>
+                <p class="mb-1"><strong>Viclu</strong>: Ver Esfera.</p>
 
-                <p style="margin-top: 2rem; margin-bottom: 1rem; font-size: 0.9rem; color: #666;"><span style="color: var(--accent); font-weight: bold;">(*)</span> Esta fue la cubierta de la primera edición de este libro, y de muchas reimpresiones sucesivas. Fue hecha, como podréis adivinar, por Tesa González. Añoro este dibujo de cubierta.</p>
+                <p class="mt-2 mb-1" style="font-size: 0.9rem; color: #666;"><span style="color: var(--accent); font-weight: bold;">(*)</span> Esta fue la cubierta de la primera edición de este libro, y de muchas reimpresiones sucesivas. Fue hecha, como podréis adivinar, por Tesa González. Añoro este dibujo de cubierta.</p>
             </div>
 
-            <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: var(--light); border-radius: 10px;">
-                <a href="index.html#libros" style="display: inline-block; background: var(--secondary); color: white; padding: 1rem 2rem; border-radius: 5px; text-decoration: none; font-weight: bold; transition: all 0.3s ease;" onmouseover="this.style.background='#2980b9'" onmouseout="this.style.background='#3498db'">
-                    ← Volver a Mis Libros
-                </a>
+            <div class="light-box">
+                <a href="index.html#libros" class="btn-back">← Volver a Mis Libros</a>
             </div>
         </div>
     </div>
 
-    <footer style="background: var(--primary); color: var(--white); text-align: center; padding: 2rem;">
+    <footer>
         <p>&copy; 2026 Ricardo Gómez. Todos los derechos reservados.</p>
     </footer>
 
-    <!-- Lightbox -->
-    <div id="lightbox" class="lightbox" onclick="cerrarLightbox()">
+    <div class="lightbox" onclick="cerrarLightbox()">
         <span class="lightbox-close">&times;</span>
-        <img id="lightbox-img" src="" loading="lazy" alt="Imagen ampliada">
+        <img src="" alt="Imagen ampliada">
     </div>
 
     <script>
         function abrirLightbox(src) {
-            document.getElementById('lightbox-img').src = src;
-            document.getElementById('lightbox').classList.add('active');
+            const lb = document.querySelector('.lightbox');
+            lb.querySelector('img').src = src;
+            lb.classList.add('active');
             document.body.style.overflow = 'hidden';
         }
         function cerrarLightbox() {
-            document.getElementById('lightbox').classList.remove('active');
+            document.querySelector('.lightbox').classList.remove('active');
             document.body.style.overflow = 'auto';
         }
         document.addEventListener('keydown', function(e) {
