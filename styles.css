@@ -484,6 +484,18 @@ article::after {
     height: 60px;
 }
 
+.contact-cita {
+    text-align: center;
+    padding: 1.5rem 2rem;
+    background: var(--white);
+}
+
+.contact-cita-img {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+}
+
 /* Footer */
 footer {
     background: var(--primary);
