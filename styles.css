@@ -464,18 +464,19 @@ footer a:hover {
 .footer-social {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    max-width: 500px;
-    margin: 0 auto 2rem;
+    gap: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto 2.5rem;
 }
 
 .footer-social-link {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
+    gap: 0.8rem;
     opacity: 0.9;
     transition: all 0.3s ease;
+    padding: 1rem;
 }
 
 .footer-social-link:hover {
@@ -483,24 +484,24 @@ footer a:hover {
 }
 
 .footer-social-icon {
-    width: 20px;
-    height: 20px;
+    width: 32px;
+    height: 32px;
     filter: brightness(0) invert(1);
     transition: transform 0.3s ease;
 }
 
 .footer-social-link:hover .footer-social-icon {
-    transform: scale(1.1);
+    transform: scale(1.15);
 }
 
 .footer-social-text {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
 }
 
 /* Footer - Enlace fotos destacado */
 .footer-photos {
-    margin: 2rem 0;
-    padding: 1.2rem 0;
+    margin: 2.5rem 0;
+    padding: 1.5rem 0;
     border-top: 1px solid rgba(255,255,255,0.15);
     border-bottom: 1px solid rgba(255,255,255,0.15);
 }
@@ -508,13 +509,13 @@ footer a:hover {
 .footer-photos-link {
     display: inline-flex;
     align-items: center;
-    gap: 0.6rem;
-    font-size: 1rem;
+    gap: 0.8rem;
+    font-size: 1.2rem;
     font-weight: 500;
-    letter-spacing: 1px;
-    padding: 0.6rem 1.2rem;
-    border: 1px solid rgba(255,255,255,0.3);
-    border-radius: 20px;
+    letter-spacing: 1.5px;
+    padding: 0.8rem 1.8rem;
+    border: 2px solid rgba(255,255,255,0.4);
+    border-radius: 25px;
     transition: all 0.3s ease;
 }
 
@@ -525,8 +526,8 @@ footer a:hover {
 }
 
 .footer-photos-icon {
-    width: 18px;
-    height: 18px;
+    width: 24px;
+    height: 24px;
     filter: brightness(0) invert(1);
     transition: filter 0.3s ease;
 }
@@ -537,18 +538,18 @@ footer a:hover {
 
 /* Footer - Copyright */
 .footer-copyright {
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     padding-top: 1.5rem;
     border-top: 1px solid rgba(255,255,255,0.1);
     font-size: 0.85rem;
     opacity: 0.6;
-    line-height: 1.6;
+    line-height: 1.8;
 }
 
 @media (max-width: 768px) {
     .footer-social {
         grid-template-columns: 1fr;
-        max-width: 250px;
+        max-width: 280px;
     }
 }
 
