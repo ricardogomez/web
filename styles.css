@@ -487,7 +487,6 @@ article::after {
 .contact-cita {
     text-align: center;
     padding: 1.5rem 2rem;
-    background: var(--white);
 }
 
 .contact-cita-img {
