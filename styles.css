@@ -487,10 +487,11 @@ article::after {
 .contact-cita {
     text-align: center;
     padding: 1.5rem 2rem;
+    background: linear-gradient(135deg, var(--primary) 0%, #1a3a4a 100%);
 }
 
 .contact-cita-img {
-    max-width: 600px;
+    max-width: 900px;
     width: 100%;
     height: auto;
 }
