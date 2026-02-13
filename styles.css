@@ -431,9 +431,9 @@ article::after {
     }
 }
 
-/* Contact wrapper - contiene hero + footer en 100vh */
+/* Contact wrapper - contiene hero + footer en 100vh menos header */
 .contact-wrapper {
-    min-height: 100vh;
+    min-height: calc(100vh - 70px);
     display: flex;
     flex-direction: column;
 }
@@ -441,14 +441,28 @@ article::after {
 .contact-hero {
     background: linear-gradient(135deg, var(--primary) 0%, #1a3a4a 100%);
     color: var(--white);
-    padding: 3rem 2rem 2rem;
+    padding: 1.5rem 2rem 1rem;
     text-align: center;
     position: relative;
 }
 
 .contact-hero .hero-content h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+}
+
+.contact-hero .hero-content .hero-subtitle {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.contact-hero .hero-content .hero-tagline {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+}
+
+.contact-hero .hero-content .hero-tagline-small {
+    font-size: 0.95rem;
 }
 
 .contact-hero .hero-icons {
@@ -456,14 +470,24 @@ article::after {
     bottom: auto;
     left: auto;
     transform: none;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
+}
+
+.contact-hero .icon-blog {
+    width: 32px;
+    height: 32px;
+}
+
+.contact-hero .icon-blog-large {
+    width: 60px;
+    height: 60px;
 }
 
 /* Footer */
 footer {
     background: var(--primary);
     color: var(--white);
-    padding: 3rem 0 2rem;
+    padding: 1.5rem 0 1rem;
     text-align: center;
     flex: 1;
     display: flex;
@@ -472,8 +496,8 @@ footer {
 }
 
 footer h3 {
-    margin-bottom: 2rem;
-    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
     letter-spacing: 0.5px;
 }
 
@@ -496,19 +520,19 @@ footer a:hover {
 .footer-social {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-    max-width: 900px;
-    margin: 0 auto 2.5rem;
+    gap: 0.5rem;
+    max-width: 700px;
+    margin: 0 auto 1rem;
 }
 
 .footer-social-link {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.8rem;
+    gap: 0.4rem;
     opacity: 0.9;
     transition: all 0.3s ease;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 .footer-social-link:hover {
@@ -516,8 +540,8 @@ footer a:hover {
 }
 
 .footer-social-icon {
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     filter: brightness(0) invert(1);
     transition: transform 0.3s ease;
 }
@@ -527,13 +551,13 @@ footer a:hover {
 }
 
 .footer-social-text {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
 }
 
 /* Footer - Enlace fotos destacado */
 .footer-photos {
-    margin: 2.5rem 0;
-    padding: 1.5rem 0;
+    margin: 1rem 0;
+    padding: 0.8rem 0;
     border-top: 1px solid rgba(255,255,255,0.15);
     border-bottom: 1px solid rgba(255,255,255,0.15);
 }
@@ -570,12 +594,12 @@ footer a:hover {
 
 /* Footer - Copyright */
 .footer-copyright {
-    margin-top: 2rem;
-    padding-top: 1.5rem;
+    margin-top: 1rem;
+    padding-top: 0.8rem;
     border-top: 1px solid rgba(255,255,255,0.1);
-    font-size: 1.1rem;
+    font-size: 0.95rem;
     opacity: 0.7;
-    line-height: 1.8;
+    line-height: 1.6;
 }
 
 @media (max-width: 768px) {
