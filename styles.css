@@ -431,13 +431,41 @@ article::after {
     }
 }
 
+/* Contact wrapper - contiene hero + footer en 100vh */
+.contact-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-hero {
+    background: linear-gradient(135deg, var(--primary) 0%, #1a3a4a 100%);
+    color: var(--white);
+    padding: 3rem 2rem 2rem;
+    text-align: center;
+    position: relative;
+}
+
+.contact-hero .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-hero .hero-icons {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    transform: none;
+    margin-top: 1.5rem;
+}
+
 /* Footer */
 footer {
     background: var(--primary);
     color: var(--white);
-    padding: 4rem 0 2rem;
+    padding: 3rem 0 2rem;
     text-align: center;
-    min-height: 100vh;
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
