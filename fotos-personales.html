@@ -65,81 +65,81 @@
         </nav>
     </header>
 
-    <div class="container" style="margin-top: 2rem; margin-bottom: 3rem;">
+    <div class="container mt-2 mb-3">
         <!-- Breadcrumbs -->
-        <div style="margin-bottom: 2rem; font-size: 0.9rem; color: #666;">
-            <a href="index.html" style="color: var(--secondary); text-decoration: none; transition: color 0.3s ease;" onmouseover="this.style.color='#2980b9'" onmouseout="this.style.color='#3498db'">Inicio</a>
-            <span style="margin: 0 0.5rem; color: #999;">›</span>
-            <a href="index.html#biografia" style="color: var(--secondary); text-decoration: none; transition: color 0.3s ease;" onmouseover="this.style.color='#2980b9'" onmouseout="this.style.color='#3498db'">Mi Biografía</a>
-            <span style="margin: 0 0.5rem; color: #999;">›</span>
-            <span style="color: #333; font-weight: 500;">Fotos personales</span>
+        <div class="breadcrumbs">
+            <a href="index.html">Inicio</a>
+            <span class="separator">›</span>
+            <a href="index.html#biografia">Mi Biografía</a>
+            <span class="separator">›</span>
+            <span class="current">Fotos personales</span>
         </div>
 
         <h2 class="section-title section-asterisk">*</h2>
         <h2 class="section-title">¿Te has atrevido? Pues ahí van algunas fotos...</h2>
         <p class="section-subtitle">Imágenes personales</p>
 
-        <div style="background: var(--white); padding: 2.5rem; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+        <div class="content-box">
 
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
-                <div style="text-align: center;">
-                    <img src="imagenes/biografia/img-2418.jpg" loading="lazy" alt="Ricardo Gómez" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+            <div class="foto-grid">
+                <div class="text-center">
+                    <img src="imagenes/biografia/img-2418.jpg" loading="lazy" alt="Ricardo Gómez" class="img-clickable" onclick="abrirLightbox(this.src)">
                 </div>
 
-                <div style="text-align: center;">
-                    <img src="imagenes/biografia/fotoparabio.jpg" loading="lazy" alt="Ricardo Gómez" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                <div class="text-center">
+                    <img src="imagenes/biografia/fotoparabio.jpg" loading="lazy" alt="Ricardo Gómez" class="img-clickable" onclick="abrirLightbox(this.src)">
                 </div>
 
-                <div style="text-align: center;">
-                    <img src="imagenes/biografia/esqueleto-para-mi-bio-con-libro.jpg" loading="lazy" alt="Ricardo Gómez" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                <div class="text-center">
+                    <img src="imagenes/biografia/esqueleto-para-mi-bio-con-libro.jpg" loading="lazy" alt="Ricardo Gómez" class="img-clickable" onclick="abrirLightbox(this.src)">
                 </div>
 
-                <div style="text-align: center;">
-                    <img src="imagenes/biografia/Ricardo_sahara.JPG" loading="lazy" alt="Ricardo Gómez" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                <div class="text-center">
+                    <img src="imagenes/biografia/Ricardo_sahara.JPG" loading="lazy" alt="Ricardo Gómez" class="img-clickable" onclick="abrirLightbox(this.src)">
                 </div>
 
-                <div style="text-align: center;">
-                    <img src="imagenes/biografia/img-0306.jpg" loading="lazy" alt="Ricardo Gómez" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                <div class="text-center">
+                    <img src="imagenes/biografia/img-0306.jpg" loading="lazy" alt="Ricardo Gómez" class="img-clickable" onclick="abrirLightbox(this.src)">
                 </div>
 
-                <div style="text-align: center;">
-                    <img src="imagenes/biografia/Ricardo-en-Islandia2.JPG" loading="lazy" alt="Ricardo Gómez" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                <div class="text-center">
+                    <img src="imagenes/biografia/Ricardo-en-Islandia2.JPG" loading="lazy" alt="Ricardo Gómez" class="img-clickable" onclick="abrirLightbox(this.src)">
                 </div>
 
-                <div style="text-align: center;">
-                    <img src="imagenes/biografia/Ricardo_charla2.jpg" loading="lazy" alt="Ricardo Gómez" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                <div class="text-center">
+                    <img src="imagenes/biografia/Ricardo_charla2.jpg" loading="lazy" alt="Ricardo Gómez" class="img-clickable" onclick="abrirLightbox(this.src)">
                 </div>
 
-                <div style="text-align: center;">
-                    <img src="imagenes/biografia/Ricardo-cazador-estrellas2.jpg" loading="lazy" alt="Ricardo Gómez" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                <div class="text-center">
+                    <img src="imagenes/biografia/Ricardo-cazador-estrellas2.jpg" loading="lazy" alt="Ricardo Gómez" class="img-clickable" onclick="abrirLightbox(this.src)">
                 </div>
 
-                <div style="text-align: center;">
-                    <img src="imagenes/biografia/Ricardo-jardín2.jpg" loading="lazy" alt="Ricardo Gómez" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                <div class="text-center">
+                    <img src="imagenes/biografia/Ricardo-jardín2.jpg" loading="lazy" alt="Ricardo Gómez" class="img-clickable" onclick="abrirLightbox(this.src)">
                 </div>
 
-                <div style="text-align: center;">
-                    <img src="imagenes/biografia/Ricardo_edimburgo_castillo2.jpg" loading="lazy" alt="Ricardo Gómez" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                <div class="text-center">
+                    <img src="imagenes/biografia/Ricardo_edimburgo_castillo2.jpg" loading="lazy" alt="Ricardo Gómez" class="img-clickable" onclick="abrirLightbox(this.src)">
                 </div>
 
-                <div style="text-align: center;">
-                    <img src="imagenes/biografia/Ricardo_icebergs2.JPG" loading="lazy" alt="Ricardo Gómez" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                <div class="text-center">
+                    <img src="imagenes/biografia/Ricardo_icebergs2.JPG" loading="lazy" alt="Ricardo Gómez" class="img-clickable" onclick="abrirLightbox(this.src)">
                 </div>
 
-                <div style="text-align: center;">
-                    <img src="imagenes/biografia/Ricardo_marsam2.jpg" loading="lazy" alt="Ricardo Gómez" class="img-clickable" onclick="abrirLightbox(this.src)" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                <div class="text-center">
+                    <img src="imagenes/biografia/Ricardo_marsam2.jpg" loading="lazy" alt="Ricardo Gómez" class="img-clickable" onclick="abrirLightbox(this.src)">
                 </div>
             </div>
 
-            <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: var(--light); border-radius: 10px;">
-                <a href="index.html#biografia" style="display: inline-block; background: var(--secondary); color: white; padding: 1rem 2rem; border-radius: 5px; text-decoration: none; font-weight: bold; transition: all 0.3s ease;" onmouseover="this.style.background='#2980b9'" onmouseout="this.style.background='#3498db'">
+            <div class="light-box">
+                <a href="index.html#biografia" class="btn-back">
                     ← Volver a Biografía
                 </a>
             </div>
         </div>
     </div>
 
-    <footer style="background: var(--primary); color: var(--white); text-align: center; padding: 2rem;">
+    <footer class="section-header-primary">
         <p>&copy; 2026 Ricardo Gómez. Todos los derechos reservados.</p>
     </footer>
 
