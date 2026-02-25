@@ -1258,6 +1258,8 @@
                 const category = card.getAttribute('data-category');
                 if (category === filter) {
                     card.classList.remove('hidden');
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
                 } else {
                     card.classList.add('hidden');
                 }
