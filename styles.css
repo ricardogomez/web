@@ -175,6 +175,10 @@ nav {
     gap: 2.5rem;
 }
 
+.book-card.hidden {
+    display: none;
+}
+
 .book-card {
     background: var(--white);
     border-radius: 12px;
