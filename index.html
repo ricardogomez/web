@@ -33,14 +33,14 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav aria-label="Navegación principal">
             <a href="#" class="logo"></a>
-            <div class="menu-toggle" onclick="toggleMenu()">
+            <div class="menu-toggle" onclick="toggleMenu()" role="button" tabindex="0" aria-label="Abrir menú" aria-expanded="false" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleMenu()}">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-            <ul class="nav-links">
+            <ul class="nav-links" role="menubar">
                 <li><a href="#inicio" onclick="closeMenu()">Inicio</a></li>
                 <li><a href="#biografia" onclick="closeMenu()">Mi Biografía</a></li>
                 <li><a href="#libros" onclick="closeMenu()">Mis Libros</a></li>
@@ -55,12 +55,16 @@
     </header>
     <script>
         function toggleMenu() {
-            document.querySelector('.menu-toggle').classList.toggle('active');
+            const toggle = document.querySelector('.menu-toggle');
+            toggle.classList.toggle('active');
             document.querySelector('.nav-links').classList.toggle('active');
+            toggle.setAttribute('aria-expanded', toggle.classList.contains('active'));
         }
         function closeMenu() {
-            document.querySelector('.menu-toggle').classList.remove('active');
+            const toggle = document.querySelector('.menu-toggle');
+            toggle.classList.remove('active');
             document.querySelector('.nav-links').classList.remove('active');
+            toggle.setAttribute('aria-expanded', 'false');
         }
     </script>
 
@@ -220,7 +224,7 @@
 
             <!-- Cuentos Crudos -->
             <div class="book-card" data-category="juvenil">
-                <img src="imagenes/mislibros/sm/crudos-CUB.png" alt="Cuentos Crudos" class="book-cover">
+                <img src="imagenes/mislibros/sm/crudos-CUB.png" alt="Cuentos Crudos" loading="lazy" class="book-cover">
                 <div class="book-info position-relative">
                     <a href="cuentos-crudos-sorpresa.html" class="book-info-link">
                         <img src="imagenes/iconos/lupa.svg" alt="" class="icon-surprise">
@@ -564,7 +568,7 @@
 
             <!-- Bruno y la casa del espejo -->
             <div class="book-card" data-category="juvenil">
-                <img src="imagenes/mislibros/alfaguara/bruno.jpg" alt="Bruno y la casa del espejo" class="book-cover">
+                <img src="imagenes/mislibros/alfaguara/bruno.jpg" alt="Bruno y la casa del espejo" loading="lazy" class="book-cover">
                 <div class="book-info">
                     <h3>Bruno y la casa del espejo</h3>
                     <p class="genre">Novela juvenil • Editorial Alfaguara</p>
@@ -1192,7 +1196,7 @@
     <div class="contact-wrapper" id="contacto">
         <section class="contact-hero">
             <div class="hero-content">
-                <h1>ricardo gómez</h1>
+                <h2>ricardo gómez</h2>
             </div>
             <div class="hero-icons">
                 <a href="blog1.html"><img src="imagenes/iconos/blog1.svg" loading="lazy" alt="Blog 1" class="icon-blog"></a>
@@ -1208,7 +1212,7 @@
         </section>
 
         <div class="contact-cita">
-            <img src="imagenes/contacto/lectora.jpg" alt="Lectora" class="contact-cita-img">
+            <img src="imagenes/contacto/lectora.jpg" alt="Lectora" loading="lazy" class="contact-cita-img">
         </div>
 
         <footer>
