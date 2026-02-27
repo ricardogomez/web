@@ -14,11 +14,17 @@
     --white: #fff;
 }
 
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
 body {
     font-family: 'Georgia', serif;
     line-height: 1.6;
     color: var(--text);
     background: var(--white);
+    animation: fadeIn 0.8s ease-out;
 }
 
 header {
