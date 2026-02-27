@@ -141,24 +141,14 @@
     </footer>
 
     <!-- Lightbox -->
-    <div id="lightbox" class="lightbox" onclick="cerrarLightbox()">
+    <div class="lightbox" onclick="cerrarLightbox()">
         <span class="lightbox-close">&times;</span>
-        <img id="lightbox-img" src="" loading="lazy" alt="Fotografía ampliada">
+        <span class="lightbox-prev" onclick="lbAnterior(event)">&#10094;</span>
+        <span class="lightbox-next" onclick="lbSiguiente(event)">&#10095;</span>
+        <img src="" alt="Imagen ampliada">
+        <span class="lightbox-counter"></span>
     </div>
 
-    <script>
-        function abrirLightbox(src) {
-            document.getElementById('lightbox-img').src = src;
-            document.getElementById('lightbox').classList.add('active');
-            document.body.style.overflow = 'hidden';
-        }
-        function cerrarLightbox() {
-            document.getElementById('lightbox').classList.remove('active');
-            document.body.style.overflow = 'auto';
-        }
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') cerrarLightbox();
-        });
-    </script>
+    <script src="lightbox.js"></script>
 </body>
 </html>

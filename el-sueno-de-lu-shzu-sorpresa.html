@@ -81,21 +81,13 @@
     </footer>
 
     <div class="lightbox" onclick="cerrarLightbox()">
+        <span class="lightbox-close">&times;</span>
+        <span class="lightbox-prev" onclick="lbAnterior(event)">&#10094;</span>
+        <span class="lightbox-next" onclick="lbSiguiente(event)">&#10095;</span>
         <img src="" alt="Imagen ampliada">
+        <span class="lightbox-counter"></span>
     </div>
 
-    <script>
-        function abrirLightbox(src) {
-            const lb = document.querySelector('.lightbox');
-            lb.querySelector('img').src = src;
-            lb.classList.add('active');
-        }
-        function cerrarLightbox() {
-            document.querySelector('.lightbox').classList.remove('active');
-        }
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') cerrarLightbox();
-        });
-    </script>
+    <script src="lightbox.js"></script>
 </body>
 </html>
