@@ -4,17 +4,32 @@
 
     // Recoger todas las imágenes clickables de la página
     function inicializar() {
-        var clickables = document.querySelectorAll('.img-clickable');
+        var clickables = document.querySelectorAll('.img-clickable, .foto-clickable');
         imagenes = Array.from(clickables).map(function(img) { return img.src; });
     }
 
     function abrirLightbox(src) {
+        // Mostrar la imagen directamente primero
+        var img = document.querySelector('.lightbox img');
+        img.src = src;
+        document.querySelector('.lightbox').classList.add('active');
+        document.body.style.overflow = 'hidden';
+
+        // Inicializar navegación
         inicializar();
         indiceActual = imagenes.indexOf(src);
         if (indiceActual === -1) indiceActual = 0;
-        mostrarImagen();
-        document.querySelector('.lightbox').classList.add('active');
-        document.body.style.overflow = 'hidden';
+
+        // Actualizar controles de navegación
+        var counter = document.querySelector('.lightbox-counter');
+        var prev = document.querySelector('.lightbox-prev');
+        var next = document.querySelector('.lightbox-next');
+        if (counter) {
+            counter.textContent = (indiceActual + 1) + ' / ' + imagenes.length;
+            counter.style.display = imagenes.length > 1 ? '' : 'none';
+        }
+        if (prev) prev.style.display = imagenes.length > 1 ? '' : 'none';
+        if (next) next.style.display = imagenes.length > 1 ? '' : 'none';
     }
 
     function cerrarLightbox() {
@@ -24,15 +39,11 @@
 
     function mostrarImagen() {
         var img = document.querySelector('.lightbox img');
-        img.src = imagenes[indiceActual];
+        if (imagenes[indiceActual]) {
+            img.src = imagenes[indiceActual];
+        }
         var counter = document.querySelector('.lightbox-counter');
         if (counter) counter.textContent = (indiceActual + 1) + ' / ' + imagenes.length;
-        // Ocultar flechas si solo hay una imagen
-        var prev = document.querySelector('.lightbox-prev');
-        var next = document.querySelector('.lightbox-next');
-        if (prev) prev.style.display = imagenes.length > 1 ? '' : 'none';
-        if (next) next.style.display = imagenes.length > 1 ? '' : 'none';
-        if (counter) counter.style.display = imagenes.length > 1 ? '' : 'none';
     }
 
     function anterior(e) {
