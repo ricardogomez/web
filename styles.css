@@ -198,8 +198,8 @@ nav {
 }
 
 .book-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    transform: perspective(800px) rotateY(-3deg) translateY(-6px);
+    box-shadow: 12px 15px 35px rgba(0,0,0,0.2);
 }
 
 .book-cover {
@@ -207,6 +207,11 @@ nav {
     height: 380px;
     object-fit: cover;
     background: linear-gradient(135deg, var(--secondary), var(--primary));
+    transition: transform 0.3s ease;
+}
+
+.book-card:hover .book-cover {
+    transform: scale(1.03);
 }
 
 .book-info {
