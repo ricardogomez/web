@@ -14,47 +14,6 @@
     <link rel="canonical" href="https://ricardogomez.com/diccionario-ricardo-gomez.html">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Lightbox */
-        .lightbox {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.9);
-            z-index: 1000;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-        }
-        .lightbox.active {
-            display: flex;
-        }
-        .lightbox img {
-            max-width: 90%;
-            max-height: 90%;
-            border-radius: 4px;
-            box-shadow: 0 0 40px rgba(0,0,0,0.7);
-        }
-        .lightbox-close {
-            position: absolute;
-            top: 20px;
-            right: 30px;
-            color: white;
-            font-size: 40px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        .img-clickable {
-            cursor: pointer;
-            transition: transform 0.3s ease;
-        }
-        .img-clickable:hover {
-            transform: scale(1.02);
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -160,8 +119,8 @@
 
                 <p><strong>Mentira:</strong> Cualidad encarnada en algunas personas que aparecen de vez en cuando en los periódicos, y cuyo nombre no diré.</p>
 
-                <div class="img-float-right text-center">
-                    <img src="imagenes/biografia/caricatura-mia.jpg" loading="lazy" alt="Caricatura de Ricardo Gómez" class="img-clickable" onclick="abrirLightbox(this.src)" class="img-shadow">
+                <div class="img-float-right text-center" style="max-width: 180px;">
+                    <img src="imagenes/biografia/caricatura-mia.jpg" loading="lazy" alt="Caricatura de Ricardo Gómez" class="img-clickable img-shadow" onclick="abrirLightbox(this.src)">
                     <span>*</span>
                 </div>
 
@@ -185,8 +144,8 @@
 
                 <p><strong>Recomendaciones (otros autores, otras obras):</strong> Una enumeración exhaustiva sería larguísima; comprensivamente diré que soy más partidario de compartir que de recomendar, porque cada lector tiene derecho a fabricarse su propio corpus literario. Siempre estoy dispuesto a intercambiar con alguien un buen libro, un buen cómic o una buena película.</p>
 
-                <div class="img-float-right text-center">
-                    <img src="imagenes/biografia/bio-joaco.jpeg" loading="lazy" alt="Ricardo Gómez" class="img-clickable" onclick="abrirLightbox(this.src)" class="img-shadow">
+                <div class="img-float-right text-center" style="max-width: 180px;">
+                    <img src="imagenes/biografia/bio-joaco.jpeg" loading="lazy" alt="Ricardo Gómez" class="img-clickable img-shadow" onclick="abrirLightbox(this.src)">
                     <span>**</span>
                 </div>
 
