@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -1471,6 +1473,37 @@ footer a:hover {
 .reading-page {
     padding-top: 6rem;
     padding-bottom: 4rem;
+    background-color: #fdf8f0;
+}
+
+.reading-page article h1 {
+    font-family: 'Lora', Georgia, serif;
+}
+
+.reading-page article p {
+    font-family: 'Lora', Georgia, serif;
+    font-size: 1.15rem;
+    line-height: 1.85;
+}
+
+.reading-page .capitular::first-letter {
+    font-family: 'Lora', Georgia, serif;
+    font-size: 4.5rem;
+    float: left;
+    line-height: 0.8;
+    margin-right: 0.08em;
+    margin-top: 0.05em;
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.reading-page .poema {
+    margin-left: 4rem;
+    font-style: italic;
+}
+
+.reading-page .poema p {
+    margin-bottom: 1rem;
 }
 
 /* Breadcrumbs */
