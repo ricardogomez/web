@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricardo Gómez - Escritor</title>
+
+    <!-- Meta tags SEO -->
+    <meta name="description" content="Ricardo Gómez, escritor de literatura infantil, juvenil y para adultos. Premio Barco de Vapor 2006 y Premio Anaya 2024. Autor de Ojo de Nube, Los Mapas del Agua y más.">
+    <meta name="keywords" content="Ricardo Gómez, escritor, literatura infantil, literatura juvenil, Ojo de Nube, Premio Barco de Vapor, Premio Anaya">
+    <meta name="author" content="Ricardo Gómez">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ricardogomez.com/">
+    <meta property="og:title" content="Ricardo Gómez - Escritor">
+    <meta property="og:description" content="Ricardo Gómez, escritor de literatura infantil, juvenil y para adultos. Premio Barco de Vapor 2006 y Premio Anaya 2024.">
+    <meta property="og:site_name" content="Ricardo Gómez">
+    <meta property="og:locale" content="es_ES">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://ricardogomez.com/">
+    <meta name="twitter:title" content="Ricardo Gómez - Escritor">
+    <meta name="twitter:description" content="Ricardo Gómez, escritor de literatura infantil, juvenil y para adultos. Premio Barco de Vapor 2006 y Premio Anaya 2024.">
+
+    <!-- Favicon -->
+    <link rel="canonical" href="https://ricardogomez.com/">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav aria-label="Navegación principal">
+            <a href="#" class="logo"></a>
+            <div class="menu-toggle" onclick="toggleMenu()" role="button" tabindex="0" aria-label="Abrir menú" aria-expanded="false" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleMenu()}">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" role="menubar">
+                <li><a href="#inicio" onclick="closeMenu()">Inicio</a></li>
+                <li><a href="#biografia" onclick="closeMenu()">Mi Biografía</a></li>
+                <li><a href="#libros" onclick="closeMenu()">Mis Libros</a></li>
+                <li><a href="#paraleer" onclick="closeMenu()">Para Leer</a></li>
+                <li><a href="#premios" onclick="closeMenu()">Premios</a></li>
+                <li><a href="#conferencias" onclick="closeMenu()">Conferencias</a></li>
+                <li><a href="#matematicas" onclick="closeMenu()">Matemáticas</a></li>
+                <li><a href="#sahara" onclick="closeMenu()">Sáhara</a></li>
+                <li><a href="#contacto" onclick="closeMenu()">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        function toggleMenu() {
+            const toggle = document.querySelector('.menu-toggle');
+            toggle.classList.toggle('active');
+            document.querySelector('.nav-links').classList.toggle('active');
+            toggle.setAttribute('aria-expanded', toggle.classList.contains('active'));
+        }
+        function closeMenu() {
+            const toggle = document.querySelector('.menu-toggle');
+            toggle.classList.remove('active');
+            document.querySelector('.nav-links').classList.remove('active');
+            toggle.setAttribute('aria-expanded', 'false');
+        }
+    </script>
+
+    <section class="hero hero-relative" id="inicio">
+        <div class="hero-content">
+            <h1>ricardo gómez</h1>
+            <p class="hero-subtitle">escritor</p>
+            <p class="hero-tagline">si me encuentras por la calle y buscas en mi mochila</p>
+            <p class="hero-tagline-small">encontrarás una libreta y una cámara fotográfica</p>
+        </div>
+        <div class="hero-icons">
+            <a href="blog1.html"><img src="imagenes/iconos/blog1.svg" loading="lazy" alt="Blog 1" class="icon-blog"></a>
+            <a href="blog2.html"><img src="imagenes/iconos/blog2.svg" loading="lazy" alt="Blog 2" class="icon-blog"></a>
+            <a href="blog3.html"><img src="imagenes/iconos/blog3.svg" loading="lazy" alt="Blog 3" class="icon-blog"></a>
+            <a href="algunas-fotos-que-hice-un-dia.html" class="icon-camera-link">
+                <img src="imagenes/iconos/camara.svg" loading="lazy" alt="Ver mis fotos" class="icon-blog-large">
+            </a>
+            <a href="blog4.html"><img src="imagenes/iconos/blog4.svg" loading="lazy" alt="Blog 4" class="icon-blog"></a>
+            <a href="blog5.html"><img src="imagenes/iconos/blog5.svg" loading="lazy" alt="Blog 5" class="icon-blog"></a>
+            <a href="blog6.html"><img src="imagenes/iconos/blog6.svg" loading="lazy" alt="Blog 6" class="icon-blog"></a>
+        </div>
+    </section>
+
+    <div class="container" id="biografia">
+        <h2 class="section-title section-asterisk">*</h2>
+        <h2 class="section-title">Si quieres saber sobre mí...</h2>
+        <p class="section-subtitle">Biografía</p>
+
+        <div class="bio-grid">
+            <div class="math-card">
+                <h3>Una bio formal</h3>
+                <p>Nací en febrero de 1954 en un pueblo de Segovia, pero crecí en Madrid. Volví a nacer cuando decidí dedicarme a escribir hace unos años, después de dar clases de matemáticas durante mucho tiempo. Me he empapado de miles de lecturas, viajando con Verne, Melville, Poe, Kafka, Nabokov, Borges y Cortázar. Leo, escribo, paseo, fotografío, disfruto del cine y la música, viajo cuando puedo. Me repugnan la injusticia y la barbarie, odio la guerra, no comprendo el hambre en el planeta y desprecio a quienes se enriquecen a costa ajena.</p>
+                <p class="mt-1"><a href="fotos-personales.html" class="link-bio">→ Si te atreves a ver algunas fotos...</a></p>
+            </div>
+
+            <div class="math-card">
+                <h3>Lo que pienso de la vida...</h3>
+                <p>"El diccionario de Ricardo Gómez" es una entrevista publicada en la revista "Lazarillo" en 2007, donde a través de entradas alfabéticas hablo sobre conceptos que me definen: amor, arte, compromiso, educación, literatura, Sáhara, solidaridad y muchos más. Defiendo el conocimiento científico, critico la injusticia y la guerra, reivindico la literatura sin fronteras de edad. Hablo de mi pasión tardía por la escritura, mi trabajo como profesor de matemáticas, mis lecturas fundamentales y mi compromiso social. Es un retrato íntimo y público a la vez, donde expreso mis convicciones sobre el mundo, la literatura y la necesidad de cambiar las cosas.</p>
+                <p class="mt-1"><a href="diccionario-ricardo-gomez.html" class="link-bio">→ Leer el diccionario completo</a></p>
+            </div>
+
+            <div class="math-card">
+                <h3>Esto NO es una biografía</h3>
+                <p>Las biografías están bien para cuando uno está muerto, que no es mi caso de momento. Leí desde muy niño gracias a un abuelo que me contaba historias por los campos de Castilla. Comencé a escribir pasados los cuarenta, después de haberme preparado durante años leyendo, y ahora la escritura me apasiona tanto que no puedo vivir sin ella. Escribo sobre cosas que me gustan y otras que me hieren, orgulloso de mis libros que me han dado premios y, sobre todo, satisfacciones. Disfruto del cine, la fotografía, la música, los paseos y, especialmente, de mis dos hijos y de las personas que me quieren.</p>
+                <p class="mt-1"><a href="esto-no-es-una-biografia.html" class="link-bio">→ Si quieres seguir cotilleando...</a></p>
+            </div>
+
+            <div class="math-card position-relative">
+                <h3>Cuentan (pero no te fíes...)</h3>
+                <p>De niño esperaba con ganas el recreo para jugar al guá, al rescate, a las chapas o al pañuelo. Con el tiempo, dejó de ser alumno y se convirtió en profesor de Matemáticas, jugando ahora con los números, que siguen encantándole. Pero como ser "de ciencias" no significa que no pueden gustarte los libros, un buen día decidió jugar con las letras y se hizo escritor. Si le encuentras por la calle y buscas en su mochila, encontrarás una libreta y una cámara fotográfica. Toma nota de casi todo y trata de registrarlo, porque nunca sabe dónde va a encontrar una buena historia que merezca la pena ser contada.</p>
+                <a href="biografia-caricatura.html" class="book-info-link-bottom"><img src="imagenes/iconos/camara.svg" loading="lazy" alt="Ver caricatura" class="icon-camera-bio"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="libros">
+
+        <h2 class="section-title section-asterisk">*</h2>
+        <h2 class="section-title">Mis Libros</h2>
+        <p class="books-intro">
+            Si puedes, no te pierdas los bonus que verás junto a los títulos...
+            <img src="imagenes/iconos/lupa.svg" loading="lazy" alt="">
+            <img src="imagenes/iconos/llave-antigua.svg" loading="lazy" alt="">
+            <img src="imagenes/iconos/baul.svg" loading="lazy" alt="">
+            <img src="imagenes/iconos/varita.svg" loading="lazy" alt="">
+        </p>
+
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="juvenil">Infantil y Juvenil</button>
+            <button class="filter-btn" data-filter="adultos">Adultos</button>
+            <button class="filter-btn" data-filter="album">Álbumes</button>
+            <button class="filter-btn" data-filter="mitologia">Mitología</button>
+            <button class="filter-btn" data-filter="adaptaciones">Adaptaciones</button>
+            <button class="filter-btn" data-filter="colectivos">Colectivos</button>
+        </div>
+
+        <div class="books-grid">
+<!-- Los Mapas del Agua -->
+            <div class="book-card" data-category="juvenil">
+                <img src="imagenes/mapasdelagua.jpg" loading="lazy" alt="Los Mapas del Agua" class="book-cover">
+                <div class="book-info position-relative">
+                    <a href="los-mapas-del-agua-sorpresa.html" class="book-info-link">
+                        <img src="imagenes/iconos/lupa.svg" alt="" class="icon-surprise">
+                    </a>
+                    <h3>Los Mapas del Agua</h3>
+                    <p class="genre">Novela juvenil • Editorial Anaya</p>
+                    <p>Las N'Wone, o mujeres-agua son vitales en el desierto. Pero a la última N'Wone le sucede su hija Nanga, que tiene solo ocho años; demasiado joven para ser una mujer-agua. El agua del pozo se está secando y solo Nanga puede encontrar la solución. Emprenderá un viaje con su hermano Rai, poco mayor que ella, con un destino incierto, tratando de salvar al poblado. Con ilustraciones de Laia Pàmpols.</p>
+                    <div class="book-awards">
+                        <span class="award-tag">🏆 Premio Anaya 2024</span>
+                        <span class="award-tag">🏆 Premio Fundación Cuatrogatos</span>
+                        <span class="award-tag">Seleccionado por la OEPLI, 2024</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- La Máquina de Hacer Cuentos -->
+            <div class="book-card" data-category="juvenil">
+                <img src="imagenes/mislibros/otros/CUB-maquina.jpg" loading="lazy" alt="La Máquina de Hacer Cuentos" class="book-cover">
+                <div class="book-info position-relative">
+                    <a href="la-maquina-de-hacer-cuentos-sorpresa.html" class="book-info-link">
+                        <img src="imagenes/iconos/baul.svg" alt="" class="icon-surprise">
+                    </a>
+                    <h3>La Máquina de Hacer Cuentos</h3>
+                    <p class="genre">Narrativa infantil • Editorial Triqueta</p>
+                    <p>A la ciudad ha llegado una máquina capaz de crear cuentos adaptados a los gustos de mayores y pequeños. Pero no todo el mundo parece satisfecho con el invento. Celeste no tarda en anticipar algunos problemas y descubrirá que la máquina esconde una conspiración que amenaza con extenderse por el país y el mundo entero. Una divertida reflexión sobre los riesgos de la Inteligencia Artificial. Con ilustraciones de Emilio Urberuaga.</p>
+                    <div class="book-awards">
+                        <span class="award-tag">Seleccionado por la OEPLI, 2024</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ojo de Nube -->
+            <div class="book-card" data-category="juvenil">
+                <img src="imagenes/mislibros/sm/CUB-ojodenube.jpg" loading="lazy" alt="Ojo de Nube" class="book-cover">
+                <div class="book-info position-relative">
+                    <a href="ojodenube-sorpresa.html" class="book-info-link">
+                        <img src="imagenes/iconos/lupa.svg" alt="" class="icon-surprise">
+                    </a>
+                    <h3>Ojo de Nube</h3>
+                    <p class="genre">Novela histórica juvenil • Editorial SM</p>
+                    <p>Esta novela recupera la vida salvaje en la gran pradera norteamericana, antes de la llegada del hombre blanco, a través de una tribu de indios crow. Los nativos ven llegar a hombres barbados, con caballos y armas aterradoras que causan estragos en la población de bisontes y cambian lo que ha sido el mundo de los habitantes de esas tierras. Ojo de Nube, un niño ciego de nacimiento, se convertirá en el miembro más útil de la tribu gracias a sus extraordinarias habilidades. Ilustraciones de Jesús Gabán.</p>
+                    <div class="book-awards">
+                        <span class="award-tag">🏆 Premio Barco de Vapor 2006</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Caballos en la Nieve -->
+            <div class="book-card" data-category="juvenil">
+                <img src="imagenes/mislibros/sm/cub-caballos.jpg" loading="lazy" alt="Caballos en la Nieve" class="book-cover">
+                <div class="book-info position-relative">
+                    <a href="caballos-en-la-nieve-sorpresa.html" class="book-info-link">
+                        <img src="imagenes/iconos/lupa.svg" alt="" class="icon-surprise">
+                    </a>
+                    <h3>Caballos en la Nieve</h3>
+                    <p class="genre">Novela juvenil • Editorial SM</p>
+                    <p>La continuación de "Ojo de Nube". Una misteriosa narradora cuenta, muchos años después de que Ojo de Nube y los suyos tuvieran que huir de sus tierras tras de robar caballos de los hombres blancos, a qué dificultades se enfrentaron en territorios agrestes y llenos de peligros. Las mujeres, entre ellas una niña llamada Caballos en la Nieve, toman un papel relevante en la supervivencia de las tribus crow, montando a caballo y luchando al lado de los hombres. Una historia basada en hechos que pudieron ser reales y que trata de recrear la dura existencia de las tribus nativas norteamericanas. Ilustraciones de Jesús Gabán.</p>
+                </div>
+            </div>
+
+            <!-- El Cazador de Estrellas -->
+            <div class="book-card" data-category="juvenil">
+                <img src="imagenes/mislibros/sm/cazadordeestrellas2004-500x759.jpg" loading="lazy" alt="El Cazador de Estrellas" class="book-cover">
+                <div class="book-info position-relative">
+                    <a href="el-cazador-de-estrellas-sorpresa.html" class="book-info-link">
+                        <img src="imagenes/iconos/camara.svg" alt="" class="icon-surprise">
+                    </a>
+                    <h3>El Cazador de Estrellas</h3>
+                    <p class="genre">Novela juvenil • Editorial SM</p>
+                    <p>Bachir es un adolescente que vive en un campamento de refugiados saharauis. Una dolencia pulmonar le obliga a permanecer en su jaima, sin más contacto que la familia y algunos visitantes ocasionales. Una noche conoce por azar a Hamida, un anciano sabio con quien habla de la historia de su pueblo y del nombre de las estrellas. Tras este encuentro descubre que la verdadera prisión no es su enfermedad sino la desesperanza, y que ambas cosas pueden tener cura. Libro inspirado en personajes reales. Con fotografías del autor.</p>
+                    <div class="book-awards">
+                        <span class="award-tag">🏆 Premio Alandar 2003</span>
+                        <span class="award-tag">⭐ White Ravens 2004</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cuentos Crudos -->
+            <div class="book-card" data-category="juvenil">
+                <img src="imagenes/mislibros/sm/crudos-CUB.png" alt="Cuentos Crudos" loading="lazy" class="book-cover">
+                <div class="book-info position-relative">
+                    <a href="cuentos-crudos-sorpresa.html" class="book-info-link">
+                        <img src="imagenes/iconos/lupa.svg" alt="" class="icon-surprise">
+                    </a>
+                    <h3>Cuentos Crudos</h3>
+                    <p class="genre">Relatos juveniles • Editorial SM</p>
+                    <p>Nueve relatos sobre situaciones duras en diferentes partes del mundo. Sus protagonistas (una niña beirutí, un muchacho saharaui, un joven camboyano, una mujer peruana… incluso personajes anónimos que viven en nuestro mundo cotidiano o que habitaron la sabana africana) se enfrentan a circunstancias difíciles, haciendo lo posible por sobrevivir con dignidad. Historias crudas, pero no faltas de esperanza. Ilustrado por Juan Ramón Alonso.</p>
+                </div>
+            </div>
+
+            <!-- Diario en un Campo de Barro -->
+            <div class="book-card" data-category="juvenil">
+                <img src="imagenes/mislibros/edelvives/diario.jpg" loading="lazy" alt="Diario en un Campo de Barro" class="book-cover">
+                <div class="book-info position-relative">
+                    <a href="diario-en-un-campo-de-barro-sorpresa.html" class="book-info-link">
+                        <img src="imagenes/iconos/camara.svg" alt="" class="icon-surprise">
+                    </a>
+                    <h3>Diario en un Campo de Barro</h3>
+                    <p class="genre">Novela juvenil • Editorial Edelvives</p>
+                    <p>Nushi, una adolescente, vuelve a su país en los Balcanes tras haber pasado un año acogida por una familia española. Desde el campo de refugiados escribe un diario con sus vivencias, reflejando sus miedos, esperanzas y deseos de una nueva vida. A pesar del silencio de sus padres y de su hermano, descubre gracias a nuevos amigos lo que fue el horror de la guerra y el destino de otro hermano desaparecido.</p>
+                </div>
+            </div>
+
+            <!-- Gente Rara -->
+            <div class="book-card" data-category="juvenil">
+                <img src="imagenes/mislibros/edelvives/gente-rara.jpg" loading="lazy" alt="Gente Rara" class="book-cover">
+                <div class="book-info">
+                    <h3>Gente Rara</h3>
+                    <p class="genre">Narrativa juvenil • Editorial Edelvives</p>
+                    <p>En la clase de Patricia todos son un poco raros. Los días transcurren con normalidad hasta que aparece La Escoba, un nuevo profesor que pretende que todos sean estudiantes ejemplares, aunque sea a costa de robarles el alma. Pero Patricia, Laura y algunos compañeros, con ayuda de su auténtica profesora, harán lo imposible por recuperar la normalidad de sus vidas. Ilustraciones de Tesa González.</p>
+                </div>
+            </div>
+
+            <!-- La Selva de los Números -->
+            <div class="book-card" data-category="juvenil">
+                <img src="imagenes/mislibros/alfaguara/CUB-selva.jpg" loading="lazy" alt="La Selva de los Números" class="book-cover">
+                <div class="book-info position-relative">
+                    <a href="la-selva-de-los-numeros-sorpresa.html" class="book-info-link">
+                        <img src="imagenes/iconos/libro-abierto.svg" alt="" class="icon-surprise">
+                    </a>
+                    <h3>La Selva de los Números</h3>
+                    <p class="genre">Narrativa infantil • Editorial Alfaguara</p>
+                    <p>Hace ya mucho tiempo, una sabia y vieja tortuga descubrió algo sorprendente que servía, entre otras cosas, para poner orden en la remota selva en que vivía: los números. Decidida a compartir su sabiduría, fue mostrando su invento a diversos animales, y estos lo utilizaron para los más variados fines. Una historia que combina matemáticas y narrativa de manera amena y divertida. Ilustraciones de Tesa González.</p>
+                </div>
+            </div>
+
+            <!-- Las Hijas de Tuga -->
+            <div class="book-card" data-category="juvenil">
+                <img src="imagenes/mislibros/alfaguara/CUB-hijas.jpg" loading="lazy" alt="Las Hijas de Tuga" class="book-cover">
+                <div class="book-info position-relative">
+                    <a href="las-hijas-de-tuga-sorpresa.html" class="book-info-link">
+                        <img src="imagenes/iconos/libro-abierto.svg" alt="" class="icon-surprise">
+                    </a>
+                    <h3>Las Hijas de Tuga</h3>
+                    <p class="genre">Narrativa infantil • Editorial Alfaguara</p>
+                    <p>Tuga, la famosa tortuga inventora de los números, acaba de tener 52 hijas. Todas han roto el cascarón y han salido a hacer su vida, como debe ser. Todas menos una, ¡que se ha quedado con Tuga y que además es una preguntona! Pero un día la pequeña tortuguita desaparece. La continuación de "La Selva de los Números", donde las matemáticas siguen siendo protagonistas de una aventura divertida y educativa. Ilustraciones de Tesa González.</p>
+                </div>
+            </div>
+
+            <!-- La Isla de Nuncameolvides -->
+            <div class="book-card" data-category="juvenil">
+                <img src="imagenes/mislibros/edelvives/CUB-lin.png" loading="lazy" alt="La Isla de Nuncameolvides" class="book-cover">
+                <div class="book-info position-relative">
+                    <a href="la-isla-de-nuncameolvides-sorpresa.html" class="book-info-link">
+                        <img src="imagenes/iconos/baul.svg" alt="" class="icon-surprise">
+                    </a>
+                    <h3>La Isla de Nuncameolvides</h3>
+                    <p class="genre">Novela juvenil • Editorial Edelvives</p>
+                    <p>Cuando tenía siete años, Fabio estuvo a punto de morir de unas fiebres. Mientras deliraba repetía que quería ver el mar, algo incomprensible en un pueblo que estaba lo más lejos del mar que podía estar. Fabio sobrevivió, se hizo marinero y capitán, dio varias vueltas al mundo. Una historia de aventuras, amor y mar inspirada en las grandes novelas de Stevenson, Salgari y Melville.</p>
+                </div>
+            </div>
+
+            <!-- El Sueño de Lu Shzu -->
+            <div class="book-card" data-category="album">
+                <img src="imagenes/mislibros/edelvives-ilustrado/luszhu.jpg" loading="lazy" alt="El Sueño de Lu Shzu" class="book-cover">
+                <div class="book-info position-relative">
+                    <a href="el-sueno-de-lu-shzu-sorpresa.html" class="book-info-link">
+                        <img src="imagenes/iconos/lupa.svg" alt="" class="icon-surprise">
+                    </a>
+                    <h3>El Sueño de Lu Shzu</h3>
+                    <p class="genre">Álbum ilustrado • Editorial Edelvives</p>
+                    <p>Pudo suceder hace mucho tiempo, en China (aunque da igual el sitio). Lu Shzu es una niña de ocho años que debe trabajar en una fábrica de juguetes para ayudar a su familia. Con el tiempo, se encaprichó de una de las muñecas que pasaban por sus manitas, pero no podía pagarla e hizo algo indebido. El encargado tomó represalias. Su abuela fue a hablar con este, restauró el honor de la familia e hizo algo que Lu Shzu no olvidaría. Con el tiempo, contó su historia a su hija. Un bellísimo álbum con el que Tesa González trabajó durante tres años y que recibió numerosos elogios aquí y en el extranjero.</p>
+                    <div class="book-awards">
+                        <span class="award-tag">🏆 Mejor Álbum Ilustrado Brasil</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mujer mirando al mar -->
+            <div class="book-card" data-category="adultos">
+                <img src="imagenes/mislibros/sm/CUB-mujer-mar.jpg" loading="lazy" alt="Mujer mirando al mar" class="book-cover">
+                <div class="book-info position-relative">
+                    <a href="mujer-mirando-al-mar-sorpresa.html" class="book-info-link">
+                        <img src="imagenes/iconos/rostro-lagrima.svg" alt="" class="icon-surprise-small">
+                    </a>
+                    <h3>Mujer mirando al mar</h3>
+                    <p class="genre">Novela para adultos • Editorial SM</p>
+                    <p>A caballo entre la ficción adulta y juvenil. Un escritor rebusca en un puesto de libros y encuentra un poema narrado en primera persona que narra la confesión del asesinato de un hombre a manos de su pareja en plena época de posguerra. El escritor trata de encontrar a los verdaderos protagonista de la historia, y su búsqueda desvela otros secretos. ¿Dónde empieza la ficción y dónde la realidad? Una novela que trata sobre los límites del amor y la construcción literaria, y que combina la narrativa con la poesía. La ilustración es de Eduardo Ortiz.</p>
+                    <div class="book-awards">
+                        <span class="award-tag">🏆 Premio Gran Angular</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tras el Cristal -->
+            <div class="book-card" data-category="adultos">
+                <img src="imagenes/mislibros/sm/tras-el-cristal-cubierta-peq.jpg" loading="lazy" alt="Tras el Cristal" class="book-cover">
+                <div class="book-info">
+                    <h3>Tras el Cristal</h3>
+                    <p class="genre">Relatos • Editorial SM</p>
+                    <p>Once relatos que muestran la vida de personas anónimas como acontecimientos únicos, extraordinarios e irrepetibles. Cualquier situación y cualquier persona adquieren protagonismo cuando se miran tras el cristal de la literatura.</p>
+                </div>
+            </div>
+
+            <!-- El Dulce Olor del Diablo -->
+            <div class="book-card" data-category="adultos">
+                <img src="imagenes/mislibros/adultos/CUB-dulce-olor.jpg" loading="lazy" alt="El Dulce Olor del Diablo" class="book-cover">
+                <div class="book-info position-relative">
+                    <a href="el-dulce-olor-del-diablo-sorpresa.html" class="book-info-link">
+                        <img src="imagenes/iconos/lupa.svg" alt="" class="icon-surprise">
+                    </a>
+                    <h3>El Dulce Olor del Diablo</h3>
+                    <p class="genre">Novela para adultos • Editorial Narval</p>
+                    <p>En su decimoquinto cumpleaños, Andrea recibe varios regalos inesperados. Una agresión despierta en ella un sentido dormido: el olfato. Su progresiva percepción de olores le permitirá detectar secretos íntimos. Un thriller psicológico que aborda violencia, género e iniciación sexual.</p>
+                </div>
+            </div>
+
+            <!-- La Conspiración de los Espejos -->
+            <div class="book-card" data-category="adultos">
+                <img src="imagenes/mislibros/adultos/conpiracionespejos.jpg" loading="lazy" alt="La Conspiración de los Espejos" class="book-cover">
+                <div class="book-info position-relative">
+                    <a href="la-conspiracion-de-los-espejos-sorpresa.html" class="book-info-link">
+                        <img src="imagenes/iconos/pergamino.svg" alt="" class="icon-surprise-small">
+                    </a>
+                    <h3>La Conspiración de los Espejos</h3>
+                    <p class="genre">Novela para adultos</p>
+                    <p>La resolución del teorema de Fermat lleva de cabeza al catedrático Patricio Virseda. Iniciará una espiral de locura cegado por la ambición. Una novela inteligente sobre incomunicación, mundos paralelos y cómo todo en la vida está encadenado como en una ecuación matemática.</p>
+                </div>
+            </div>
+
+            <!-- Dios 3.0 -->
+            <div class="book-card" data-category="adultos">
+                <img src="imagenes/mislibros/adultos/CUB-dios30.png" loading="lazy" alt="Dios 3.0" class="book-cover">
+                <div class="book-info">
+                    <h3>Dios 3.0</h3>
+                    <p class="genre">Novela para adultos • Editorial Laude</p>
+                    <p>Dios, que ha dejado a la humanidad a su libre albedrío tras la creación del mundo, decide intervenir para intentar combatir la barbarie, la superstición y los falsos dioses. Para ello, reúne en un oasis a cuatro mujeres y a cuatro hombres de distintas culturas, acompañados de otros tantos ángeles. El encargo divino es que elaboren un Libro Sagrado que difunda el Conocimiento y la Razón. Pero la convivencia entre ángeles y humanos dará lugar a situaciones inesperadas.</p>
+                </div>
+            </div>
+
+            <!-- Música entre las Ramas -->
+            <div class="book-card" data-category="juvenil">
+                <img src="imagenes/mislibros/edelvives/cub-musica-ramas-para-web.jpg" loading="lazy" alt="Música entre las Ramas" class="book-cover">
+                <div class="book-info position-relative">
+                    <a href="musica-entre-las-ramas-sorpresa.html" class="book-info-link">
+                        <img src="imagenes/iconos/libro-abierto.svg" alt="" class="icon-surprise">
+                    </a>
+                    <h3>Música entre las Ramas</h3>
+                    <p class="genre">Novela juvenil • Editorial Edelvives</p>
+                    <p>Las motosierras de los hombres blancos han llegado a la selva habitada por los bayaka, una tribu acostumbrada a vivir en armonía con la naturaleza. El joven Emeka se pregunta si podrá hacer algo para ahuyentar la amenaza. Un fascinante canto a la naturaleza y a las culturas indígenas que alerta sobre los peligros de alterar el equilibrio de la selva. Ilustrado por Christa Soriano.</p>
+                    <div class="book-awards">
+                        <span class="award-tag">🏆 XXXII Premio Ala Delta 2021</span>
+                        <span class="award-tag">🏆 IBBY Certificate of Honour 2024</span>
+                        <span class="award-tag">⭐ Selección Fundación Cuatrogatos</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Juegos inocentes juegos -->
+            <div class="book-card" data-category="juvenil">
+                <img src="imagenes/mislibros/edelvives/103211-cubtd-juegos-web.jpg" loading="lazy" alt="Juegos inocentes juegos" class="book-cover">
+                <div class="book-info position-relative">
+                    <a href="juegos-inocentes-juegos-sorpresa.html" class="book-info-link">
+                        <img src="imagenes/iconos/lupa.svg" alt="" class="icon-surprise">
+                    </a>
+                    <h3>Juegos inocentes juegos</h3>
+                    <p class="genre">Novela juvenil • Editorial Edelvives</p>
+                    <p>Sebastián es un adolescente madrileño conocido como "el Asesino" en el mundo virtual. Su afición por los videojuegos le lleva a probar simuladores de drones. Sin saberlo, lo que pilota son aviones reales que atacan a personas reales en zonas de conflicto. El relato se entrecruza con historias que narran lo que sucede al otro lado de su pantalla, mostrando las devastadoras consecuencias de esos juegos que el chico cree inocentes.</p>
+                    <div class="book-awards">
+                        <span class="award-tag">🏆 Premio Alandar 2013</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- La Pastelería -->
+            <div class="book-card" data-category="album">
+                <img src="imagenes/mislibros/edelvives-ilustrado/CUB-pasteleria.jpg" loading="lazy" alt="La Pastelería" class="book-cover">
+                <div class="book-info position-relative">
+                    <a href="la-pasteleria-sorpresa.html" class="book-info-link">
+                        <img src="imagenes/iconos/lupa.svg" alt="" class="icon-surprise">
+                    </a>
+                    <h3>La Pastelería</h3>
+                    <p class="genre">Álbum ilustrado • Editorial Edelvives</p>
+                    <p>El afamado pastelero Kuchen se instala inesperadamente al final de la calle Strasse. Pronto todos los vecinos, niños y adultos, empiezan a fantasear sobre los maravillosos dulces que elaborará. Pero pasan los días y la pastelería no abre sus puertas. Los estantes siguen vacíos y la gente comienza a murmurar... Un álbum ilustrado por Tesa González con una historia llena de magia y sorpresas.</p>
+                </div>
+            </div>
+
+            <!-- Tres Historias con Gato -->
+            <div class="book-card" data-category="juvenil">
+                <img src="imagenes/mislibros/edelvives/cub-treshistorias-para-web.png" loading="lazy" alt="Tres Historias con Gato" class="book-cover">
+                <div class="book-info position-relative">
+                    <a href="tres-historias-con-gato-sorpresa.html" class="book-info-link">
+                        <img src="imagenes/iconos/cara-gato.svg" alt="" class="icon-surprise">
+                    </a>
+                    <h3>Tres Historias con Gato</h3>
+                    <p class="genre">Narrativa infantil • Editorial Edelvives</p>
+                    <p>Claudia y Dani están muy enfadados porque Cepillo, su gato, ha desaparecido. Cuando llegó a su casa, puso patas arriba la vida de la familia. Ahora repasan los momentos felices de su vida en común y se preguntan si se ha perdido o ha sido secuestrado. Pero, en realidad, ninguno sabe la verdad, excepto el propio Cepillo. Tres historias narradas desde diferentes puntos de vista: Claudia, Dani y el propio gato. Ilustrado por Mar Ferrero.</p>
+                </div>
+            </div>
+
+            <!-- El Deseo Insensato de Tener un Gato -->
+            <div class="book-card" data-category="juvenil">
+                <img src="imagenes/mislibros/sm/insensato-para-web.jpg" loading="lazy" alt="El Deseo Insensato de Tener un Gato" class="book-cover">
+                <div class="book-info">
+                    <h3>El Deseo Insensato de<br>Tener un Gato</h3>
+                    <p class="genre">Narrativa infantil • Editorial SM</p>
+                    <p>El protagonista de nuestra historia es un incomprendido. Es el pequeño de la familia y sueña con hacer cosas que nadie entre los suyos ha hecho, como viajar por el mundo y ser pirata. Además, sus padres no quieren que adopte un gato. ¿Pero qué hay de malo en tener un gato como mascota?, dice. No es un animal peligroso como una serpiente o una tarántula. Es solo un gato... Pero las cosas en realidad no son tan sencillas como parecen.</p>
+                </div>
+            </div>
+
+            <!-- Los Poemas de la Arena -->
+            <div class="book-card" data-category="adultos">
+                <img src="imagenes/mislibros/adultos/los-poemas.jpg" loading="lazy" alt="Los Poemas de la Arena" class="book-cover">
+                <div class="book-info">
+                    <h3>Los Poemas de la Arena <a href="los-poemas-de-la-arena-sorpresa.html"><img src="imagenes/iconos/camara.svg" loading="lazy" alt="" class="icon-surprise-small icon-inline"></a></h3>
+                    <p class="genre">Novela para adultos • Editorial Algaida</p>
+                    <p>Cuatro soldados comparten guardia en una casamata perdida en medio del desierto. El calor, la arena, el tedio y el miedo marcan sus días. Para sobrevivir al aburrimiento, juegan al ajedrez con piezas talladas artesanalmente, leen poesía árabe y recuerdan su patria lejana. Una historia sobre la guerra, la amistad y el poder de la poesía en las situaciones más extremas.</p>
+                    <div class="book-awards">
+                        <span class="award-tag">🏆 Premio Felipe Trigo 1999</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Como la Piel del Caimán -->
+            <div class="book-card" data-category="juvenil">
+                <img src="imagenes/mislibros/sm/caiman-para-web.jpg" loading="lazy" alt="Como la Piel del Caimán" class="book-cover">
+                <div class="book-info position-relative">
+                    <a href="como-la-piel-del-caiman-sorpresa.html" class="book-info-link">
+                        <img src="imagenes/iconos/pergamino.svg" loading="lazy" alt="" class="icon-surprise">
+                    </a>
+                    <h3>Como la Piel del Caimán</h3>
+                    <p class="genre">Novela juvenil • Editorial SM</p>
+                    <p>El protagonista, Rubén, narra en primera persona los sucesos que derivaron en unos hechos dramáticos. Todo comenzó con la llegada a clase de Wilson, un joven inmigrante que sufre el bulling de algunos intolerantes compañeros de clase. Una novela que muestra que no hay violencia pequeña y que la intolerancia y el acoso no son juegos sin consecuencias. Wilson no vive en la selva como vivió su abuelo, pero le acechan los caimanes, gentes que no admiten una razón que no sea la suya porque su piel es dura y correosa.</p>
+                </div>
+            </div>
+
+            <!-- Uno de Ellos -->
+            <div class="book-card" data-category="juvenil">
+                <img src="imagenes/mislibros/sm/uno-de-ellos-para-web.jpg" loading="lazy" alt="Uno de Ellos" class="book-cover">
+                <div class="book-info position-relative">
+                    <a href="uno-de-ellos-sorpresa.html" class="book-info-link">
+                        <img src="imagenes/iconos/lupa.svg" alt="" class="icon-surprise">
+                    </a>
+                    <h3>Uno de Ellos</h3>
+                    <p class="genre">Novela juvenil • Editorial SM</p>
+                    <p>Una finca heredada. Unos días en familia para descansar. Tranquilidad. Pero ¿quién asegura que al apagar la luz todo va a seguir igual? Comenzaron invadiendo el piso de arriba en silencio. Cuando se dieron cuenta ya era demasiado tarde. Eran muchos, tal vez decenas o cientos. No quedó más remedio que huir con lo imprescindible. Una gran llamarada envolvió la casa. Una inquietante historia de terror psicológico.</p>
+                </div>
+            </div>
+
+            <!-- Un Chico Diferente -->
+            <div class="book-card" data-category="juvenil">
+                <img src="imagenes/mislibros/edelvives/cubierta-chico-peq.jpg" loading="lazy" alt="Un Chico Diferente" class="book-cover">
+                <div class="book-info position-relative">
+                    <a href="un-chico-diferente-sorpresa.html" class="book-info-link">
+                        <img src="imagenes/iconos/llave-antigua.svg" alt="" class="icon-surprise">
+                    </a>
+                    <h3>Un Chico Diferente</h3>
+                    <p class="genre">Novela juvenil • Editorial Edelvives</p>
+                    <p>Sam tiene la extraña capacidad de ver el mundo a través de las matemáticas, lo que le convierte en un chico diferente. Su habitación es su refugio, aunque convive con el Monstruo Abominable que se esconde en la Zona Oscura. Pasa las horas con su Cajón y Álbum de las Cosas Interesantes, observando el mundo desde su ventana. Un día, una cámara de fotos será el acicate para salir de su habitación y descubrir que en la calle se esconde un mundo lleno de sorpresas y misterios. Ilustrado por Jordi Vila Delclòs. Con fotografías del autor.</p>
+                </div>
+            </div>
+
+            <!-- 3333 -->
+            <div class="book-card" data-category="juvenil">
+                <img src="imagenes/mislibros/sm/CUB3333nuevo.jpg" loading="lazy" alt="3333" class="book-cover">
+                <div class="book-info position-relative">
+                    <a href="3333-sorpresa.html" class="book-info-link">
+                        <img src="imagenes/iconos/pergamino.svg" alt="" class="icon-surprise">
+                    </a>
+                    <h3>3333</h3>
+                    <p class="genre">Ciencia ficción juvenil • Editorial SM</p>
+                    <p>Vivir en el siglo XXXIV no es muy diferente a hacerlo hoy en día. Sí, puede que existan esferas de desplazamiento instantáneo, calas, holopadres y telegafas, y puede que el mundo esté unido en paz y armonía. Pero, para un chico de 11 años como Mot, la vida puede ser algo muy aburrido y sin aventuras. Todo cambiará cuando, por accidente (e infringiendo alguna que otra ley), Mot viaje hasta un lugar desconocido para él: el siglo XXI. Un juguete literario sobre viajes en el tiempo y la resolución de un problema fascinante: ¿cómo reparar una máquina del tiempo averiada en una época de tecnología antigua? Ilustrado por David Navarro.</p>
+                </div>
+            </div>
+
+            <!-- 3336 -->
+            <div class="book-card" data-category="juvenil">
+                <img src="imagenes/mislibros/sm/cubierta-3336.jpg" loading="lazy" alt="3336" class="book-cover">
+                <div class="book-info">
+                    <h3>3336</h3>
+                    <p class="genre">Ciencia ficción juvenil • Editorial SM</p>
+                    <p>Mot ha vuelto de su viaje al pasado en 3333. Pensaba que se haría famoso, pero todo el mundo hace como si esa aventura no hubiera sucedido, incluyendo sus padres. Intrigado por esa indiferencia, junto con su amiga Eva, trata de buscar huellas de su aventura, y juntos descubren otro Mundo que está en el suyo, y que a todos les pasa inadvertido. ¿A todos? No. Gracias a nuevos amigos, entrarán en contacto con Eva y Noé. Pero un grave peligro acecha a la gente que le rodea... ¿Lograrán salvarlos? Spes ultima Dea (La Esperanza es la última de las Diosas). Ilustrado por David Navarro.</p>
+                </div>
+            </div>
+
+            <!-- Los Zorros del Norte -->
+            <div class="book-card" data-category="juvenil">
+                <img src="imagenes/mislibros/edelvives/los-zorros.jpg" loading="lazy" alt="Los Zorros del Norte" class="book-cover">
+                <div class="book-info position-relative">
+                    <a href="los-zorros-del-norte-sorpresa.html" class="book-info-link">
+                        <img src="imagenes/iconos/pergamino.svg" alt="" class="icon-surprise">
+                    </a>
+                    <h3>Los Zorros del Norte</h3>
+                    <p class="genre">Narrativa infantil • Editorial Edelvives</p>
+                    <p>Ocurrió hace muchos años, en un frío y lejano país del norte. El padre de Katrin era cazador y leñador, pero ella prefería imaginar que era barquero. A Katrin le gustaban los árboles, los animales y las palabras. Un día, vio dos zorros plateados. Le extrañó mucho, pero recordó una leyenda que le contaba su abuela y decidió seguirlos. Una historia mágica sobre la naturaleza, las leyendas y el poder de las palabras. Ilustrado por Ximena Maier.</p>
+                </div>
+            </div>
+
+            <!-- El perro que buscaba estrellas -->
+            <div class="book-card" data-category="juvenil">
+                <img src="imagenes/mislibros/edelvives-ilustrado/CUB-perro-estrellas.jpg" loading="lazy" alt="El perro que buscaba estrellas" class="book-cover">
+                <div class="book-info position-relative">
+                    <a href="el-perro-que-buscaba-estrellas-sorpresa.html" class="book-info-link">
+                        <img src="imagenes/iconos/cielo-estrellado.svg" alt="" class="icon-surprise">
+                    </a>
+                    <h3>El perro que buscaba estrellas</h3>
+                    <p class="genre">Narrativa infantil • Editorial Edelvives</p>
+                    <p>Gos es un perro vagabundo, y los perros vagabundos van por ahí sin dar explicaciones a nadie. A Gos le gusta perseguir lagartijas y, sobre todo, por las noches, contemplar las estrellas. Un día decide caminar para seguir la pista de estos puntos luminosos, y en su viaje se encontrará con distintas personas, y  en especial con un niño con el que iniciará una amistad especial. Gracias a él, Gos cree entender qué son en realidad las estrellas. Un libro bellísimamente ilustrado, un mini-álbum con la preciosa ejecución gráfica de Tesa González.</p>
+                </div>
+            </div>
+
+            <!-- El Hermano Secreto de Caperucita Erre -->
+            <div class="book-card" data-category="juvenil">
+                <img src="imagenes/mislibros/edelvives/caperucita-cubierta-peq.jpg" loading="lazy" alt="El Hermano Secreto de Caperucita Erre" class="book-cover">
+                <div class="book-info">
+                    <h3>El Hermano Secreto de<br>Caperucita Erre</h3>
+                    <p class="genre">Novela juvenil • Editorial Edelvives</p>
+                    <p>¿Es Caperucita tan inocente como parece? ¿Su madre desconoce el peligro del bosque? ¿La abuela ha sido realmente devorada? ¿Qué intereses esconden Perrault o los hermanos Grimm? Alex, el hermano de Caperucita Erre, va a tener que enfrentarse a prejuicios y ocultas intenciones si quiere dar respuesta a tan espinosos asuntos. Una revisión inteligente y divertida del cuento clásico desde una perspectiva totalmente nueva. Ilustrado por María Lires.</p>
+                </div>
+            </div>
+
+            <!-- Zigurat. Dioses, reyes, leyes -->
+            <div class="book-card" data-category="juvenil">
+                <img src="imagenes/mislibros/sm/zigurat-dioses-340.png" loading="lazy" alt="Zigurat. Dioses, reyes, leyes" class="book-cover">
+                <div class="book-info">
+                    <h3>Zigurat. Dioses, reyes, leyes</h3>
+                    <p class="genre">Novela juvenil • Editorial SM - Gran Angular</p>
+                    <p>El destino de Namri parece escrito: es el hijo del rey, y su futuro pasa inevitablemente por el trono. Pero Namri está a punto de experimentar las vueltas que da la fortuna. Cuando Hammurabi se hace con el poder y asume el gobierno de toda Babilonia, el destino de Namri cambiará inevitablemente, obligándolo a luchar por la supervivencia. Una apasionante novela histórica ambientada en la antigua Mesopotamia, en los albores de la civilización.</p>
+                </div>
+            </div>
+
+            <!-- Bruno y la casa del espejo -->
+            <div class="book-card" data-category="juvenil">
+                <img src="imagenes/mislibros/alfaguara/bruno.jpg" alt="Bruno y la casa del espejo" loading="lazy" class="book-cover">
+                <div class="book-info">
+                    <h3>Bruno y la casa del espejo</h3>
+                    <p class="genre">Novela juvenil • Editorial Alfaguara</p>
+                    <p>Bruno está convencido de que en la pequeña ciudad en que vive pueden encontrarse muchos elementos que aparecen en las historias que le apasiona leer. Un día entra en una extraña casa, de la que roba un ejemplar de "Alicia a través del espejo". A partir de aquí se suceden extraños sucesos. ¡Descubrirá que tiene un doble, que ahora ocupa su lugar en casa y en el colegio! Conocerá a curiosos personajes, como Viento, Perro y Caramelo con los que inicia una nueva vida, pero deberá encontrar con urgencia la forma de volver a ser lo que antes era. En caso de no lograrlo, le espera un futuro incierto.</p>
+                </div>
+            </div>
+
+            <!-- El viaje de Yuri -->
+            <div class="book-card" data-category="juvenil">
+                <img src="imagenes/inicio.jpg" loading="lazy" alt="El viaje de Yuri" class="book-cover">
+                <div class="book-info">
+                    <h3>El viaje de Yuri</h3>
+                    <p class="genre">Novela juvenil • Editorial Edebé</p>
+                    <p>Próxima publicación. Editorial Edebé</p>
+                </div>
+            </div>
+
+            <!-- Los Viajes de Ulises -->
+            <div class="book-card" data-category="mitologia">
+                <img src="imagenes/mislibros/edelvives-mitologia/ulises-550.jpg" loading="lazy" alt="Los Viajes de Ulises" class="book-cover">
+                <div class="book-info position-relative">
+                    <a href="los-viajes-de-ulises-sorpresa.html" class="book-info-link">
+                        <img src="imagenes/iconos/camara.svg" loading="lazy" alt="" class="icon-surprise">
+                    </a>
+                    <h3>Los Viajes de Ulises</h3>
+                    <p class="genre">Mitología griega • Editorial Edelvives</p>
+                    <p>Con buen viento, las naves de Ulises habrían tardado solo tres o cuatro días en regresar desde Troya hasta Ítaca, tras la famosa batalla. Sin embargo, el dios Poseidón desvió corrientes y provocó tormentas haciendo que Ulises recorriera islas y puertos por todo el Mediterráneo. Librarse de magas, cíclopes y sirenas, y sortear muchos otros peligros, alargó su viaje de regreso diez largos años. Ilustrado por Mariona Cabassa.</p>
+                </div>
+            </div>
+
+            <!-- El Minotauro y el Laberinto -->
+            <div class="book-card" data-category="mitologia">
+                <img src="imagenes/mislibros/edelvives-mitologia/minotauro-550.jpg" loading="lazy" alt="El Minotauro y el Laberinto" class="book-cover">
+                <div class="book-info">
+                    <h3>El Minotauro y el Laberinto</h3>
+                    <p class="genre">Mitología griega • Editorial Edelvives</p>
+                    <p>El dios Poseidón, ofendido con el rey Minos por no ser capaz de reconocer la ayuda que le prestó al vencer a sus enemigos, lo castiga condenando a su esposa a dar a luz a un niño monstruoso con cuerpo de hombre y cabeza de toro. Cuando crece, el Minotauro se vuelve peligroso y es encerrado en un laberinto. Cada año, el rey Minos exige a Grecia un terrible tributo para aplacar la furia de su hijo. Ilustrado por Iratxe López de Munáin.</p>
+                </div>
+            </div>
+
+            <!-- Los Trabajos de Hércules -->
+            <div class="book-card" data-category="mitologia">
+                <img src="imagenes/mislibros/edelvives-mitologia/hercules-550.jpg" loading="lazy" alt="Los Trabajos de Hércules" class="book-cover">
+                <div class="book-info">
+                    <h3>Los Trabajos de Hércules</h3>
+                    <p class="genre">Mitología griega • Editorial Edelvives</p>
+                    <p>Hércules es un niño especial que tiene una fuerza prodigiosa. Sin embargo, la diosa Hera está empeñada en hacerle la vida imposible. Para conciliarse con ella, Hércules va a tener que llevar a cabo doce encargos, cada cual más difícil: matar al león de Nemea, limpiar el estiércol de los establos de Augías, vencer a la hidra de Lerna... Las hazañas del héroe más fuerte de la mitología griega. Ilustrado por Anna Mongay.</p>
+                </div>
+            </div>
+
+            <!-- El Fuego de Prometeo -->
+            <div class="book-card" data-category="mitologia">
+                <img src="imagenes/mislibros/edelvives-mitologia/prometeo-550.jpg" loading="lazy" alt="El Fuego de Prometeo" class="book-cover">
+                <div class="book-info">
+                    <h3>El Fuego de Prometeo</h3>
+                    <p class="genre">Mitología griega • Editorial Edelvives</p>
+                    <p>Los dioses encargaron a Prometeo y a su hermano que crearan unos seres parecidos a ellos, aunque mortales. Y ambos, con barro, hicieron cientos de animales. Pero un día, Prometeo modeló un ser diferente, con forma humana. Al verlo tan indefenso ante las inclemencias, decidió robar el fuego de los dioses para entregárselo a los hombres. Zeus, furioso ante la osadía del titán, ideará un terrible castigo. Ilustrado por David Pintor.</p>
+                </div>
+            </div>
+
+            <!-- Orfeo y Eurídice -->
+            <div class="book-card" data-category="mitologia">
+                <img src="imagenes/mislibros/edelvives-mitologia/orfeo-550.jpg" loading="lazy" alt="Orfeo y Eurídice" class="book-cover">
+                <div class="book-info">
+                    <h3>Orfeo y Eurídice</h3>
+                    <p class="genre">Mitología griega • Editorial Edelvives</p>
+                    <p>El canto de Orfeo cautivaba a flores, animales, ninfas o fornidos guerreros. Un día, el joven conoció a la bella Eurídice y se enamoraron. Pero su felicidad no iba a durar mucho, por culpa de los celos de Aristeo y la desafortunada mordedura de una víbora que mató a su amada. Desolado, Orfeo se propone descender al inframundo para recuperar a su amada. Una conmovedora historia de amor y pérdida. Ilustrado por Ana Pez.</p>
+                </div>
+            </div>
+
+            <!-- El Vuelo de Ícaro -->
+            <div class="book-card" data-category="mitologia">
+                <img src="imagenes/mislibros/edelvives-mitologia/icaro-550.jpg" loading="lazy" alt="El Vuelo de Ícaro" class="book-cover">
+                <div class="book-info">
+                    <h3>El Vuelo de Ícaro</h3>
+                    <p class="genre">Mitología griega • Editorial Edelvives</p>
+                    <p>Cuando el rey Minos recibe la noticia de que su hijo, el Minotauro, ha sido asesinado por Teseo, y que este ha logrado escapar del laberinto concebido por Dédalo, decide encarcelar al arquitecto y a su hijo, Ícaro, en lo alto de una torre. Dédalo construye unas alas de cera y plumas para escapar volando, pero advierte a Ícaro que no vuele demasiado cerca del sol. Una historia sobre ambición, desobediencia y las consecuencias de no escuchar. Ilustrado por Paloma Corral.</p>
+                </div>
+            </div>
+
+            <!-- Los Enigmas de la Esfinge -->
+            <div class="book-card" data-category="mitologia">
+                <img src="imagenes/mislibros/edelvives-mitologia/esfinge-550.jpg" loading="lazy" alt="Los Enigmas de la Esfinge" class="book-cover">
+                <div class="book-info">
+                    <h3>Los Enigmas de la Esfinge</h3>
+                    <p class="genre">Mitología griega • Editorial Edelvives</p>
+                    <p>La diosa Hera quiere castigar a la ciudad de Tebas por desobedecer sus mandatos, y manda a la terrible Esfinge para que devore a cualquier persona que quiera entrar o salir de allí. El monstruo, no contento con su crueldad, propone a los tebanos un enigma que, si resuelven, les salvará de la muerte. Solo Edipo, un forastero que acaba de llegar, parece tener el ingenio suficiente para vencer a la Esfinge. Ilustrado por Mar Ferrero.</p>
+                </div>
+            </div>
+
+            <!-- La Sabiduría de Atenea -->
+            <div class="book-card" data-category="mitologia">
+                <img src="imagenes/mislibros/edelvives-mitologia/Optimized-atenea-cub-600.jpg" loading="lazy" alt="La Sabiduría de Atenea" class="book-cover">
+                <div class="book-info position-relative">
+                    <a href="la-sabiduria-de-atenea-sorpresa.html" class="book-info-link">
+                        <img src="imagenes/iconos/lupa.svg" alt="" class="icon-surprise">
+                    </a>
+                    <h3>La Sabiduría de Atenea</h3>
+                    <p class="genre">Mitología griega • Editorial Edelvives</p>
+                    <p>Atenea, diosa de la sabiduría y la estrategia, nació de la cabeza de Zeus completamente armada. Su inteligencia y justicia la convierten en una de las diosas más respetadas del Olimpo. Este libro narra las hazañas y la influencia de Atenea en la mitología griega, desde su nacimiento extraordinario hasta su papel como protectora de héroes y ciudades. Ilustrado por Ayesha L. Rubio.</p>
+                </div>
+            </div>
+
+            <!-- Las Valientes Amazonas -->
+            <div class="book-card" data-category="mitologia">
+                <img src="imagenes/mislibros/edelvives-mitologia/Optimized-amazonas-cub-600.jpg" loading="lazy" alt="Las Valientes Amazonas" class="book-cover">
+                <div class="book-info">
+                    <h3>Las Valientes Amazonas</h3>
+                    <p class="genre">Mitología griega • Editorial Edelvives</p>
+                    <p>Las amazonas eran un pueblo de mujeres guerreras que vivían sin la compañía de hombres. Hábiles cazadoras y arqueras, su fuerza y valentía eran legendarias. Este libro cuenta las historias de estas intrépidas guerreras, sus batallas contra los más grandes héroes griegos y su sociedad matriarcal única en la mitología antigua. Ilustrado por Rebeca Luciani.</p>
+                </div>
+            </div>
+
+            <!-- La Terrorífica Medusa -->
+            <div class="book-card" data-category="mitologia">
+                <img src="imagenes/mislibros/edelvives-mitologia/Optimized-medusa-cub-600.jpg" loading="lazy" alt="La Terrorífica Medusa" class="book-cover">
+                <div class="book-info position-relative">
+                    <a href="la-terrorifica-medusa-sorpresa.html" class="book-info-link">
+                        <img src="imagenes/iconos/camara.svg" loading="lazy" alt="" class="icon-surprise">
+                    </a>
+                    <h3>La Terrorífica Medusa</h3>
+                    <p class="genre">Mitología griega • Editorial Edelvives</p>
+                    <p>Medusa fue una vez una bella joven, pero la ira de Atenea la transformó en un monstruo con serpientes por cabello cuya mirada convertía en piedra a quien la contemplara. Perseo, el valiente héroe, recibe el encargo de traer su cabeza como regalo. La historia de Medusa es una de las más fascinantes y trágicas de la mitología griega. Ilustrado por Dani Torrent.</p>
+                </div>
+            </div>
+
+            <!-- La Vida es Sueño -->
+            <div class="book-card" data-category="adaptaciones">
+                <img src="imagenes/mislibros/adaptaciones/vidasueño.jpg" loading="lazy" alt="La Vida es Sueño" class="book-cover">
+                <div class="book-info">
+                    <h3>La Vida es Sueño</h3>
+                    <p class="genre">Adaptación de Calderón • Editorial SM</p>
+                    <p>Adaptación de la obra maestra de Calderón de la Barca. Mantiene la "voz" de Calderón y el dramatismo de las relaciones entre los personajes, haciendo accesible a lectores jóvenes esta obra fundamental del teatro español. El príncipe Segismundo, encerrado desde su nacimiento por un vaticinio astrológico, se pregunta sobre la libertad, el destino y la naturaleza de la realidad.</p>
+                </div>
+            </div>
+
+            <!-- Romeo y Julieta -->
+            <div class="book-card" data-category="adaptaciones">
+                <img src="imagenes/mislibros/adaptaciones/romeoyjulieta2.jpg" loading="lazy" alt="Romeo y Julieta" class="book-cover">
+                <div class="book-info">
+                    <h3>Romeo y Julieta</h3>
+                    <p class="genre">Adaptación de Shakespeare • Editorial SM</p>
+                    <p>La historia de amor más famosa de la literatura universal, adaptada para lectores jóvenes. Romeo y Julieta, dos jóvenes de familias enemigas en la Verona renacentista, se enamoran perdidamente. Su amor imposible y trágico destino han convertido esta obra en el símbolo universal del amor prohibido. El reto en este libro es que contuviera todas las escenas de la obra original. Ilustrado por David Rubín.</p>
+                </div>
+            </div>
+
+            <!-- El Abencerraje -->
+            <div class="book-card" data-category="adaptaciones">
+                <img src="imagenes/mislibros/adaptaciones/abencerraje-peq.jpg" loading="lazy" alt="El Abencerraje" class="book-cover">
+                <div class="book-info">
+                    <h3>El Abencerraje</h3>
+                    <p class="genre">Adaptación de novela morisca • Editorial SM</p>
+                    <p>Adaptación de esta joya de la literatura española del siglo XVI. La historia de Abindarráez, un noble moro del linaje de los Abencerrajes, y su amor por la bella Jarifa, en un contexto de enfrentamientos entre moros y cristianos. Una historia sobre el honor, la amistad y la nobleza que trasciende las diferencias religiosas y culturales.</p>
+                </div>
+            </div>
+
+            <!-- Amadís de Gaula -->
+            <div class="book-card" data-category="adaptaciones">
+                <img src="imagenes/mislibros/adaptaciones/amadis-peq.jpg" loading="lazy" alt="Amadís de Gaula" class="book-cover">
+                <div class="book-info">
+                    <h3>Amadís de Gaula</h3>
+                    <p class="genre">Adaptación de novela de caballerías • Editorial SM</p>
+                    <p>Adaptación de la más famosa novela de caballerías española. Las aventuras del caballero Amadís, sus hazañas en defensa de los débiles, sus combates contra gigantes y encantadores, y su amor inquebrantable por la princesa Oriana. Una obra fundamental que influyó en toda la literatura de caballerías europea, incluido el Don Quijote de Cervantes. El desafío era condensar en unas pocas páginas el espíritu de la obra original. Ilustrado por Emma Ríos.</p>
+                </div>
+            </div>
+
+            <!-- El Conde Lucanor -->
+            <div class="book-card" data-category="adaptaciones">
+                <img src="imagenes/mislibros/adaptaciones/condelucanor-peq.jpg" loading="lazy" alt="El Conde Lucanor" class="book-cover">
+                <div class="book-info">
+                    <h3>El Conde Lucanor</h3>
+                    <p class="genre">Adaptación de Don Juan Manuel • Editorial Edelvives</p>
+                    <p>Adaptación de la obra maestra medieval de Don Juan Manuel. Una colección de cuentos en los que el Conde Lucanor pide consejo a su sabio consejero Patronio sobre diversos problemas. Cada cuento encierra una moraleja sobre la prudencia, la astucia y la sabiduría necesarias para gobernar y vivir. Ilustrado por Javier Zabala.</p>
+                </div>
+            </div>
+
+            <!-- Aurora o Nunca -->
+            <div class="book-card" data-category="colectivos">
+                <img src="imagenes/mislibros/varios-y-colectivos/CUB-aurora-nunca.jpg" loading="lazy" alt="Aurora o Nunca" class="book-cover">
+                <div class="book-info">
+                    <h3>Aurora o Nunca</h3>
+                    <p class="genre">Obra colectiva • Editorial Edelvives</p>
+                    <p>Por razones de peso no llegué a escribir un relato, aunque participe con otros diez prestigiosos colegas en la creación de este lugar imaginario que es Aurora: un pueblo perdido en las brumas del norte, en la latitud 42ºN. Un sitio en el que nadie puede ser feliz porque esconde un terrible secreto derivado de su historia como saqueadores de naufragios. Una geografía inquietante que esconde una maldición. (Una experiencia literaria también: la escritura de una novela a veinte manos).</p>
+                </div>
+            </div>
+
+            <!-- Aurora y en la Hora -->
+            <div class="book-card" data-category="colectivos">
+                <img src="imagenes/mislibros/varios-y-colectivos/CUB-aurora-hora.png" loading="lazy" alt="Aurora y en la Hora" class="book-cover">
+                <div class="book-info">
+                    <h3>Aurora y en la Hora</h3>
+                    <p class="genre">Obra colectiva • Editorial Edelvives</p>
+                    <p>Me sumo aquí a los Cronistas de Aurora,  con la creación de peronajes y narraciones. El pueblo está de fiesta, pero la terrible maldición de Livjatan no olvida a sus habitantes. Una acumulación de hechos extraordinarios presagia una pesadilla: un estremecedor encuentro en el tren de la bruja, una loca que espera el regreso de su hermana muerta, una visita fantasmal... Se agota el tiempo: ¡ha llegado la hora! (Esta vez, somos veintidós manos escribiendo la novela).</p>
+                </div>
+            </div>
+
+            <!-- Aurora y Siempre -->
+            <div class="book-card" data-category="colectivos">
+                <img src="imagenes/mislibros/varios-y-colectivos/CUB-aurora-siempre.jpg" loading="lazy" alt="Aurora y Siempre" class="book-cover">
+                <div class="book-info">
+                    <h3>Aurora y Siempre</h3>
+                    <p class="genre">Obra colectiva • Editorial Edelvives</p>
+                    <p>Nos enteramos aquí del origen de la maldición de Aurora. Una fría mañana de 1830, el destino de sus habitantes cambia cuando reciben una temeraria propuesta. Empujados por la pobreza, buena parte de los hombres (y alguna mujer) parten en busca de la ballena, en una caza desesperada. El viaje y el regreso marcarán para siempre el destino de esta población maldita. Con esto cerramos una trilogía, en la que cada libro se puede leer como una novela independiente. ¡Una experiencia única, de trabajo y amistad!</p>
+                </div>
+            </div>
+
+            <!-- 21 Relatos contra el Acoso Escolar -->
+            <div class="book-card" data-category="colectivos">
+                <img src="imagenes/mislibros/varios-y-colectivos/libro-acoso-sm.jpg" loading="lazy" alt="21 Relatos contra el Acoso Escolar" class="book-cover">
+                <div class="book-info">
+                    <h3>21 Relatos contra el Acoso Escolar</h3>
+                    <p class="genre">Obra colectiva • Editorial SM</p>
+                    <p>Veintiún autores se enfrentan sin miedo, y de forma a veces muy poco complaciente, a las múltiples caras de este gravísimo problema que constituye hoy y ahora una terrible forma de tortura para muchos escolares. Veinte escritores de reconocido prestigio y un ilustrador reclaman nuestra mirada hacia este espejo oscuro. Incluye el relato de Ricardo Gómez "No lo entiendo".</p>
+                </div>
+            </div>
+
+            <!-- 8 Maneras de Contar -->
+            <div class="book-card" data-category="colectivos">
+                <img src="imagenes/mislibros/varios-y-colectivos/8-maneras-sm-a.jpg" loading="lazy" alt="8 Maneras de Contar" class="book-cover">
+                <div class="book-info">
+                    <h3>8 Maneras de Contar</h3>
+                    <p class="genre">Obra colectiva</p>
+                    <p>Ocho escritores hablan sobre sus manías, procesos creativos y asuntos relacionados con la escritura. Ricardo Gómez contribuye con "Apocalipsis 2008", donde reflexiona sobre su oficio de escritor y comparte sus experiencias y reflexiones sobre el acto de contar historias.</p>
+                </div>
+            </div>
+
+            <!-- Atlántico -->
+            <div class="book-card" data-category="colectivos">
+                <img src="imagenes/mislibros/varios-y-colectivos/atlantico.png" loading="lazy" alt="Atlántico" class="book-cover">
+                <div class="book-info">
+                    <h3>Atlántico (30 historias de dos mundos)</h3>
+                    <p class="genre">Obra colectiva</p>
+                    <p>Treinta autores de ambas orillas del Atlántico, quince españoles y quince latinoamericanos, narran historias que conectan dos mundos unidos por el océano. Un proyecto literario que celebra los lazos culturales y humanos entre España y América Latina a través de la palabra escrita.</p>
+                </div>
+            </div>
+
+            <!-- 21 Relatos por la Educación -->
+            <div class="book-card" data-category="colectivos">
+                <img src="imagenes/mislibros/varios-y-colectivos/relatos-educación.jpg" loading="lazy" alt="21 Relatos por la Educación" class="book-cover">
+                <div class="book-info">
+                    <h3>21 Relatos por la Educación</h3>
+                    <p class="genre">Obra colectiva</p>
+                    <p>Veintiún escritores reflexionan sobre la educación, su importancia y sus desafíos en el mundo contemporáneo. Historias que ponen en valor el papel fundamental de la enseñanza y el aprendizaje en la formación de las personas y la construcción de una sociedad más justa y libre.</p>
+                </div>
+            </div>
+
+            <!-- Cuarenta Cuentos a Todo Vapor -->
+            <div class="book-card" data-category="colectivos">
+                <img src="imagenes/mislibros/varios-y-colectivos/CUB-cuentos-vapor.jpg" loading="lazy" alt="Cuarenta Cuentos a Todo Vapor" class="book-cover">
+                <div class="book-info">
+                    <h3>Cuarenta Cuentos a Todo Vapor</h3>
+                    <p class="genre">Obra colectiva • Editorial SM</p>
+                    <p>Celebración del 40 aniversario del Premio Barco de Vapor con cuarenta cuentos escritos por los ganadores del prestigioso galardón. Una antología que recoge lo mejor de cuatro décadas de literatura infantil y juvenil española, mostrando la evolución y la calidad de este género literario. Participo en el libro con el relato "Guárdame el secreto" (página 139), con una ilustración de Adolfo Serra, preciosa.</p>
+                </div>
+            </div>
+
+            <!-- Como Tú -->
+            <div class="book-card" data-category="colectivos">
+                <img src="imagenes/mislibros/CUB-comotu.png" loading="lazy" alt="Como Tú" class="book-cover">
+                <div class="book-info">
+                    <h3>Como Tú</h3>
+                    <p class="genre">Obra colectiva</p>
+                    <p>Una colección de relatos sobre la diversidad, la inclusión y el respeto a las diferencias. Historias que nos recuerdan que todos somos únicos y, al mismo tiempo, compartimos una humanidad común. Un libro que celebra la riqueza de ser diferentes y la importancia de la empatía. Contribuyo en el libro con el  primer relato, 'Leer el cielo', ilustrado (magníficamente) por Alba Marina Rivera.</p>
+                </div>
+            </div>
+
+            <!-- Escritos de Otro Mundo -->
+            <div class="book-card" data-category="colectivos">
+                <img src="imagenes/mislibros/CUB-escritos.jpg" loading="lazy" alt="Escritos de Otro Mundo" class="book-cover">
+                <div class="book-info">
+                    <h3>Escritos de Otro Mundo</h3>
+                    <p class="genre">Obra colectiva • Editorial Kalandraka</p>
+                    <p>Siete autores utilizamos las biografías u obras de otros tantos escritores de fantasía y ciencia ficción para escribir cuentos basados en sus libros o personajes. En mi caso, en el cuento titulado "La visita", recreo el encuentro de Stanilaw Lem con un personaje venido de otro mundo, Ijon Tichy, que inspirará muchas de sus obras. Las ilustraciones, magníficas, son de Federico Delicado.</p>
+                </div>
+            </div>
+
+            <!-- La Calle de las Doce Lunas -->
+            <div class="book-card" data-category="colectivos">
+                <img src="imagenes/mislibros/varios-y-colectivos/CUB-doce-lunas.jpg" loading="lazy" alt="La Calle de las Doce Lunas" class="book-cover">
+                <div class="book-info">
+                    <h3>La Calle de las Doce Lunas</h3>
+                    <p class="genre">Obra colectiva • Editorial Loqueleo - Santillana</p>
+                    <p>El reto, entre doce escritores, era inventar un pueblo, una calle y un personaje,  con la regla de que cada uno debía jugar con el personaje propio y alguno de los ajenos. Los doce relatos configuran la historia de una calle, por cuyos tejados, balcones y ventanas se asoman misterios y secretos del pasado. Aunque cada historia no identifica a su autor, contribuí con el relato "La bicicleta" (capítulo 4) y un personaje que me encantó: la rebelde Tona.</p>
+                </div>
+            </div>
+
+            <!-- Cuento Contigo: 20 Cuentos Solidarios -->
+            <div class="book-card" data-category="colectivos">
+                <img src="imagenes/mislibros/varios-y-colectivos/CUB-cuento-contigo.jpg" loading="lazy" alt="Cuento contigo: 20 cuentos solidarios" class="book-cover">
+                <div class="book-info">
+                    <h3>Cuento contigo: 20 cuentos solidarios</h3>
+                    <p class="genre">Obra colectiva • Editorial Bruño</p>
+                    <p>Veinte ilustradores y veinte autores cedemos nuestras obras a una iniciativa solidaria, la "Fundación Leucemia y Linfoma", por intermediación de Bruño y de "Menudo Castillo". Un libro de lujo, magníficamente editado. Participo en él con el cuento "El Hada Nada-de-Nada", la historia de un hada cansada del papel asignado a las de su especie, y que toma sorprendentes decisiones. Como en muchas ocasiones, ilustrado por Tesa González.</p>
+                </div>
+            </div>
+
+            <!-- Daños Colaterales -->
+            <div class="book-card" data-category="colectivos">
+                <img src="imagenes/mislibros/varios-y-colectivos/CUB-antibelicas.jpg" loading="lazy" alt="Daños Colaterales" class="book-cover">
+                <div class="book-info">
+                    <h3>Daños Colaterales (Hazañas antibélicas)</h3>
+                    <p class="genre">Obra colectiva • Editorial Lengua de Trapo</p>
+                    <p>Un conjunto de relatos antibélicos que muestran las terribles consecuencias de los conflictos armados en las personas comunes. Historias que denuncian la guerra y sus devastadores efectos, poniendo rostro humano a las estadísticas y recordándonos el verdadero coste de la violencia. En mi caso, cree el relato 'La última foto de Robert Capa", que podrás leer completo en el apartado PARA LEER, de esta página.</p>
+                </div>
+            </div>
+
+            <!-- Palabras por la Lectura -->
+            <div class="book-card" data-category="colectivos">
+                <img src="imagenes/mislibros/otros/CUB-palabras-lectura.jpg" loading="lazy" alt="Palabras por la Lectura" class="book-cover">
+                <div class="book-info">
+                    <h3>Palabras por la Lectura</h3>
+                    <p class="genre">Obra colectiva • Editado por la Junta de Castilla La Mancha</p>
+                    <p>41 autores, docentes o narradores orales (entre ellos Rosa Regás, Amos Oz, John Berger, Rosa Regás...) damos distintas visiones sobre la lectura, su creación o su promoción, en textos ensayísticos o literarios. En mi caso, aporté el cuento "Las garzas del lago de Huan Hao", que podrás leer completo en el apartado PARA LEER de esta página web.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<section class="awards-section" id="premios">
+        <div class="container">
+
+            <h2 class="section-title section-asterisk">*</h2>
+            <h2 class="section-title">Premios y Reconocimientos</h2>
+
+            <div class="awards-grid">
+                <div class="award-card">
+                    <h3>🏆 Premio honorífico "Torre del Agua"</h3>
+                    <p class="year">2026</p>
+                    <p>En el marco del FestiLIJ26, en su IX edición, celebrada en Tres Cantos (Madrid), me conceden este premio "por mi dedicación a la Literatura Infantil y Juvenil". Me enorgullece esta distinción, concedida otros años a notables colegas: Luisa Villar, Concha López Narváez, Alfredo Gómez Cerdá y Jordi Sierra y Fabra. ¡Por la LIJ, su presente y su futuro!</p>
+                </div>
+
+                <div class="award-card">
+                    <h3>🏆 Premio Anaya Infantil</h3>
+                    <p class="year">2024</p>
+                    <p>Por la novela "Los mapas del agua", una historia situada en el desierto australiano, donde el agua es vital y las mujeres-agua, la N'Wone tienen en sus manos (y en sus oídos) la supervivencia de los pequeños pueblos, en los que la poesía y las canciones son el mapa de esos territorios.</p>
+                </div>
+
+                <div class="award-card">
+                    <h3>🏆 Premio Barco de Vapor</h3>
+                    <p class="year">2006</p>
+                    <p>Por "Ojo de Nube", una historia sobre un niño ciego en una tribu crow que se convierte en el miembro más útil de su comunidad gracias a sus extraordinarias habilidades.</p>
+                </div>
+
+                <div class="award-card">
+                    <h3>🏆 Premio Cervantes Chico</h3>
+                    <p class="year">2006</p>
+                    <p>Reconocimiento al conjunto de mi obra de literatura infantil y juvenil. Un honor que me honró con miedo, a sabiendas de que había colegas con más méritos que los míos.</p>
+                </div>
+
+                <div class="award-card">
+                    <h3>🏆 Premio Gran Angular</h3>
+                    <p class="year">2016</p>
+                    <p>Por "Mujer mirando al mar". Elena, la protagonista de mi historia, me llevó a conseguir un premio de tanto prestigio. Fue emoción pura al pensar en ello.</p>
+                </div>
+
+                <div class="award-card">
+                    <h3>🏆 Premio Alandar</h3>
+                    <p class="year">2003 y 2013</p>
+                    <p>Por "El cazador de estrellas" (situado en el Sáhara) y "Juegos inocentes juegos" (en relación con los drones), dos historias realistas y vinculadas con la actualidad. El tipo de literatura que me atrae y me gusta hacer.</p>
+                </div>
+
+                <div class="award-card">
+                    <h3>🏆 Premio Ignacio Aldecoa</h3>
+                    <p class="year">1996 y 1997</p>
+                    <p>Reconocimiento por mi trabajo literario en dos ediciones consecutivas de este prestigioso premio que honra la memoria del gran escritor vasco Ignacio Aldecoa.</p>
+                </div>
+
+                <div class="award-card">
+                    <h3>⭐ White Ravens</h3>
+                    <p class="year">2004</p>
+                    <p>Por "El Cazador de Estrellas". Seleccionado por la Biblioteca Internacional de Múnich como uno de los mejores libros juveniles del año a nivel internacional.</p>
+                </div>
+
+                <div class="award-card">
+                    <h3>📚 Libro Recomendado OEPLI</h3>
+                    <p class="year">Varios años</p>
+                    <p>Organización Española para el Libro Infantil y Juvenil. Varios de mis libros han sido seleccionados y recomendados por esta organización para fomentar la lectura entre los jóvenes.</p>
+                </div>
+
+                <div class="award-card">
+                    <h3>🌍 Mejor Álbum Ilustrado Brasil</h3>
+                    <p class="year">2015</p>
+                    <p>Por "El Sueño de Lu Shzu", ilustrado por Tesa González. Reconocido como el mejor álbum ilustrado del año en Brasil. Tres años de trabajo conjunto para crear esta joya.</p>
+                </div>
+
+                <div class="award-card">
+                    <h3>📖 Lista de Honor IBBY</h3>
+                    <p class="year">Varias ediciones</p>
+                    <p>International Board on Books for Young People. Reconocimiento internacional por la calidad literaria de mis obras dirigidas al público infantil y juvenil.</p>
+                </div>
+
+                <div class="award-card">
+                    <h3>🏆 Varios premios de relatos</h3>
+                    <p class="year">Varios años</p>
+                    <p>Cuando comencé a escribir literatura adulta, me presenté a algunos premios de relatos, por aquello de 'examinarme'. Tampoco conocía a nadie en este mundillo. Fruto de esos envíos fueron el Premio Unión Latina en París, el de Cuentos de La Felguera, el Gabriel Miró, dos veces el Aldecoa, el Ciudad de Mula... Todo esto me animó a iniciar una escritura más dedicada.</p>
+                </div>
+
+                <div class="award-card">
+                    <h3>🏆 Y alguno de poesía...</h3>
+                    <p class="year">Varios años</p>
+                    <p>Incluso me atreví a escribir poesía, en plan "intruso". Me dieron el "Pedro Iglesias Caballero", en Cabra, y el "Café Croché", en San Lorenzo de El Escorial. No sé si algún día volveré a las andadas. También en este género he escrito algunas cosas más, como los poemas que aparecen en "Mujer mirando al mar".</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="conferences-section" id="conferencias">
+        <div class="container">
+
+            <h2 class="section-title section-asterisk">*</h2>
+            <h2 class="section-title">Conferencias y Reflexiones</h2>
+            <p class="section-subtitle">Charlas sobre literatura, educación y el compromiso del escritor</p>
+            
+            <div class="conferences-grid">
+                <div class="conference-card">
+                    <h3>Literatura Comprometida</h3>
+                    <p class="meta">Reflexiones sobre el papel del escritor</p>
+                    <p>He defendido que el principal compromiso del escritor es con la propia literatura, entendida como el arte de imaginar, descubrir, comunicar y compartir a través de la palabra. Los escritores solemos olvidar en ocasiones que la escritura tiene varios milenios de existencia, que la narración oral lleva existiendo varios milenios más, y que nuestra responsabilidad es intentar ahondar desde una perspectiva distinta, o con una mirada más profunda, sobre asuntos que ya han sido tratados una y otra vez a lo largo de los siglos.</p>
+                    <a href="/literatura-comprometida.html" class="link-styled">Leer conferencia completa →</a>
+                </div>
+
+                <div class="conference-card">
+                    <h3>Leer en Tiempos Turbios</h3>
+                    <p class="meta">Conferencia en Miami • Sobre el valor de la lectura</p>
+                    <p>Confieso ser un lector voraz, pero desastroso. A veces, sobre mi mesilla de noche hay dos o tres novelas que leo asistemáticamente, alternando unas y otras. Cuando me llega alguna revista científica a la que estoy suscrito, interrumpo esa lectura para dar cuenta de algún artículo que llama mi atención. Me son muy queridos los géneros diarísticos y aquellos en que los escritores hablan sobre escritores, y especialmente sobre sí mismos.</p>
+                    <a href="/leer-tiempos-turbios.html" class="link-styled">Leer conferencia completa →</a>
+                </div>
+
+                <div class="conference-card">
+                    <h3>Gastronomía y literatura: Salir de tapas (el cuento)</h3>
+                    <p class="meta">Conferencia impartida en Alberta, Canadá</p>
+                    <p>En ocasiones, sobre todo entre lectores poco frecuentes o adolescentes, la literatura produce empacho, y el propósito de leer un libro, por excelso que sea, se convierte en un obstáculo insalvable. Pero hay otras vías para saciar el hambre e incluso para incitar el sentido del gusto: pequeñas porciones.</p>
+                    <a href="/gastronomia-literatura.html" class="link-styled">Leer un extracto de la conferencia →</a>
+                </div>
+
+                <div class="conference-card">
+                    <h3>Leer, Sentir, Escribir</h3>
+                    <p class="meta">Mi experiencia lectora y vital</p>
+                    <p>Cada escritor es producto de su experiencia lectora y su perspectiva vital. En mis tiempos "no existía" la literatura juvenil. En el colegio y en el instituto se leía lo que a uno le obligaban, que era más bien poco y fragmentario, lo suficiente para aprenderse ristras de autores, fechas y títulos, y algunos textos breves que se suponía permitían diferenciar entre géneros, épocas, temáticas y estilos.</p>
+                </div>
+
+                <div class="conference-card">
+                    <h3>Hay que Invitar a Escribir</h3>
+                    <p class="meta">Entrevista en Vitoria • Sobre escritura y juventud</p>
+                    <p>Leer es un placer, pero también es trabajoso, ya que requiere de esfuerzo y de concentración. Aunque no tengo la solución para fomentar la lectura entre los adolescentes, recalco la importancia de darles protagonismo y les invito a escribir sobre cualquier cosa, aunque sea con faltas de ortografía. El acto de escribir, de poner en palabras los propios pensamientos, es fundamental para el desarrollo personal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container section-padded" id="paraleer">
+
+        <h2 class="section-title section-asterisk">*</h2>
+        <h2 class="section-title">Para Leer</h2>
+        <p class="section-subtitle">Cuentos, fragmentos de novelas, poemas y textos completos para disfrutar</p>
+        
+        <div class="paraleer-intro">
+            <p>
+                Algunos de mis cuentos están recogidos en libros como <em>Tras el cristal</em> o <em>Cuentos crudos</em>.
+                Otros han sido publicados en diferentes momentos y están ya libres de derechos. Los ofrezco ahora juntos,
+                y completos, a petición de algunos lectores. Añado, por aquello del reconocimiento, y no sin recato, algunos poemas.
+            </p>
+        </div>
+
+        <!-- Enlaces a cuentos y relatos -->
+        <div class="paraleer-box">
+            <h3 class="paraleer-title">Cuentos y Relatos</h3>
+            <div class="paraleer-grid">
+                <div><a href="/los-poemas-de-la-arena" class="paraleer-link">▶ 'Los poemas de la arena'</a></div>
+                <div><a href="/algo-es-algo" class="paraleer-link">▶ 'Algo es algo'</a></div>
+                <div><a href="/la-ultima-foto-de-robert-capa" class="paraleer-link">▶ 'La última foto de Robert Capa'</a></div>
+                <div><a href="/las-garzas-del-lago-de-luan-hao" class="paraleer-link">▶ 'Las garzas del lago de Luan Hao'</a></div>
+                <div><a href="/no-lo-entiendo" class="paraleer-link">▶ 'No lo entiendo'</a></div>
+                <div><a href="/la-ultima-leccion" class="paraleer-link">▶ 'La última lección'</a></div>
+                <div><a href="/ruleta-rusa" class="paraleer-link">▶ 'Ruleta rusa'</a></div>
+                <div><a href="/mujer-mirando-al-mar" class="paraleer-link">▶ 'Mujer mirando al mar' (el relato)</a></div>
+                <div><a href="/los-nombres-de-las-cosas" class="paraleer-link">▶ 'Los nombres de las cosas' (poema)</a></div>
+                <div><a href="/hace-tiempo" class="paraleer-link">▶ 'Hace tiempo' (poema)</a></div>
+            </div>
+        </div>
+
+        <!-- Fragmentos de otros autores -->
+        <div class="paraleer-box">
+            <h3 class="paraleer-title">Fragmentos de Lecturas</h3>
+            <p class="fragments-subtitle">Líneas que un día me asombraron a mí... y quizá te sorprendan a ti.</p>
+
+            <div class="fragments-container">
+                <div class="fragment-card">
+                    <p class="fragment-text">"A estas alturas debes haberlo adivinado: vengo de otro planeta. Pero nunca te diré llévame ante tus dirigentes. Ni siquiera yo, poco acostumbrada como estoy a vuestras maneras, cometería tal error... En cambio te diré: Llévame ante tus desayunos, tus puestas de sol, tus malos sueños, tus zapatos, tus sustantivos. Llévame ante tus dedos; ante tus muertes. Esos sí valen la pena. Eso es lo que vine buscando."</p>
+                    <p class="fragment-author">— Margaret Atwood: "Aterrizaje"</p>
+                </div>
+
+                <div class="fragment-card border-secondary">
+                    <p class="fragment-text">"Si pudiera ser un indio, ahora mismo, y sobre un caballo a todo galope, con el cuerpo inclinado y suspendido en el aire, estremeciéndome sobre el suelo oscilante, hasta dejar las espuelas, pues no tenía espuelas, hasta tirar las riendas, pues no tenía riendas, y sólo viendo ante mí un paisaje como una pradera segada, ya sin el cuello y sin la cabeza del caballo."</p>
+                    <p class="fragment-author">— Franz Kafka: "El deseo de ser un indio"</p>
+                </div>
+
+                <div class="fragment-card border-accent">
+                    <p class="fragment-text">"La tierra bajo sus botas era como un viejo colchón chirriante y elástico: encima una capa de hojas ligeras, frágiles, diferentes entre sí también en la muerte; y, debajo, otra de hojas disecadas, viejas, de hace años, que se habían macerado y que constituían una única masa marrón: polvo de la vida que un día había brotado en capullos, susurrado en el viento de una tormenta, brillado al sol después de una lluvia."</p>
+                    <p class="fragment-author">— Vasili Grossman: "Vida y destino"</p>
+                </div>
+
+                <div class="fragment-card">
+                    <p class="fragment-text">"Las bibliotecas de los críticos suelen ser estupendas, primero por la inmensa cantidad de libros (no los compran, se los mandan de regalo las editoriales, con dedicatorias lambonas de los autores), y segundo porque la mayoría de ellos permanecen intonsos, como nuevos, no teniendo el crítico de tiempo ni ganas de leer los libros que reseña. En Angosta se sabía que el lema de Afamador era el siguiente: Reseño los libros antes de leerlos; así, cuando los leo, ya sé qué pensar de ellos."</p>
+                    <p class="fragment-author">— Héctor Abad Faciolince: "Angosta"</p>
+                </div>
+
+                <div class="fragment-card border-secondary">
+                    <p class="fragment-text">"No basta con lamentarnos, criticar al gobierno, a los capitalistas o a las multinacionales. Es necesario mucho más. Basta con resistir culturalmente como lectores. Militantes de la lectura. Resistentes de la cultura. Frente a la dictadura de la basura, hay que insistir en lo bueno, defender el derecho a leer literatura."</p>
+                    <p class="fragment-author">— Ana María Machado</p>
+                </div>
+
+                <div class="fragment-card border-accent">
+                    <p class="fragment-text">"Yo creo que la verdad siempre es simple. Y lo es por fuerza. Tiene que ser bastante simple como para que la entienda un niño. De lo contrario sería demasiado tarde. Cuando la comprendieras ya sería tarde."</p>
+                    <p class="fragment-author">— Cormac McCarthy: "No es país para viejos"</p>
+                </div>
+
+                <div class="fragment-card">
+                    <p class="fragment-text">"En mi opinión, solo deberíamos leer libros que nos muerdan y nos hieran. Si el libro que estamos leyendo no nos sacude como un golpe en el cráneo, ¿para qué molestarnos en leerlo? ¿Para que nos haga felices, como tú dices? Dios mío, seríamos igual de felices si no tuviéramos ningún libro."</p>
+                    <p class="fragment-author">— Kafka. Carta a Oskar Pollak.</p>
+                </div>
+
+                <div class="fragment-card border-secondary">
+                    <p class="fragment-text">"Van pasando, pasan, pasan, deslizándose los años, por utilizar una desgarradora inflexión horaciana. Pasan los años, cariño, y con el tiempo nadie sabrá lo que tú y yo sabemos. Crece nuestro hijo; las rosas de Paestum, del neblinoso Paestum, han desaparecido; estúpidos mecanicistas manosean ciertas fuerzas de la naturaleza que algunos mansos matemáticos, para su propia y secreta sorpresa, parecen haber presentido; de modo que quizá haya llegado la hora de que examinemos algunas instantáneas antiguas, pinturas rupestres de trenes y aeroplanos, estratos de juguetes en el pesado armario."</p>
+                    <p class="fragment-author">— Vladimir Nabokov: "Habla, memoria"</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="paraleer-cta">
+            <h3>¿Quieres leer fotos?</h3>
+            <p>Porque una foto también puede contar una historia...</p>
+            <a href="algunas-fotos-que-hice-un-dia.html" class="btn-cta">Leer fotos →</a>
+        </div>
+    </section>
+
+    <section class="math-section" id="matematicas">
+        <div class="container">
+
+            <h2 class="section-title section-asterisk">*</h2>
+            <h2 class="section-title">El Rincón de las Matemáticas</h2>
+            <p class="section-subtitle">Donde la literatura y las matemáticas se encuentran</p>
+            
+            <div class="math-grid">
+                <div class="math-card">
+                    <h3>📐 Matemáticas y Literatura: ¡no tan distantes!</h3>
+                    <p>Hace no mucho tiempo, solo unos cuantos miles de años, nadie pensaba en términos de "matemáticas" y "literatura", porque nadie había inventado aún esas palabras. El lenguaje y las matemáticas discurrían en paralelo. Hubo un momento en el que alguien creó la palabra "ave" para representar una abstracción que comprendía por igual a los buitres, los jilgueros, los vencejos. Lo mismo ocurrió con "cinco". La literatura, como las matemáticas, nacen del pensamiento y no de la acción.</p>
+                </div>
+
+                <div class="math-card">
+                    <h3>🔢 Desnumeralizar las Matemáticas</h3>
+                    <p>Conferencia en la Universidad de Santiago de Compostela. Nadie que esté aquí presente logrará nunca el Nobel de Matemáticas porque, como es sabido, no existe. Alfred Nobel consideró que las matemáticas no constituyen "una fuente de beneficio práctico para la humanidad". Pero las matemáticas son mucho más que números: son una forma de pensar, de ver el mundo, de resolver problemas creativamente.</p>
+                </div>
+
+                <div class="math-card">
+                    <h3>🦊 ¿Qué Saben de Números los Animales?</h3>
+                    <p>Muchos experimentos realizados con animales, y en particular con primates, tratan de conocer no solo las aptitudes numéricas del animal, sino también de saber cómo los seres humanos desarrollaron las nociones de número, cantidad, orden y operación. Hubo un tiempo en que los humanos probablemente no poseían más capacidades numéricas que las de los actuales chimpancés.</p>
+                </div>
+
+                <div class="math-card">
+                    <h3>🔐 Primos, Claves y Grandes Números</h3>
+                    <p>Los números primos son fundamentales para la criptografía moderna. Saber si un número es primo es relativamente sencillo, pero determinar cuáles son sus factores primos puede llevar millones de años de computación. Esta asimetría es la base de la seguridad en Internet. Por encima de nuestras cabezas, a la velocidad de la luz, viajan billones de datos cifrados con números primos largos, casi imposibles de factorizar.</p>
+                </div>
+
+                <div class="math-card">
+                    <h3>🏛️ ¿Por qué Arquímedes es tan Famoso?</h3>
+                    <p>Arquímedes fue uno de los gigantes de las matemáticas, a las que dedicó buena parte de su larga vida. Sus escritos fueron copiados y vueltos a copiar durante generaciones y no se entendieron plenamente hasta dieciocho siglos después. Muchos estudiosos consideran que si hubiera que nombrar tres matemáticos de la historia de la humanidad, uno de ellos sería Arquímedes; otro, Newton y el tercero, quizá Gauss.</p>
+                </div>
+
+                <div class="math-card">
+                    <h3>📊 Problemas y Reflexiones</h3>
+                    <p>Hace mucho tiempo (unos 30 años, todavía no habían llegado los ordenadores), proponía a mis alumnos problemas ilustrados por mi amigo Antonio Varas. ¡Qué tiempos, en los que uno se apañaba con una máquina de escribir y una caja de rotuladores! En esta sección de mi web comparto problemas matemáticos, reflexiones y lecturas recomendadas.</p>
+                    <p class="mt-1"><a href="algunos-problemas.html" class="link-bio">→ ¿Quieres ver algunos problemas?</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container section-padded" id="sahara">
+
+        <h2 class="section-title section-asterisk">*</h2>
+        <h2 class="section-title">Bienvenid@ al Sáhara</h2>
+
+        <div class="sahara-intro">
+            <p><strong>Hace años, tuve la suerte de visitar el Sáhara y de conocer a hombres, mujeres y niños que viven en un desierto terrible. Una inconclusa descolonización, la invasión de un país extranjero, la contumacia de nuestros gobernantes y la incapacidad de la ONU no ha resuelto después de décadas un problema vergonzoso.</strong></p>
+
+            <p><strong>Desde aquel primer viaje he hecho una docena más, casi siempre en relación con el Bubisher. Pero el apoyo no solo se puede hacer allí, sino también aquí, y siempre con personas que sentimos que el Sáhara sigue siendo una parte distante de este país, mientras el Sáhara Occidental no obtenga su liberación y por tanto su independencia.</strong></p>
+
+            <div class="mt-2">
+                <img src="imagenes/elsahara/bubisher-en-desierto.png" loading="lazy" alt="Bubisher en el desierto" class="img-rounded img-full-width">
+                <p class="photo-credit">(Foto de Inés G. Aparicio.)</p>
+            </div>
+        </div>
+
+        <h3 class="sahara-subtitle">Los caminos del desierto son infinitos, pero te invito a recorrer tres...</h3>
+
+        <div class="math-grid">
+            <a href="sahara-bubisher.html" class="card-link">
+                <div class="math-card sahara-card">
+                    <h3>Un proyecto apasionante: el Bubisher</h3>
+                    <p>En el desierto, el bubisher es el pájaro que trae la buena suerte. Lo utilizamos como símbolo de los libros que viajan hasta las bibliotecas, escuelas, jaimas y calles saharauis. Comenzó como un pequeño proyecto, que hoy asombra y es candidato en 2026 al Premio "Astrid Lindgren Memorial Award" (ALMA), de promoción de la lectura. Si quieres conocer su origen, desarrollo y trabajo...</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="sahara-arrow" fill="none" stroke="#c0392b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="M12 8l4 4-4 4" /><line x1="8" y1="12" x2="16" y2="12" /></svg>
+                </div>
+            </a>
+
+            <a href="sahara-colaborar.html" class="card-link">
+                <div class="math-card sahara-card">
+                    <h3>Colaborar con el Bubisher: libros y más...</h3>
+                    <p>Construir y mantener bibliotecas, pagar a bibliotecarias y ayudantes saharauis, trasladar libros o comprarlos, llenar el combustible de los bibliobuses... supone esfuerzo y dinero, que íntegramente se traslada al desierto. Desde aquí se puede ayudar de muchas formas: haciéndose socio de Bubisher, realizando pequeñas donaciones, ofreciéndose a formar personal o... ¡llevándote libros que editamos a cambio de una pequeña ofrenda! Si quieres saber cómo echar una mano...</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="sahara-arrow" fill="none" stroke="#c0392b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="M12 8l4 4-4 4" /><line x1="8" y1="12" x2="16" y2="12" /></svg>
+                </div>
+            </a>
+
+            <a href="sahara-poetas.html" class="card-link">
+                <div class="math-card sahara-card">
+                    <h3>Poetas y escritores saharauis</h3>
+                    <p>No hay que olvidar que los saharauis hablan español, que estudiaron en español y que escriben en español. No han olvidado su lengua y su poesía o sus cuentos y novelas tratan de mantener la cultura inmemorial de su pueblo y de ser un testimonio de la añoranza por sus tierras y la lucha por su liberación. Necesitan apoyo, tanto aquí como en el desierto. Si quieres conocer sus obras...</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="sahara-arrow" fill="none" stroke="#c0392b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="M12 8l4 4-4 4" /><line x1="8" y1="12" x2="16" y2="12" /></svg>
+                </div>
+            </a>
+        </div>
+
+    </section>
+
+    <div class="contact-wrapper" id="contacto">
+        <section class="contact-hero">
+            <div class="hero-content">
+                <h2>ricardo gómez</h2>
+            </div>
+            <div class="hero-icons">
+                <a href="blog1.html"><img src="imagenes/iconos/blog1.svg" loading="lazy" alt="Blog 1" class="icon-blog"></a>
+                <a href="blog2.html"><img src="imagenes/iconos/blog2.svg" loading="lazy" alt="Blog 2" class="icon-blog"></a>
+                <a href="blog3.html"><img src="imagenes/iconos/blog3.svg" loading="lazy" alt="Blog 3" class="icon-blog"></a>
+                <a href="algunas-fotos-que-hice-un-dia.html" class="icon-camera-link">
+                    <img src="imagenes/iconos/camara.svg" loading="lazy" alt="Ver mis fotos" class="icon-blog-large">
+                </a>
+                <a href="blog4.html"><img src="imagenes/iconos/blog4.svg" loading="lazy" alt="Blog 4" class="icon-blog"></a>
+                <a href="blog5.html"><img src="imagenes/iconos/blog5.svg" loading="lazy" alt="Blog 5" class="icon-blog"></a>
+                <a href="blog6.html"><img src="imagenes/iconos/blog6.svg" loading="lazy" alt="Blog 6" class="icon-blog"></a>
+            </div>
+        </section>
+
+        <div class="contact-cita">
+            <img src="imagenes/contacto/yo-despedida.png" alt="Ricardo Gómez" loading="lazy" class="contact-cita-img">
+        </div>
+
+        <footer>
+            <div class="container">
+                <h3>Contacto</h3>
+
+                <div class="footer-social">
+                    <a href="mailto:correo@ricardogomez.com" class="footer-social-link">
+                        <img src="imagenes/iconos/sobre.svg" alt="Email" class="footer-social-icon">
+                        <span class="footer-social-text">correo@ricardogomez.com</span>
+                    </a>
+                    <a href="https://www.instagram.com/ricardogomez3333/" class="footer-social-link">
+                        <img src="imagenes/iconos/instagram.svg" alt="Instagram" class="footer-social-icon">
+                        <span class="footer-social-text">@ricardogomez3333</span>
+                    </a>
+                    <a href="https://www.facebook.com/people/Ricardo-G%C3%B3mez/100050068996347/" class="footer-social-link">
+                        <img src="imagenes/iconos/facebook.svg" alt="Facebook" class="footer-social-icon">
+                        <span class="footer-social-text">Ricardo Gómez</span>
+                    </a>
+                </div>
+
+                <div class="footer-photos">
+                    <a href="algunas-fotos-que-hice-un-dia.html" class="footer-photos-link">
+                        <img src="imagenes/iconos/camara.svg" alt="" class="footer-photos-icon">
+                        <span>MIS FOTOS</span>
+                        <img src="imagenes/iconos/camara.svg" alt="" class="footer-photos-icon">
+                    </a>
+                </div>
+
+                <p class="footer-copyright">Diseño y realización de la página: Ricardo Gómez.<br>Contenido literario, reservado. Actualizado en Febrero de 2026<br>Las fotos de la web son mías, excepto retratos y las acreditadas o señaladas como prestadas.</p>
+            </div>
+        </footer>
+    </div>
+
+        <script>
+        // Filtros de libros
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const bookCards = document.querySelectorAll('.book-card');
+
+        // Función para filtrar libros
+        function filterBooks(filter) {
+            bookCards.forEach(card => {
+                const category = card.getAttribute('data-category');
+                if (category === filter) {
+                    card.classList.remove('hidden');
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        }
+
+        // Filtrar por "juvenil" al cargar la página
+        filterBooks('juvenil');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                const filter = this.getAttribute('data-filter');
+                
+                filterBtns.forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                filterBooks(filter);
+            });
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Animaciones al hacer scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.book-card, .conference-card, .math-card, .award-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
