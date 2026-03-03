@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test WebP - ¿Soporta tu navegador WebP?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: #f5f5f5;
+        }
+        .test-box {
+            background: white;
+            padding: 2rem;
+            margin: 1rem 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        img {
+            border: 3px solid red;
+            max-width: 100%;
+            display: block;
+            margin: 1rem 0;
+        }
+        .success { color: green; font-weight: bold; font-size: 1.2rem; }
+        .error { color: red; font-weight: bold; font-size: 1.2rem; }
+    </style>
+</head>
+<body>
+    <h1>🔍 Diagnóstico de Imágenes WebP</h1>
+
+    <div class="test-box">
+        <h2>Test 1: ¿Tu navegador soporta WebP?</h2>
+        <p id="webp-support">Comprobando...</p>
+    </div>
+
+    <div class="test-box">
+        <h2>Test 2: Imagen WebP desde tu servidor</h2>
+        <p>Esta imagen debería aparecer con borde rojo:</p>
+        <img id="img1" src="https://ricardogomez.com/imagenes/biografia/para-biografia-3.jpg" alt="Test WebP">
+        <p id="status1">Cargando...</p>
+    </div>
+
+    <div class="test-box">
+        <h2>Test 3: Imagen WebP (ruta relativa)</h2>
+        <img id="img2" src="imagenes/biografia/caricatura-mia.jpg" alt="Test WebP 2">
+        <p id="status2">Cargando...</p>
+    </div>
+
+    <div class="test-box">
+        <h2>Test 4: Información del navegador</h2>
+        <p id="browser-info"></p>
+    </div>
+
+    <script>
+        // Test 1: Soporte WebP
+        function checkWebPSupport() {
+            const elem = document.createElement('canvas');
+            if (elem.getContext && elem.getContext('2d')) {
+                return elem.toDataURL('image/webp').indexOf('data:image/webp') === 0;
+            }
+            return false;
+        }
+
+        const supportsWebP = checkWebPSupport();
+        const supportElem = document.getElementById('webp-support');
+
+        if (supportsWebP) {
+            supportElem.innerHTML = '<span class="success">✅ Tu navegador SÍ soporta WebP</span>';
+        } else {
+            supportElem.innerHTML = '<span class="error">❌ Tu navegador NO soporta WebP - Este es el problema!</span>';
+        }
+
+        // Test 2 y 3: Carga de imágenes
+        const img1 = document.getElementById('img1');
+        const img2 = document.getElementById('img2');
+
+        img1.addEventListener('load', function() {
+            document.getElementById('status1').innerHTML =
+                '<span class="success">✅ Imagen cargada correctamente (URL absoluta)</span>';
+        });
+
+        img1.addEventListener('error', function() {
+            document.getElementById('status1').innerHTML =
+                '<span class="error">❌ ERROR al cargar imagen<br>URL: ' + this.src + '</span>';
+        });
+
+        img2.addEventListener('load', function() {
+            document.getElementById('status2').innerHTML =
+                '<span class="success">✅ Imagen cargada correctamente (URL relativa)</span>';
+        });
+
+        img2.addEventListener('error', function() {
+            document.getElementById('status2').innerHTML =
+                '<span class="error">❌ ERROR al cargar imagen<br>URL: ' + this.src + '</span>';
+        });
+
+        // Test 4: Info del navegador
+        document.getElementById('browser-info').innerHTML =
+            '<strong>Navegador:</strong> ' + navigator.userAgent + '<br>' +
+            '<strong>URL actual:</strong> ' + window.location.href + '<br>' +
+            '<strong>Protocolo:</strong> ' + window.location.protocol;
+    </script>
+</body>
+</html>

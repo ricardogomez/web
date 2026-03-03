@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Imágenes</title>
+    <style>
+        body { padding: 2rem; font-family: Arial, sans-serif; }
+        img { border: 2px solid red; margin: 1rem 0; display: block; }
+        .test-box { background: #f0f0f0; padding: 1rem; margin: 1rem 0; }
+    </style>
+</head>
+<body>
+    <h1>Test de Imágenes - Diagnóstico</h1>
+
+    <div class="test-box">
+        <h2>Imagen 1: Path relativo</h2>
+        <img src="imagenes/biografia/para-biografia-3.jpg" alt="Test 1" style="max-width: 300px">
+        <p>Si ves un borde rojo con imagen dentro = FUNCIONA ✅</p>
+        <p>Si solo ves borde rojo vacío = NO FUNCIONA ❌</p>
+    </div>
+
+    <div class="test-box">
+        <h2>Imagen 2: Otra imagen</h2>
+        <img src="imagenes/biografia/caricatura-mia.jpg" alt="Test 2" style="max-width: 300px">
+    </div>
+
+    <div class="test-box">
+        <h2>Imagen 3: De portada</h2>
+        <img src="imagenes/mapasdelagua.jpg" alt="Test 3" style="max-width: 300px">
+    </div>
+
+    <div class="test-box">
+        <h2>Info del navegador</h2>
+        <p id="info"></p>
+    </div>
+
+    <script>
+        document.getElementById('info').innerHTML =
+            'URL actual: ' + window.location.href + '<br>' +
+            'Protocolo: ' + window.location.protocol;
+
+        // Detectar errores de carga de imagen
+        document.querySelectorAll('img').forEach((img, index) => {
+            img.addEventListener('error', function() {
+                console.error('Error cargando imagen ' + (index + 1) + ': ' + this.src);
+                this.insertAdjacentHTML('afterend',
+                    '<p style="color: red; font-weight: bold;">❌ ERROR: No se pudo cargar esta imagen</p>' +
+                    '<p>Path: ' + this.src + '</p>');
+            });
+
+            img.addEventListener('load', function() {
+                console.log('Imagen ' + (index + 1) + ' cargada correctamente');
+                this.insertAdjacentHTML('afterend',
+                    '<p style="color: green; font-weight: bold;">✅ Imagen cargada correctamente</p>');
+            });
+        });
+    </script>
+</body>
+</html>
