@@ -1040,9 +1040,11 @@
         </div>
 
         <!-- Enlaces a cuentos y relatos -->
-        <div class="paraleer-box">
-            <h3 class="paraleer-title">Cuentos y Relatos</h3>
-            <div class="paraleer-grid">
+        <div class="paraleer-box paraleer-with-image">
+            <img src="imagenes/acuarelas/acu-mar.jpeg" alt="Mar y prado en acuarela" class="paraleer-watercolor-image">
+            <div class="paraleer-content">
+                <h3 class="paraleer-title">Cuentos y Relatos</h3>
+                <div class="paraleer-grid">
                 <div><a href="/los-poemas-de-la-arena" class="paraleer-link">▶ 'Los poemas de la arena'</a></div>
                 <div><a href="/algo-es-algo" class="paraleer-link">▶ 'Algo es algo'</a></div>
                 <div><a href="/la-ultima-foto-de-robert-capa" class="paraleer-link">▶ 'La última foto de Robert Capa'</a></div>
@@ -1053,6 +1055,7 @@
                 <div><a href="/mujer-mirando-al-mar" class="paraleer-link">▶ 'Mujer mirando al mar' (el relato)</a></div>
                 <div><a href="/los-nombres-de-las-cosas" class="paraleer-link">▶ 'Los nombres de las cosas' (poema)</a></div>
                 <div><a href="/hace-tiempo" class="paraleer-link">▶ 'Hace tiempo' (poema)</a></div>
+                </div>
             </div>
         </div>
 
@@ -1333,7 +1336,7 @@
         `;
         document.body.appendChild(lightbox);
 
-        document.querySelectorAll('.conference-ink-image').forEach(img => {
+        document.querySelectorAll('.conference-ink-image, .paraleer-watercolor-image').forEach(img => {
             img.style.cursor = 'pointer';
             img.addEventListener('click', () => {
                 document.getElementById('lightbox-img').src = img.src;
