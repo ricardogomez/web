@@ -1321,6 +1321,36 @@
             card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
             observer.observe(card);
         });
+
+        // Lightbox para imágenes de tinta china
+        const lightbox = document.createElement('div');
+        lightbox.id = 'lightbox';
+        lightbox.innerHTML = `
+            <div class="lightbox-content">
+                <span class="lightbox-close">&times;</span>
+                <img src="" alt="" id="lightbox-img">
+            </div>
+        `;
+        document.body.appendChild(lightbox);
+
+        document.querySelectorAll('.conference-ink-image').forEach(img => {
+            img.style.cursor = 'pointer';
+            img.addEventListener('click', () => {
+                document.getElementById('lightbox-img').src = img.src;
+                document.getElementById('lightbox-img').alt = img.alt;
+                lightbox.classList.add('active');
+            });
+        });
+
+        document.querySelector('.lightbox-close').addEventListener('click', () => {
+            lightbox.classList.remove('active');
+        });
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.classList.remove('active');
+            }
+        });
     </script>
 </body>
 </html>
