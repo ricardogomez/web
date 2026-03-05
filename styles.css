@@ -1747,13 +1747,13 @@ footer a:hover {
 /* Fragment with watercolor image */
 .fragment-with-image {
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
     align-items: stretch;
 }
 
 .fragment-watercolor-image {
     flex-shrink: 0;
-    width: 300px;
+    width: 150px;
     height: 100%;
     object-fit: cover;
     opacity: 1;
