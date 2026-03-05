@@ -321,6 +321,25 @@ nav {
     margin-bottom: 1rem;
 }
 
+/* Conference card with ink drawing */
+.conference-with-ink {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.conference-ink-image {
+    flex-shrink: 0;
+    width: 200px;
+    height: auto;
+    opacity: 0.8;
+    border-radius: 5px;
+}
+
+.conference-content {
+    flex: 1;
+}
+
 .read-more {
     color: var(--accent);
     text-decoration: none;
