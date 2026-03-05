@@ -1426,6 +1426,10 @@ footer a:hover {
     font-size: 1rem;
     opacity: 0.9;
     margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.hero-content .hero-tagline-small:last-of-type {
     margin-bottom: 5.5rem !important;
 }
 
