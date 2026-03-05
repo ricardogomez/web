@@ -325,13 +325,14 @@ nav {
 .conference-with-ink {
     display: flex;
     gap: 2rem;
-    align-items: flex-start;
+    align-items: stretch;
 }
 
 .conference-ink-image {
     flex-shrink: 0;
-    width: 200px;
-    height: auto;
+    width: 250px;
+    height: 100%;
+    object-fit: cover;
     opacity: 0.8;
     border-radius: 5px;
 }
