@@ -1604,10 +1604,19 @@ footer a:hover {
     background-image: url('imagenes/acuarelas/acu-paisaje1.jpeg');
     background-size: cover;
     background-position: center;
-    padding: 3rem 2rem;
+    padding: 8rem 2rem 2rem;
     color: white;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
     border-radius: 10px;
     margin: 1rem auto 2rem;
-    max-width: 900px;
+    max-width: 1000px;
+    min-height: 200px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+/* Remove red line decoration from biography title */
+#biografia .section-title:not(.section-asterisk)::after {
+    display: none;
 }
