@@ -1573,3 +1573,21 @@ footer a:hover {
     color: #333;
     font-weight: 500;
 }
+
+/* Watercolor section divider */
+.watercolor-divider {
+    width: 100%;
+    max-width: 1000px;
+    height: 60px;
+    margin: 4rem auto;
+    background-image: url('imagenes/acuarelas/acu-paisaje1.jpeg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    border-radius: 8px;
+    transition: opacity 0.3s ease;
+}
+
+.watercolor-divider:hover {
+    opacity: 0.7;
+}
