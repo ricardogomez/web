@@ -1315,6 +1315,15 @@ footer a:hover {
     margin-bottom: 1.5rem;
 }
 
+.sahara-intro img {
+    opacity: 0.75;
+    transition: opacity 0.3s ease;
+}
+
+.sahara-intro img:hover {
+    opacity: 1;
+}
+
 .sahara-subtitle {
     color: #c0392b;
     font-size: 1.6rem;
