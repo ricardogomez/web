@@ -1599,28 +1599,15 @@ footer a:hover {
     font-weight: 500;
 }
 
-/* Watercolor background for biography section */
-#biografia {
-    position: relative;
+/* Watercolor background for biography title */
+#biografia .section-title:not(.section-asterisk) {
     background-image: url('imagenes/acuarelas/acu-paisaje1.jpeg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
-}
-
-#biografia::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(255, 255, 255, 0.85);
-    z-index: 0;
-    pointer-events: none;
-}
-
-#biografia > * {
-    position: relative;
-    z-index: 1;
+    padding: 3rem 2rem;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    margin: 1rem auto 2rem;
+    max-width: 900px;
 }
