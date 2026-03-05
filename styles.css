@@ -1283,15 +1283,18 @@ footer a:hover {
 }
 
 /* Sección Sáhara */
-#sahara {
+.sahara-intro {
     position: relative;
     background-image: url('imagenes/acuarelas/acu-desierto1.jpeg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    padding: 2.5rem;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
-#sahara::before {
+.sahara-intro::before {
     content: '';
     position: absolute;
     top: 0;
@@ -1301,19 +1304,12 @@ footer a:hover {
     background: rgba(255, 255, 255, 0.85);
     z-index: 0;
     pointer-events: none;
+    border-radius: 10px;
 }
 
-#sahara > * {
+.sahara-intro > * {
     position: relative;
     z-index: 1;
-}
-
-.sahara-intro {
-    background: var(--white);
-    padding: 2.5rem;
-    border-radius: 10px;
-    margin-bottom: 3rem;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
 .sahara-intro p {
