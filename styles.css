@@ -384,6 +384,15 @@ nav {
     margin-bottom: 1rem;
 }
 
+.math-card-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.math-card-link:hover {
+    text-decoration: underline;
+}
+
 .math-card p {
     color: #666;
     line-height: 1.7;
