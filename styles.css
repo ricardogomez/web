@@ -1590,8 +1590,26 @@ footer a:hover {
     background-color: #fdf8f0;
 }
 
+.reading-page h4 {
+    margin-bottom: 2.5rem;
+    color: #888;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.reading-page article {
+    margin-top: 0.5rem;
+}
+
 .reading-page article h1 {
     font-family: 'Lora', Georgia, serif;
+}
+
+.reading-page article h3 {
+    font-family: 'Lora', Georgia, serif;
+    color: var(--primary);
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
 }
 
 .reading-page article p {
