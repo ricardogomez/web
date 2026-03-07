@@ -1469,7 +1469,11 @@ footer a:hover {
 
 /* Fondo de tinta china en cabecera de Para Leer */
 #paraleer .paraleer-header-bg {
+    background-image: url('imagenes/tintas/china-paraleer.jpeg');
+    background-size: cover;
+    background-position: center;
     padding: 0 2rem 2rem;
+    border-radius: 10px;
     margin-bottom: 2rem;
 }
 
