@@ -1211,18 +1211,6 @@ footer a:hover {
 }
 
 /* Sección Para Leer */
-.paraleer-intro {
-    background: var(--light);
-    padding: 2rem;
-    border-radius: 10px;
-    margin-bottom: 3rem;
-}
-
-.paraleer-intro p {
-    text-align: center;
-    color: #555;
-    line-height: 1.8;
-}
 
 .paraleer-box {
     background: white;
@@ -1484,13 +1472,20 @@ footer a:hover {
     background-image: url('imagenes/tintas/china-paraleer.jpeg');
     background-size: cover;
     background-position: center;
-    padding: 3rem 2rem 2rem;
+    padding: 0.5rem 2rem 2rem;
     border-radius: 10px;
     margin-bottom: 2rem;
 }
 
 #paraleer .section-title::after {
     display: none;
+}
+
+.paraleer-intro-text {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1rem;
+    line-height: 1.8;
 }
 
 /* Fragmentos container */
