@@ -1479,6 +1479,20 @@ footer a:hover {
     padding-top: 4rem;
 }
 
+/* Fondo de tinta china en cabecera de Para Leer */
+#paraleer .paraleer-header-bg {
+    background-image: url('imagenes/tintas/china-paraleer.jpeg');
+    background-size: cover;
+    background-position: center;
+    padding: 3rem 2rem 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+#paraleer .section-title::after {
+    display: none;
+}
+
 /* Fragmentos container */
 .fragments-container {
     display: flex;
