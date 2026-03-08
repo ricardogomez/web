@@ -1223,7 +1223,7 @@ footer a:hover {
 .paraleer-box-transparent {
     background: transparent;
     box-shadow: none;
-    margin-top: 4rem;
+    margin-top: 6rem;
 }
 
 .paraleer-title {
@@ -1235,13 +1235,13 @@ footer a:hover {
 
 .paraleer-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
 }
 
 .paraleer-link {
     color: var(--gold);
-    font-size: 1.05rem;
+    font-size: 1.2rem;
     font-weight: 600;
     text-decoration: none;
     display: block;
