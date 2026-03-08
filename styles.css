@@ -1223,7 +1223,7 @@ footer a:hover {
 .paraleer-box-transparent {
     background: transparent;
     box-shadow: none;
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 
 .paraleer-title {
@@ -1240,7 +1240,9 @@ footer a:hover {
 }
 
 .paraleer-link {
-    color: var(--secondary);
+    color: var(--gold);
+    font-size: 1.05rem;
+    font-weight: 600;
     text-decoration: none;
     display: block;
     padding: 0.5rem;
@@ -1250,8 +1252,9 @@ footer a:hover {
 }
 
 .paraleer-link:hover {
-    background: var(--light);
-    border-left-color: var(--secondary);
+    color: var(--accent);
+    border-left-color: var(--accent);
+    transform: translateX(6px);
 }
 
 /* Fragmentos de lecturas */
