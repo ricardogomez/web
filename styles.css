@@ -1223,7 +1223,8 @@ footer a:hover {
 .paraleer-box-transparent {
     background: transparent;
     box-shadow: none;
-    margin-top: 6rem;
+    margin-top: auto;
+    padding-top: 2rem;
 }
 
 .paraleer-title {
@@ -1235,19 +1236,18 @@ footer a:hover {
 
 .paraleer-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.25rem;
 }
 
 .paraleer-link {
-    color: var(--accent);
-    font-size: 1.5rem;
-    font-weight: 600;
+    color: var(--secondary);
+    font-size: 1rem;
+    font-weight: normal;
     text-decoration: none;
     display: block;
-    padding: 0.5rem;
-    border-left: 3px solid var(--accent);
-    padding-left: 1rem;
+    padding: 0.25rem 0.25rem 0.25rem 0.75rem;
+    border-left: 3px solid var(--secondary);
     transition: all 0.3s;
 }
 
@@ -1484,6 +1484,8 @@ footer a:hover {
     padding: 0 2rem 2rem;
     border-radius: 10px;
     margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
 }
 
 #paraleer .section-title::after {
