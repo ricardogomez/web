@@ -1492,11 +1492,14 @@ footer a:hover {
     display: none;
 }
 
+#paraleer .section-subtitle {
+    margin-bottom: 0.5rem;
+}
+
 .paraleer-intro-text {
     font-size: 1.15rem;
-    font-weight: bold;
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 0.25rem;
     line-height: 1.8;
 }
 
