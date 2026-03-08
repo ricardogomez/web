@@ -1240,20 +1240,20 @@ footer a:hover {
 }
 
 .paraleer-link {
-    color: var(--gold);
-    font-size: 1.2rem;
+    color: var(--accent);
+    font-size: 1.5rem;
     font-weight: 600;
     text-decoration: none;
     display: block;
     padding: 0.5rem;
-    border-left: 3px solid var(--gold);
+    border-left: 3px solid var(--accent);
     padding-left: 1rem;
     transition: all 0.3s;
 }
 
 .paraleer-link:hover {
-    color: var(--accent);
-    border-left-color: var(--accent);
+    color: var(--gold);
+    border-left-color: var(--gold);
     transform: translateX(6px);
 }
 
