@@ -1241,13 +1241,13 @@ footer a:hover {
 }
 
 .paraleer-link {
-    color: var(--accent);
+    color: #1a3a8f;
     font-size: 1rem;
     font-weight: bold;
     text-decoration: none;
     display: block;
     padding: 0.25rem 0.25rem 0.25rem 0.75rem;
-    border-left: 3px solid var(--accent);
+    border-left: 3px solid #1a3a8f;
     transition: all 0.3s;
 }
 
