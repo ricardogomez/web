@@ -223,7 +223,7 @@ nav {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0.92);
-    background: rgba(255, 255, 255, 0.93);
+    background: rgba(210, 230, 250, 0.96);
     border-radius: 16px;
     padding: 1.2rem 1.3rem;
     font-family: 'Lora', serif;
@@ -241,6 +241,13 @@ nav {
 .book-cover-wrapper:hover .comic-bubble {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
+}
+
+.comic-bubble-intro {
+    color: var(--gold);
+    font-style: italic;
+    display: block;
+    margin-bottom: 0.4rem;
 }
 
 .book-info {
