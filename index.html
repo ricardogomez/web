@@ -1310,7 +1310,7 @@
                     </a>
                 </div>
 
-                <p class="footer-copyright">Diseño y realización de la página: Ricardo Gómez.<br>Contenido literario, reservado. Actualizado en Marzo de 2026<br>Las fotos de la web son mías, excepto retratos y las acreditadas o señaladas como prestadas.</p>
+                <p class="footer-copyright">Diseño y realización de la página: Ricardo Gómez.<br>Contenido literario, reservado. Actualizado en <span id="fecha-actualizacion"></span><br>Las fotos de la web son mías, excepto retratos y las acreditadas o señaladas como prestadas.</p>
             </div>
         </footer>
     </div>
@@ -1413,6 +1413,15 @@
                 lightbox.classList.remove('active');
             }
         });
+
+        // Fecha de última actualización
+        (function() {
+            const meses = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+            const d = new Date(document.lastModified);
+            const mes = meses[d.getMonth()];
+            const año = d.getFullYear();
+            document.getElementById('fecha-actualizacion').textContent = mes.charAt(0).toUpperCase() + mes.slice(1) + ' de ' + año;
+        })();
 
         // Burbujas: tap en móvil
         document.querySelectorAll('.book-cover-wrapper').forEach(wrapper => {
