@@ -190,11 +190,12 @@ nav {
 .book-card {
     background: var(--white);
     border-radius: 12px;
-    overflow: hidden;
+    overflow: visible;
     box-shadow: 0 5px 20px rgba(0,0,0,0.08);
     transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .book-card:hover {
@@ -216,38 +217,43 @@ nav {
 
 .book-cover-wrapper {
     position: relative;
+    overflow: hidden;
+    border-radius: 12px 12px 0 0;
 }
 
 .comic-bubble {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0.92);
-    background: rgba(210, 230, 250, 0.96);
+    top: 10%;
+    left: 105%;
+    width: 280px;
+    background: rgba(30, 90, 160, 0.93);
     border-radius: 16px;
-    padding: 1.2rem 1.3rem;
+    padding: 1.3rem 1.4rem;
     font-family: 'Lora', serif;
     font-size: 1rem;
     line-height: 1.6;
-    color: #222;
-    width: 82%;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.22);
+    color: #fff;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.28);
     opacity: 0;
     pointer-events: none;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    z-index: 10;
+    transition: opacity 0.35s ease, transform 0.35s ease;
+    transform: translateX(-10px);
+    z-index: 20;
 }
 
 .book-cover-wrapper:hover .comic-bubble {
     opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
+    transform: translateX(0);
 }
 
 .comic-bubble-intro {
-    color: var(--gold);
-    font-style: italic;
+    color: #f39c12;
+    font-family: 'Caveat', cursive;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 600;
     display: block;
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.7rem;
 }
 
 .book-info {
