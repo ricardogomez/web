@@ -918,10 +918,8 @@
                     <p>Reconocimiento al conjunto de mi obra de literatura infantil y juvenil. Un honor que me honró con miedo, a sabiendas de que había colegas con más méritos que los míos.</p>
                 </div>
 
-                <div class="award-card">
-                    <h3>🏆 Premio Gran Angular</h3>
-                    <p class="year">2016</p>
-                    <p>Por "Mujer mirando al mar". Elena, la protagonista de mi historia, me llevó a conseguir un premio de tanto prestigio. Fue emoción pura al pensar en ello.</p>
+                <div class="award-card award-image-card">
+                    <img src="imagenes/acuarelas/acu-luciernagas.jpeg" alt="Acuarela de luciérnagas" class="award-watercolor-image">
                 </div>
 
                 <div class="award-card">
@@ -1377,7 +1375,7 @@
         `;
         document.body.appendChild(lightbox);
 
-        document.querySelectorAll('.conference-ink-image, .paraleer-watercolor-image, .fragment-watercolor-image').forEach(img => {
+        document.querySelectorAll('.conference-ink-image, .paraleer-watercolor-image, .fragment-watercolor-image, .award-watercolor-image').forEach(img => {
             img.style.cursor = 'pointer';
             img.addEventListener('click', () => {
                 document.getElementById('lightbox-img').src = img.src;
