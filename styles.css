@@ -214,6 +214,57 @@ nav {
     transform: scale(1.03);
 }
 
+.book-cover-wrapper {
+    position: relative;
+}
+
+.comic-bubble {
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%) scale(0.85);
+    background: white;
+    border: 2px solid #333;
+    border-radius: 12px;
+    padding: 0.9rem 1rem;
+    font-family: 'Lora', serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    width: 88%;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.15);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 10;
+}
+
+.comic-bubble::after {
+    content: '';
+    position: absolute;
+    bottom: -14px;
+    left: 2rem;
+    border-width: 14px 10px 0;
+    border-style: solid;
+    border-color: white transparent transparent;
+    filter: drop-shadow(1px 2px 1px rgba(0,0,0,0.1));
+}
+
+.comic-bubble::before {
+    content: '';
+    position: absolute;
+    bottom: -17px;
+    left: calc(2rem - 1px);
+    border-width: 16px 11px 0;
+    border-style: solid;
+    border-color: #333 transparent transparent;
+}
+
+.book-cover-wrapper:hover .comic-bubble {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+}
+
 .book-info {
     padding: 1.5rem;
     flex-grow: 1;
