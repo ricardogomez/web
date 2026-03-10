@@ -224,9 +224,11 @@ nav {
 
 .comic-bubble {
     position: absolute;
-    top: 5%;
+    top: 0;
     left: 100%;
-    width: 260px;
+    width: 500px;
+    height: 500px;
+    overflow-y: auto;
     background: rgba(30, 90, 160, 0.93);
     border-radius: 16px;
     padding: 1.3rem 1.4rem;
