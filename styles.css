@@ -201,6 +201,7 @@ nav {
 .book-card:hover {
     transform: perspective(800px) rotateY(-3deg) translateY(-6px);
     box-shadow: 12px 15px 35px rgba(0,0,0,0.2);
+    z-index: 50;
 }
 
 .book-cover {
@@ -237,14 +238,15 @@ nav {
     box-shadow: 0 8px 24px rgba(0,0,0,0.28);
     opacity: 0;
     pointer-events: none;
-    transition: opacity 0.35s ease, transform 0.35s ease;
-    transform: translateX(-8px);
-    z-index: 20;
+    transition: opacity 0.35s ease, transform 0.4s ease;
+    transform: scaleX(0);
+    transform-origin: left center;
+    z-index: 100;
 }
 
 .book-card:hover .comic-bubble {
     opacity: 1;
-    transform: translateX(0);
+    transform: scaleX(1);
 }
 
 .comic-bubble-intro {
