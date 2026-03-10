@@ -406,6 +406,27 @@ nav {
     transition: all 0.3s ease;
 }
 
+.math-card-numbered {
+    background: #fdf8f0;
+    position: relative;
+    overflow: hidden;
+}
+
+.math-card-numbered::before {
+    content: attr(data-number);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18rem;
+    font-weight: 900;
+    color: rgba(180, 170, 155, 0.18);
+    line-height: 1;
+    pointer-events: none;
+    user-select: none;
+    font-family: Georgia, serif;
+}
+
 .math-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 25px rgba(0,0,0,0.12);
