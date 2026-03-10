@@ -223,9 +223,10 @@ nav {
 
 .comic-bubble {
     position: absolute;
-    top: 10%;
-    left: 105%;
-    width: 280px;
+    top: 5%;
+    left: 100%;
+    margin-left: 1rem;
+    width: 260px;
     background: rgba(30, 90, 160, 0.93);
     border-radius: 16px;
     padding: 1.3rem 1.4rem;
@@ -237,11 +238,11 @@ nav {
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.35s ease, transform 0.35s ease;
-    transform: translateX(-10px);
+    transform: translateX(-8px);
     z-index: 20;
 }
 
-.book-cover-wrapper:hover .comic-bubble {
+.book-card:hover .comic-bubble {
     opacity: 1;
     transform: translateX(0);
 }
