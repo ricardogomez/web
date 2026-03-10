@@ -148,7 +148,7 @@
                 <div class="book-cover-wrapper">
                     <img src="imagenes/mapasdelagua.jpg" loading="lazy" alt="Los Mapas del Agua" class="book-cover">
                 </div>
-                <div class="comic-bubble"><em class="comic-bubble-intro">Así comienza el libro...</em> En el desierto, el agua es tan valiosa como la sangre. Allí, desde que se nace se aprende a no desperdiciar una gota. Hasta un niño sabe que un buche puede salvar una vida; que una calabaza, la vida de una familia; que un pozo, la vida de un pueblo.</div>
+                <div class="comic-bubble"><em class="comic-bubble-intro">Así comienza el libro...</em><p>En el desierto, el agua es tan valiosa como la sangre. Allí, desde que se nace se aprende a no desperdiciar una gota. Hasta un niño sabe que un buche puede salvar una vida; que una calabaza, la vida de una familia; que un pozo, la vida de un pueblo.</p><p>Un desierto.</p><p>En el desierto, un poblado.</p><p>Y bajo la arena, el agua.</p></div>
                 <div class="book-info position-relative">
                     <a href="los-mapas-del-agua-sorpresa.html" class="book-info-link">
                         <img src="imagenes/iconos/lupa.svg" alt="" class="icon-surprise">
@@ -169,7 +169,7 @@
                 <div class="book-cover-wrapper">
                     <img src="imagenes/mislibros/otros/CUB-maquina.jpg" loading="lazy" alt="La Máquina de Hacer Cuentos" class="book-cover">
                 </div>
-                <div class="comic-bubble"><em class="comic-bubble-intro">Así comienza el libro...</em> Era primavera en la ciudad. Más concretamente, el mes de abril. Para ser exactos, el día 21, dos antes de la celebración del Día del libro, una fecha que las cinco librerías del lugar aguardaban con regocijo. Ese día, esperaban vender muchos libros.<br><br>Bueno, o por lo menos, bastantes libros.</div>
+                <div class="comic-bubble"><em class="comic-bubble-intro">Así comienza el libro...</em><p>Era primavera en la ciudad. Más concretamente, el mes de abril. Para ser exactos, el día 21, dos antes de la celebración del Día del Libro, una fecha que las cinco librerías del lugar aguardaban con regocijo. Ese día, esperaban vender muchos libros.</p><p>Bueno, o por lo menos, bastantes libros.</p></div>
                 <div class="book-info position-relative">
                     <a href="la-maquina-de-hacer-cuentos-sorpresa.html" class="book-info-link">
                         <img src="imagenes/iconos/baul.svg" alt="" class="icon-surprise">
@@ -185,7 +185,10 @@
 
             <!-- Ojo de Nube -->
             <div class="book-card" data-category="juvenil">
-                <img src="imagenes/mislibros/sm/CUB-ojodenube.jpg" loading="lazy" alt="Ojo de Nube" class="book-cover">
+                <div class="book-cover-wrapper">
+                    <img src="imagenes/mislibros/sm/CUB-ojodenube.jpg" loading="lazy" alt="Ojo de Nube" class="book-cover">
+                </div>
+                <div class="comic-bubble comic-bubble-left"><em class="comic-bubble-intro">Así comienza el libro...</em><p>Al sentir los primeros dolores del parto, Abeto Floreciente dejó caer en el suelo la bolsa en que recogía moras silvestres y avisó a su madre:</p><p>—Madre, ya llega...</p><p>Luz Dorada la sostuvo por la cintura y caminó con ella hacia un claro del bosque. Otras dos mujeres dejaron la recolección y la acompañaron...</p></div>
                 <div class="book-info position-relative">
                     <a href="ojodenube-sorpresa.html" class="book-info-link">
                         <img src="imagenes/iconos/lupa.svg" alt="" class="icon-surprise">
@@ -1412,6 +1415,24 @@
             if (e.target === lightbox) {
                 lightbox.classList.remove('active');
             }
+        });
+
+        // Burbujas: tap en móvil
+        document.querySelectorAll('.book-cover-wrapper').forEach(wrapper => {
+            wrapper.addEventListener('click', function(e) {
+                if (!window.matchMedia('(hover: none)').matches) return;
+                const card = this.closest('.book-card');
+                const bubble = card.querySelector('.comic-bubble');
+                if (!bubble) return;
+                e.stopPropagation();
+                const isOpen = card.classList.contains('bubble-open');
+                document.querySelectorAll('.book-card.bubble-open').forEach(c => c.classList.remove('bubble-open'));
+                if (!isOpen) card.classList.add('bubble-open');
+            });
+        });
+
+        document.addEventListener('click', () => {
+            document.querySelectorAll('.book-card.bubble-open').forEach(c => c.classList.remove('bubble-open'));
         });
     </script>
 </body>
