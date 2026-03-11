@@ -29,6 +29,10 @@ body {
     animation: fadeIn 0.8s ease-out;
 }
 
+section[id] {
+    scroll-margin-top: 70px;
+}
+
 header {
     /* OPCIÓN B — oscuro con acento dorado. Original: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%) */
     background: #1a1a2e;
