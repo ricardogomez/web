@@ -293,8 +293,13 @@ nav {
     top: 30%;
     left: auto;
     right: 0;
-    width: 900px;
+    width: 1000px;
     transform-origin: right top;
+}
+
+/* Neutralizar el giro 3D en hover para libros de mitología */
+.book-card:has(.comic-bubble-myth):hover {
+    transform: translateY(-6px);
 }
 
 .comic-bubble p {
