@@ -126,6 +126,7 @@ nav {
     max-width: 1200px;
     margin: 0 auto;
     padding: 4rem 2rem;
+    position: relative;
 }
 
 .section-title {
@@ -290,26 +291,45 @@ nav {
     margin-top: 0.6rem;
 }
 
-/* Burbuja especial para Mitología: se abre desde el tercio superior del libro */
-.comic-bubble-myth {
-    top: calc(30% - 80px);
-    left: auto;
+/* Overlay especial para Mitología: se abre hacia abajo, ancho del contenedor */
+.myth-overlay {
+    position: absolute;
+    left: 0;
     right: 0;
-    width: min(1150px, calc(100vw - 4rem));
-    transform-origin: right top;
+    z-index: 200;
+    background: linear-gradient(160deg, rgba(20, 60, 120, 0.97) 0%, rgba(10, 30, 70, 0.97) 100%);
+    border: 1.5px solid var(--gold);
+    box-shadow: 0 16px 60px rgba(0,0,0,0.55), 0 4px 20px rgba(0,0,0,0.4);
+    border-radius: 16px;
+    padding: 0.8rem 0.8rem 0;
+    pointer-events: none;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top center;
+    transition: transform 0.4s ease, opacity 0.35s ease;
 }
 
-/* Variante: abre hacia la derecha (columnas 1 y 2) */
-.comic-bubble-myth-right {
-    top: calc(30% - 80px);
-    left: 0;
-    right: auto;
-    width: min(1150px, calc(100vw - 4rem));
-    transform-origin: left top;
+.myth-overlay.visible {
+    opacity: 1;
+    transform: scaleY(1);
+    pointer-events: auto;
+}
+
+.myth-overlay .comic-bubble-intro {
+    display: block;
+    margin-bottom: 0.7rem;
+}
+
+.myth-overlay img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-top: 0.6rem;
 }
 
 /* Neutralizar el giro 3D en hover para libros de mitología */
-.book-card:has(.comic-bubble-myth):hover {
+.book-card[data-myth]:hover {
     transform: translateY(-6px);
 }
 

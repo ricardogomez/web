@@ -762,13 +762,9 @@
             </div>
 
             <!-- Los Viajes de Ulises -->
-            <div class="book-card" data-category="mitologia">
+            <div class="book-card" data-category="mitologia" data-myth="imagenes/mislibros/edelvives-mitologia/ulises-1A.png" data-myth-title="«Los viajes de Ulises»">
                 <div class="book-cover-wrapper">
                     <img src="imagenes/mislibros/edelvives-mitologia/ulises-550.jpg" loading="lazy" alt="Los Viajes de Ulises" class="book-cover">
-                </div>
-                <div class="comic-bubble comic-bubble-img comic-bubble-myth-right">
-                    <em class="comic-bubble-intro">Así comienza «Los viajes de Ulises»...</em>
-                    <img src="imagenes/mislibros/edelvives-mitologia/ulises-1A.png" alt="Ilustración Ulises">
                 </div>
                 <div class="book-info position-relative">
                     <a href="los-viajes-de-ulises-sorpresa.html" class="book-info-link">
@@ -781,13 +777,9 @@
             </div>
 
             <!-- El Minotauro y el Laberinto -->
-            <div class="book-card" data-category="mitologia">
+            <div class="book-card" data-category="mitologia" data-myth="imagenes/mislibros/edelvives-mitologia/minotauro-1A.png" data-myth-title="«El Minotauro y el laberinto»">
                 <div class="book-cover-wrapper">
                     <img src="imagenes/mislibros/edelvives-mitologia/minotauro-550.jpg" loading="lazy" alt="El Minotauro y el Laberinto" class="book-cover">
-                </div>
-                <div class="comic-bubble comic-bubble-img comic-bubble-myth-right">
-                    <em class="comic-bubble-intro">Así comienza «El Minotauro y el laberinto»...</em>
-                    <img src="imagenes/mislibros/edelvives-mitologia/minotauro-1A.png" alt="Ilustración Minotauro">
                 </div>
                 <div class="book-info">
                     <h3>El Minotauro y el Laberinto</h3>
@@ -797,13 +789,9 @@
             </div>
 
             <!-- Los Trabajos de Hércules -->
-            <div class="book-card" data-category="mitologia">
+            <div class="book-card" data-category="mitologia" data-myth="imagenes/mislibros/edelvives-mitologia/hercules-1A.png" data-myth-title="«Los trabajos de Hércules»">
                 <div class="book-cover-wrapper">
                     <img src="imagenes/mislibros/edelvives-mitologia/hercules-550.jpg" loading="lazy" alt="Los Trabajos de Hércules" class="book-cover">
-                </div>
-                <div class="comic-bubble comic-bubble-img comic-bubble-myth">
-                    <em class="comic-bubble-intro">Así comienza «Los trabajos de Hércules»...</em>
-                    <img src="imagenes/mislibros/edelvives-mitologia/hercules-1A.png" alt="Ilustración Hércules">
                 </div>
                 <div class="book-info">
                     <h3>Los Trabajos de Hércules</h3>
@@ -1078,6 +1066,7 @@
                 </div>
             </div>
         </div>
+        <div id="myth-overlay" class="myth-overlay"></div>
     </div>
 
 <section class="awards-section" id="premios">
@@ -1622,6 +1611,33 @@
 
         document.addEventListener('click', () => {
             document.querySelectorAll('.book-card.bubble-open').forEach(c => c.classList.remove('bubble-open'));
+        });
+
+        // Overlay de mitología
+        const mythOverlay = document.getElementById('myth-overlay');
+        const librosContainer = document.getElementById('libros');
+        let hideTimeout;
+
+        document.querySelectorAll('.book-card[data-myth]').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                clearTimeout(hideTimeout);
+                const img = this.dataset.myth;
+                const title = this.dataset.mythTitle;
+                const cardRect = this.getBoundingClientRect();
+                const containerRect = librosContainer.getBoundingClientRect();
+                const top = cardRect.top - containerRect.top + cardRect.height * 0.3 - 80 + librosContainer.scrollTop;
+                mythOverlay.innerHTML = `<em class="comic-bubble-intro">Así comienza ${title}...</em><img src="${img}" alt="${title}">`;
+                mythOverlay.style.top = top + 'px';
+                mythOverlay.classList.add('visible');
+            });
+            card.addEventListener('mouseleave', function() {
+                hideTimeout = setTimeout(() => mythOverlay.classList.remove('visible'), 200);
+            });
+        });
+
+        mythOverlay.addEventListener('mouseenter', () => clearTimeout(hideTimeout));
+        mythOverlay.addEventListener('mouseleave', () => {
+            hideTimeout = setTimeout(() => mythOverlay.classList.remove('visible'), 200);
         });
     </script>
 </body>
