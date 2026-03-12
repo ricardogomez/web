@@ -278,8 +278,6 @@ nav {
 .comic-bubble-img {
     background: rgba(30, 90, 160, 0.93);
     padding: 0.8rem 0.8rem 0;
-    width: 700px;
-    margin-right: 30px;
 }
 
 .comic-bubble-img img {
@@ -288,6 +286,15 @@ nav {
     height: auto;
     border-radius: 4px;
     margin-top: 0.6rem;
+}
+
+/* Burbuja especial para Mitología: se abre desde el tercio superior del libro */
+.comic-bubble-myth {
+    top: 30%;
+    left: auto;
+    right: 0;
+    width: 900px;
+    transform-origin: right top;
 }
 
 .comic-bubble p {
