@@ -276,18 +276,18 @@ nav {
 }
 
 .comic-bubble-img {
-    background: none;
-    padding: 0;
-    border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
-    width: auto;
+    background: rgba(30, 90, 160, 0.93);
+    padding: 0.8rem 0.8rem 0;
+    width: 320px;
+    margin-right: 12px;
 }
 
 .comic-bubble-img img {
     display: block;
-    max-height: 400px;
-    width: auto;
-    border-radius: 8px;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-top: 0.6rem;
 }
 
 .comic-bubble p {
