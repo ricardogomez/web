@@ -290,7 +290,7 @@ nav {
 
 /* Burbuja especial para Mitología: se abre desde el tercio superior del libro */
 .comic-bubble-myth {
-    top: calc(30% - 150px);
+    top: calc(30% - 80px);
     left: auto;
     right: 0;
     width: min(1150px, calc(100vw - 4rem));
