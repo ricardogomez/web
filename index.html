@@ -1618,6 +1618,12 @@
         const librosContainer = document.getElementById('libros');
         let hideTimeout;
 
+        // Precarga de imágenes del overlay
+        document.querySelectorAll('.book-card[data-myth]').forEach(card => {
+            const img = new Image();
+            img.src = card.dataset.myth;
+        });
+
         document.querySelectorAll('.book-card[data-myth]').forEach(card => {
             card.addEventListener('mouseenter', function() {
                 clearTimeout(hideTimeout);
