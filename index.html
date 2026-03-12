@@ -1624,22 +1624,38 @@
             img.src = card.dataset.myth;
         });
 
+        function showMythOverlay(card) {
+            clearTimeout(hideTimeout);
+            const img = card.dataset.myth;
+            const title = card.dataset.mythTitle;
+            const cardRect = card.getBoundingClientRect();
+            const containerRect = librosContainer.getBoundingClientRect();
+            const top = cardRect.top - containerRect.top + cardRect.height * 0.3 - 80 + librosContainer.scrollTop;
+            mythOverlay.innerHTML = `<em class="comic-bubble-intro">Así comienza ${title}...</em><img src="${img}" alt="${title}">`;
+            mythOverlay.style.top = top + 'px';
+            mythOverlay.classList.add('visible');
+        }
+
         document.querySelectorAll('.book-card[data-myth]').forEach(card => {
-            card.addEventListener('mouseenter', function() {
-                clearTimeout(hideTimeout);
-                const img = this.dataset.myth;
-                const title = this.dataset.mythTitle;
-                const cardRect = this.getBoundingClientRect();
-                const containerRect = librosContainer.getBoundingClientRect();
-                const top = cardRect.top - containerRect.top + cardRect.height * 0.3 - 80 + librosContainer.scrollTop;
-                mythOverlay.innerHTML = `<em class="comic-bubble-intro">Así comienza ${title}...</em><img src="${img}" alt="${title}">`;
-                mythOverlay.style.top = top + 'px';
-                mythOverlay.classList.add('visible');
-            });
+            card.addEventListener('mouseenter', function() { showMythOverlay(this); });
             card.addEventListener('mouseleave', function() {
                 hideTimeout = setTimeout(() => mythOverlay.classList.remove('visible'), 200);
             });
+            // Soporte táctil
+            card.addEventListener('click', function(e) {
+                if (!window.matchMedia('(hover: none)').matches) return;
+                e.stopPropagation();
+                const isOpen = mythOverlay.classList.contains('visible') &&
+                               mythOverlay.dataset.activeCard === this.dataset.myth;
+                mythOverlay.classList.remove('visible');
+                if (!isOpen) {
+                    mythOverlay.dataset.activeCard = this.dataset.myth;
+                    showMythOverlay(this);
+                }
+            });
         });
+
+        document.addEventListener('click', () => mythOverlay.classList.remove('visible'));
 
         mythOverlay.addEventListener('mouseenter', () => clearTimeout(hideTimeout));
         mythOverlay.addEventListener('mouseleave', () => {
