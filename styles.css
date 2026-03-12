@@ -275,6 +275,21 @@ nav {
     transform-origin: right center;
 }
 
+.comic-bubble-img {
+    background: none;
+    padding: 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    width: auto;
+}
+
+.comic-bubble-img img {
+    display: block;
+    max-height: 400px;
+    width: auto;
+    border-radius: 8px;
+}
+
 .comic-bubble p {
     margin: 0;
     line-height: 1.3;
