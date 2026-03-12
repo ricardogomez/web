@@ -299,6 +299,15 @@ nav {
     transform-origin: right top;
 }
 
+/* Variante: abre hacia la derecha (columnas 1 y 2) */
+.comic-bubble-myth-right {
+    top: calc(30% - 80px);
+    left: 0;
+    right: auto;
+    width: min(1150px, calc(100vw - 4rem));
+    transform-origin: left top;
+}
+
 /* Neutralizar el giro 3D en hover para libros de mitología */
 .book-card:has(.comic-bubble-myth):hover {
     transform: translateY(-6px);
