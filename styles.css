@@ -2019,3 +2019,11 @@ footer a:hover {
 .fragment-content {
     flex: 1;
 }
+
+@media (max-width: 768px) {
+    .comic-bubble-left {
+        left: 100%;
+        right: auto;
+        transform-origin: left center;
+    }
+}
