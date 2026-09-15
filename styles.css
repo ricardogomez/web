@@ -276,6 +276,70 @@ nav {
     transform-origin: right center;
 }
 
+/* Contenedor para apilar el bocadillo "Así comienza..." junto a un cartel extra debajo */
+.comic-bubble-stack {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.35s ease, transform 0.4s ease;
+    transform: scaleX(0);
+    transform-origin: left center;
+    z-index: 100;
+}
+
+.book-card:hover .comic-bubble-stack,
+.book-card.bubble-open .comic-bubble-stack {
+    opacity: 1;
+    transform: scaleX(1);
+    pointer-events: auto;
+}
+
+.comic-bubble-stack-left {
+    left: auto;
+    right: 100%;
+    transform-origin: right center;
+}
+
+.comic-bubble-stack .comic-bubble {
+    position: static;
+    width: 100%;
+    opacity: 1;
+    transform: none;
+    transition: none;
+    pointer-events: auto;
+}
+
+.book-note {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    background: linear-gradient(135deg, #fdf3d9, #f6dfa0);
+    color: #6b4a00;
+    border: 2px dashed var(--gold);
+    border-radius: 14px;
+    padding: 0.9rem 1.1rem;
+    font-family: 'Lora', serif;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    text-align: left;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    transform: rotate(-2deg);
+}
+
+.book-note-icon {
+    flex: 0 0 auto;
+    width: 90px;
+    height: auto;
+    filter: drop-shadow(0 2px 3px rgba(0,0,0,0.2));
+}
+
 .comic-bubble-img {
     background: linear-gradient(160deg, rgba(20, 60, 120, 0.97) 0%, rgba(10, 30, 70, 0.97) 100%);
     border: 1.5px solid var(--gold);
@@ -2026,4 +2090,44 @@ footer a:hover {
         right: auto;
         transform-origin: left center;
     }
+}
+
+.novedad-ribbon {
+    position: absolute;
+    top: 18px;
+    left: -56px;
+    width: 200px;
+    padding: 0.5rem 0;
+    background: linear-gradient(135deg, #e63946, #b71c2b);
+    color: #fff;
+    text-align: center;
+    font-family: Georgia, serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    transform: rotate(-45deg);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.35);
+    z-index: 60;
+    pointer-events: none;
+}
+
+.novedad-ribbon::before,
+.novedad-ribbon::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    border: 4px solid #8c1120;
+}
+
+.novedad-ribbon::before {
+    left: 0;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+}
+
+.novedad-ribbon::after {
+    right: 0;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
 }
