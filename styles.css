@@ -79,7 +79,8 @@ nav {
     box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-links a.active {
     background: var(--gold);
     color: #1a1a2e;
     transform: translateY(-2px);
@@ -981,6 +982,13 @@ footer a:hover {
         background: rgba(255,255,255,0.15);
         color: var(--white);
         transform: none;
+    }
+
+    .nav-links a.active {
+        background: rgba(255,255,255,0.15);
+        color: var(--gold);
+        transform: none;
+        box-shadow: none;
     }
 
     nav {

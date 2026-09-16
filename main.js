@@ -87,3 +87,17 @@ lightbox.addEventListener('click', (e) => {
     const año = d.getFullYear();
     fechaEl.textContent = mes.charAt(0).toUpperCase() + mes.slice(1) + ' de ' + año;
 })();
+
+// Resaltar en el menú la sección en la que se está navegando
+(function() {
+    function normalizar(path) {
+        path = path.replace(/index\.html$/, '').replace(/\/$/, '');
+        return path === '' ? '/' : path;
+    }
+    const actual = normalizar(window.location.pathname);
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        if (normalizar(link.pathname) === actual) {
+            link.classList.add('active');
+        }
+    });
+})();

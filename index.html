@@ -1705,6 +1705,20 @@
         mythOverlay.addEventListener('mouseleave', () => {
             hideTimeout = setTimeout(() => mythOverlay.classList.remove('visible'), 200);
         });
+
+        // Resaltar en el menú la sección en la que se está navegando
+        (function() {
+            function normalizar(path) {
+                path = path.replace(/index\.html$/, '').replace(/\/$/, '');
+                return path === '' ? '/' : path;
+            }
+            const actual = normalizar(window.location.pathname);
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                if (normalizar(link.pathname) === actual) {
+                    link.classList.add('active');
+                }
+            });
+        })();
     </script>
 </body>
 </html>
