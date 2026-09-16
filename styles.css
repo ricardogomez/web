@@ -2021,8 +2021,8 @@ footer a:hover {
     font-weight: 500;
 }
 
-/* Watercolor background for biography title */
-#biografia .section-title:not(.section-asterisk) {
+/* Watercolor banner closing the Inicio section */
+#inicio .section-title:not(.section-asterisk) {
     background-image: url('imagenes/acuarelas/acu-paisaje1.jpeg');
     background-size: cover;
     background-position: center;
@@ -2038,8 +2038,8 @@ footer a:hover {
     justify-content: center;
 }
 
-/* Remove red line decoration from biography titles */
-#biografia .section-title::after {
+/* Remove red line decoration from the Inicio banner */
+#inicio .section-title::after {
     display: none;
 }
 
