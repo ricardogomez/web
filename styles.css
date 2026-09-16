@@ -1290,6 +1290,25 @@ footer a:hover {
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
+/* Variante con columna de imagen de ancho fijo, para que el texto no quede arrinconado por fotos muy grandes */
+.foto-grid-fixed {
+    grid-template-columns: 1fr 320px;
+}
+
+.foto-grid-fixed img {
+    max-height: 380px;
+}
+
+@media (max-width: 700px) {
+    .foto-grid-fixed {
+        grid-template-columns: 1fr;
+    }
+
+    .foto-grid-fixed img {
+        max-height: 260px;
+    }
+}
+
 /* Imagen con sombra */
 .img-shadow {
     border-radius: 8px;

@@ -76,3 +76,14 @@ lightbox.addEventListener('click', (e) => {
         lightbox.classList.remove('active');
     }
 });
+
+// Fecha de última actualización
+(function() {
+    const fechaEl = document.getElementById('fecha-actualizacion');
+    if (!fechaEl) return;
+    const meses = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+    const d = new Date(document.lastModified);
+    const mes = meses[d.getMonth()];
+    const año = d.getFullYear();
+    fechaEl.textContent = mes.charAt(0).toUpperCase() + mes.slice(1) + ' de ' + año;
+})();

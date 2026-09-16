@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Biografía - Ricardo Gómez</title>
+
+    <!-- Meta tags SEO -->
+    <meta name="description" content="Biografía de Ricardo Gómez, escritor de literatura infantil, juvenil y para adultos. Su vida, su pasión por la escritura y su trayectoria.">
+    <meta name="author" content="Ricardo Gómez">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ricardogomez.com/biografia/">
+    <meta property="og:title" content="Mi Biografía - Ricardo Gómez">
+    <meta property="og:description" content="Biografía de Ricardo Gómez, escritor de literatura infantil, juvenil y para adultos. Su vida, su pasión por la escritura y su trayectoria.">
+    <meta property="og:site_name" content="Ricardo Gómez">
+    <meta property="og:locale" content="es_ES">
+
+    <!-- Favicon -->
+    <link rel="canonical" href="https://ricardogomez.com/biografia/">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <nav aria-label="Navegación principal">
+            <a href="../index.html" class="logo"></a>
+            <div class="menu-toggle" onclick="toggleMenu()" role="button" tabindex="0" aria-label="Abrir menú" aria-expanded="false" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleMenu()}">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" role="menubar">
+                <li><a href="../index.html#inicio" onclick="closeMenu()">Inicio</a></li>
+                <li><a href="index.html" onclick="closeMenu()">Mi Biografía</a></li>
+                <li><a href="../index.html#libros" onclick="closeMenu()">Mis Libros</a></li>
+                <li><a href="../paraleer/index.html" onclick="closeMenu()">Para Leer</a></li>
+                <li><a href="../premios/index.html" onclick="closeMenu()">Premios</a></li>
+                <li><a href="../conferencias/index.html" onclick="closeMenu()">Conferencias</a></li>
+                <li><a href="../matematicas/index.html" onclick="closeMenu()">Matemáticas</a></li>
+                <li><a href="../sahara/index.html" onclick="closeMenu()">Sáhara</a></li>
+                <li><a href="../contacto/index.html" onclick="closeMenu()">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2 class="section-title">Si quieres saber sobre mí...</h2>
+
+        <div class="bio-grid">
+            <div class="math-card">
+                <h3>Una bio formal</h3>
+                <p>Nací en febrero de 1954 en un pueblo de Segovia, pero crecí en Madrid. Volví a nacer cuando decidí dedicarme a escribir hace unos años, después de dar clases de matemáticas durante mucho tiempo. Me he empapado de miles de lecturas, viajando con Verne, Melville, Poe, Kafka, Nabokov, Borges y Cortázar. Leo, escribo, paseo, fotografío, disfruto del cine y la música, viajo cuando puedo. Me repugnan la injusticia y la barbarie, odio la guerra, no comprendo el hambre en el planeta y desprecio a quienes se enriquecen a costa ajena.</p>
+                <p class="mt-1"><a href="../fotos-personales.html" class="link-bio">→ Si te atreves a ver algunas fotos...</a></p>
+            </div>
+
+            <div class="math-card">
+                <h3>Lo que pienso de la vida...</h3>
+                <p>"El diccionario de Ricardo Gómez" es una entrevista publicada en la revista "Lazarillo" en 2007, donde a través de entradas alfabéticas hablo sobre conceptos que me definen: amor, arte, compromiso, educación, literatura, Sáhara, solidaridad y muchos más. Defiendo el conocimiento científico, critico la injusticia y la guerra, reivindico la literatura sin fronteras de edad. Hablo de mi pasión tardía por la escritura, mi trabajo como profesor de matemáticas, mis lecturas fundamentales y mi compromiso social. Es un retrato íntimo y público a la vez, donde expreso mis convicciones sobre el mundo, la literatura y la necesidad de cambiar las cosas.</p>
+                <p class="mt-1"><a href="../diccionario-ricardo-gomez.html" class="link-bio">→ Leer el diccionario completo</a></p>
+            </div>
+
+            <div class="math-card">
+                <h3>Esto NO es una biografía</h3>
+                <p>Las biografías están bien para cuando uno está muerto, que no es mi caso de momento. Leí desde muy niño gracias a un abuelo que me contaba historias por los campos de Castilla. Comencé a escribir pasados los cuarenta, después de haberme preparado durante años leyendo, y ahora la escritura me apasiona tanto que no puedo vivir sin ella. Escribo sobre cosas que me gustan y otras que me hieren, orgulloso de mis libros que me han dado premios y, sobre todo, satisfacciones. Disfruto del cine, la fotografía, la música, los paseos y, especialmente, de mis dos hijos y de las personas que me quieren.</p>
+                <p class="mt-1"><a href="../esto-no-es-una-biografia.html" class="link-bio">→ Si quieres seguir cotilleando...</a></p>
+            </div>
+
+            <div class="math-card position-relative">
+                <h3>Cuentan (pero no te fíes...)</h3>
+                <p>De niño esperaba con ganas el recreo para jugar al guá, al rescate, a las chapas o al pañuelo. Con el tiempo, dejó de ser alumno y se convirtió en profesor de Matemáticas, jugando ahora con los números, que siguen encantándole. Pero como ser "de ciencias" no significa que no pueden gustarte los libros, un buen día decidió jugar con las letras y se hizo escritor. Si le encuentras por la calle y buscas en su mochila, encontrarás una libreta y una cámara fotográfica. Toma nota de casi todo y trata de registrarlo, porque nunca sabe dónde va a encontrar una buena historia que merezca la pena ser contada.</p>
+                <a href="../biografia-caricatura.html" class="book-info-link-bottom"><img src="../imagenes/iconos/camara.svg" loading="lazy" alt="Ver caricatura" class="icon-camera-bio"></a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Ricardo Gómez. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../main.js"></script>
+</body>
+</html>
