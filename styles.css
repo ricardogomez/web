@@ -113,17 +113,21 @@ nav {
 }
 
 .hero {
-    background: linear-gradient(rgba(44, 62, 80, 0.85), rgba(52, 152, 219, 0.85)), 
+    background: linear-gradient(rgba(44, 62, 80, 0.85), rgba(52, 152, 219, 0.85)),
                 url('imagenes/portada/original.jpg');
     background-size: cover;
     background-position: center;
-    min-height: 400px;
+    min-height: 550px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: var(--white);
     padding: 2rem;
+}
+
+.hero-content {
+    padding-top: 3rem;
 }
 
 .hero-content h1 {
