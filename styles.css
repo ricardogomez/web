@@ -87,6 +87,31 @@ nav {
     box-shadow: 0 4px 10px rgba(0,0,0,0.25);
 }
 
+/* "Inicio" como firma: sin pastilla, el doble de alto que el resto */
+.nav-logo-link {
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    display: inline-flex !important;
+    align-items: center;
+}
+
+.nav-logo-link:hover,
+.nav-logo-link.active {
+    transform: scale(1.08);
+}
+
+.nav-logo-rg {
+    height: 76px;
+    width: auto;
+    display: block;
+    transition: filter 0.3s ease;
+}
+
+.nav-logo-link.active .nav-logo-rg {
+    filter: drop-shadow(0 0 6px var(--gold));
+}
+
 .hero {
     background: linear-gradient(rgba(44, 62, 80, 0.85), rgba(52, 152, 219, 0.85)), 
                 url('imagenes/portada/original.jpg');
@@ -989,6 +1014,23 @@ footer a:hover {
         color: var(--gold);
         transform: none;
         box-shadow: none;
+    }
+
+    .nav-logo-link {
+        display: flex !important;
+        justify-content: flex-start;
+        padding: 1rem 2rem !important;
+        background: transparent !important;
+    }
+
+    .nav-logo-link:hover,
+    .nav-logo-link.active {
+        background: rgba(255,255,255,0.15) !important;
+        transform: none;
+    }
+
+    .nav-logo-rg {
+        height: 44px;
     }
 
     nav {
