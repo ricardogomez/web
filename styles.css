@@ -1479,33 +1479,39 @@ footer a:hover {
 .icon-camera-link::after {
     content: attr(data-tooltip);
     position: absolute;
-    bottom: calc(100% + 10px);
+    bottom: calc(100% + 16px);
     left: 50%;
-    transform: translateX(-50%);
-    background: var(--primary);
-    color: var(--white);
-    padding: 0.4rem 0.8rem;
-    border-radius: 6px;
-    font-size: 0.85rem;
+    transform: translateX(-50%) rotate(-4deg) scale(0.7);
+    background: #fff8e1;
+    color: var(--accent);
+    padding: 0.3rem 1rem 0.5rem;
+    border: 3px solid var(--primary);
+    border-radius: 22px 22px 22px 4px;
+    font-family: 'Caveat', cursive;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.1;
     white-space: nowrap;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+    box-shadow: 3px 3px 0 var(--primary);
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
     transition: opacity 0.2s ease, transform 0.2s ease;
+    z-index: 20;
 }
 
 .icon-camera-link::before {
     content: '';
     position: absolute;
-    bottom: calc(100% + 4px);
+    bottom: calc(100% + 8px);
     left: 50%;
-    transform: translateX(-50%);
-    border: 6px solid transparent;
+    transform: translateX(-50%) rotate(-4deg);
+    border: 9px solid transparent;
     border-top-color: var(--primary);
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.2s ease;
+    z-index: 19;
 }
 
 .icon-camera-link:hover::after,
@@ -1515,7 +1521,8 @@ footer a:hover {
 }
 
 .icon-camera-link:hover::after {
-    transform: translateX(-50%) translateY(-2px);
+    transform: translateX(-50%) rotate(-4deg) scale(1);
+    transition: opacity 0.2s ease, transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 /* Iconos de sorpresa en libros */
