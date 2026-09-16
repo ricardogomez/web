@@ -764,9 +764,8 @@ article::after {
     }
 }
 
-/* Contact wrapper - contiene hero + footer en 100vh menos header */
+/* Contact wrapper - contiene hero + footer */
 .contact-wrapper {
-    min-height: calc(100vh - 70px);
     display: flex;
     flex-direction: column;
 }
@@ -774,7 +773,7 @@ article::after {
 .contact-hero {
     background: linear-gradient(135deg, var(--primary) 0%, #1a3a4a 100%);
     color: var(--white);
-    padding: 4.5rem 2rem 1rem;
+    padding: 2rem 2rem 1rem;
     text-align: center;
     position: relative;
 }
@@ -826,6 +825,11 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.contact-wrapper footer .container {
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 footer h3 {
