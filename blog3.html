@@ -124,19 +124,18 @@
                 left: 23px;
             }
             .foto-pegada {
-                position: relative !important;
-                right: auto !important;
-                bottom: auto !important;
-                margin: 2rem auto 0 auto !important;
+                float: none !important;
+                display: block !important;
+                width: fit-content !important;
+                margin: 1rem auto 2rem auto !important;
             }
         }
 
         .foto-pegada {
-            position: absolute;
-            right: 80px;
-            bottom: 80px;
-            transform: rotate(-10deg);
-            z-index: 5;
+            float: right;
+            margin: 0.75rem 0 1rem 2rem;
+            transform: rotate(-6deg);
+            shape-outside: margin-box;
         }
 
         .foto-marco {
@@ -192,20 +191,20 @@
             <h1>16 de septiembre de 2026. Un nuevo hijo literario: Yuri</h1>
         </div>
         <div class="cuaderno-contenido">
+            <div class="foto-pegada">
+                <div class="foto-marco">
+                    <span class="cinta cinta-top-left"></span>
+                    <span class="cinta cinta-top-right"></span>
+                    <span class="cinta cinta-bottom-left"></span>
+                    <span class="cinta cinta-bottom-right"></span>
+                    <img src="imagenes/mislibros/otros/yuri-cub.jpg" alt="Cubierta de El viaje de Yuri" loading="lazy">
+                </div>
+            </div>
             <p>Hace tiempo, cuando se acabó toda la tarea con "El viaje de Yuri", la editora me comunicó que el libro saldría el 16 de septiembre. Faltaban al menos cuatro meses para llegar a hoy, y desde entonces esa fecha en mente. Tenía que pasar la primavera completa, casi el verano…</p>
             <p>Pero el día ha llegado. Recibir un nuevo libro es como esperar a un nuevo hijo. Sabes que vendrá, pero tienes ganas de verlo andar por ahí, en librerías, en manos de lectores… Y durante mucho tiempo persistirán dudas: ¿resulta atractivo?, ¿son inteligentes sus palabras?, ¿invita a pensar, a conectar con otros personajes?...</p>
             <p>Ahora hay que acompañarlo un tiempo, hasta que sea capaz de hacerse un lugar en el mundo. Vendrán presentaciones, tertulias y encuentros, y habrá que estar atento a lo que opinan lectores fieles. Por mi parte, me siento orgulloso de ese chaval (libro y personaje) que busca para sí un destino amable en unos tiempos (los pasados y los presentes) tan llenos de despropósitos y de amenazas.</p>
             <p>Entretanto, te quiero, Yuri.</p>
             <p>(Ni que decir tiene que ha sido un placer trabajar con EDEBÉ…)</p>
-        </div>
-        <div class="foto-pegada">
-            <div class="foto-marco">
-                <span class="cinta cinta-top-left"></span>
-                <span class="cinta cinta-top-right"></span>
-                <span class="cinta cinta-bottom-left"></span>
-                <span class="cinta cinta-bottom-right"></span>
-                <img src="imagenes/mislibros/otros/yuri-cub.jpg" alt="Cubierta de El viaje de Yuri" loading="lazy">
-            </div>
         </div>
     </div>
 </body>
