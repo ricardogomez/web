@@ -1473,10 +1473,14 @@ footer a:hover {
 
 .hero-icons a.icon-camera-link {
     margin: 0 0.5rem;
+}
+
+/* Cartel-bocadillo de cómic reutilizable al pasar el cursor por un icono */
+.has-tooltip {
     position: relative;
 }
 
-.icon-camera-link::after {
+.has-tooltip::after {
     content: attr(data-tooltip);
     position: absolute;
     bottom: calc(100% + 16px);
@@ -1490,8 +1494,11 @@ footer a:hover {
     font-family: 'Caveat', cursive;
     font-weight: 700;
     font-size: 1.6rem;
-    line-height: 1.1;
-    white-space: nowrap;
+    line-height: 1.15;
+    max-width: 200px;
+    width: max-content;
+    white-space: normal;
+    text-align: center;
     box-shadow: 3px 3px 0 var(--primary);
     opacity: 0;
     visibility: hidden;
@@ -1500,7 +1507,7 @@ footer a:hover {
     z-index: 20;
 }
 
-.icon-camera-link::before {
+.has-tooltip::before {
     content: '';
     position: absolute;
     bottom: calc(100% + 8px);
@@ -1514,13 +1521,13 @@ footer a:hover {
     z-index: 19;
 }
 
-.icon-camera-link:hover::after,
-.icon-camera-link:hover::before {
+.has-tooltip:hover::after,
+.has-tooltip:hover::before {
     opacity: 1;
     visibility: visible;
 }
 
-.icon-camera-link:hover::after {
+.has-tooltip:hover::after {
     transform: translateX(-50%) rotate(-4deg) scale(1);
     transition: opacity 0.2s ease, transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
