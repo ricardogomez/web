@@ -95,9 +95,28 @@ lightbox.addEventListener('click', (e) => {
         return path === '' ? '/' : path;
     }
     const actual = normalizar(window.location.pathname);
-    document.querySelectorAll('.nav-links a').forEach(link => {
+    const links = document.querySelectorAll('.nav-links a');
+    let coincidencia = false;
+    links.forEach(link => {
         if (normalizar(link.pathname) === actual) {
             link.classList.add('active');
+            coincidencia = true;
         }
     });
+
+    // Si no hay coincidencia exacta (estamos en una subpágina de una sección,
+    // como una ficha de libro o un texto de Para Leer), usar el data-section
+    // del body para resaltar el apartado del menú al que pertenece.
+    if (!coincidencia) {
+        const seccion = document.body.dataset.section;
+        if (seccion) {
+            links.forEach(link => {
+                const segmentos = normalizar(link.pathname).split('/').filter(Boolean);
+                const seccionLink = segmentos.length ? segmentos[segmentos.length - 1] : 'inicio';
+                if (seccionLink === seccion) {
+                    link.classList.add('active');
+                }
+            });
+        }
+    }
 })();
