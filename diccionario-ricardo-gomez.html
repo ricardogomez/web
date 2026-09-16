@@ -35,16 +35,21 @@
     <header>
         <nav aria-label="Navegación principal">
             <a href="#" class="logo"></a>
-            <ul class="nav-links">
-                <li><a href="index.html#inicio" class="nav-logo-link"><img src="imagenes/mislibros/otros/rg.png" alt="Inicio" class="nav-logo-rg"></a></li>
-                <li><a href="biografia/index.html">Mi Biografía</a></li>
-                <li><a href="libros/index.html">Mis Libros</a></li>
-                <li><a href="paraleer/index.html">Para Leer</a></li>
-                <li><a href="premios/index.html">Premios</a></li>
-                <li><a href="conferencias/index.html">Conferencias</a></li>
-                <li><a href="matematicas/index.html">Matemáticas</a></li>
-                <li><a href="sahara/index.html">Sáhara</a></li>
-                <li><a href="contacto/index.html">Contacto</a></li>
+            <div class="menu-toggle" onclick="toggleMenu()" role="button" tabindex="0" aria-label="Abrir menú" aria-expanded="false" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleMenu()}">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" role="menubar">
+                <li><a href="index.html#inicio" class="nav-logo-link" onclick="closeMenu()"><img src="imagenes/mislibros/otros/rg.png" alt="Inicio" class="nav-logo-rg"></a></li>
+                <li><a href="biografia/index.html" onclick="closeMenu()">Mi Biografía</a></li>
+                <li><a href="libros/index.html" onclick="closeMenu()">Mis Libros</a></li>
+                <li><a href="paraleer/index.html" onclick="closeMenu()">Para Leer</a></li>
+                <li><a href="premios/index.html" onclick="closeMenu()">Premios</a></li>
+                <li><a href="conferencias/index.html" onclick="closeMenu()">Conferencias</a></li>
+                <li><a href="matematicas/index.html" onclick="closeMenu()">Matemáticas</a></li>
+                <li><a href="sahara/index.html" onclick="closeMenu()">Sáhara</a></li>
+                <li><a href="contacto/index.html" onclick="closeMenu()">Contacto</a></li>
             </ul>
         </nav>
     </header>
